@@ -13,52 +13,21 @@ browser-compat: javascript.builtins.Math.atan
 The **`Math.atan()`** function returns the arctangent (in radians) of a number,
 that is
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace" <mrow
-> <mo lspace="0em" rspace="thinmathspace">Math.atan</mo>
-
-          <mo stretchy="false">(</mo>
-          <mi>x</mi>
-          <mo stretchy="false">)</mo>
-        </mrow></mstyle
-      ><mo>=</mo>
-      <mo lspace="0em" rspace="0em">arctan</mo>
-      <mo stretchy="false">(</mo>
-      <mi>x</mi>
-      <mo stretchy="false">)</mo>
-      <mo>=</mo>
-      <mtext>the unique </mtext><mspace width="thickmathspace"></mspace
-      ><mi>y</mi>
-      <mo>∊</mo>
-      <mrow
-        ><mo>[</mo>
-        <mrow
-          ><mo>-</mo>
-          <mfrac
-            ><mi>π</mi>
-            <mn>2</mn> </mfrac
-          ><mo>;</mo>
-          <mfrac
-            ><mi>π</mi>
-            <mn>2</mn>
-          </mfrac></mrow
-        ><mo>]</mo> </mrow
-      ><mspace width="thinmathspace"></mspace><mtext>such that</mtext>
-      <mspace width="thickmathspace"></mspace
-      ><mo lspace="0em" rspace="0em">tan</mo>
-      <mo stretchy="false">(</mo>
-      <mi>y</mi>
-      <mo stretchy="false">)</mo>
-      <mo>=</mo>
-      <mi>x</mi> </mrow
-    ><annotation encoding="TeX"
-      >\mathtt{\operatorname{Math.atan}(x)} = \arctan(x) = \text{ the unique }
-      \; y \in \left[-\frac{\pi}{2}; \frac{\pi}{2}\right] \, \text{such that} \;
-      \tan(y) = x</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.atan</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo>
+</mrow></mstyle><mo>=</mo> <mo lspace="0em" rspace="0em">arctan</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo> <mo>=</mo>
+<mtext>the unique </mtext><mspace width="thickmathspace"></mspace><mi>y</mi>
+<mo>∊</mo> <mrow><mo>[</mo> <mrow><mo>-</mo> <mfrac><mi>π</mi> <mn>2</mn>
+</mfrac><mo>;</mo> <mfrac><mi>π</mi> <mn>2</mn> </mfrac></mrow><mo>]</mo>
+</mrow><mspace width="thinmathspace"></mspace><mtext>such that</mtext>
+<mspace width="thickmathspace"></mspace><mo lspace="0em" rspace="0em">tan</mo>
+<mo stretchy="false">(</mo> <mi>y</mi> <mo stretchy="false">)</mo> <mo>=</mo>
+<mi>x</mi>
+</mrow><annotation encoding="TeX">\mathtt{\operatorname{Math.atan}(x)} =
+\arctan(x) = \text{ the unique } \; y \in \left[-\frac{\pi}{2};
+\frac{\pi}{2}\right] \, \text{such that} \; \tan(y) =
+x</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-atan.html")}}
 
@@ -79,20 +48,12 @@ The arctangent (in radians) of the given number.
 
 ## Description
 
-The `Math.atan()` method returns a numeric value between <math> <semantics
-    ><mrow
-      ><mo>-</mo> <mfrac
-        ><mi>π</mi> <mn>2</mn> </mfrac></mrow
-    ><annotation encoding="TeX">-\frac{\pi}{2}</annotation> </semantics></math
-
-> and <math> <semantics <mfrac <mi>π</mi>
-
-      <mn>2</mn> </mfrac
-    ><annotation encoding="TeX">\frac{\pi}{2}</annotation>
-
-</semantics></math
-
-> radians.
+The `Math.atan()` method returns a numeric value between <math>
+<semantics><mrow><mo>-</mo> <mfrac><mi>π</mi> <mn>2</mn>
+</mfrac></mrow><annotation encoding="TeX">-\frac{\pi}{2}</annotation>
+</semantics></math> and <math> <semantics><mfrac><mi>π</mi> <mn>2</mn>
+</mfrac><annotation encoding="TeX">\frac{\pi}{2}</annotation>
+</semantics></math> radians.
 
 Because `atan()` is a static method of `Math`, you always use it as
 `Math.atan()`, rather than as a method of a `Math` object you created (`Math` is

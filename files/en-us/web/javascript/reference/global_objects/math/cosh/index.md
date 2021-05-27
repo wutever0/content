@@ -6,6 +6,7 @@ tags:
 - Math
 - Method
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Math.cosh
 ---
 {{JSRef}}
@@ -14,31 +15,11 @@ The **`Math.cosh()`** function returns the hyperbolic cosine of a number, that
 can be expressed using the
 {{jsxref("Math.E", "constant e", "", 1)}}:
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace"
-> <mo lspace="0em" rspace="thinmathspace">Math.cosh(x)</mo> </mstyle <mo>=</mo>
-
-      <mfrac
-        ><mrow
-          ><msup
-            ><mi>e</mi>
-            <mi>x</mi> </msup
-          ><mo>+</mo>
-          <msup
-            ><mi>e</mi>
-            <mrow
-              ><mo>-</mo>
-              <mi>x</mi>
-            </mrow></msup
-          ></mrow
-        ><mn>2</mn>
-      </mfrac></mrow
-    ><annotation encoding="TeX"
-      >\mathtt{\operatorname{Math.cosh(x)}} = \frac{e^x + e^{-x}}{2}</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mo lspace="0em" rspace="thinmathspace">Math.cosh(x)</mo>
+</mstyle><mo>=</mo> <mfrac><mrow><msup><mi>e</mi> <mi>x</mi> </msup><mo>+</mo>
+<msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi> </mrow></msup></mrow><mn>2</mn>
+</mfrac></mrow><annotation encoding="TeX">\mathtt{\operatorname{Math.cosh(x)}} =
+\frac{e^x + e^{-x}}{2}</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-cosh.html")}}
 
@@ -101,6 +82,8 @@ Math.cosh = Math.cosh || function(x) {
 
 ## See also
 
+- A polyfill of `Math.cosh` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.acosh()")}}
 - {{jsxref("Math.asinh()")}}
 - {{jsxref("Math.atanh()")}}

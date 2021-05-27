@@ -14,11 +14,8 @@ browser-compat: javascript.builtins.Intl.Locale.script
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.script</code></strong> property is an
-> accessor property which returns the script used for writing the particular
-> language used in the locale.</span
+The **`Intl.Locale.prototype.script`** property is an accessor property which
+returns the script used for writing the particular language used in the locale.
 
 ## Description
 

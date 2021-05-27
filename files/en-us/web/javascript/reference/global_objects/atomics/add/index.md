@@ -19,8 +19,7 @@ written back.
 
 ## Syntax
 
-<pre class="brush: js">
-Atomics.add(<var>typedArray</var>, <var>index</var>, <var>value</var>)
+<pre class="brush: js">Atomics.add(<var>typedArray</var>, <var>index</var>, <var>value</var>)
 </pre>
 
 ### Parameters
@@ -32,18 +31,14 @@ Atomics.add(<var>typedArray</var>, <var>index</var>, <var>value</var>)
     {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
     {{jsxref("BigUint64Array")}}.
 - `index`
-
-  - : The position in the `typedArray` to add a
-
-    `value` to.
-
+  - : The position in the `typedArray` to add a `value` to.
 - `value`
   - : The number to add.
 
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code> ).
+(<code><var>typedArray</var>[<var>index</var>]</code>).
 
 ### Exceptions
 

@@ -7,6 +7,7 @@ tags:
 - Math
 - Method
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Math.sinh
 ---
 {{JSRef}}
@@ -14,31 +15,11 @@ browser-compat: javascript.builtins.Math.sinh
 The **`Math.sinh()`** function returns the hyperbolic sine of a number, that can
 be expressed using the {{jsxref("Math.E", "constant e", "", 1)}}:
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace"
-> <mo lspace="0em" rspace="thinmathspace">Math.sinh(x)</mo> </mstyle <mo>=</mo>
-
-      <mfrac
-        ><mrow
-          ><msup
-            ><mi>e</mi>
-            <mi>x</mi> </msup
-          ><mo>-</mo>
-          <msup
-            ><mi>e</mi>
-            <mrow
-              ><mo>-</mo>
-              <mi>x</mi>
-            </mrow></msup
-          ></mrow
-        ><mn>2</mn>
-      </mfrac></mrow
-    ><annotation encoding="TeX"
-      >\mathtt{\operatorname{Math.sinh(x)}} = \frac{e^x - e^{-x}}{2}</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mo lspace="0em" rspace="thinmathspace">Math.sinh(x)</mo>
+</mstyle><mo>=</mo> <mfrac><mrow><msup><mi>e</mi> <mi>x</mi> </msup><mo>-</mo>
+<msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi> </mrow></msup></mrow><mn>2</mn>
+</mfrac></mrow><annotation encoding="TeX">\mathtt{\operatorname{Math.sinh(x)}} =
+\frac{e^x - e^{-x}}{2}</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-sinh.html")}}
 
@@ -100,6 +81,8 @@ Math.sinh(1); // 1.1752011936438014
 
 ## See also
 
+- A polyfill of `Math.sinh` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.acosh()")}}
 - {{jsxref("Math.asinh()")}}
 - {{jsxref("Math.atanh()")}}

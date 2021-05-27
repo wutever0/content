@@ -7,6 +7,7 @@ tags:
   - TypedArray
   - TypedArrays
   - Uint8Array
+  - Polyfill
 browser-compat: javascript.builtins.Uint8Array
 ---
 {{JSRef}}
@@ -25,10 +26,10 @@ syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Uint8Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `1` in the case of an
-    `Uint8Array` .
+    `Uint8Array`.
 - {{jsxref("TypedArray.name", "Uint8Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
-    `Uint8Array` type: " `Uint8Array` ".
+    `Uint8Array` type: "`Uint8Array`".
 
 ## Static methods
 
@@ -43,16 +44,16 @@ syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Uint8Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Uint8Array` . Fixed at construction time and thus **read only** .
+    `Uint8Array`. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Uint8Array.prototype.byteLength")}}
-  - : Returns the length (in bytes) of the `Uint8Array` . Fixed at construction
+  - : Returns the length (in bytes) of the `Uint8Array`. Fixed at construction
     time and thus **read only.**
 - {{jsxref("TypedArray.prototype.byteOffset", "Uint8Array.prototype.byteOffset")}}
   - : Returns the offset (in bytes) of the `Uint8Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Uint8Array.prototype.length")}}
-  - : Returns the number of elements held in the `Uint8Array` . Fixed at
+  - : Returns the number of elements held in the `Uint8Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -72,7 +73,7 @@ syntax (that is, using bracket notation).
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.filter", "Uint8Array.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.find", "Uint8Array.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -189,6 +190,8 @@ var uint8 = new Uint8Array(iterable);
 
 ## See also
 
+- A polyfill of `Uint8Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

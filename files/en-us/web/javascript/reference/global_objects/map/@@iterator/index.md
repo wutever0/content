@@ -13,11 +13,9 @@ browser-compat: javascript.builtins.Map.@@iterator
 ---
 {{JSRef}}
 
-<p class="seoSummary">
-  The initial value of the <strong><code>@@iterator</code></strong> property is
-  the same function object as the initial value of the
-  {{jsxref("Map.prototype.entries()", "entries")}} method.
-</p>
+<p class="seoSummary">The initial value of the <strong><code>@@iterator</code></strong>
+property is the same function object as the initial value of the
+{{jsxref("Map.prototype.entries()", "entries")}} method.</p>
 
 {{EmbedInteractiveExample("pages/js/map-prototype-@@iterator.html")}}
 

@@ -19,8 +19,7 @@ including inherited enumerable properties.
 
 ## Syntax
 
-<pre class="brush: js">
-for (<var>variable</var> in <var>object</var>) {
+<pre class="brush: js">for (<var>variable</var> in <var>object</var>) {
   <var>statement</var>
 }
 </pre>

@@ -26,7 +26,7 @@ delete(value)
 ### Parameters
 
 - `value`
-  - : The value to remove from `mySet` .
+  - : The value to remove from `mySet`.
 
 ### Return value
 

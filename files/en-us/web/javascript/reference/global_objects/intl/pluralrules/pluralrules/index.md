@@ -33,54 +33,45 @@ new Intl.PluralRules(locales, options)
 			"#Locale_identification_and_negotiation", 1)}}
     page.
 - `options` {{optional_inline}}
-
   - : An object with some or all of the following properties:
-
-    - `localeMatcher`
-      - : The locale matching algorithm to use. Possible values are " `lookup` "
-        and " `best fit` "; the default is " `best fit` ". For information about
-        this option, see the
-        {{jsxref("Global_Objects/Intl", "Intl", "#Locale_negotiation", 1)}}
-        page.
-    - `type` _ : The type to use. Possible values are: _ "`cardinal`" for
-      cardinal numbers (refering to the quantity of things). This is the default
-      value. \* "`ordinal`" for ordinal number (refering to the ordering or
-      ranking of things, e.g. "1st", "2nd", "3rd" in English). The following
-      properties fall into two groups: `minimumIntegerDigits`,
-      `minimumFractionDigits`, and `maximumFractionDigits` in one group,
-      `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If
-      at least one property from the second group is defined, then the first
-      group is ignored.
-    - `minimumIntegerDigits`
-      - : The minimum number of integer digits to use. Possible values are from
-        1 to 21; the default is 1.
-    - `minimumFractionDigits`
-      - : The minimum number of fraction digits to use. Possible values are from
-        0 to 20; the default for plain number and percent formatting is 0; the
-        default for currency formatting is the number of minor unit digits
-        provided by the
-        [ISO 4217 currency code list](http://www.currency-iso.org/en/home/tables/table-a1.html)
-        (2 if the list doesn't provide that information).
-    - `maximumFractionDigits`
-
-      - : The maximum number of fraction digits to use. Possible values are from
-        0 to 20; the default for plain number formatting is the larger of
-
-        `minimumFractionDigits` and 3; the default for currency formatting is
-        the larger of `minimumFractionDigits` and the number of minor unit
-        digits provided by the
-        [ISO 4217 currency code list](http://www.currency-iso.org/en/home/tables/table-a1.html)
-        (2 if the list doesn't provide that information); the default for
-        percent formatting is the larger of
-
-        `minimumFractionDigits` and 0.
-
-    - `minimumSignificantDigits`
-      - : The minimum number of significant digits to use. Possible values are
-        from 1 to 21; the default is 1.
-    - `maximumSignificantDigits`
-      - : The maximum number of significant digits to use. Possible values are
-        from 1 to 21; the default is 21.
+    <dl><dt><code>localeMatcher</code></dt><dd>The locale matching algorithm to use. Possible values are
+    "<code>lookup</code>" and "<code>best fit</code>"; the default is
+    "<code>best fit</code>". For information about this option, see the
+    {{jsxref("Global_Objects/Intl", "Intl", "#Locale_negotiation", 1)}} page.</dd><dt><code>type</code></dt><dd>The type to use. Possible values are:<ul><li>"<code>cardinal</code>" for cardinal numbers (refering to the
+    quantity of things). This is the default value.</li><li>"<code>ordinal</code>" for ordinal number (refering to the
+    ordering or ranking of things, e.g. "1st", "2nd", "3rd" in
+    English).</li></ul></dd></dl>
+    The following properties fall into two groups:
+    `minimumIntegerDigits`, `minimumFractionDigits`, and
+    `maximumFractionDigits` in one group,
+    `minimumSignificantDigits` and
+    `maximumSignificantDigits` in the other. If at least one property
+    from the second group is defined, then the first group is ignored.
+    *   `minimumIntegerDigits`
+        *   : The minimum number of integer digits to use. Possible values are from 1 to
+            21; the default is 1.
+    *   `minimumFractionDigits`
+        *   : The minimum number of fraction digits to use. Possible values are from 0
+            to 20; the default for plain number and percent formatting is 0; the
+            default for currency formatting is the number of minor unit digits
+            provided by the [ISO
+            4217 currency code list](http://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that
+            information).
+    *   `maximumFractionDigits`
+        *   : The maximum number of fraction digits to use. Possible values are from 0
+            to 20; the default for plain number formatting is the larger of
+            `minimumFractionDigits` and 3; the default for currency
+            formatting is the larger of `minimumFractionDigits` and the
+            number of minor unit digits provided by the [ISO
+            4217 currency code list](http://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that
+            information); the default for percent formatting is the larger of
+            `minimumFractionDigits` and 0.
+    *   `minimumSignificantDigits`
+        *   : The minimum number of significant digits to use. Possible values are from
+            1 to 21; the default is 1.
+    *   `maximumSignificantDigits`
+        *   : The maximum number of significant digits to use. Possible values are from
+            1 to 21; the default is 21.
 
 ## Examples
 

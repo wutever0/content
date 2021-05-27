@@ -13,11 +13,10 @@ browser-compat: javascript.builtins.Intl.Locale.maximize
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.maximize()</code></strong> method gets
-> the most likely values for the language, script, and region of the locale
-> based on existing values.</span
+<span class="seoSummary">The
+<strong><code>Intl.Locale.prototype.maximize()</code></strong> method gets the
+most likely values for the language, script, and region of the locale based on
+existing values.</span>
 
 {{EmbedInteractiveExample("pages/js/intl-locale-prototype-maximize.html")}}
 

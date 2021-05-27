@@ -44,7 +44,7 @@ splice(start, deleteCount, item1, item2, itemN)
     If negative, it will begin that many elements from the end of the array. (In
     this case, the origin `-1`, meaning <code>-<var>n</var></code> is the index
     of the `n`th last element, and is therefore equivalent to the index of
-    <code><var>array</var>.length - <var>n</var></code> .) If
+    <code><var>array</var>.length - <var>n</var></code>.) If
     <code><var>array</var>.length + <var>start</var></code> is less than `0`, it
     will begin from index `0`.
 
@@ -63,7 +63,7 @@ splice(start, deleteCount, item1, item2, itemN)
     you should specify at least one new element (see below).
 
 - <code><var>item1</var>, <var>item2</var>, ...</code> {{optional_inline}}
-  - : The elements to add to the array, beginning from `start` . If you do not
+  - : The elements to add to the array, beginning from `start`. If you do not
     specify any elements, `splice()` will only remove elements from the array.
 
 ### Return value

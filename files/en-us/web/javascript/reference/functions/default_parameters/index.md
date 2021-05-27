@@ -10,11 +10,9 @@ browser-compat: javascript.functions.default_parameters
 ---
 {{jsSidebar("Functions")}}
 
-<span class="seoSummary"
-
-> <strong>Default function parameters</strong> allow named parameters to be
-> initialized with default values if no value or <code>undefined</code> is
-> passed.</span
+<span class="seoSummary"><strong>Default function parameters</strong> allow
+named parameters to be initialized with default values if no value or
+<code>undefined</code> is passed.</span>
 
 {{EmbedInteractiveExample("pages/js/functions-default.html")}}
 

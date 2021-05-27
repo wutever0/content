@@ -6,6 +6,7 @@ tags:
   - ECMAScript 2015
   - JavaScript
   - WeakSet
+  - Polyfill
 browser-compat: javascript.builtins.WeakSet
 ---
 {{JSRef}}
@@ -82,12 +83,9 @@ object references, especially if a very large number of objects is involved.
 - {{jsxref("WeakSet.add", "WeakSet.prototype.add(<var>value</var>)")}}
   - : Appends `value` to the `WeakSet` object.
 - {{jsxref("WeakSet.delete", "WeakSet.prototype.delete(<var>value</var>)")}}
-
-  - : Removes `value` from the `WeakSet` .
-    <code>WeakSet.prototype.has(<var>value</var>)</code>
-
-    will return `false` afterwards.
-
+  - : Removes `value` from the `WeakSet`.
+    <code>WeakSet.prototype.has(<var>value</var>)</code> will return `false`
+    afterwards.
 - {{jsxref("WeakSet.has", "WeakSet.prototype.has(<var>value</var>)")}}
   - : Returns a boolean asserting whether `value` is present in the `WeakSet`
     object or not.
@@ -125,6 +123,8 @@ same object\***. And so they are both added to the set.
 
 ## See also
 
+- A polyfill of `WeakSet` is available in
+  [`core-js`](https://github.com/zloirock/core-js#weakset)
 - {{jsxref("Map")}}
 - {{jsxref("Set")}}
 - {{jsxref("WeakMap")}}

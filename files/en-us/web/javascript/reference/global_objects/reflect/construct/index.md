@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.construct
 ---
 {{JSRef}}
@@ -30,17 +31,12 @@ Reflect.construct(target, argumentsList, newTarget)
 - `target`
   - : The target function to call.
 - `argumentsList`
-
-  - : An array-like object specifying the arguments with which
-
-    `target` should be called.
-
+  - : An array-like object specifying the arguments with which `target` should
+    be called.
 - `newTarget` {{optional_inline}}
-
   - : The constructor whose prototype should be used. See also the
     [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
-
-    operator. If `newTarget` is not present, its value defaults to `target` .
+    operator. If `newTarget` is not present, its value defaults to `target`.
 
 ### Return value
 
@@ -60,8 +56,7 @@ of arguments. (This would also be possible by using the
 combined with the
 [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new).)
 
-<pre class="brush: js">
-let obj = new Foo(...<var>args</var>)
+<pre class="brush: js">let obj = new Foo(...<var>args</var>)
 let obj = Reflect.construct(Foo, <var>args</var>)
 </pre>
 
@@ -118,8 +113,7 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target`
 operator will point to the `newTarget` parameter if supplied, or `target` if
 not.
 
-<pre class="brush: js">
-function OneClass() {
+<pre class="brush: js">function OneClass() {
     console.log('OneClass')
     console.log(new.target)
 }
@@ -165,6 +159,8 @@ d.getFullYear()    // 1776
 
 ## See also
 
+- A polyfill of `Reflect.construct` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Operators/new", "new")}}
 - [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target)

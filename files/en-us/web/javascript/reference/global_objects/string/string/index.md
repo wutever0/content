@@ -18,17 +18,13 @@ useful.
 
 ## Syntax
 
-<pre class="brush: js">
-new String(<var>thing</var>)
-String(<var>thing</var>)</pre
->
-
+<pre class="brush: js">new String(<var>thing</var>)
+String(<var>thing</var>)</pre>
 
 ### Parameters
 
-*   `thing`
-    *   : 
-        Anything to be converted to a string.
+- `thing`
+  - : Anything to be converted to a string.
 
 ## Examples
 
@@ -36,16 +32,15 @@ String(<var>thing</var>)</pre
 
 String function and String constructor produce different results:
 
-
-
 ```js
 typeof String('Hello world'); // string
 typeof new String('Hello world'); // object
 ```
 
-Here, the function produces a string (the {{Glossary("primitive")}} type) as promised.
-However, the constructor produces an instance of the type String (an object wrapper) and
-that's why you rarely want to use the String constructor at all.
+Here, the function produces a string (the {{Glossary("primitive")}} type)
+as promised. However, the constructor produces an instance of the type String
+(an object wrapper) and that's why you rarely want to use the String constructor
+at all.
 
 ## Specifications
 
@@ -57,5 +52,4 @@ that's why you rarely want to use the String constructor at all.
 
 ## See also
 
-*   [Text formatting in the
-    JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Text_formatting)
+- [Text formatting in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Text_formatting)

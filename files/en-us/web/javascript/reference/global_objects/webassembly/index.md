@@ -55,15 +55,15 @@ The primary uses for the `WebAssembly` object are:
     {{jsxref("WebAssembly/Memory/buffer","buffer")}} property is
     a resizable
     [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
-    that holds the raw bytes of memory accessed by a WebAssembly `Instance` .
+    that holds the raw bytes of memory accessed by a WebAssembly `Instance`.
 - [`WebAssembly.Module()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/Module)
   - : Contains stateless WebAssembly code that has already been compiled by the
     browser and can be efficiently
-    [shared with Workers](/en-US/docs/Web/API/Worker/postMessage) , and
+    [shared with Workers](/en-US/docs/Web/API/Worker/postMessage), and
     instantiated multiple times.
 - [`WebAssembly.RuntimeError()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError/RunTimeError)
   - : Error type that is thrown whenever WebAssembly specifies a
-    [trap](https://webassembly.org/docs/semantics/#traps) .
+    [trap](https://webassembly.org/docs/semantics/#traps).
 - [`WebAssembly.Table()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/Table)
   - : An array-like structure representing a WebAssembly Table, which stores
     function references.
@@ -72,10 +72,10 @@ The primary uses for the `WebAssembly` object are:
 
 - {{jsxref("WebAssembly.instantiate()")}}
   - : The primary API for compiling and instantiating WebAssembly code,
-    returning both a `Module` and its first `Instance` .
+    returning both a `Module` and its first `Instance`.
 - {{jsxref("WebAssembly.instantiateStreaming()")}}
   - : Compiles and instantiates a WebAssembly module directly from a streamed
-    underlying source, returning both a `Module` and its first `Instance` .
+    underlying source, returning both a `Module` and its first `Instance`.
 - {{jsxref("WebAssembly.compile()")}}
   - : Compiles a {{jsxref("WebAssembly.Module")}} from WebAssembly
     binary code, leaving instantiation as a separate step.
@@ -84,7 +84,7 @@ The primary uses for the `WebAssembly` object are:
     streamed underlying source, leaving instantiation as a separate step.
 - {{jsxref("WebAssembly.validate()")}}
   - : Validates a given typed array of WebAssembly binary code, returning
-    whether the bytes are valid WebAssembly code ( `true` ) or not ( `false` ).
+    whether the bytes are valid WebAssembly code (`true`) or not (`false`).
 
 ## Examples
 

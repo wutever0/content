@@ -45,47 +45,8 @@ or
 var re = new RegExp('pattern', 'flags');
 ```
 
-<table class="standard-table">
-  <caption>
-    Regular expression flags
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Flag</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>g</code></td>
-      <td>Global search.</td>
-    </tr>
-    <tr>
-      <td>i</td>
-      <td>Case-insensitive search.</td>
-    </tr>
-    <tr>
-      <td>m</td>
-      <td>Multi-line search.</td>
-    </tr>
-    <tr>
-      <td>s</td>
-      <td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td>
-    </tr>
-    <tr>
-      <td>u</td>
-      <td>Unicode; treat pattern as a sequence of Unicode code points</td>
-    </tr>
-    <tr>
-      <td>y</td>
-      <td>
-        Perform a "sticky" search that matches starting at the current position
-        in the target string. See
-        {{jsxref("RegExp.sticky", "sticky")}}
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Regular expression flags</caption><thead><tr><th scope="col">Flag</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>g</code></td><td>Global search.</td></tr><tr><td>i</td><td>Case-insensitive search.</td></tr><tr><td>m</td><td>Multi-line search.</td></tr><tr><td>s</td><td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td></tr><tr><td>u</td><td>Unicode; treat pattern as a sequence of Unicode code points</td></tr><tr><td>y</td><td>Perform a "sticky" search that matches starting at the current position in the
+target string. See {{jsxref("RegExp.sticky", "sticky")}}</td></tr></tbody></table>
 
 ## Examples
 

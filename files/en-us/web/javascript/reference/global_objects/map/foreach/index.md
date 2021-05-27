@@ -12,11 +12,8 @@ browser-compat: javascript.builtins.Map.forEach
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>forEach()</code></strong> method executes a provided
-> function once per each key/value pair in the <code>Map</code> object, in
-> insertion order.</span
+The **`forEach()`** method executes a provided function once per each key/value
+pair in the `Map` object, in insertion order.
 
 {{EmbedInteractiveExample("pages/js/map-prototype-foreach.html")}}
 
@@ -51,9 +48,9 @@ forEach(function callbackFn(value, key, map) { ... }, thisArg)
     - `key` {{Optional_Inline}}
       - : Key of each iteration.
     - `map` {{Optional_Inline}}
-      - : The map being iterated ( `myMap` in the above Syntax box).
+      - : The map being iterated (`myMap` in the above Syntax box).
 - `thisArg` {{Optional_Inline}}
-  - : Value to use as `this` when executing `callback` .
+  - : Value to use as `this` when executing `callback`.
 
 ### Return value
 

@@ -6,16 +6,15 @@ tags:
   - DataView
   - JavaScript
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.DataView
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>DataView</code></strong> view provides a low-level interface
-> for reading and writing multiple number types in a binary
-> {{jsxref("ArrayBuffer")}}, without having to care about the platform's
-> <a href="/en-US/docs/Glossary/Endianness">endianness</a>.</span
+<span class="seoSummary">The <strong><code>DataView</code></strong> view
+provides a low-level interface for reading and writing multiple number types in
+a binary {{jsxref("ArrayBuffer")}}, without having to care about the
+platform's <a href="/en-US/docs/Glossary/Endianness">endianness</a>.</span>
 
 ## Description
 
@@ -183,6 +182,8 @@ view.getInt16(1); // 42
 
 ## See also
 
+- A polyfill of `DataView` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [jDataView](https://github.com/jDataView/jDataView): JavaScript library that
   polyfills and extends the `DataView` API to all browsers and Node.js.
 - {{jsxref("ArrayBuffer")}}

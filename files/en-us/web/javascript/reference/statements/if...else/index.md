@@ -12,18 +12,15 @@ browser-compat: javascript.statements.if_else
 ---
 {{jsSidebar("Statements")}}
 
-<span class="seoSummary"
-
-> The <strong><code>if</code></strong> statement executes a statement if a
-> specified condition is {{Glossary("truthy")}}. If the condition is
-> {{Glossary("falsy")}}, another statement can be executed.</span
+The **`if`** statement executes a statement if a specified condition is
+{{Glossary("truthy")}}. If the condition is {{Glossary("falsy")}},
+another statement can be executed.
 
 {{EmbedInteractiveExample("pages/js/statement-ifelse.html")}}
 
 ## Syntax
 
-<pre class="brush: js">
-if (<var>condition</var>) {
+<pre class="brush: js">if (<var>condition</var>) {
    <var>statement1</var>
 } else {
    <var>statement2</var>
@@ -31,23 +28,17 @@ if (<var>condition</var>) {
 </pre>
 
 - `condition`
-
   - : An
     [expression](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)
-
     that is considered to be either {{Glossary("truthy")}} or
     {{Glossary("falsy")}}.
-
 - `statement1`
-
-  - : Statement that is executed if <var>condition</var>
-
-    is {{Glossary("truthy")}}. Can be any statement, including further
-    nested `if` statements. To execute multiple statements, use a
-    [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement (
-    `{ ... }` ) to group those statements. To execute no statements, use an
+  - : Statement that is executed if <var>condition</var> is
+    {{Glossary("truthy")}}. Can be any statement, including further nested
+    `if` statements. To execute multiple statements, use a
+    [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement
+    (`{ ... }`) to group those statements. To execute no statements, use an
     [empty](/en-US/docs/Web/JavaScript/Reference/Statements/Empty) statement.
-
 - `statement2`
   - : Statement that is executed if `condition` is {{Glossary("falsy")}}
     and the `else` clause exists. Can be any statement, including block
@@ -58,8 +49,7 @@ if (<var>condition</var>) {
 Multiple `if...else` statements can be nested to create an `else if` clause.
 Note that there is no `elseif` (in one word) keyword in JavaScript.
 
-<pre class="brush: js">
-if (<var>condition1</var>)
+<pre class="brush: js">if (<var>condition1</var>)
   <var>statement1</var>
 else if (<var>condition2</var>)
   <var>statement2</var>
@@ -73,8 +63,7 @@ else
 To see how this works, this is how it would look if the nesting were properly
 indented:
 
-<pre class="brush: js">
-if (<var>condition1</var>)
+<pre class="brush: js">if (<var>condition1</var>)
   <var>statement1</var>
 else
   if (<var>condition2</var>)
@@ -89,8 +78,7 @@ To execute multiple statements within a clause, use a block statement
 always use block statements, especially in code involving nested `if`
 statements:
 
-<pre class="brush: js">
-if (<var>condition</var>) {
+<pre class="brush: js">if (<var>condition</var>) {
   <var>statements1</var>
 } else {
   <var>statements2</var>

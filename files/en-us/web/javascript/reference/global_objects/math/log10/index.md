@@ -7,6 +7,7 @@ tags:
 - Math
 - Method
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Math.log10
 ---
 {{JSRef}}
@@ -14,44 +15,19 @@ browser-compat: javascript.builtins.Math.log10
 The **`Math.log10()`** function returns the base 10 logarithm of a number, that
 is
 
-<math display="block"
-
-> <semantics <mrow <mo>∀</mo>
-
-      <mi>x</mi>
-      <mo>></mo>
-      <mn>0</mn>
-      <mo>,</mo>
-      <mstyle mathvariant="monospace"
-        ><mrow
-          ><mo lspace="0em" rspace="thinmathspace">Math.log10</mo>
-          <mo stretchy="false">(</mo>
-          <mi>x</mi>
-          <mo stretchy="false">)</mo>
-        </mrow></mstyle
-      ><mo>=</mo>
-      <msub
-        ><mo lspace="0em" rspace="0em">log</mo>
-        <mn>10</mn> </msub
-      ><mo stretchy="false">(</mo>
-      <mi>x</mi>
-      <mo stretchy="false">)</mo>
-      <mo>=</mo>
-      <mtext>the unique</mtext>
-      <mspace width="thickmathspace"></mspace><mi>y</mi>
-      <mspace width="thickmathspace"></mspace><mtext>such that</mtext>
-      <mspace width="thickmathspace"></mspace
-      ><msup
-        ><mn>10</mn>
-        <mi>y</mi> </msup
-      ><mo>=</mo>
-      <mi>x</mi> </mrow
-    ><annotation encoding="TeX"
-      >\forall x > 0, \mathtt{\operatorname{Math.log10}(x)} = \log_10(x) =
-      \text{the unique} \; y \; \text{such that} \; 10^y = x</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mo>∀</mo> <mi>x</mi> <mo>></mo>
+<mn>0</mn> <mo>,</mo>
+<mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.log10</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo>
+</mrow></mstyle><mo>=</mo> <msub><mo lspace="0em" rspace="0em">log</mo>
+<mn>10</mn> </msub><mo stretchy="false">(</mo> <mi>x</mi>
+<mo stretchy="false">)</mo> <mo>=</mo> <mtext>the unique</mtext>
+<mspace width="thickmathspace"></mspace><mi>y</mi>
+<mspace width="thickmathspace"></mspace><mtext>such that</mtext>
+<mspace width="thickmathspace"></mspace><msup><mn>10</mn> <mi>y</mi>
+</msup><mo>=</mo> <mi>x</mi> </mrow><annotation encoding="TeX">\forall x > 0,
+\mathtt{\operatorname{Math.log10}(x)} = \log_10(x) = \text{the unique} \; y \;
+\text{such that} \; 10^y = x</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-log10.html")}}
 
@@ -114,6 +90,8 @@ Math.log10 = Math.log10 || function(x) {
 
 ## See also
 
+- A polyfill of `Math.log10` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.exp()")}}
 - {{jsxref("Math.log()")}}
 - {{jsxref("Math.log1p()")}}

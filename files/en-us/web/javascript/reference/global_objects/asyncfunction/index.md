@@ -32,12 +32,9 @@ new AsyncFunction(arg0, arg1, ...argN, functionBody)
 ### Parameters
 
 - <code>arg1, arg2, ... arg<em>N</em></code>
-
   - : Names to be used by the function as formal argument names. Each must be a
     string that corresponds to a valid JavaScript identifier or a list of such
-    strings separated with a comma; for example " `x` ", " `theValue` ", or "
-    `a,b` ".
-
+    strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
 - `functionBody`
   - : A string containing the JavaScript statements comprising the function
     definition.

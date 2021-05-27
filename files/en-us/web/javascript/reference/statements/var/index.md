@@ -17,40 +17,25 @@ optionally initializing it to a value.
 
 ## Syntax
 
-<pre
-  class="brush: js"
->var <var>varname1</var> [= <var>value1</var>] [, <var>varname2</var> [= <var>value2</var>] ... [, <var>varname<strong>N</strong></var> [= <var>value<strong>N</strong></var>]]];</pre>
+<pre class="brush: js">var <var>varname1</var> [= <var>value1</var>] [, <var>varname2</var> [= <var>value2</var>] ... [, <var>varname<strong>N</strong></var> [= <var>value<strong>N</strong></var>]]];</pre>
 
-- <code
-
-  > <var>varname<strong>N</strong></var></code
-
+- <code><var>varname<strong>N</strong></var></code>
   - : Variable name. It can be any legal identifier.
-
-- <code
-
-  > <var>value<strong>N</strong></var></code
-  >
-  > {{optional_inline}}
-
+- <code><var>value<strong>N</strong></var></code> {{optional_inline}}
   - : Initial value of the variable. It can be any legal expression. Default
-    value is
-
-    `undefined` .
+    value is `undefined`.
 
 Alternatively,
 the [Destructuring Assignment ](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)syntax
 can also be used to declare variables.
 
-<pre
-  class="brush: js"
->var <var>{ bar }</var> = <em>foo</em>; // where foo = { bar:10, baz:12 };
+<pre class="brush: js">var <var>{ bar }</var> = <em>foo</em>; // where foo = { bar:10, baz:12 };
 /* This creates a variable with the name 'bar', which has a value of 10 */</pre>
 
 ## Description
 
 `var` declarations, wherever they occur, are processed before any code is
-executed. This is called <dfn>hoisting</dfn> , and is discussed further below.
+executed. This is called <dfn>hoisting</dfn>, and is discussed further below.
 
 The scope of a variable declared with `var` is its current _execution context
 and closures thereof_, which is either the enclosing function and functions
@@ -163,7 +148,7 @@ merely has a syntax that looks like it does.
 Because variable declarations (and declarations in general) are processed before
 any code is executed, declaring a variable anywhere in the code is equivalent to
 declaring it at the top. This also means that a variable can appear to be used
-before it's declared. This behavior is called "<dfn>hoisting</dfn> ", as it
+before it's declared. This behavior is called "<dfn>hoisting</dfn>", as it
 appears that the variable declaration is moved to the top of the function or
 global code.
 

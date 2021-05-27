@@ -39,19 +39,19 @@ The object returned by `resolvedOptions()` has the following properties:
   - : The BCP 47 language tag for the locale actually used. If any Unicode
     extension values were requested in the input BCP 47 language tag that led to
     this locale, the key-value pairs that were requested and are supported for
-    this locale are included in `locale` .
+    this locale are included in `locale`.
 - `style`
   - : The value provided for this property in the `options` argument of the
-    constructor or the default value (" `long` "). Its value is either " `long`
-    ", " `short` ", or " `narrow` ".
+    constructor or the default value ("`long`"). Its value is either "`long`",
+    "`short`", or "`narrow`".
 - `type`
   - : The value provided for this property in the `options` argument of the
-    constructor or the default value (" `language` "). Its value is either "
-    `language` ", " `region` ", " `script` ", or " `currency` ".
+    constructor or the default value ("`language`"). Its value is either
+    "`language`", "`region`", "`script`", or "`currency`".
 - `fallback`
   - : The value provided for this property in the options argument of the
-    constructor or the default value (" `code` "). Its value is either " `code`
-    " or " `none` ".
+    constructor or the default value ("`code`"). Its value is either "`code`" or
+    "`none`".
 
 ## Examples
 

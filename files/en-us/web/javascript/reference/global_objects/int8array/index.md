@@ -7,6 +7,7 @@ tags:
   - JavaScript
   - TypedArray
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.Int8Array
 ---
 {{JSRef}}
@@ -25,10 +26,10 @@ array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Int8Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `1` in the case of an
-    `Int8Array` .
+    `Int8Array`.
 - {{jsxref("TypedArray.name", "Int8Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
-    `Int8Array` type: " `Int8Array` ".
+    `Int8Array` type: "`Int8Array`".
 
 ## Static methods
 
@@ -42,8 +43,8 @@ array index syntax (that is, using bracket notation).
 ## Instance properties
 
 - {{jsxref("TypedArray.prototype.buffer", "Int8Array.prototype.buffer")}}
-  - : Returns the {{jsxref("ArrayBuffer")}} referenced by the `Int8Array`
-    . Fixed at construction time and thus **read only** .
+  - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
+    `Int8Array`. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Int8Array.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `Int8Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
@@ -53,7 +54,7 @@ array index syntax (that is, using bracket notation).
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Int8Array.prototype.length")}}
-  - : Returns the number of elements held in the `Int8Array` . Fixed at
+  - : Returns the number of elements held in the `Int8Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -73,7 +74,7 @@ array index syntax (that is, using bracket notation).
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.filter", "Int8Array.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.find", "Int8Array.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -190,6 +191,8 @@ var int8 = new Int8Array(iterable);
 
 ## See also
 
+- A polyfill of `Int8Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

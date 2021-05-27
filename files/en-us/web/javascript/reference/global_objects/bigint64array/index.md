@@ -28,7 +28,7 @@ or by using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "BigInt64Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `8` in the case of a
-    `BigInt64Array` .
+    `BigInt64Array`.
 - {{jsxref("TypedArray.name", "BigInt64Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
     `BigInt64Array` type, this is "BigInt64Array".
@@ -46,8 +46,7 @@ or by using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "BigInt64Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `BigInt64Array` . This is fixed at construction time and thus **read only**
-    .
+    `BigInt64Array`. This is fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "BigInt64Array.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `BigInt64Array` from the start of its
     {{jsxref("ArrayBuffer")}}. This is fixed at construction time and
@@ -57,7 +56,7 @@ or by using standard array index syntax (that is, using bracket notation).
     {{jsxref("ArrayBuffer")}}. This is fixed at construction time and
     thus **read only.**
 - {{jsxref("TypedArray.prototype.length", "BigInt64Array.prototype.length")}}
-  - : Returns the number of elements hold in the `BigInt64Array` . This is fixed
+  - : Returns the number of elements hold in the `BigInt64Array`. This is fixed
     at construction time and thus **read only.**
 
 ## Instance methods

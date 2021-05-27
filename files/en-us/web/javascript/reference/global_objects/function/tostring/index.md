@@ -71,78 +71,11 @@ console.log(foo + ''); // "function foo() { return 'bar' }"
 
 ### Comparing actual source code and toString results
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Function</th>
-      <th scope="col">Function.prototype.toString result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><pre class="brush: js">function f(){}</pre></td>
-      <td><pre class="brush: js">"function f(){}"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">class A { a(){} }</pre></td>
-      <td><pre class="brush: js">"class A { a(){} }"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">function* g(){}</pre></td>
-      <td><pre class="brush: js">"function* g(){}"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">a => a</pre></td>
-      <td><pre class="brush: js">"a => a"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">({ a(){} }.a)</pre></td>
-      <td><pre class="brush: js">"a(){}"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">({ *a(){} }.a)</pre></td>
-      <td><pre class="brush: js">"*a(){}"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">({ [0](){} }[0])</pre></td>
-      <td><pre class="brush: js">"[0](){}"</pre></td>
-    </tr>
-    <tr>
-      <td>
-        <pre class="brush: js">
-Object.getOwnPropertyDescriptor({
+<table class="standard-table"><thead><tr><th scope="col">Function</th><th scope="col">Function.prototype.toString result</th></tr></thead><tbody><tr><td><pre class="brush: js">function f(){}</pre></td><td><pre class="brush: js">"function f(){}"</pre></td></tr><tr><td><pre class="brush: js">class A { a(){} }</pre></td><td><pre class="brush: js">"class A { a(){} }"</pre></td></tr><tr><td><pre class="brush: js">function* g(){}</pre></td><td><pre class="brush: js">"function* g(){}"</pre></td></tr><tr><td><pre class="brush: js">a => a</pre></td><td><pre class="brush: js">"a => a"</pre></td></tr><tr><td><pre class="brush: js">({ a(){} }.a)</pre></td><td><pre class="brush: js">"a(){}"</pre></td></tr><tr><td><pre class="brush: js">({ *a(){} }.a)</pre></td><td><pre class="brush: js">"*a(){}"</pre></td></tr><tr><td><pre class="brush: js">({ [0](){} }[0])</pre></td><td><pre class="brush: js">"[0](){}"</pre></td></tr><tr><td><pre class="brush: js">Object.getOwnPropertyDescriptor({
     get a(){}
-}, "a").get</pre
-        >
-      </td>
-      <td><pre class="brush: js">"get a(){}"</pre></td>
-    </tr>
-    <tr>
-      <td>
-        <pre class="brush: js">
-Object.getOwnPropertyDescriptor({
+}, "a").get</pre></td><td><pre class="brush: js">"get a(){}"</pre></td></tr><tr><td><pre class="brush: js">Object.getOwnPropertyDescriptor({
     set a(x){}
-}, "a").set</pre
-        >
-      </td>
-      <td><pre class="brush: js">"set a(x){}"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">Function.prototype.toString</pre></td>
-      <td>
-        <pre class="brush: js">"function toString() { [native code] }"</pre>
-      </td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">(function f(){}.bind(0))</pre></td>
-      <td><pre class="brush: js">"function () { [native code] }"</pre></td>
-    </tr>
-    <tr>
-      <td><pre class="brush: js">Function("a", "b")</pre></td>
-      <td><pre class="brush: js">"function anonymous(a\n) {\nb\n}"</pre></td>
-    </tr>
-  </tbody>
-</table>
+}, "a").set</pre></td><td><pre class="brush: js">"set a(x){}"</pre></td></tr><tr><td><pre class="brush: js">Function.prototype.toString</pre></td><td><pre class="brush: js">"function toString() { [native code] }"</pre></td></tr><tr><td><pre class="brush: js">(function f(){}.bind(0))</pre></td><td><pre class="brush: js">"function () { [native code] }"</pre></td></tr><tr><td><pre class="brush: js">Function("a", "b")</pre></td><td><pre class="brush: js">"function anonymous(a\n) {\nb\n}"</pre></td></tr></tbody></table>
 
 ## Specifications
 

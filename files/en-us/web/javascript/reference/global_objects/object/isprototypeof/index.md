@@ -113,5 +113,4 @@ if (Foo.prototype.isPrototypeOf(baz)) {
 - {{jsxref("Operators/instanceof", "instanceof")}}
 - {{jsxref("Object.getPrototypeOf()")}}
 - {{jsxref("Object.setPrototypeOf()")}}
-
 - {{jsxref("Object/proto")}}

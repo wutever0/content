@@ -12,10 +12,8 @@ browser-compat: javascript.builtins.Intl.Locale
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale</code></strong> object is a standard built-in
-> property of the Intl object that represents a Unicode locale identifier.</span
+The **`Intl.Locale`** object is a standard built-in property of the Intl object
+that represents a Unicode locale identifier.
 
 {{EmbedInteractiveExample("pages/js/intl-locale.html")}}
 
@@ -53,7 +51,7 @@ region, as well as extension tags.
   - : Returns whether case is taken into account for the locale's collation
     rules.
 - {{jsxref("Intl/Locale/collation", "Intl.Locale.prototype.collation")}}
-  - : Returns the collation type for the `Locale` , which is used to order
+  - : Returns the collation type for the `Locale`, which is used to order
     strings according to the locale's rules.
 - {{jsxref("Intl/Locale/hourCycle", "Intl.Locale.prototype.hourCycle")}}
   - : Returns the time keeping format convention used by the locale.

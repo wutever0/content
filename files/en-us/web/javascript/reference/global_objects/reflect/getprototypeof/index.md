@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.getPrototypeOf
 ---
 {{JSRef}}
@@ -19,8 +20,7 @@ the value of the internal `[[Prototype]]` property) of the specified object.
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.getPrototypeOf(<var>target</var>)
+<pre class="brush: js">Reflect.getPrototypeOf(<var>target</var>)
 </pre>
 
 ### Parameters
@@ -82,5 +82,7 @@ Reflect.getPrototypeOf(Object('foo'))  // String.prototype
 
 ## See also
 
+- A polyfill of `Reflect.getPrototypeOf` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.getPrototypeOf()")}}

@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.indexOf
 ---
 {{JSRef}}
@@ -74,5 +75,7 @@ uint8.indexOf(2, -3); // 0
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.indexOf` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.lastIndexOf()")}}
 - {{jsxref("Array.prototype.indexOf()")}}

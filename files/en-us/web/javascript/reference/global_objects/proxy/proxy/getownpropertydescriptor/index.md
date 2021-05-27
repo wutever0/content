@@ -17,8 +17,7 @@ The **`handler.getOwnPropertyDescriptor()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   getOwnPropertyDescriptor: function(<var>target</var>, <var>prop</var>) {
   }
 });

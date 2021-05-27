@@ -6,16 +6,14 @@ tags:
   - Function
   - JavaScript
   - Property
+  - Polyfill
 browser-compat: javascript.builtins.Function.name
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> A {{jsxref("Function")}} object's read-only
-> <strong><code>name</code></strong> property indicates the function's name as
-> specified when it was created, or it may be either <code>anonymous</code> or
-> <code>''</code> (an empty string) for functions created anonymously.</span
+A {{jsxref("Function")}} object's read-only **`name`** property indicates
+the function's name as specified when it was created, or it may be either
+`anonymous` or `''` (an empty string) for functions created anonymously.
 
 {{EmbedInteractiveExample("pages/js/function-name.html")}}
 
@@ -261,4 +259,6 @@ o[sym2].name; // ""
 
 ## See also
 
+- A polyfill for functions `.name` property is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
 - {{jsxref("Function")}}

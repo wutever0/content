@@ -13,18 +13,9 @@ browser-compat: javascript.builtins.Math.SQRT1_2
 The **`Math.SQRT1_2`** property represents the square root of 1/2 which is
 approximately 0.707:
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace"><mi>Math.SQRT1_2</mi></mstyle
-> <mo>=</mo <msqrt <mfrac><mn>1</mn><mn>2</mn></mfrac></msqrt <mo>=</mo <mfrac
-> <mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac <mo>≈</mo><mn>0.707</mn></mrow
-> <annotation encoding="TeX" \mathtt{\mi{Math.SQRT1_2}} = \sqrt{\frac{1}{2}} =
-> \frac{1}{\sqrt{2}}
-
-      \approx 0.707</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mi>Math.SQRT1_2</mi></mstyle><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>2</mn></mfrac></msqrt><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>≈</mo><mn>0.707</mn></mrow><annotation encoding="TeX">\mathtt{\mi{Math.SQRT1_2}}
+= \sqrt{\frac{1}{2}} = \frac{1}{\sqrt{2}} \approx
+0.707</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-sqrt1_2.html", "shorter")}}
 

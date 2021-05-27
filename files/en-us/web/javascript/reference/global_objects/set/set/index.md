@@ -6,16 +6,15 @@ tags:
 - JavaScript
 - Reference
 - set
+- Polyfill
 browser-compat: javascript.builtins.Set.Set
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Set</code> constructor</strong> lets you create
-> <code>Set</code> objects that store unique values of any type, whether
-> <a href="/en-US/docs/Glossary/Primitive">primitive values</a> or object
-> references.</span
+<span class="seoSummary">The <strong><code>Set</code> constructor</strong> lets
+you create <code>Set</code> objects that store unique values of any type,
+whether <a href="/en-US/docs/Glossary/Primitive">primitive values</a> or object
+references.</span>
 
 {{EmbedInteractiveExample("pages/js/set-prototype-constructor.html")}}
 
@@ -66,4 +65,6 @@ mySet.add(o)
 
 ## See also
 
+- A polyfill of `Set` is available in
+  [`core-js`](https://github.com/zloirock/core-js#set)
 - {{jsxref("Set")}}

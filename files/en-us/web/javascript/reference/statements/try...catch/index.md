@@ -30,21 +30,13 @@ finally {
 ```
 
 - <code><em>try_statements</em></code>
-
   - : The statements to be executed.
-
 - <code><em>catch_statements</em></code>
-
-  - : Statement that is executed if an exception is thrown in the `try` \-block.
-
+  - : Statement that is executed if an exception is thrown in the `try`-block.
 - <code><em>exception_var</em></code>
-
   - : An optional identifier to hold an exception object for the associated
-
-    `catch` \-block.
-
+    `catch`-block.
 - <code><em>finally_statements</em></code>
-
   - : Statements that are executed after the `try` statement completes. These
     statements execute regardless of whether an exception was thrown or caught.
 

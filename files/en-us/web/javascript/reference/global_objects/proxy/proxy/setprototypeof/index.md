@@ -19,8 +19,7 @@ The **`handler.setPrototypeOf()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   setPrototypeOf: function(<var>target</var>, <var>prototype</var>) {
   }
 });
@@ -34,7 +33,7 @@ bound to the handler.
 - `target`
   - : The target object.
 - `prototype`
-  - : The object's new prototype or `null` .
+  - : The object's new prototype or `null`.
 
 ### Return value
 

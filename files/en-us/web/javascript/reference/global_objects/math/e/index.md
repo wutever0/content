@@ -13,11 +13,8 @@ browser-compat: javascript.builtins.Math.E
 The **`Math.E`** property represents Euler's number, the base of natural
 logarithms, e, which is approximately 2.718.
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace"><mi>Math.E</mi></mstyle
-> <mo>=</mo><mi>e</mi><mo>≈</mo><mn>2.718</mn></mrow <annotation encoding="TeX"
-> \mathtt{\mi{Math.E}} = e \approx 2.718</annotation </semantics </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mi>Math.E</mi></mstyle><mo>=</mo><mi>e</mi><mo>≈</mo><mn>2.718</mn></mrow><annotation encoding="TeX">\mathtt{\mi{Math.E}}
+= e \approx 2.718</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-e.html")}}
 

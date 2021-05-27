@@ -19,8 +19,7 @@ modified value is written back.
 
 ## Syntax
 
-<pre class="brush: js">
-Atomics.and(<var>typedArray</var>, <var>index</var>, <var>value</var>)
+<pre class="brush: js">Atomics.and(<var>typedArray</var>, <var>index</var>, <var>value</var>)
 </pre>
 
 ### Parameters
@@ -39,7 +38,7 @@ Atomics.and(<var>typedArray</var>, <var>index</var>, <var>value</var>)
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code> ).
+(<code><var>typedArray</var>[<var>index</var>]</code>).
 
 ### Exceptions
 

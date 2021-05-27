@@ -17,8 +17,7 @@ given position in the array and returns that value.
 
 ## Syntax
 
-<pre class="brush: js">
-Atomics.store(<var>typedArray</var>, <var>index</var>, <var>value</var>)
+<pre class="brush: js">Atomics.store(<var>typedArray</var>, <var>index</var>, <var>value</var>)
 </pre>
 
 ### Parameters
@@ -30,11 +29,7 @@ Atomics.store(<var>typedArray</var>, <var>index</var>, <var>value</var>)
     {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
     {{jsxref("BigUint64Array")}}.
 - `index`
-
-  - : The position in the `typedArray` to store a
-
-    `value` in.
-
+  - : The position in the `typedArray` to store a `value` in.
 - `value`
   - : The number to store.
 

@@ -25,8 +25,7 @@ or reason from that promise.
 
 - `iterable`
   - : An iterable object, such as an {{jsxref("Array")}}. See
-    [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
-    .
+    [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol).
 
 ### Return value
 

@@ -8,6 +8,7 @@ tags:
 - Reference
 - RegExp
 - Regular Expressions
+- Polyfill
 browser-compat: javascript.builtins.RegExp.@@match
 ---
 {{JSRef}}
@@ -98,6 +99,8 @@ console.log(result.group(3)); // 02
 
 ## See also
 
+- A polyfill of `RegExp.prototype[@@match]` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.match()")}}
 - {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
 - {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}

@@ -14,11 +14,9 @@ browser-compat: javascript.builtins.Intl.Locale.numeric
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.numeric</code></strong> property is an
-> accessor property that returns whether the locale has special collation
-> handling for numeric characters.</span
+The **`Intl.Locale.prototype.numeric`** property is an accessor property that
+returns whether the locale has special collation handling for numeric
+characters.
 
 ## Description
 

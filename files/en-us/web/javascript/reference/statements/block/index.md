@@ -22,8 +22,7 @@ group zero or more statements. The block is delimited by a pair of braces
 
 ### Block Statement
 
-<pre class="brush: js">
-{
+<pre class="brush: js">{
   <em>StatementList</em>
 }
 </pre>

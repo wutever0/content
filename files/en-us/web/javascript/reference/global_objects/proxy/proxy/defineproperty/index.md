@@ -17,8 +17,7 @@ The **`handler.defineProperty()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   defineProperty: function(<var>target</var>, <var>property</var>, <var>descriptor</var>) {
   }
 });
@@ -66,10 +65,8 @@ If the following invariants are violated, the proxy will throw a
   property of the target object exists.
 - If a property has a corresponding target object property then
 
-  <code
-
-  > Object.defineProperty(<var>target</var>, <var>prop</var>,
-  > <var>descriptor</var>)</code
+  <code>Object.defineProperty(<var>target</var>, <var>prop</var>,
+  <var>descriptor</var>)</code>
 
   will not throw an exception.
 

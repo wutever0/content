@@ -9,6 +9,7 @@ tags:
   - Reference
   - RegExp
   - Regular Expressions
+  - Polyfill
 browser-compat: javascript.builtins.RegExp.flags
 ---
 {{JSRef}}
@@ -58,4 +59,6 @@ if (RegExp.prototype.flags === undefined) {
 
 ## See also
 
+- A polyfill of `RegExp.prototype.flags` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{JSxRef("RegExp.prototype.source")}}

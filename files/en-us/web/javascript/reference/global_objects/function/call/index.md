@@ -9,10 +9,8 @@ browser-compat: javascript.builtins.Function.call
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>call()</strong></code> method calls a function with a given
-> <code>this</code> value and arguments provided individually.</span
+The **`call()`** method calls a function with a given `this` value and arguments
+provided individually.
 
 {{EmbedInteractiveExample("pages/js/function-call.html")}}
 
@@ -40,8 +38,8 @@ call(thisArg, arg1, ... , argN)
     > {{jsxref("Global_Objects/undefined", "undefined")}} will
     > be replaced with the global object, and primitive values will be converted
     > to objects.
-- <code><var>arg1</var>, <var>arg2</var>, ...<var>argN</var></code>
-   {{optional_inline}}
+- <code><var>arg1</var>, <var>arg2</var>,
+  ...<var>argN</var></code> {{optional_inline}}
   - : Arguments for the function.
 
 ### Return value

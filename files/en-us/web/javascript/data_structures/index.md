@@ -35,10 +35,7 @@ The latest ECMAScript standard defines nine types:
   checked by [typeof](/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
   operator:
 
-  - [undefined](/en-US/docs/Glossary/undefined) :
-
-    <code>typeof instance === "<strong>undefined</strong>"</code>
-
+  - [undefined](/en-US/docs/Glossary/undefined) : `typeof instance === "undefined"`
   - [Boolean](/en-US/docs/Glossary/Boolean) : `typeof instance === "boolean"`
   - [Number](/en-US/docs/Glossary/Number) : `typeof instance === "number"`
   - [String](/en-US/docs/Glossary/String) : `typeof instance === "string"`
@@ -47,11 +44,8 @@ The latest ECMAScript standard defines nine types:
 
 - **Structural** **Types**:
 
-  - [Object](/en-US/docs/Glossary/Object) :
-
-    <code>typeof instance === "<strong>object</strong>"</code>
-
-    . Special non-data but **Structural** **type** for any
+  - [Object](/en-US/docs/Glossary/Object) : `typeof instance === "object"`.
+    Special non-data but **Structural** **type** for any
     [constructed](/en-US/docs/Learn/JavaScript/Objects#the_constructor) object
     instance also used as data structures: new {{jsxref("Object")}}, new
     {{jsxref("Array")}}, new {{jsxref("Map")}}, new
@@ -59,22 +53,15 @@ The latest ECMAScript standard defines nine types:
     {{jsxref("WeakSet")}}, new {{jsxref("Date")}} and almost
     everything made with
     [new keyword](/en-US/docs/Web/JavaScript/Reference/Operators/new);
-
   - [Function](/en-US/docs/Glossary/Function) : a non-data structure, though it
-    also answers for `typeof` operator:
-
-    <code>typeof instance === "<strong>function</strong>"</code>
-
-    . This is merely a special shorthand for Functions, though every Function
+    also answers for `typeof` operator: `typeof instance === "function"`. This
+    is merely a special shorthand for Functions, though every Function
     constructor is derived from Object constructor.
 
 - **Structural Root** Primitive:
 
-  - **[null](/en-US/docs/Glossary/Null)** :
-
-    <code>typeof instance === "<strong>object</strong>"</code>
-
-    . Special [primitive](/en-US/docs/Glossary/Primitive) type having
+  - **[null](/en-US/docs/Glossary/Null)** : `typeof instance === "object"`.
+    Special [primitive](/en-US/docs/Glossary/Primitive) type having
     additional usage for its value: if object is not inherited, then `null` is
     shown;
 
@@ -287,161 +274,16 @@ _data_ property and the _accessor_ property.
 
 Associates a key with a value, and has the following attributes:
 
-<table class="standard-table">
-  <caption>
-    Attributes of a data property
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Attribute</th>
-      <th scope="col">Type</th>
-      <th scope="col">Description</th>
-      <th scope="col">Default value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>[[Value]]</td>
-      <td>Any JavaScript type</td>
-      <td>The value retrieved by a get access of the property.</td>
-      <td><code>undefined</code></td>
-    </tr>
-    <tr>
-      <td>[[Writable]]</td>
-      <td>Boolean</td>
-      <td>
-        If <code>false</code>, the property's [[Value]] cannot be changed.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-    <tr>
-      <td>[[Enumerable]]</td>
-      <td>Boolean</td>
-      <td>
-        <p>
-          If <code>true</code>, the property will be enumerated in
-          <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in"
-            >for...in</a
-          >
-          loops.<br />See also
-          <a
-            href="/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties"
-            >Enumerability and ownership of properties</a
-          >.
-        </p>
-      </td>
-      <td><code>false</code></td>
-    </tr>
-    <tr>
-      <td>[[Configurable]]</td>
-      <td>Boolean</td>
-      <td>
-        If <code>false</code>, the property cannot be deleted, cannot be changed
-        to an accessor property, and attributes other than [[Value]] and
-        [[Writable]] cannot be changed.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Attributes of a data property</caption><thead><tr><th scope="col">Attribute</th><th scope="col">Type</th><th scope="col">Description</th><th scope="col">Default value</th></tr></thead><tbody><tr><td>[[Value]]</td><td>Any JavaScript type</td><td>The value retrieved by a get access of the property.</td><td><code>undefined</code></td></tr><tr><td>[[Writable]]</td><td>Boolean</td><td>If <code>false</code>, the property's [[Value]] cannot be changed.</td><td><code>false</code></td></tr><tr><td>[[Enumerable]]</td><td>Boolean</td><td><p>If <code>true</code>, the property will be enumerated in <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...in</a> loops.<br>See also <a href="/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a>.</p></td><td><code>false</code></td></tr><tr><td>[[Configurable]]</td><td>Boolean</td><td>If <code>false</code>, the property cannot be deleted, cannot be changed to an accessor property, and attributes other than [[Value]] and [[Writable]] cannot be changed.</td><td><code>false</code></td></tr></tbody></table>
 
-<table class="standard-table">
-  <caption>
-    Obsolete attributes (as of ECMAScript 3, renamed in ECMAScript 5)
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Attribute</th>
-      <th scope="col">Type</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Read-only</td>
-      <td>Boolean</td>
-      <td>Reversed state of the ES5 [[Writable]] attribute.</td>
-    </tr>
-    <tr>
-      <td>DontEnum</td>
-      <td>Boolean</td>
-      <td>Reversed state of the ES5 [[Enumerable]] attribute.</td>
-    </tr>
-    <tr>
-      <td>DontDelete</td>
-      <td>Boolean</td>
-      <td>Reversed state of the ES5 [[Configurable]] attribute.</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Obsolete attributes (as of ECMAScript 3, renamed in ECMAScript 5)</caption><thead><tr><th scope="col">Attribute</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead><tbody><tr><td>Read-only</td><td>Boolean</td><td>Reversed state of the ES5 [[Writable]] attribute.</td></tr><tr><td>DontEnum</td><td>Boolean</td><td>Reversed state of the ES5 [[Enumerable]] attribute.</td></tr><tr><td>DontDelete</td><td>Boolean</td><td>Reversed state of the ES5 [[Configurable]] attribute.</td></tr></tbody></table>
 
 #### Accessor property
 
 Associates a key with one of two accessor functions (`get` and `set`) to
 retrieve or store a value, and has the following attributes:
 
-<table class="standard-table">
-  <caption>
-    Attributes of an accessor property
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Attribute</th>
-      <th scope="col">Type</th>
-      <th scope="col">Description</th>
-      <th scope="col">Default value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>[[Get]]</td>
-      <td>Function object or <code>undefined</code></td>
-      <td>
-        The function is called with an empty argument list and retrieves the
-        property value whenever a get access to the value is performed.<br />See
-        also
-        <a href="/en-US/docs/Web/JavaScript/Reference/Functions/get"
-          ><code>get</code></a
-        >.
-      </td>
-      <td><code>undefined</code></td>
-    </tr>
-    <tr>
-      <td>[[Set]]</td>
-      <td>Function object or <code>undefined</code></td>
-      <td>
-        The function is called with an argument that contains the assigned value
-        and is executed whenever a specified property is attempted to be
-        changed.<br />See also
-        <a href="/en-US/docs/Web/JavaScript/Reference/Functions/set"
-          ><code>set</code></a
-        >.
-      </td>
-      <td><code>undefined</code></td>
-    </tr>
-    <tr>
-      <td>[[Enumerable]]</td>
-      <td>Boolean</td>
-      <td>
-        If <code>true</code>, the property will be enumerated in
-        <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in"
-          >for...in</a
-        >
-        loops.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-    <tr>
-      <td>[[Configurable]]</td>
-      <td>Boolean</td>
-      <td>
-        If <code>false</code>, the property can't be deleted and can't be
-        changed to a data property.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Attributes of an accessor property</caption><thead><tr><th scope="col">Attribute</th><th scope="col">Type</th><th scope="col">Description</th><th scope="col">Default value</th></tr></thead><tbody><tr><td>[[Get]]</td><td>Function object or <code>undefined</code></td><td>The function is called with an empty argument list and retrieves the property value whenever a get access to the value is performed.<br>See also <a href="/en-US/docs/Web/JavaScript/Reference/Functions/get"><code>get</code></a>.</td><td><code>undefined</code></td></tr><tr><td>[[Set]]</td><td>Function object or <code>undefined</code></td><td>The function is called with an argument that contains the assigned value and is executed whenever a specified property is attempted to be changed.<br>See also <a href="/en-US/docs/Web/JavaScript/Reference/Functions/set"><code>set</code></a>.</td><td><code>undefined</code></td></tr><tr><td>[[Enumerable]]</td><td>Boolean</td><td>If <code>true</code>, the property will be enumerated in <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...in</a> loops.</td><td><code>false</code></td></tr><tr><td>[[Configurable]]</td><td>Boolean</td><td>If <code>false</code>, the property can't be deleted and can't be changed to a data property.</td><td><code>false</code></td></tr></tbody></table>
 
 ### "Normal" objects, and functions
 
@@ -476,114 +318,7 @@ represent lists or sets.
 with ECMAScript 2015, and present an array-like view of an underlying binary
 data buffer. The following table helps determine the equivalent C data types:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th class="header" scope="col">Type</th>
-      <th class="header" scope="col">Value Range</th>
-      <th class="header" scope="col">Size in bytes</th>
-      <th class="header" scope="col">Description</th>
-      <th class="header" scope="col">Web IDL type</th>
-      <th class="header" scope="col">Equivalent C type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{jsxref("Int8Array")}}</td>
-      <td><code>-128</code> to <code>127</code></td>
-      <td>1</td>
-      <td>8-bit two's complement signed integer</td>
-      <td><code>byte</code></td>
-      <td><code>int8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8Array")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8ClampedArray")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer (clamped)</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int16Array")}}</td>
-      <td><code>-32768</code> to <code>32767</code></td>
-      <td>2</td>
-      <td>16-bit two's complement signed integer</td>
-      <td><code>short</code></td>
-      <td><code>int16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint16Array")}}</td>
-      <td><code>0</code> to <code>65535</code></td>
-      <td>2</td>
-      <td>16-bit unsigned integer</td>
-      <td><code>unsigned short</code></td>
-      <td><code>uint16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int32Array")}}</td>
-      <td><code>-2147483648</code> to <code>2147483647</code></td>
-      <td>4</td>
-      <td>32-bit two's complement signed integer</td>
-      <td><code>long</code></td>
-      <td><code>int32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint32Array")}}</td>
-      <td><code>0</code> to <code>4294967295</code></td>
-      <td>4</td>
-      <td>32-bit unsigned integer</td>
-      <td><code>unsigned long</code></td>
-      <td><code>uint32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float32Array")}}</td>
-      <td><code>1.2E-38</code> to <code>3.4E38</code></td>
-      <td>4</td>
-      <td>
-        32-bit IEEE floating point number (7 significant digits
-        e.g., <code>1.1234567</code>)
-      </td>
-      <td><code>unrestricted float</code></td>
-      <td><code>float</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float64Array")}}</td>
-      <td><code>5E-324</code> to <code>1.8E308</code></td>
-      <td>8</td>
-      <td>
-        64-bit IEEE floating point number (16 significant digits
-        e.g., <code>1.123...15</code>)
-      </td>
-      <td><code>unrestricted double</code></td>
-      <td><code>double</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigInt64Array")}}</td>
-      <td><code>-2^63</code> to <code>2^63 - 1</code></td>
-      <td>8</td>
-      <td>64-bit two's complement signed integer</td>
-      <td><code>bigint</code></td>
-      <td><code>int64_t (signed long long)</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigUint64Array")}}</td>
-      <td><code>0</code> to <code>2^64 - 1</code></td>
-      <td>8</td>
-      <td>64-bit unsigned integer</td>
-      <td><code>bigint</code></td>
-      <td><code>uint64_t (unsigned long long)</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th class="header" scope="col">Type</th><th class="header" scope="col">Value Range</th><th class="header" scope="col">Size in bytes</th><th class="header" scope="col">Description</th><th class="header" scope="col">Web IDL type</th><th class="header" scope="col">Equivalent C type</th></tr></thead><tbody><tr><td>{{jsxref("Int8Array")}}</td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr><td>{{jsxref("Uint8Array")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Uint8ClampedArray")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Int16Array")}}</td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr><td>{{jsxref("Uint16Array")}}</td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr><td>{{jsxref("Int32Array")}}</td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr><td>{{jsxref("Uint32Array")}}</td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr><td>{{jsxref("Float32Array")}}</td><td><code>1.2E-38</code> to <code>3.4E38</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.1234567</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr><td>{{jsxref("Float64Array")}}</td><td><code>5E-324</code> to <code>1.8E308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.123...15</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr><td>{{jsxref("BigInt64Array")}}</td><td><code>-2^63</code> to <code>2^63 - 1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr><td>{{jsxref("BigUint64Array")}}</td><td><code>0</code> to <code>2^64 - 1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
 
 ### Keyed collections: Maps, Sets, WeakMaps, WeakSets
 

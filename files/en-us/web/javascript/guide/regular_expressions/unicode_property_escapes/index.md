@@ -33,8 +33,7 @@ punctuations, letters (even letters from specific languages or scripts), etc.
 
 ## Syntax
 
-<pre class="brush: js">
-// Non-binary values
+<pre class="brush: js">// Non-binary values
 \p{<em>UnicodePropertyValue</em>}
 \p{<em>UnicodePropertyName</em>=<em>UnicodePropertyValue</em>}
 
@@ -56,16 +55,13 @@ See also
 
 - UnicodeBinaryPropertyName
   - : The name of a
-    [binary property](https://tc39.es/ecma262/#table-binary-unicode-properties)
-    . E.g.: 
-    [`ASCII`](https://unicode.org/reports/tr18/#General_Category_Property) , 
-    [`Alpha`](https://unicode.org/reports/tr44/#Alphabetic) , `Math` ,
-    [`Diacritic`](https://unicode.org/reports/tr44/#Diacritic) , 
-    [`Emoji`](https://unicode.org/reports/tr51/#Emoji_Properties) , 
-    [`Hex_Digit`](https://unicode.org/reports/tr44/#Hex_Digit) ,  `Math` ,
-    [`White_space`](https://unicode.org/reports/tr44/#White_Space) , etc. See
-    [Unicode Data PropList.txt ](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt)
-    for more info.
+    [binary property](https://tc39.es/ecma262/#table-binary-unicode-properties).
+    E.g.: [`ASCII`](https://unicode.org/reports/tr18/#General_Category_Property), [`Alpha`](https://unicode.org/reports/tr44/#Alphabetic),
+    `Math`,
+    [`Diacritic`](https://unicode.org/reports/tr44/#Diacritic), [`Emoji`](https://unicode.org/reports/tr51/#Emoji_Properties), [`Hex_Digit`](https://unicode.org/reports/tr44/#Hex_Digit), `Math`,
+    [`White_space`](https://unicode.org/reports/tr44/#White_Space), etc. See
+    [Unicode Data PropList.txt ](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt)for
+    more info.
 - UnicodePropertyName
   - : The name of a
     [non-binary](https://tc39.es/ecma262/#table-nonbinary-unicode-properties)
@@ -73,9 +69,9 @@ See also
 - UnicodePropertyValue
   - : One of the tokens listed in the Values section, below. Many values have
     aliases or shorthand (e.g. the value `Decimal_Number` for the
-    `General_Category` property may be written `Nd` , `digit` , or
-    `Decimal_Number` ). For most values, the  _`UnicodePropertyName`_ part and
-    equals sign may be omitted. If a  _`UnicodePropertyName`_ is specified, the
+    `General_Category` property may be written `Nd`, `digit`, or
+    `Decimal_Number`). For most values, the *`UnicodePropertyName`* part and
+    equals sign may be omitted. If a *`UnicodePropertyName`* is specified, the
     value must correspond to the property type given.
 
 > **Note:** As there are many properties and values available, we will not

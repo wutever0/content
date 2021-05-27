@@ -24,8 +24,7 @@ syntax.
 
 ## Syntax
 
-<pre class="brush: js">
-function* <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
+<pre class="brush: js">function* <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
    <var>statements</var>
 }
 </pre>

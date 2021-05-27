@@ -25,15 +25,13 @@ has(value)
 ### Parameters
 
 - `value`
-  - : Required. The object to test for presence in the `WeakSet` .
+  - : Required. The object to test for presence in the `WeakSet`.
 
 ### Return value
 
 - Boolean
-
   - : Returns `true` if an element with the specified value exists in the
-
-    `WeakSet` object; otherwise `false` .
+    `WeakSet` object; otherwise `false`.
 
 ## Examples
 

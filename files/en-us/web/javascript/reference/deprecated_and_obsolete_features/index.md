@@ -23,20 +23,7 @@ should work to remove their use from your code.
 the following properties are deprecated. This does not affect their use in
 {{jsxref("String.replace", "replacement strings", "", 1)}}:
 
-| Property                                                         | Description                                                                                                                                                |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {{jsxref("RegExp.n", "$1-$9")}}                         | Parenthesized substring matches, if any. **Warning:** Using these properties can result in problems, since browser extensions can modify them. Avoid them! |
-| {{jsxref("RegExp.input", "$_")}}                     | See `input`.                                                                                                                                               |
-| {{jsxref("RegExp.multiline", "$*")}}                 | See `multiline`.                                                                                                                                           |
-| {{jsxref("RegExp.lastMatch", "$&amp;")}}             | See `lastMatch`.                                                                                                                                           |
-| {{jsxref("RegExp.lastParen", "$+")}}                 | See `lastParen`.                                                                                                                                           |
-| {{jsxref("RegExp.leftContext", "$`")}}             | See `leftContext`.                                                                                                                                         |
-| {{jsxref("RegExp.rightContext", "$'")}}             | See `rightContext`.                                                                                                                                        |
-| {{jsxref("RegExp.input", "input")}}                 | The string against which a regular expression is matched.                                                                                                  |
-| {{jsxref("RegExp.lastMatch", "lastMatch")}}         | The last matched characters.                                                                                                                               |
-| {{jsxref("RegExp.lastParen", "lastParen")}}         | The last parenthesized substring match, if any.                                                                                                            |
-| {{jsxref("RegExp.leftContext", "leftContext")}} | The substring preceding the most recent match.                                                                                                             |
-| {{jsxref("RegExp.rightContext", "rightContext")}} | The substring following the most recent match.                                                                                                             |
+<table class="standard-table"><tbody><tr><th>Property</th><th>Description</th></tr><tr><td>{{jsxref("RegExp.n", "$1-$9")}}</td><td><p>Parenthesized substring matches, if any.<br><strong>Warning:</strong> Using these properties can result in problems, since browser extensions can modify them. Avoid them!</p></td></tr><tr><td>{{jsxref("RegExp.input", "$_")}}</td><td>See <code>input</code>.</td></tr><tr><td>{{jsxref("RegExp.multiline", "$*")}}</td><td>See <code>multiline</code>.</td></tr><tr><td>{{jsxref("RegExp.lastMatch", "$&amp;")}}</td><td>See <code>lastMatch</code>.</td></tr><tr><td>{{jsxref("RegExp.lastParen", "$+")}}</td><td>See <code>lastParen</code>.</td></tr><tr><td>{{jsxref("RegExp.leftContext", "$`")}}</td><td>See <code>leftContext</code>.</td></tr><tr><td>{{jsxref("RegExp.rightContext", "$'")}}</td><td>See <code>rightContext</code>.</td></tr><tr><td>{{jsxref("RegExp.input", "input")}}</td><td>The string against which a regular expression is matched.</td></tr><tr><td>{{jsxref("RegExp.lastMatch", "lastMatch")}}</td><td>The last matched characters.</td></tr><tr><td>{{jsxref("RegExp.lastParen", "lastParen")}}</td><td>The last parenthesized substring match, if any.</td></tr><tr><td>{{jsxref("RegExp.leftContext", "leftContext")}}</td><td>The substring preceding the most recent match.</td></tr><tr><td>{{jsxref("RegExp.rightContext", "rightContext")}}</td><td>The substring following the most recent match.</td></tr></tbody></table>
 
 The following are now properties of `RegExp` instances, no longer of the
 `RegExp` object:
@@ -193,9 +180,8 @@ longer be used as of the indicated version of JavaScript.
 
 ### Array
 
-|                                          |                                             |
-| ---------------------------------------- | ------------------------------------------- |
 | Property                                 | Description                                 |
+| ---------------------------------------- | ------------------------------------------- |
 | {{jsxref("Array.observe()")}} | Asynchronously observing changes to Arrays. |
 | {{jsxref("Array.unobserve()")}} | Remove observers.                           |
 

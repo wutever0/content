@@ -66,17 +66,7 @@ gradually. To begin, let's examine how to add JavaScript to your page for
 creating a _Hello world!_ example. (_Hello world!_
 is[ the standard for introductory programming examples](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program).)
 
-<div class="warning">
-  <p>
-    <strong>Important</strong>: If you haven't been following along with the
-    rest of our course,
-    <a
-      href="https://github.com/mdn/beginner-html-site-styled/archive/gh-pages.zip"
-      >download this example code</a
-    >
-    and use it as a starting point.
-  </p>
-</div>
+<div class="warning"><p><strong>Important</strong>: If you haven't been following along with the rest of our course, <a href="https://github.com/mdn/beginner-html-site-styled/archive/gh-pages.zip">download this example code</a> and use it as a starting point.</p></div>
 
 1.  Go to your test site and create a new folder named `scripts`. Within the
     scripts folder, create a new file called `main.js`, and save it.
@@ -100,26 +90,9 @@ is[ the standard for introductory programming examples](https://en.wikipedia.org
 5.  Make sure the HTML and JavaScript files are saved. Then load `index.html` in
     your browser. You should see something like this:
 
-    <img alt="" src="hello-world.png" style="display: block; margin: 0px auto" />
+    <img alt="" src="hello-world.png" style="display: block; margin: 0px auto;">
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: The reason the instructions (above) place the
-    {{htmlelement("script")}} element near the bottom of the HTML file is
-    that
-    <strong>the browser reads code in the order it appears in the file</strong>.
-  </p>
-  <p>
-    If the JavaScript loads first and it is supposed to affect the HTML that
-    hasn't loaded yet, there could be problems. Placing JavaScript near the
-    bottom of an HTML page is one way to accommodate this dependency. To learn
-    more about alternative approaches, see
-    <a
-      href="/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies"
-      >Script loading strategies</a
-    >.
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: The reason the instructions (above) place the {{htmlelement("script")}} element near the bottom of the HTML file is that <strong>the browser reads code in the order it appears in the file</strong>.</p><p>If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. To learn more about alternative approaches, see <a href="/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies">Script loading strategies</a>.</p></div>
 
 ### What happened?
 
@@ -134,15 +107,7 @@ Following that, the code set the value of the `myHeading` variable's
 `{{domxref("Node.textContent", "textContent")}}` property (which
 represents the content of the heading) to _Hello world!_.
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: Both of the features you used in this exercise are
-    parts of the
-    <a href="/en-US/docs/Web/API/Document_Object_Model"
-      >Document Object Model (DOM) API</a
-    >, which has the capability to manipulate documents.
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: Both of the features you used in this exercise are parts of the <a href="/en-US/docs/Web/API/Document_Object_Model">Document Object Model (DOM) API</a>, which has the capability to manipulate documents.</p></div>
 
 ## Language basics crash course
 
@@ -151,17 +116,7 @@ of the core features of the language. It's worth noting that these features are
 common to all programming languages. If you master these fundamentals, you have
 a head start on coding in other languages too!
 
-<div class="warning">
-  <p>
-    <strong>Important</strong>: In this article, try entering the example code
-    lines into your JavaScript console to see what happens. For more details on
-    JavaScript consoles, see
-    <a
-      href="/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
-      >Discover browser developer tools</a
-    >.
-  </p>
-</div>
+<div class="warning"><p><strong>Important</strong>: In this article, try entering the example code lines into your JavaScript console to see what happens. For more details on JavaScript consoles, see <a href="/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">Discover browser developer tools</a>.</p></div>
 
 ### Variables
 
@@ -176,50 +131,13 @@ by the name you give to the variable:
 let myVariable;
 ```
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: A semicolon at the end of a line indicates where a
-    statement ends. It is only required when you need to separate statements on
-    a single line. However, some people believe it's good practice to have
-    semicolons at the end of each statement. There are other rules for when you
-    should and shouldn't use semicolons. For more details, see
-    <a
-      href="https://news.codecademy.com/your-guide-to-semicolons-in-javascript/"
-      >Your Guide to Semicolons in JavaScript</a
-    >.
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons. For more details, see <a href="https://news.codecademy.com/your-guide-to-semicolons-in-javascript/">Your Guide to Semicolons in JavaScript</a>.</p></div>
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: You can name a variable nearly anything, but there
-    are some restrictions. (See
-    <a href="/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables"
-      >this section about naming rules</a
-    >.) If you are unsure, you can
-    <a href="https://mothereff.in/js-variables">check your variable name</a> to
-    see if it's valid.
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: You can name a variable nearly anything, but there are some restrictions. (See <a href="/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables">this section about naming rules</a>.) If you are unsure, you can <a href="https://mothereff.in/js-variables">check your variable name</a> to see if it's valid.</p></div>
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: JavaScript is case sensitive. This means
-    <code>myVariable</code> is not the same as <code>myvariable</code>. If you
-    have problems in your code, check the case!
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: JavaScript is case sensitive. This means <code>myVariable</code> is not the same as <code>myvariable</code>. If you have problems in your code, check the case!</p></div>
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: For more details about the difference between
-    <code>var</code> and <code>let</code>, see
-    <a
-      href="/en-US/docs/Learn/JavaScript/First_steps/Variables#the_difference_between_var_and_let"
-      >The difference between var and let</a
-    >.
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: For more details about the difference between <code>var</code> and <code>let</code>, see <a href="/en-US/docs/Learn/JavaScript/First_steps/Variables#the_difference_between_var_and_let">The difference between var and let</a>.</p></div>
 
 After declaring a variable, you can give it a value:
 
@@ -247,61 +165,7 @@ After assigning a value to a variable, you can change it later in the code:
 Note that variables may hold values that have different
 [data types](/en-US/docs/Web/JavaScript/Data_structures):
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="row">Variable</th>
-      <th scope="col">Explanation</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">{{Glossary("String")}}</th>
-      <td>
-        This is a sequence of text known as a string. To signify that the value
-        is a string, enclose it in single quote marks.
-      </td>
-      <td><code>let myVariable = 'Bob';</code></td>
-    </tr>
-    <tr>
-      <th scope="row">{{Glossary("Number")}}</th>
-      <td>This is a number. Numbers don't have quotes around them.</td>
-      <td><code>let myVariable = 10;</code></td>
-    </tr>
-    <tr>
-      <th scope="row">{{Glossary("Boolean")}}</th>
-      <td>
-        This is a True/False value. The words <code>true</code> and
-        <code>false</code> are special keywords that don't need quote marks.
-      </td>
-      <td><code>let myVariable = true;</code></td>
-    </tr>
-    <tr>
-      <th scope="row">{{Glossary("Array")}}</th>
-      <td>
-        This is a structure that allows you to store multiple values in a single
-        reference.
-      </td>
-      <td>
-        <code>let myVariable = [1,'Bob','Steve',10];</code><br />Refer to each
-        member of the array like this:<br /><code>myVariable[0]</code>,
-        <code>myVariable[1]</code>, etc.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">{{Glossary("Object")}}</th>
-      <td>
-        This can be anything. Everything in JavaScript is an object and can be
-        stored in a variable. Keep this in mind as you learn.
-      </td>
-      <td>
-        <code>let myVariable = document.querySelector('h1');</code><br />All of
-        the above examples too.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="row">Variable</th><th scope="col">Explanation</th><th scope="col">Example</th></tr></thead><tbody><tr><th scope="row">{{Glossary("String")}}</th><td>This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks.</td><td><code>let myVariable = 'Bob';</code></td></tr><tr><th scope="row">{{Glossary("Number")}}</th><td>This is a number. Numbers don't have quotes around them.</td><td><code>let myVariable = 10;</code></td></tr><tr><th scope="row">{{Glossary("Boolean")}}</th><td>This is a True/False value. The words <code>true</code> and <code>false</code> are special keywords that don't need quote marks.</td><td><code>let myVariable = true;</code></td></tr><tr><th scope="row">{{Glossary("Array")}}</th><td>This is a structure that allows you to store multiple values in a single reference.</td><td><code>let myVariable = [1,'Bob','Steve',10];</code><br>Refer to each member of the array like this:<br><code>myVariable[0]</code>, <code>myVariable[1]</code>, etc.</td></tr><tr><th scope="row">{{Glossary("Object")}}</th><td>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn.</td><td><code>let myVariable = document.querySelector('h1');</code><br>All of the above examples too.</td></tr></tbody></table>
 
 So why do we need variables? Variables are necessary to do anything interesting
 in programming. If values couldn't change, then you couldn't do anything
@@ -323,8 +187,7 @@ Everything in between is a comment.
 If your comment contains no line breaks, it's an option to put it behind two
 slashes like this:
 
-<pre class="brush: js" style="font-size: 14px">
-// This is a comment
+<pre class="brush: js" style="font-size: 14px;">// This is a comment
 </pre>
 
 ### Operators
@@ -334,97 +197,13 @@ result based on two values (or variables). In the following table, you can see
 some of the simplest operators, along with some examples to try in the
 JavaScript console.
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="row">Operator</th>
-      <th scope="col">Explanation</th>
-      <th scope="col">Symbol(s)</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Addition</th>
-      <td>Add two numbers together or combine two strings.</td>
-      <td><code>+</code></td>
-      <td>
-        <code>6 + 9;<br />'Hello ' + 'world!';</code>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Subtraction, Multiplication, Division</th>
-      <td>These do what you'd expect them to do in basic math.</td>
-      <td><code>-</code>, <code>*</code>, <code>/</code></td>
-      <td>
-        <code
-          >9 - 3;<br />8 * 2; // multiply in JS is an asterisk<br />9 / 3;</code
-        >
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Assignment</th>
-      <td>As you've seen already: this assigns a value to a variable.</td>
-      <td><code>=</code></td>
-      <td><code>let myVariable = 'Bob';</code></td>
-    </tr>
-    <tr>
-      <th scope="row">Equality</th>
-      <td>
-        This performs a test to see if two values are equal. It returns a
-        <code>true</code>/<code>false</code> (Boolean) result.
-      </td>
-      <td><code>===</code></td>
-      <td>
-        <code>let myVariable = 3;<br />myVariable === 4;</code>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Not, Does-not-equal</th>
-      <td>
-        This returns the logically opposite value of what it precedes. It turns
-        a <code>true</code> into a <code>false</code>, etc.. When it is used
-        alongside the Equality operator, the negation operator tests whether two
-        values are <em>not</em> equal.
-      </td>
-      <td><code>!</code>, <code>!==</code></td>
-      <td>
-        <p>
-          For "Not", the basic expression is <code>true</code>, but the
-          comparison returns <code>false</code> because we negate it:
-        </p>
-        <p>
-          <code>let myVariable = 3;<br />!(myVariable === 3);</code>
-        </p>
-        <p>
-          "Does-not-equal" gives basically the same result with different
-          syntax. Here we are testing "is <code>myVariable</code> NOT equal to
-          3". This returns<code> false</code> because <code>myVariable</code> IS
-          equal to 3:
-        </p>
-        <p>
-          <code>let myVariable = 3;<br />myVariable !== 3;</code>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="row">Operator</th><th scope="col">Explanation</th><th scope="col">Symbol(s)</th><th scope="col">Example</th></tr></thead><tbody><tr><th scope="row">Addition</th><td>Add two numbers together or combine two strings.</td><td><code>+</code></td><td><code>6 + 9;<br>'Hello ' + 'world!';</code></td></tr><tr><th scope="row">Subtraction, Multiplication, Division</th><td>These do what you'd expect them to do in basic math.</td><td><code>-</code>, <code>*</code>, <code>/</code></td><td><code>9 - 3;<br>8 * 2; // multiply in JS is an asterisk<br>9 / 3;</code></td></tr><tr><th scope="row">Assignment</th><td>As you've seen already: this assigns a value to a variable.</td><td><code>=</code></td><td><code>let myVariable = 'Bob';</code></td></tr><tr><th scope="row">Equality</th><td>This performs a test to see if two values are equal. It returns a <code>true</code>/<code>false</code> (Boolean) result.</td><td><code>===</code></td><td><code>let myVariable = 3;<br>myVariable === 4;</code></td></tr><tr><th scope="row">Not, Does-not-equal</th><td>This returns the logically opposite value of what it precedes. It turns a <code>true</code> into a <code>false</code>, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are <em>not</em> equal.</td><td><code>!</code>, <code>!==</code></td><td><p>For "Not", the basic expression is <code>true</code>, but the comparison returns <code>false</code> because we negate it:</p><p><code>let myVariable = 3;<br>!(myVariable === 3);</code></p><p>"Does-not-equal" gives basically the same result with different syntax. Here we are testing "is <code>myVariable</code> NOT equal to 3". This returns<code> false</code> because <code>myVariable</code> IS equal to 3:</p><p><code>let myVariable = 3;<br>myVariable !== 3;</code></p></td></tr></tbody></table>
 
 There are a lot more operators to explore, but this is enough for now. See
 [Expressions and operators](/en-US/docs/Web/JavaScript/Reference/Operators) for
 a complete list.
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: Mixing data types can lead to some strange results
-    when performing calculations. Be careful that you are referring to your
-    variables correctly, and getting the results you expect. For example, enter
-    <code>'35' + '25'</code> into your console. Why don't you get the result you
-    expected? Because the quote marks turn the numbers into strings, so you've
-    ended up concatenating strings rather than adding numbers. If you enter
-    <code>35 + 25</code> you'll get the total of the two numbers.
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: Mixing data types can lead to some strange results when performing calculations. Be careful that you are referring to your variables correctly, and getting the results you expect. For example, enter <code>'35' + '25'</code> into your console. Why don't you get the result you expected? Because the quote marks turn the numbers into strings, so you've ended up concatenating strings rather than adding numbers. If you enter <code>35 + 25</code> you'll get the total of the two numbers.</p></div>
 
 ### Conditionals
 
@@ -494,22 +273,7 @@ multiply(20, 20);
 multiply(0.5, 3);
 ```
 
-<div class="note">
-  <p>
-    <strong>Note</strong>: The
-    <a href="/en-US/docs/Web/JavaScript/Reference/Statements/return"
-      ><code>return</code></a
-    >
-    statement tells the browser to return the <code>result</code> variable out
-    of the function so it is available to use. This is necessary because
-    variables defined inside functions are only available inside those
-    functions. This is called variable
-    {{Glossary("Scope", "scoping")}}. (Read more about
-    <a href="/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope"
-      >variable scoping</a
-    >.)
-  </p>
-</div>
+<div class="note"><p><strong>Note</strong>: The <a href="/en-US/docs/Web/JavaScript/Reference/Statements/return"><code>return</code></a> statement tells the browser to return the <code>result</code> variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable {{Glossary("Scope", "scoping")}}. (Read more about <a href="/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope">variable scoping</a>.)</p></div>
 
 ### Events
 
@@ -714,11 +478,7 @@ If you have followed all the instructions in this article, you should end up
 with a page that looks something like the image below. You can also
 [view our version](https://mdn.github.io/beginner-html-site-scripted/).
 
-<img
-  alt=""
-  src="website-screen-scripted.png"
-  style="display: block; margin: 0px auto"
-/>
+<img alt="" src="website-screen-scripted.png" style="display: block; margin: 0px auto;">
 
 If you get stuck, you can compare your work with our
 [finished example code on GitHub](https://github.com/mdn/beginner-html-site-scripted/blob/gh-pages/scripts/main.js).

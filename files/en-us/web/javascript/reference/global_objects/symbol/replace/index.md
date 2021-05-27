@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Property
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol.replace
 ---
 {{JSRef}}
@@ -50,6 +51,8 @@ console.log('football'.replace(new CustomReplacer('foo')));
 
 ## See also
 
+- A polyfill of `Symbol.replace` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - {{jsxref("Symbol.match")}}
 - {{jsxref("Symbol.search")}}
 - {{jsxref("Symbol.split")}}

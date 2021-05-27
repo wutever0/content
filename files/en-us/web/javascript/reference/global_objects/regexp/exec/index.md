@@ -12,11 +12,8 @@ browser-compat: javascript.builtins.RegExp.exec
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>exec()</code></strong> method executes a search for a match
-> in a specified string. Returns a result array, or
-> {{jsxref("null")}}.</span
+The **`exec()`** method executes a search for a match in a specified string.
+Returns a result array, or {{jsxref("null")}}.
 
 JavaScript {{jsxref("RegExp")}} objects are **stateful** when they have
 the {{jsxref("RegExp.global", "global")}} or
@@ -76,143 +73,24 @@ let result = re.exec('The Quick Brown Fox Jumps Over The Lazy Dog');
 
 The following table shows the state of `result` after running this script:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Property/Index</th>
-      <th scope="col">Description</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>[0]</code></td>
-      <td>The full string of characters matched</td>
-      <td><code>"Quick Brown Fox Jumps"</code></td>
-    </tr>
-    <tr>
-      <td><code>[1], ...[<var>n</var>]</code></td>
-      <td>
-        <p>The parenthesized substring matches, if any.</p>
-        <p>The number of possible parenthesized substrings is unlimited.</p>
-      </td>
-      <td>
-        <p><code>result[1] === "Brown"</code></p>
-        <p><code>result[2] === "Jumps"</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td><code>index</code></td>
-      <td>The 0-based index of the match in the string.</td>
-      <td><code>4</code></td>
-    </tr>
-    <tr>
-      <td><code>indices</code></td>
-      <td>
-        An array where each entry represents a substring match. Each substring
-        match itself is an array where the first entry represents its start
-        index and the second entry its end index.<br />The
-        <code>indices</code> array additionally has a
-        <code>groups</code> property which holds an object of all named
-        capturing groups. The keys are the names of the capturing groups and
-        each value is an array with the first item being the start entry and the
-        second entry being the end index of the capturing group. If the regular
-        expression doesn't contain any capturing groups, <code>groups</code> is
-        <code>undefined</code>.
-      </td>
-      <td>
-        <p><code>indices[0] === Array [ 4, 25 ]</code></p>
-        <p><code>indices[1] === Array [ 10, 15 ]</code></p>
-        <p><code>indices[2] === Array [ 20, 25 ]</code></p>
-        <p><code>indices.groups === undefined</code></p>
-        <p><code>indices.length === 3</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td><code>input</code></td>
-      <td>The original string that was matched against.</td>
-      <td><code>The Quick Brown Fox Jumps Over The Lazy Dog</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Property/Index</th><th scope="col">Description</th><th scope="col">Example</th></tr></thead><tbody><tr><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>"Quick Brown Fox Jumps"</code></td></tr><tr><td><code>[1], ...[<var>n</var>]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === "Brown"</code></p><p><code>result[2] === "Jumps"</code></p></td></tr><tr><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr><td><code>indices</code></td><td>An array where each entry represents a substring match.
+Each substring match itself is an array where the first entry
+represents its start index and the second entry its end index.<br>The <code>indices</code> array additionally has a <code>groups</code>
+property which holds an object of all named capturing groups. The keys
+are the names of the capturing groups and each value is an array with
+the first item being the start entry and the second entry being the
+end index of the capturing group. If the regular expression doesn't
+contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td><td><p><code>indices[0] === Array [ 4, 25 ]</code></p><p><code>indices[1] === Array [ 10, 15 ]</code></p><p><code>indices[2] === Array [ 20, 25 ]</code></p><p><code>indices.groups === undefined</code></p><p><code>indices.length === 3</code></p></td></tr><tr><td><code>input</code></td><td>The original string that was matched against.</td><td><code>The Quick Brown Fox Jumps Over The Lazy Dog</code></td></tr></tbody></table>
 
 The following table shows the state of `re` after running this script:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Property/Index</th>
-      <th scope="col">Description</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>lastIndex</code></td>
-      <td>
-        <p>The index at which to start the next match.</p>
-        <p>If <code>g</code> is absent, this will always be <code>0</code>.</p>
-      </td>
-      <td><code>25</code></td>
-    </tr>
-    <tr>
-      <td><code>dotAll</code></td>
-      <td>
-        Indicates if the <code>s</code> flag was used to let
-        <code>.</code> match newlines.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-    <tr>
-      <td><code>hasIndices</code></td>
-      <td>
-        Indicates if the <code>d</code> flag was used to generate an
-        <code>indices</code> property in the returned value containing start and
-        end indices of the substring matches.
-      </td>
-      <td><code>true</code></td>
-    </tr>
-    <tr>
-      <td><code>ignoreCase</code></td>
-      <td>Indicates if the <code>i</code> flag was used to ignore case.</td>
-      <td><code>true</code></td>
-    </tr>
-    <tr>
-      <td><code>global</code></td>
-      <td>Indicates if the <code>g</code> flag was used for a global match.</td>
-      <td><code>true</code></td>
-    </tr>
-    <tr>
-      <td><code>multiline</code></td>
-      <td>
-        Indicates if the <code>m</code> flag was used to search across multiple
-        lines.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-    <tr>
-      <td><code>source</code></td>
-      <td>The text of the pattern.</td>
-      <td><code>quick\s(brown).+?(jumps)</code></td>
-    </tr>
-    <tr>
-      <td><code>sticky</code></td>
-      <td>
-        Indicates if the <code>y</code> flag was used to match only from the
-        index indicated by the <code>lastIndex</code> property.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-    <tr>
-      <td><code>unicode</code></td>
-      <td>
-        Indicates if the <code>u</code> flag was used to treat the pattern as a
-        sequence of Unicode code points.
-      </td>
-      <td><code>false</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Property/Index</th><th scope="col">Description</th><th scope="col">Example</th></tr></thead><tbody><tr><td><code>lastIndex</code></td><td><p>The index at which to start the next match.</p><p>If <code>g</code> is absent, this will always be <code>0</code>.</p></td><td><code>25</code></td></tr><tr><td><code>dotAll</code></td><td>Indicates if the <code>s</code> flag was used to let <code>.</code>
+match newlines.</td><td><code>false</code></td></tr><tr><td><code>hasIndices</code></td><td>Indicates if the <code>d</code> flag was used to generate an
+<code>indices</code> property in the returned value containing
+start and end indices of the substring matches.</td><td><code>true</code></td></tr><tr><td><code>ignoreCase</code></td><td>Indicates if the <code>i</code> flag was used to ignore case.</td><td><code>true</code></td></tr><tr><td><code>global</code></td><td>Indicates if the <code>g</code> flag was used for a global match.</td><td><code>true</code></td></tr><tr><td><code>multiline</code></td><td>Indicates if the <code>m</code> flag was used to search across multiple lines.</td><td><code>false</code></td></tr><tr><td><code>source</code></td><td>The text of the pattern.</td><td><code>quick\s(brown).+?(jumps)</code></td></tr><tr><td><code>sticky</code></td><td>Indicates if the <code>y</code> flag was used to match
+only from the index indicated by the <code>lastIndex</code>
+property.</td><td><code>false</code></td></tr><tr><td><code>unicode</code></td><td>Indicates if the <code>u</code> flag was used to
+treat the pattern as a sequence of Unicode code points.</td><td><code>false</code></td></tr></tbody></table>
 
 ## Examples
 

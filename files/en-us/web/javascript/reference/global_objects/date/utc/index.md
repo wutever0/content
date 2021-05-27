@@ -37,19 +37,19 @@ Date.UTC(year, month, day, hour, minute, second, millisecond)
     longer is.)_
 - `day` {{optional_inline}}
   - : An integer between `1` and `31` representing the day of the month. If
-    omitted, defaults to `1` .
+    omitted, defaults to `1`.
 - `hour` {{optional_inline}}
   - : An integer between `0` and `23` representing the hours. If omitted,
-    defaults to `0` .
+    defaults to `0`.
 - `minute` {{optional_inline}}
   - : An integer between `0` and `59` representing the minutes. If omitted,
-    defaults to `0` .
+    defaults to `0`.
 - `second` {{optional_inline}}
   - : An integer between `0` and `59` representing the seconds. If omitted,
-    defaults to `0` .
+    defaults to `0`.
 - `millisecond` {{optional_inline}}
   - : An integer between `0` and `999` representing the milliseconds. If
-    omitted, defaults to `0` .
+    omitted, defaults to `0`.
 
 ### Return value
 

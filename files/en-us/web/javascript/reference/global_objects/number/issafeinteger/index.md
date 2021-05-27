@@ -6,12 +6,13 @@ tags:
   - JavaScript
   - Method
   - Number
+  - Polyfill
 browser-compat: javascript.builtins.Number.isSafeInteger
 ---
 {{JSRef}}
 
 The **`Number.isSafeInteger()`** method determines whether the provided value is
-a number that is a <dfn>safe integer</dfn> .
+a number that is a <dfn>safe integer</dfn>.
 
 {{EmbedInteractiveExample("pages/js/number-issafeinteger.html")}}
 
@@ -87,6 +88,8 @@ Number.isSafeInteger(3.0);                  // true
 
 ## See also
 
+- A polyfill of `Number.isSafeInteger` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - The {{jsxref("Number")}} object it belongs to.
 - {{jsxref("Number.MIN_SAFE_INTEGER")}}
 - {{jsxref("Number.MAX_SAFE_INTEGER")}}

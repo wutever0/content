@@ -11,14 +11,10 @@ browser-compat: javascript.builtins.Function.arguments
 ---
 {{JSRef}} {{deprecated_header}}
 
-The <code
-
-> <strong><em>function</em>.arguments</strong></code
->
-> property refers to an array-like object corresponding to the arguments passed
-> to a function. Use the simple variable
-> {{jsxref("Functions/arguments", "arguments")}} instead. This
-> property is restricted to non-strict functions.
+The <code><strong><em>function</em>.arguments</strong></code> property refers to
+an array-like object corresponding to the arguments passed to a function. Use
+the simple variable {{jsxref("Functions/arguments", "arguments")}}
+instead. This property is restricted to non-strict functions.
 
 ## Description
 

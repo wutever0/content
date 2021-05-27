@@ -19,8 +19,7 @@ written back.
 
 ## Syntax
 
-<pre class="brush: js">
-Atomics.sub(<var>typedArray</var>, <var>index</var>, <var>value</var>)
+<pre class="brush: js">Atomics.sub(<var>typedArray</var>, <var>index</var>, <var>value</var>)
 </pre>
 
 ### Parameters
@@ -32,18 +31,14 @@ Atomics.sub(<var>typedArray</var>, <var>index</var>, <var>value</var>)
     {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
     {{jsxref("BigUint64Array")}}.
 - `index`
-
-  - : The position in the `typedArray` to subtract a
-
-    `value` from.
-
+  - : The position in the `typedArray` to subtract a `value` from.
 - `value`
   - : The number to subtract.
 
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code> ).
+(<code><var>typedArray</var>[<var>index</var>]</code>).
 
 ### Exceptions
 

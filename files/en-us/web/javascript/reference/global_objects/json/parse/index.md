@@ -11,12 +11,10 @@ browser-compat: javascript.builtins.JSON.parse
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>JSON.parse()</code></strong> method parses a JSON string,
-> constructing the JavaScript value or object described by the string. An
-> optional <strong>reviver</strong> function can be provided to perform a
-> transformation on the resulting object before it is returned.</span
+The **`JSON.parse()`** method parses a JSON string, constructing the JavaScript
+value or object described by the string. An optional **reviver** function can be
+provided to perform a transformation on the resulting object before it is
+returned.
 
 {{EmbedInteractiveExample("pages/js/json-parse.html")}}
 

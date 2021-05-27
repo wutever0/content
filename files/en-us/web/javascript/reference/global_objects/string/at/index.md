@@ -14,13 +14,10 @@ browser-compat: javascript.builtins.String.at
 ---
 {{JSRef}}
 
-<p class="summary">
-  The <strong><code>at()</code></strong> method takes an integer value and
-  returns a new {{jsxref('String')}} consisting of the single UTF-16
-  code unit located at the specified offset. This method allows for positive and
-  negative integers. Negative integers count back from the last string
-  character.
-</p>
+The **`at()`** method takes an integer value and returns a new
+{{jsxref('String')}} consisting of the single UTF-16 code unit located
+at the specified offset. This method allows for positive and negative integers.
+Negative integers count back from the last string character.
 
 {{EmbedInteractiveExample("pages/js/string-at.html")}}
 

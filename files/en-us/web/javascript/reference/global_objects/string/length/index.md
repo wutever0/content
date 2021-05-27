@@ -12,12 +12,9 @@ browser-compat: javascript.builtins.String.length
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>length</code></strong> property of a
-> {{jsxref("String")}} object contains the length of the string, in
-> UTF-16 code units. <code>length</code> is a read-only data property of string
-> instances.</span
+The **`length`** property of a {{jsxref("String")}} object contains the
+length of the string, in UTF-16 code units. `length` is a read-only data
+property of string instances.
 
 {{EmbedInteractiveExample("pages/js/string-length.html", "shorter")}}
 

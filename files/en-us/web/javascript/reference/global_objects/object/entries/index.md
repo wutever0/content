@@ -6,6 +6,7 @@ tags:
   - Method
   - Object
   - Reference
+  - Polyfill
 browser-compat: javascript.builtins.Object.entries
 ---
 {{JSRef}}
@@ -31,12 +32,8 @@ should be sorted first, like
 ### Parameters
 
 - `obj`
-
   - : The object whose own enumerable string-keyed property
-
-    <code>[<var>key</var>, <var>value</var>]</code>
-
-    pairs are to be returned.
+    <code>[<var>key</var>, <var>value</var>]</code> pairs are to be returned.
 
 ### Return value
 
@@ -47,10 +44,9 @@ An array of the given object's own enumerable string-keyed property
 
 `Object.entries()` returns an array whose elements are arrays corresponding to
 the enumerable string-keyed property <code>[<var>key</var>,
-<var>value</var>]</code>
-
-pairs found directly upon `object`. The ordering of the properties is the same
-as that given by looping over the property values of the object manually.
+<var>value</var>]</code> pairs found directly upon `object`. The ordering of the
+properties is the same as that given by looping over the property values of the
+object manually.
 
 ## Polyfill
 
@@ -153,6 +149,8 @@ Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); 
 
 ## See also
 
+- A polyfill of `Object.entries` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 - {{jsxref("Object.keys()")}}
 - {{jsxref("Object.values()")}}

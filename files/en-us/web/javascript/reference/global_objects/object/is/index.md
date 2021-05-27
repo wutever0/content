@@ -10,6 +10,7 @@ tags:
   - JavaScript
   - Method
   - Object
+  - Polyfill
 browser-compat: javascript.builtins.Object.is
 ---
 {{JSRef}}
@@ -130,5 +131,7 @@ if (!Object.is) {
 
 ## See also
 
+- A polyfill of `Object.is` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - [Equality comparisons and sameness](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
   — a comparison of all three built-in sameness facilities

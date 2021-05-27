@@ -4,10 +4,8 @@ slug: Web/JavaScript/Reference/Global_Objects/Intl/Segmenter
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Segmenter</code></strong> object is a constructor for
-> segmenters, objects that enable language sensitive string splitting.</span
+The **`Intl.Segmenter`** object is a constructor for segmenters, objects that
+enable language sensitive string splitting.
 
 ## Constructor
 

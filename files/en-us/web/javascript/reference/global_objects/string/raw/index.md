@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.raw
 ---
 {{JSRef}}
@@ -23,9 +24,7 @@ to get the raw string form of template literals, that is, substitutions (e.g.
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><code>String.raw(<var>callSite</var>, <var>...substitutions</var>)
+<pre class="brush: js"><code>String.raw(<var>callSite</var>, <var>...substitutions</var>)
 
 String.raw`<var>templateString</var>`
 </code></pre>
@@ -33,17 +32,14 @@ String.raw`<var>templateString</var>`
 ### Parameters
 
 - `callSite`
-
   - : Well-formed template call site object, like
-
-    `{ raw: ['foo', 'bar', 'baz'] }` .
-
+    `{ raw: ['foo', 'bar', 'baz'] }`.
 - `...substitutions`
   - : Contains substitution values.
 - `templateString`
   - : A
     {{jsxref("template_literals", "template literal", "", 1)}},
-    optionally with substitutions ( `${...}` ).
+    optionally with substitutions (`${...}`).
 
 ### Return value
 
@@ -115,6 +111,8 @@ String.raw({ raw: 'test' }, 0, 1, 2); // 't0e1s2t'
 
 ## See also
 
+- A polyfill of `String.raw` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - [Template literals](/en-US/docs/Web/JavaScript/Reference/template_strings)
 - {{jsxref("String")}}
 - [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)

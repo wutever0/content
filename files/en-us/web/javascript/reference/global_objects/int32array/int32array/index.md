@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - Reference
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.Int32Array.Int32Array
 ---
 {{JSRef}}
@@ -19,88 +20,39 @@ is, using bracket notation).
 
 ## Syntax
 
-<pre class="brush: js">
-new Int32Array(); // new in ES2017
+<pre class="brush: js">new Int32Array(); // new in ES2017
 new Int32Array(<var>length</var>);
 new Int32Array(<var>typedArray</var>);
 new Int32Array(<var>object</var>);
-new Int32Array(<var>buffer</var> [, <var>byteOffset</var> [, <var>length</var>]]);</pre
->
-
+new Int32Array(<var>buffer</var> [, <var>byteOffset</var> [, <var>length</var>]]);</pre>
 
 ### Parameters
 
-*   `length`
-    *   : 
-        When called with a 
-        `length`
-         argument, an internal array buffer
-        is created in memory, of size 
-        `length`
-         
-        *multiplied by
-        `BYTES_PER_ELEMENT`*
-         bytes, containing zeros.
-*   `typedArray`
-    *   : 
-        When called with a 
-        `typedArray`
-         argument, which can be an object of any
-        of the typed array types (such as 
-        `Int32Array`
-        ), the
-
-        `typedArray`
-         gets copied into a new typed array. Each value in
-
-        `typedArray`
-         is converted to the corresponding type of the
-        constructor before being copied into the new array. The length of the new typed array
-        will be same as the length of the 
-        `typedArray`
-         argument.
-*   `object`
-    *   : 
-        When called with an 
-        `object`
-         argument, a new typed array is
-        created as if by the 
-        <code><var>TypedArray</var>.from()</code>
-
-         method.
-*   `buffer`, `byteOffset`,
-    `length`
-    *   : 
-        When called with a 
-        `buffer`
-        , and optionally a
-
-        `byteOffset`
-         and a 
-        `length`
-         argument, a
-        new typed array view is created that views the specified {{jsxref("ArrayBuffer")}}.
-        The 
-        `byteOffset`
-         and 
-        `length`
-         parameters
-        specify the memory range that will be exposed by the typed array view. If both are
-        omitted, all of 
-        `buffer`
-         is viewed; if only
-
-        `length`
-         is omitted, the remainder of
-
-        `buffer`
-         is viewed.
+- `length`
+  - : When called with a `length` argument, an internal array buffer is created
+    in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes,
+    containing zeros.
+- `typedArray`
+  - : When called with a `typedArray` argument, which can be an object of any of
+    the typed array types (such as `Int32Array`), the `typedArray` gets copied
+    into a new typed array. Each value in `typedArray` is converted to the
+    corresponding type of the constructor before being copied into the new
+    array. The length of the new typed array will be same as the length of the
+    `typedArray` argument.
+- `object`
+  - : When called with an `object` argument, a new typed array is created as if
+    by the <code><var>TypedArray</var>.from()</code> method.
+- `buffer`, `byteOffset`, `length`
+  - : When called with a `buffer`, and optionally a `byteOffset` and a `length`
+    argument, a new typed array view is created that views the specified
+    {{jsxref("ArrayBuffer")}}. The `byteOffset` and `length` parameters
+    specify the memory range that will be exposed by the typed array view. If
+    both are omitted, all of `buffer` is viewed; if only `length` is omitted,
+    the remainder of `buffer` is viewed.
 
 ## Examples
 
 ### Different ways to create an Int32Array
-
-
 
 ```js
 // From a length
@@ -140,11 +92,9 @@ var int32 = new Int32Array(iterable);
 ### Compatibility notes
 
 Starting with ECMAScript 2015, `Int32Array` constructors require to be
-constructed with a {{jsxref("Operators/new", "new")}} operator. Calling a
-`Int32Array` constructor as a function without `new`, will throw a
+constructed with a {{jsxref("Operators/new", "new")}} operator.
+Calling a `Int32Array` constructor as a function without `new`, will throw a
 {{jsxref("TypeError")}} from now on.
-
-
 
 ```js example-bad
 var dv = Int32Array([1, 2, 3]);
@@ -152,14 +102,14 @@ var dv = Int32Array([1, 2, 3]);
 // without new is forbidden
 ```
 
-
-
 ```js example-good
 var dv = new Int32Array([1, 2, 3]);
 ```
 
 ## See also
 
-*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-*   {{jsxref("ArrayBuffer")}}
-*   {{jsxref("DataView")}}
+- A polyfill of `Int32Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+- {{jsxref("ArrayBuffer")}}
+- {{jsxref("DataView")}}

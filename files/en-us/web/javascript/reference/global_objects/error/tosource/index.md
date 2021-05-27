@@ -33,8 +33,7 @@ evaluated to create an (approximately) equal object. Naturally, the string
 containing the source follows the structure of the {{jsxref("Error")}}
 constructor. For example:
 
-<pre class="brush: js">
-(new<em>name</em>(<em>message</em> ,<em>fileName</em>,<em>lineNumber</em>))
+<pre class="brush: js">(new<em>name</em>(<em>message</em> ,<em>fileName</em>,<em>lineNumber</em>))
 </pre>
 
 where these attributes correspond to the respective properties of the error

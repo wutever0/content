@@ -17,8 +17,7 @@ The **`handler.has()`** method is a trap for the
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   has: function(<var>target</var>, <var>prop</var>) {
   }
 });

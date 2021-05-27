@@ -7,6 +7,7 @@ tags:
 - Prototype
 - Reference
 - TypedArray
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.set
 ---
 {{JSRef}}
@@ -34,13 +35,10 @@ set(typedarray, offset)
     offset exceeds the length of the target array, in which case an exception is
     thrown.
 - `typedarray`
-
   - : If the source array is a typed array, the two arrays may share the same
     underlying {{jsxref("ArrayBuffer")}}; the JavaScript engine will
-    intelligently
-
-    **copy** the source range of the buffer to the destination range.
-
+    intelligently **copy** the source range of the buffer to the destination
+    range.
 - `offset` {{optional_inline}}
   - : The offset into the target array at which to begin writing values from the
     source array. If this value is omitted, 0 is assumed (that is, the source
@@ -74,6 +72,8 @@ console.log(uint8); // Uint8Array [ 0, 0, 0, 1, 2, 3, 0, 0 ]
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.set` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("TypedArray")}}
 - {{jsxref("ArrayBuffer")}}

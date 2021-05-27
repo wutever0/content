@@ -30,13 +30,10 @@ concat(value0, value1, ... , valueN)
 ### Parameters
 
 - <code>value<em>N</em></code> {{optional_inline}}
-
   - : Arrays and/or values to concatenate into a new array. If all
-
-    <code>value<em>N</em></code>
-
-    parameters are omitted, `concat` returns a shallow copy of the existing
-    array on which it is called. See the description below for more details.
+    <code>value<em>N</em></code> parameters are omitted, `concat` returns a
+    shallow copy of the existing array on which it is called. See the
+    description below for more details.
 
 ### Return value
 

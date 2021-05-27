@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.reverse
 ---
 {{JSRef}}
@@ -52,4 +53,6 @@ console.log(uint8); // Uint8Array [3, 2, 1]
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.reverse` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("Array.prototype.reverse()")}}

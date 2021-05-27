@@ -27,10 +27,8 @@ message / error.
 ### Parameters
 
 - `iterable`
-
   - : An
     [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
-
     object such as an {{jsxref("Array")}}.
 
 ### Return value

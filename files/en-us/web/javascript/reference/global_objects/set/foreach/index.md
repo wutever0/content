@@ -43,12 +43,12 @@ forEach(function callbackFn(value, key, set) { ... }, thisArg)
 - `callback`
   - : Function to execute for each element, taking three arguments:
     - `value`, `key`
-      - : The current element being processed in the `Set` . As there are no
-        keys in `Set` , the value is passed for both arguments.
+      - : The current element being processed in the `Set`. As there are no keys
+        in `Set`, the value is passed for both arguments.
     - `set`
       - : The `Set` object which `forEach()` was called upon.
 - `thisArg`
-  - : Value to use as `this` when executing `callbackFn` .
+  - : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 

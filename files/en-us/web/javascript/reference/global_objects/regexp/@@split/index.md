@@ -8,6 +8,7 @@ tags:
 - Reference
 - RegExp
 - Regular Expressions
+- Polyfill
 browser-compat: javascript.builtins.RegExp.@@split
 ---
 {{JSRef}}
@@ -19,9 +20,7 @@ an array of strings by separating the string into substrings.
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><var>regexp</var>[Symbol.split](<var>str</var>[, <var>limit</var>])</pre>
+<pre class="brush: js"><var>regexp</var>[Symbol.split](<var>str</var>[, <var>limit</var>])</pre>
 
 ### Parameters
 
@@ -98,6 +97,8 @@ console.log(result); // ["(2016)", "(01)", "(02)"]
 
 ## See also
 
+- A polyfill of `RegExp.prototype[@@split]` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.split()")}}
 - {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
 - {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}

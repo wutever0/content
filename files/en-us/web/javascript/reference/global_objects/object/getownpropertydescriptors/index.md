@@ -5,6 +5,7 @@ tags:
 - JavaScript
 - Method
 - Object
+- Polyfill
 browser-compat: javascript.builtins.Object.getOwnPropertyDescriptors
 ---
 {{JSRef}}
@@ -106,6 +107,8 @@ subclass.prototype = Object.create(
 
 ## See also
 
+- A polyfill of `Object.getOwnPropertyDescriptors` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.getOwnPropertyDescriptor()")}}
 - {{jsxref("Object.defineProperty()")}}
 - [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)

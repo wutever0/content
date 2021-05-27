@@ -32,8 +32,8 @@ search(regexp)
     object.
 
     If a non-RegExp object `regexp` is passed, it is implicitly converted to a
-    {{jsxref("RegExp")}} with <code>new RegExp(<var>regexp</var>)</code>
-    .
+    {{jsxref("RegExp")}} with <code>new
+    RegExp(<var>regexp</var>)</code>.
 
 ### Return value
 

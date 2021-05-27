@@ -5,6 +5,7 @@ tags:
 - Constructor
 - JavaScript
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.AggregateError.AggregateError
 ---
 {{JSRef}}
@@ -54,4 +55,6 @@ try {
 
 ## See also
 
+- A polyfill of `AggregateError` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
 - {{jsxref("Promise.any")}}

@@ -6,6 +6,7 @@ tags:
 - ECMAScript 2015
 - JavaScript
 - Method
+- Polyfill
 browser-compat: javascript.builtins.Array.of
 ---
 {{JSRef}}
@@ -37,10 +38,7 @@ Array.of(element0, element1, ... , elementN)
 
 ### Parameters
 
-- <code
-
-  > <var>element<em>N</em></var></code
-
+- <code><var>element<em>N</em></var></code>
   - : Elements used to create the array.
 
 ### Return value
@@ -77,6 +75,8 @@ Array.of(undefined); // [undefined]
 
 ## See also
 
+- A polyfill of `Array.of` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
 - {{jsxref("Array")}}
 - {{jsxref("Array.from()")}}

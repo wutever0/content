@@ -12,13 +12,10 @@ browser-compat: javascript.builtins.String.split
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>split()</code></strong> method divides a
-> {{jsxref("String")}} into an ordered list of substrings, puts these
-> substrings into an array, and returns the array.  The division is done by
-> searching for a pattern; where the pattern is provided as the first parameter
-> in the method's call.  </span
+The **`split()`** method divides a {{jsxref("String")}} into an ordered
+list of substrings, puts these substrings into an array, and returns the array.
+ The division is done by searching for a pattern; where the pattern is provided
+as the first parameter in the method's call.
 
 {{EmbedInteractiveExample("pages/js/string-split.html", "taller")}}
 

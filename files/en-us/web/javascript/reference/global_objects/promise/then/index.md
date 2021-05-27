@@ -38,12 +38,12 @@ p.then(value => {
 
 - `onFulfilled` {{optional_inline}}
   - : A {{jsxref("Function")}} called if the `Promise` is fulfilled. This
-    function has one argument, the `fulfillment value` . If it is not a
-    function, it is internally replaced with an "Identity" function (it returns
-    the received argument).
+    function has one argument, the `fulfillment value`. If it is not a function,
+    it is internally replaced with an "Identity" function (it returns the
+    received argument).
 - `onRejected` {{optional_inline}}
   - : A {{jsxref("Function")}} called if the `Promise` is rejected. This
-    function has one argument, the `rejection reason` . If it is not a function,
+    function has one argument, the `rejection reason`. If it is not a function,
     it is internally replaced with a "Thrower" function (it throws an error it
     received as argument).
 

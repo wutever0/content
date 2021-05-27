@@ -11,12 +11,10 @@ browser-compat: javascript.functions.arguments
 ---
 {{JSSidebar("Functions")}}
 
-<span class="summary"
-
-> <strong><code>arguments</code></strong> is an <code>Array</code>-like object
-> accessible inside
-> <a href="/en-US/docs/Web/JavaScript/Guide/Functions">functions</a> that
-> contains the values of the arguments passed to that function.</span
+<span class="summary"><strong><code>arguments</code></strong> is an
+<code>Array</code>-like object accessible inside
+<a href="/en-US/docs/Web/JavaScript/Guide/Functions">functions</a> that contains
+the values of the arguments passed to that function.</span>
 
 {{EmbedInteractiveExample("pages/js/functions-arguments.html")}}
 
@@ -128,7 +126,7 @@ console.log(typeof arguments[0]); // returns the type of the first argument
 - {{jsxref("Functions/arguments/@@iterator", "arguments[@@iterator]")}}
   - : Returns a new
     {{jsxref("Array/@@iterator", "Array iterator", "", 0)}}
-    object that contains the values for each index in `arguments` .
+    object that contains the values for each index in `arguments`.
 
 ## Examples
 

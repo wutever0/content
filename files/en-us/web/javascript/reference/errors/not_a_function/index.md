@@ -64,7 +64,7 @@ let x = document.getElementByID('foo');
 // TypeError: document.getElementByID is not a function
 ```
 
-The correct function name is <code>getElementByI<strong>d</strong></code> :
+The correct function name is `getElementById`:
 
 ```js example-good
 let x = document.getElementById('foo');

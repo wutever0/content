@@ -26,7 +26,7 @@ decoding or validation.
 - {{jsxref("Error.prototype.message", "WebAssembly.CompileError.prototype.message")}}
   - : Error message. Although ECMA-262 specifies that
     {{jsxref("URIError")}} should provide its own `message` property, in
-    [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey) , it inherits
+    [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
     {{jsxref("Error.prototype.message")}}.
 - {{jsxref("Error.prototype.name", "WebAssembly.CompileError.prototype.name")}}
   - : Error name. Inherited from {{jsxref("Error")}}.

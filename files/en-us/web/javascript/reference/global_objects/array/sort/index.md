@@ -41,14 +41,7 @@ sort(function compareFn(firstEl, secondEl) { ... })
 
 ### Parameters
 
-- `compareFunction` {{optional_inline}}
-  - : Specifies a function that defines the sort order. If omitted, the array
-    elements are converted to strings, then sorted according to each character's
-    Unicode code point value.
-    - `firstEl`
-      - : The first element for comparison.
-    - `secondEl`
-      - : The second element for comparison.
+<dl><dt><code>compareFunction</code> {{optional_inline}}</dt><dd>Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.<dl><dt><code>firstEl</code></dt><dd>The first element for comparison.</dd><dt><code>secondEl</code></dt><dd>The second element for comparison.</dd></dl></dd></dl>
 
 ### Return value
 
@@ -76,13 +69,16 @@ according to the return value of the compare function (all `undefined` elements
 are sorted to the end of the array, with no call to `compareFunction`). If `a`
 and `b` are two elements being compared, then:
 
-- If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
-- If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect
-  to each other, but sorted with respect to all different elements. Note: the
-  ECMAScript standard only started guaranteeing this behavior
-  [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro),
-  thus, older browsers may not respect this.
-- If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
+- If `compareFunction(a, b)` returns a value > than 0, sort `b` before `a`.
+- If `compareFunction(a, b)` returns a value ≤ 0, leave `a` and `b` in the same
+  order.
+
+  > **Note:** The
+  > [ECMAScript Standard, 10th edition](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro)
+  > (2019) algorithm mandates stable sorting, which means than elements that
+  > compare equal must remain in their original order with respect to each
+  > other. This behaviour may not be respected by older browsers.
+
 - `compareFunction(a, b)` must always return the same value when given a
   specific pair of elements `a` and `b` as its two arguments. If inconsistent
   results are returned, then the sort order is undefined.

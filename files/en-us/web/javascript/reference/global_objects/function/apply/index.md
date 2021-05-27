@@ -71,8 +71,8 @@ rewrite the method for the new object.
 except for the type of arguments it supports. You use an arguments array instead
 of a list of arguments (parameters). With `apply`, you can also use an array
 literal, for example, <code><var>func</var>.apply(this, ['eat',
-'bananas'])</code> , or an {{jsxref("Array")}} object, for example,
-<code><var>func</var>.apply(this, new Array('eat', 'bananas'))</code> .
+'bananas'])</code>, or an {{jsxref("Array")}} object, for example,
+<code><var>func</var>.apply(this, new Array('eat', 'bananas'))</code>.
 
 You can also use {{jsxref("Functions/arguments", "arguments")}}
 for the `argsArray` parameter.

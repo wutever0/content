@@ -7,17 +7,14 @@ tags:
   - Function
   - JavaScript
   - Method
-  - polyfill
+  - Polyfill
 browser-compat: javascript.builtins.Function.bind
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>bind()</strong></code> method creates a new function that,
-> when called, has its <code>this</code> keyword set to the provided value, with
-> a given sequence of arguments preceding any provided when the new function is
-> called.</span
+The **`bind()`** method creates a new function that, when called, has its `this`
+keyword set to the provided value, with a given sequence of arguments preceding
+any provided when the new function is called.
 
 {{EmbedInteractiveExample("pages/js/function-bind.html", "taller")}}
 
@@ -33,32 +30,19 @@ bind(thisArg, arg1, ... , argN)
 ### Parameters
 
 - `thisArg`
-
   - : The value to be passed as the `this` parameter to the target function
-
     `func` when the bound function is called. The value is ignored if the bound
     function is constructed using the
     {{jsxref("Operators/new", "new")}} operator. When using `bind` to
-    create a function (supplied as a callback) inside a `setTimeout` , any
-    primitive value passed as
-
-    `thisArg` is converted to object. If no arguments are provided to `bind ` ,
-    or if the `thisArg` is
-
-    `null` or `undefined` , the
-
-    `this` of the executing scope is treated as the
-
-    `thisArg` for the new function.
-
+    create a function (supplied as a callback) inside a `setTimeout`, any
+    primitive value passed as `thisArg` is converted to object. If no arguments
+    are provided to `bind `, or if the `thisArg` is `null` or `undefined`, the
+    `this` of the executing scope is treated as the `thisArg` for the new
+    function.
 - <code><var>arg1</var>, <var>arg2</var>, ...<var>argN</var></code>
-
   {{optional_inline}}
-
   - : Arguments to prepend to arguments provided to the bound function when
-    invoking
-
-    `func` .
+    invoking `func`.
 
 ### Return value
 
@@ -89,7 +73,7 @@ A bound function has the following internal properties:
 
 When a bound function is called, it calls internal method `[[Call]]` on
 `[[BoundTargetFunction]]`, with following arguments
-<code>Call(<var>boundThis</var>, ...<var>args</var>)</code> . Where `boundThis`
+<code>Call(<var>boundThis</var>, ...<var>args</var>)</code>. Where `boundThis`
 is `[[BoundThis]]`, `args` is `[[BoundArguments]]`, followed by the arguments
 passed by the function call.
 
@@ -325,6 +309,8 @@ slice(arguments);
 
 ## See also
 
+- A polyfill of `Function.prototype.bind` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
 - {{jsxref("Function.prototype.apply()")}}
 - {{jsxref("Function.prototype.call()")}}
 - {{jsxref("Functions", "Functions", "", 1)}}

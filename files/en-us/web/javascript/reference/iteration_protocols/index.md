@@ -35,23 +35,7 @@ method, meaning that the object (or one of the objects up its
 must have a property with a `@@iterator` key which is available via constant
 {{jsxref("Symbol.iterator")}}:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Property</th>
-      <th scope="col">Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>[Symbol.iterator]</code></td>
-      <td>
-        A zero-argument function that returns an object, conforming to the
-        <a href="#the_iterator_protocol">iterator protocol</a>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead><tbody><tr><td><code>[Symbol.iterator]</code></td><td>A zero-argument function that returns an object, conforming to the <a href="#the_iterator_protocol">iterator protocol</a>.</td></tr></tbody></table>
 
 Whenever an object needs to be iterated (such as at the beginning of a
 {{jsxref("Statements/for...of", "for...of")}} loop), its
@@ -76,54 +60,7 @@ been generated.
 An object is an iterator when it implements a **`next()`** method with the
 following semantics:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Property</th>
-      <th scope="col">Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>next()</code></td>
-      <td>
-        <p>
-          A zero-argument function that returns an object with at least the
-          following two properties:
-        </p>
-        <dl>
-          <dt><code>done</code> (boolean)</dt>
-          <dd>
-            <p>
-              Has the value <code>false</code> if the iterator was able to
-              produce the next value in the sequence. (This is equivalent to not
-              specifying the <code>done</code> property altogether.)
-            </p>
-            <p>
-              Has the value <code>true</code> if the iterator has completed its
-              sequence. In this case, <code>value</code> optionally specifies
-              the return value of the iterator.
-            </p>
-          </dd>
-          <dt><code>value</code></dt>
-          <dd>
-            Any JavaScript value returned by the iterator. Can be omitted when
-            <code>done</code> is <code>true</code>.
-          </dd>
-        </dl>
-        <p>
-          The <code>next()</code> method must always return an object with
-          appropriate properties including <code>done</code> and
-          <code>value</code>. If a non-object value gets returned (such as
-          <code>false</code> or <code>undefined</code>), a
-          {{jsxref("TypeError")}} (<code
-            >"iterator.next() returned a non-object value"</code
-          >) will be thrown.
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead><tbody><tr><td><code>next()</code></td><td><p>A zero-argument function that returns an object with at least the following two properties:</p><dl><dt><code>done</code> (boolean)</dt><dd><p>Has the value <code>false</code> if the iterator was able to produce the next value in the sequence. (This is equivalent to not specifying the <code>done</code> property altogether.)</p><p>Has the value <code>true</code> if the iterator has completed its sequence. In this case, <code>value</code> optionally specifies the return value of the iterator.</p></dd><dt><code>value</code></dt><dd>Any JavaScript value returned by the iterator. Can be omitted when <code>done</code> is <code>true</code>.</dd></dl><p>The <code>next()</code> method must always return an object with appropriate properties including <code>done</code> and <code>value</code>. If a non-object value gets returned (such as <code>false</code> or <code>undefined</code>), a {{jsxref("TypeError")}} (<code>"iterator.next() returned a non-object value"</code>) will be thrown.</p></td></tr></tbody></table>
 
 > **Note:** It is not possible to know reflectively whether a particular object
 > implements the iterator protocol. However, it is easy to create an object that

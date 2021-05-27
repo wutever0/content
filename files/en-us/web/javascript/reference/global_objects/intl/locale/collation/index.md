@@ -14,16 +14,12 @@ browser-compat: javascript.builtins.Intl.Locale.collation
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.collation</code></strong> property is
-> an accessor property that returns the <a
-
-    href="https://www.unicode.org/reports/tr35/tr35-collation.html#CLDR_Collation"
-    >collation type</a
-
-> for the <code>Locale</code>, which is used to order strings according to the
-> locale's rules.</span
+<span class="seoSummary">The
+<strong><code>Intl.Locale.prototype.collation</code></strong> property is an
+accessor property that returns the
+<a href="https://www.unicode.org/reports/tr35/tr35-collation.html#CLDR_Collation">collation
+type</a> for the <code>Locale</code>, which is used to order strings according
+to the locale's rules.</span>
 
 ## Description
 
@@ -39,119 +35,7 @@ Below is a table with the available collation types, taken from the
 
 ### Valid collation types
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Collation Type</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>big5han</td>
-      <td>
-        Pinyin ordering for Latin, big5 charset ordering for CJK characters
-        (used in Chinese)
-      </td>
-    </tr>
-    <tr>
-      <td>compat</td>
-      <td>A previous version of the ordering, for compatibility</td>
-    </tr>
-    <tr>
-      <td>dict</td>
-      <td>Dictionary style ordering (such as in Sinhala)</td>
-    </tr>
-    <tr>
-      <td>
-        <div class="notecard warning">
-          <p>
-            <strong>Warning:</strong> The <code>direct</code> collation type has
-            been deprected. Do not use.
-          </p>
-        </div>
-        <p>direct</p>
-      </td>
-      <td>Binary code point order (used in Hindi)</td>
-    </tr>
-    <tr>
-      <td>ducet</td>
-      <td>The default Unicode collation element table order</td>
-    </tr>
-    <tr>
-      <td>emoji</td>
-      <td>Recommended ordering for emoji characters</td>
-    </tr>
-    <tr>
-      <td>eor</td>
-      <td>European ordering rules</td>
-    </tr>
-    <tr>
-      <td>gb2312</td>
-      <td>
-        Pinyin ordering for Latin, gb2312han charset ordering for CJK characters
-        (used in Chinese)
-      </td>
-    </tr>
-    <tr>
-      <td>phonebk</td>
-      <td>Phonebook style ordering (such as in German)</td>
-    </tr>
-    <tr>
-      <td>phonetic</td>
-      <td>Phonetic ordering (sorting based on pronunciation)</td>
-    </tr>
-    <tr>
-      <td>pinyin</td>
-      <td>
-        Pinyin ordering for Latin and for CJK characters (used in Chinese)
-      </td>
-    </tr>
-    <tr>
-      <td>reformed</td>
-      <td>Reformed ordering (such as in Swedish)</td>
-    </tr>
-    <tr>
-      <td>search</td>
-      <td>Special collation type for string search</td>
-    </tr>
-    <tr>
-      <td>searchjl</td>
-      <td>Special collation type for Korean initial consonant search</td>
-    </tr>
-    <tr>
-      <td>standard</td>
-      <td>Default ordering for each language</td>
-    </tr>
-    <tr>
-      <td>stroke</td>
-      <td>
-        Pinyin ordering for Latin, stroke order for CJK characters (used in
-        Chinese)
-      </td>
-    </tr>
-    <tr>
-      <td>trad</td>
-      <td>Traditional style ordering (such as in Spanish)</td>
-    </tr>
-    <tr>
-      <td>unihan</td>
-      <td>
-        Pinyin ordering for Latin, Unihan radical-stroke ordering for CJK
-        characters (used in Chinese)
-      </td>
-    </tr>
-    <tr>
-      <td>zhuyin</td>
-      <td>
-        <p>
-          Pinyin ordering for Latin, zhuyin order for Bopomofo and CJK
-          characters (used in Chinese)
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Collation Type</th><th scope="col">Description</th></tr></thead><tbody><tr><td>big5han</td><td>Pinyin ordering for Latin, big5 charset ordering for CJK characters (used in Chinese)</td></tr><tr><td>compat</td><td>A previous version of the ordering, for compatibility</td></tr><tr><td>dict</td><td>Dictionary style ordering (such as in Sinhala)</td></tr><tr><td><div class="notecard warning"><p><strong>Warning:</strong> The <code>direct</code> collation type has been deprected. Do not use.</p></div><p>direct</p></td><td>Binary code point order (used in Hindi)</td></tr><tr><td>ducet</td><td>The default Unicode collation element table order</td></tr><tr><td>emoji</td><td>Recommended ordering for emoji characters</td></tr><tr><td>eor</td><td>European ordering rules</td></tr><tr><td>gb2312</td><td>Pinyin ordering for Latin, gb2312han charset ordering for CJK characters (used in Chinese)</td></tr><tr><td>phonebk</td><td>Phonebook style ordering (such as in German)</td></tr><tr><td>phonetic</td><td>Phonetic ordering (sorting based on pronunciation)</td></tr><tr><td>pinyin</td><td>Pinyin ordering for Latin and for CJK characters (used in Chinese)</td></tr><tr><td>reformed</td><td>Reformed ordering (such as in Swedish)</td></tr><tr><td>search</td><td>Special collation type for string search</td></tr><tr><td>searchjl</td><td>Special collation type for Korean initial consonant search</td></tr><tr><td>standard</td><td>Default ordering for each language</td></tr><tr><td>stroke</td><td>Pinyin ordering for Latin, stroke order for CJK characters (used in Chinese)</td></tr><tr><td>trad</td><td>Traditional style ordering (such as in Spanish)</td></tr><tr><td>unihan</td><td>Pinyin ordering for Latin, Unihan radical-stroke ordering for CJK characters (used in Chinese)</td></tr><tr><td>zhuyin</td><td><p>Pinyin ordering for Latin, zhuyin order for Bopomofo and CJK characters (used in Chinese)</p></td></tr></tbody></table>
 
 ## Examples
 

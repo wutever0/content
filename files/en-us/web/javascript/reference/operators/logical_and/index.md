@@ -27,9 +27,7 @@ return a non-Boolean value.
 
 ## Description
 
-If <code>expr<strong>1</strong></code> can be converted to `true`, returns
-<code>expr<strong>2</strong></code> ; else, returns
-<code>expr<strong>1</strong></code> .
+If `expr1` can be converted to `true`, returns `expr2`; else, returns `expr1`.
 
 If a value can be converted to `true`, the value is so-called
 {{Glossary("truthy")}}. If a value can be converted to `false`, the value

@@ -9,6 +9,7 @@ tags:
 - String
 - UTF-32
 - Unicode
+- Polyfill
 browser-compat: javascript.builtins.String.fromCodePoint
 ---
 {{JSRef}}
@@ -29,7 +30,6 @@ String.fromCodePoint(num1, num2, ..., numN)
 ### Parameters
 
 - <code><var>num1</var>, ..., <var>numN</var></code>
-
   - : A sequence of code points.
 
 ### Return value
@@ -151,6 +151,8 @@ String.fromCodePoint(0x1F303); // or 127747 in decimal
 
 ## See also
 
+- A polyfill of `String.fromCodePoint` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.fromCharCode()")}}
 - {{jsxref("String.prototype.charAt()")}}
 - {{jsxref("String.prototype.codePointAt()")}}

@@ -45,8 +45,7 @@ let o = {
 Please see the compatibility table for support for these notations. In
 non-supporting environments, these notations will lead to syntax errors.
 
-<pre class="brush: js">
-// Shorthand property names (ES2015)
+<pre class="brush: js">// Shorthand property names (ES2015)
 let a = 'foo', b = 42, c = {};
 let o = {a, b, c}
 
@@ -60,23 +59,30 @@ let prop = 'foo';
 let o = {
   [prop]: 'hey',
   ['b' + 'ar']: 'there'
-}</pre
->
-
+}</pre>
 
 ## Description
 
-An object initializer is an expression that describes the initialization of an {{jsxref("Object")}}. Objects consist of *properties*, which are used to describe an object. The values of object properties can either contain [primitive](/en-US/docs/Glossary/primitive) data types or other objects.
+An object initializer is an expression that describes the initialization of an
+{{jsxref("Object")}}. Objects consist of _properties_, which are used to
+describe an object. The values of object properties can either contain
+[primitive](/en-US/docs/Glossary/primitive) data types or other objects.
 
 ### Object literal notation vs JSON
 
-The object literal notation is not the same as the **J**ava**S**cript **O**bject **N**otation ([JSON](/en-US/docs/Glossary/JSON)). Although they look similar, there are differences between them:
+The object literal notation is not the same as the **J**ava**S**cript **O**bject
+**N**otation ([JSON](/en-US/docs/Glossary/JSON)). Although they look similar,
+there are differences between them:
 
-*   JSON permits *only* property definition using `"property": value` syntax.  The property name must be double-quoted, and the definition cannot be a shorthand.
-*   In JSON the values can only be strings, numbers, arrays, `true`, `false`, `null`, or another (JSON) object.
-*   A function value (see "Methods" below) can not be assigned to a value in JSON.
-*   Objects like {{jsxref("Date")}} will be a string after {{jsxref("JSON.parse()")}}.
-*   {{jsxref("JSON.parse()")}} will reject computed property names and an error will be thrown.
+- JSON permits _only_ property definition using `"property": value` syntax.  The
+  property name must be double-quoted, and the definition cannot be a shorthand.
+- In JSON the values can only be strings, numbers, arrays, `true`, `false`,
+  `null`, or another (JSON) object.
+- A function value (see "Methods" below) can not be assigned to a value in JSON.
+- Objects like {{jsxref("Date")}} will be a string after
+  {{jsxref("JSON.parse()")}}.
+- {{jsxref("JSON.parse()")}} will reject computed property names and
+  an error will be thrown.
 
 ## Examples
 
@@ -84,17 +90,17 @@ The object literal notation is not the same as the **J**ava**S**cript **O**bject
 
 An empty object with no properties can be created like this:
 
-
-
 ```js
 let object = {}
 ```
 
-However, the advantage of the *literal* or *initializer* notation is, that you are able to quickly create objects with properties inside the curly braces. You notate a list of `key: value` pairs delimited by commas.
+However, the advantage of the _literal_ or _initializer_ notation is, that you
+are able to quickly create objects with properties inside the curly braces. You
+notate a list of `key: value` pairs delimited by commas.
 
-The following code creates an object with three properties and the keys are `"foo"`, `"age"` and `"baz"`. The values of these keys are a string `"bar"`, the number `42`, and another object.
-
-
+The following code creates an object with three properties and the keys are
+`"foo"`, `"age"` and `"baz"`. The values of these keys are a string `"bar"`, the
+number `42`, and another object.
 
 ```js
 let object = {
@@ -106,9 +112,11 @@ let object = {
 
 ### Accessing properties
 
-Once you have created an object, you might want to read or change them. Object properties can be accessed by using the dot notation or the bracket notation. (See [property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors) for detailed information.)
-
-
+Once you have created an object, you might want to read or change them. Object
+properties can be accessed by using the dot notation or the bracket notation.
+(See
+[property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
+for detailed information.)
 
 ```js
 object.foo // "bar"
@@ -119,9 +127,9 @@ object.foo = 'baz'
 
 ### Property definitions
 
-We have already learned how to notate properties using the initializer syntax. Oftentimes, there are variables in your code that you would like to put into an object. You will see code like this:
-
-
+We have already learned how to notate properties using the initializer syntax.
+Oftentimes, there are variables in your code that you would like to put into an
+object. You will see code like this:
 
 ```js
 let a = 'foo',
@@ -137,8 +145,6 @@ let o = {
 
 With ECMAScript 2015, there is a shorter notation available to achieve the same:
 
-
-
 ```js
 let a = 'foo',
     b = 42,
@@ -153,18 +159,18 @@ console.log((o.a === {a}.a)) // true
 
 #### Duplicate property names
 
-When using the same name for your properties, the second property will overwrite the first.
-
-
+When using the same name for your properties, the second property will overwrite
+the first.
 
 ```js
 let a = {x: 1, x: 2}
 console.log(a) // {x: 2}
 ```
 
-In ECMAScript 5 strict mode code, duplicate property names were considered a {{jsxref("SyntaxError")}}.  With the introduction of computed property names making duplication possible at runtime, ECMAScript 2015 has removed this restriction.
-
-
+In ECMAScript 5 strict mode code, duplicate property names were considered a
+{{jsxref("SyntaxError")}}.  With the introduction of computed property
+names making duplication possible at runtime, ECMAScript 2015 has removed this
+restriction.
 
 ```js
 function haveES2015DuplicatePropertySemantics() {
@@ -183,7 +189,10 @@ function haveES2015DuplicatePropertySemantics() {
 
 ### Method definitions
 
-A property of an object can also refer to a [function](/en-US/docs/Web/JavaScript/Reference/Functions) or a [getter](/en-US/docs/Web/JavaScript/Reference/Functions/get) or [setter](/en-US/docs/Web/JavaScript/Reference/Functions/set) method.
+A property of an object can also refer to a
+[function](/en-US/docs/Web/JavaScript/Reference/Functions) or a
+[getter](/en-US/docs/Web/JavaScript/Reference/Functions/get) or
+[setter](/en-US/docs/Web/JavaScript/Reference/Functions/set) method.
 
 <pre class="brush: js">let o = {
   <var>property: function </var>(<var>parameters</var>) {},
@@ -194,26 +203,22 @@ A property of an object can also refer to a [function](/en-US/docs/Web/JavaScrip
 In ECMAScript 2015, a shorthand notation is available, so that the keyword
 "`function`" is no longer necessary.
 
-<pre class="brush: js">
-// Shorthand method names (ES2015)
+<pre class="brush: js">// Shorthand method names (ES2015)
 let o = {
   <var>property</var>(<var>parameters</var>) {},
-}</pre
->
+}</pre>
 
+In ECMAScript 2015, there is a way to concisely define properties whose values
+are generator functions:
 
-In ECMAScript 2015, there is a way to concisely define properties whose values are generator functions:
-
-<pre class="brush: js">
-let o = {
+<pre class="brush: js">let o = {
   *<var>generator</var>() {
     ...........
   }
-};</pre
->
+};</pre>
 
-
-Which is equivalent to this ES5-like notation (but note that ECMAScript 5 has no generators):
+Which is equivalent to this ES5-like notation (but note that ECMAScript 5 has no
+generators):
 
 <pre class="brush: js">let o = {
   generator<var>: function* </var>() {

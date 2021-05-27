@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.anchor
 ---
 {{JSRef}} {{deprecated_header}}
@@ -30,15 +31,13 @@ anchor(name)
 ### Parameters
 
 - `name`
-
   - : A string representing a `name` value to put into the generated
-
     `<a name="...">` start tag.
 
 ### Return value
 
 A string beginning with an <code>&#x3C;a name="<var>name</var>"></code> start
-tag, then the text <var>str</var> , and then an `</a>` end tag.
+tag, then the text <var>str</var>, and then an `</a>` end tag.
 
 ## Description
 
@@ -73,4 +72,6 @@ will output the following HTML:
 
 ## See also
 
+- A polyfill of `String.prototype.anchor` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.link()")}}

@@ -7,24 +7,22 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.isExtensible
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The static <strong><code>Reflect.isExtensible()</code></strong> method
-> determines if an object is extensible (whether it can have new properties
-> added to it). It is similar to
-> {{jsxref("Object.isExtensible()")}}, but with some
-> <a href="#Difference_to_Object.isExtensible">differences</a>.</span
+<span class="seoSummary">The static
+<strong><code>Reflect.isExtensible()</code></strong> method determines if an
+object is extensible (whether it can have new properties added to it). It is
+similar to {{jsxref("Object.isExtensible()")}}, but with some
+<a href="#Difference_to_Object.isExtensible">differences</a>.</span>
 
 {{EmbedInteractiveExample("pages/js/reflect-isextensible.html", "taller")}}
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.isExtensible(<var>target</var>)
+<pre class="brush: js">Reflect.isExtensible(<var>target</var>)
 </pre>
 
 ### Parameters
@@ -97,5 +95,7 @@ Object.isExtensible(1)
 
 ## See also
 
+- A polyfill of `Reflect.isExtensible` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.isExtensible()")}}

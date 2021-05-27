@@ -15,13 +15,10 @@ browser-compat: javascript.builtins.decodeURI
 ---
 {{jsSidebar("Objects")}}
 
-<span class="seoSummary"
-
-> The <code><strong>decodeURI()</strong></code> function decodes a Uniform
-> Resource Identifier (URI) previously created by
-> {{jsxref("encodeURI",
-    "encodeURI()")}} or by a similar
-> routine.</span
+The **`decodeURI()`** function decodes a Uniform Resource Identifier (URI)
+previously created by {{jsxref("encodeURI",
+    "encodeURI()")}}
+or by a similar routine.
 
 {{EmbedInteractiveExample("pages/js/globalprops-decodeuri.html")}}
 

@@ -32,11 +32,9 @@ setFullYear(yearValue, monthValue, dateValue)
   - : Optional. An integer between 0 and 11 representing the months January
     through December.
 - `dateValue`
-
   - : Optional. An integer between 1 and 31 representing the day of the month.
     If you specify the `dateValue` parameter, you must also specify the
-
-    `monthValue` .
+    `monthValue`.
 
 ### Return value
 
@@ -55,7 +53,7 @@ If a parameter you specify is outside of the expected range, `setFullYear()`
 attempts to update the other parameters and the date information in the
 {{jsxref("Date")}} object accordingly. For example, if you specify 15 for
 `monthValue`, the year is incremented by 1 (<code><var>yearValue</var> +
-1</code> ), and 3 is used for the month.
+1</code>), and 3 is used for the month.
 
 ## Examples
 

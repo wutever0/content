@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Method
   - Object
+  - Polyfill
 browser-compat: javascript.builtins.Object.getPrototypeOf
 ---
 {{JSRef}}
@@ -42,10 +43,8 @@ Object.getPrototypeOf(obj) === proto; // true
 ### Non-object coercion
 
 In ES5, it will throw a {{jsxref("TypeError")}} exception if the
-<var>obj</var>
-
-parameter isn't an object. In ES2015, the parameter will be coerced to an
-{{jsxref("Object")}}.
+<var>obj</var> parameter isn't an object. In ES2015, the parameter will be
+coerced to an {{jsxref("Object")}}.
 
 ```js
 Object.getPrototypeOf('foo');
@@ -70,6 +69,8 @@ Opera supports the non-standard
 
 ## See also
 
+- A polyfill of `Object.getPrototypeOf` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.prototype.isPrototypeOf()")}}
 - {{jsxref("Object.setPrototypeOf()")}}
 - {{jsxref("Object/proto","Object.prototype.__proto__")}}

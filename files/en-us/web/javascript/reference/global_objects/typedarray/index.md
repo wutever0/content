@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray
 ---
 {{JSRef}}
@@ -28,7 +29,7 @@ directly exposed: there is no global `%TypedArray%` or `TypedArray` property. It
 is only directly accessible through `Object.getPrototypeOf(Int8Array)` and
 similar. All `TypedArray`s constructors inherit common properties from the
 `%TypedArray%` constructor function. Additionally, all typed array prototypes
-(<code><var>TypedArray</var>.prototype</code> ) have `%TypedArray%.prototype` as
+(<code><var>TypedArray</var>.prototype</code>) have `%TypedArray%.prototype` as
 their `[[Prototype]]`.
 
 The `%TypedArray%` constructor on its own is not particularly useful. Calling it
@@ -41,119 +42,16 @@ When creating an instance of a `TypedArray` (e.g. `Int8Array`), an array buffer
 is created internally in memory or, if an `ArrayBuffer` object is given as
 constructor argument, then this is used instead. The buffer address is saved as
 an internal property of the instance and all the methods of
-<code>%<var>TypedArray</var>%.prototype</code> , i.e. set value and get value
+<code>%<var>TypedArray</var>%.prototype</code>, i.e. set value and get value
 etc., operate on that array buffer address.
 
 ### TypedArray objects
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th class="header" scope="col">Type</th>
-      <th class="header" scope="col">Value Range</th>
-      <th class="header" scope="col">Size in bytes</th>
-      <th class="header" scope="col">Description</th>
-      <th class="header" scope="col">Web IDL type</th>
-      <th class="header" scope="col">Equivalent C type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{jsxref("Int8Array")}}</td>
-      <td><code>-128</code> to <code>127</code></td>
-      <td>1</td>
-      <td>8-bit two's complement signed integer</td>
-      <td><code>byte</code></td>
-      <td><code>int8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8Array")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8ClampedArray")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer (clamped)</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int16Array")}}</td>
-      <td><code>-32768</code> to <code>32767</code></td>
-      <td>2</td>
-      <td>16-bit two's complement signed integer</td>
-      <td><code>short</code></td>
-      <td><code>int16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint16Array")}}</td>
-      <td><code>0</code> to <code>65535</code></td>
-      <td>2</td>
-      <td>16-bit unsigned integer</td>
-      <td><code>unsigned short</code></td>
-      <td><code>uint16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int32Array")}}</td>
-      <td><code>-2147483648</code> to <code>2147483647</code></td>
-      <td>4</td>
-      <td>32-bit two's complement signed integer</td>
-      <td><code>long</code></td>
-      <td><code>int32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint32Array")}}</td>
-      <td><code>0</code> to <code>4294967295</code></td>
-      <td>4</td>
-      <td>32-bit unsigned integer</td>
-      <td><code>unsigned long</code></td>
-      <td><code>uint32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float32Array")}}</td>
-      <td><code>1.2E-38</code> to <code>3.4E38</code></td>
-      <td>4</td>
-      <td>
-        32-bit IEEE floating point number (7 significant digits e.g.,
-        <code>1.234567</code>)
-      </td>
-      <td><code>unrestricted float</code></td>
-      <td><code>float</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float64Array")}}</td>
-      <td><code>5E-324</code> to <code>1.8E308</code></td>
-      <td>8</td>
-      <td>
-        64-bit IEEE floating point number (16 significant digits e.g.,
-        <code>1.23456789012345</code>)
-      </td>
-      <td><code>unrestricted double</code></td>
-      <td><code>double</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigInt64Array")}}</td>
-      <td><code>-2^63</code> to <code>2^63 - 1</code></td>
-      <td>8</td>
-      <td>64-bit two's complement signed integer</td>
-      <td><code>bigint</code></td>
-      <td><code>int64_t (signed long long)</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigUint64Array")}}</td>
-      <td><code>0</code> to <code>2^64 - 1</code></td>
-      <td>8</td>
-      <td>64-bit unsigned integer</td>
-      <td><code>bigint</code></td>
-      <td><code>uint64_t (unsigned long long)</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th class="header" scope="col">Type</th><th class="header" scope="col">Value Range</th><th class="header" scope="col">Size in bytes</th><th class="header" scope="col">Description</th><th class="header" scope="col">Web IDL type</th><th class="header" scope="col">Equivalent C type</th></tr></thead><tbody><tr><td>{{jsxref("Int8Array")}}</td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr><td>{{jsxref("Uint8Array")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Uint8ClampedArray")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Int16Array")}}</td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr><td>{{jsxref("Uint16Array")}}</td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr><td>{{jsxref("Int32Array")}}</td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr><td>{{jsxref("Uint32Array")}}</td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr><td>{{jsxref("Float32Array")}}</td><td><code>1.2E-38</code> to
+<code>3.4E38</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g.,
+<code>1.234567</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr><td>{{jsxref("Float64Array")}}</td><td><code>5E-324</code> to
+<code>1.8E308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g.,
+<code>1.23456789012345</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr><td>{{jsxref("BigInt64Array")}}</td><td><code>-2^63</code> to <code>2^63 - 1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr><td>{{jsxref("BigUint64Array")}}</td><td><code>0</code> to <code>2^64 - 1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
 
 ## Constructor
 
@@ -179,49 +77,33 @@ Where <var>TypedArray</var> is a constructor for one of the concrete types.
 
 - `length`
   - : When called with a `length` argument, an internal array buffer is created
-    in memory, of size `length`
-    _multiplied by `BYTES_PER_ELEMENT`_ bytes, containing zeros.
+    in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes,
+    containing zeros.
 - `typedArray`
-
   - : When called with a `typedArray` argument, which can be an object of any of
-    the typed array types (such as `Int32Array` ), the
-
-    `typedArray` gets copied into a new typed array. Each value in
-
-    `typedArray` is converted to the corresponding type of the constructor
-    before being copied into the new array. The length of the new typed array
-    will be same as the length of the `typedArray` argument.
-
+    the typed array types (such as `Int32Array`), the `typedArray` gets copied
+    into a new typed array. Each value in `typedArray` is converted to the
+    corresponding type of the constructor before being copied into the new
+    array. The length of the new typed array will be same as the length of the
+    `typedArray` argument.
 - `object`
-
   - : When called with an `object` argument, a new typed array is created as if
-    by the <code><var>TypedArray</var>.from()</code>
-
-    method.
-
+    by the <code><var>TypedArray</var>.from()</code> method.
 - `buffer`, `byteOffset`, `length`
-
-  - : When called with a `buffer` , and optionally a
-
-    `byteOffset` and a `length` argument, a new typed array view is created that
-    views the specified {{jsxref("ArrayBuffer")}}. The `byteOffset` and
-    `length` parameters specify the memory range that will be exposed by the
-    typed array view. If both are omitted, all of `buffer` is viewed; if only
-
-    `length` is omitted, the remainder of
-
-    `buffer` is viewed.
+  - : When called with a `buffer`, and optionally a `byteOffset` and a `length`
+    argument, a new typed array view is created that views the specified
+    {{jsxref("ArrayBuffer")}}. The `byteOffset` and `length` parameters
+    specify the memory range that will be exposed by the typed array view. If
+    both are omitted, all of `buffer` is viewed; if only `length` is omitted,
+    the remainder of `buffer` is viewed.
 
 ## Static properties
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT")}}
-
-  - : Returns a number value of the element size for the different
-
-    `TypedArray` objects.
-
+  - : Returns a number value of the element size for the different `TypedArray`
+    objects.
 - {{jsxref("TypedArray.name")}}
-  - : Returns the string value of the constructor name (e.g, " `Int8Array` ").
+  - : Returns the string value of the constructor name (e.g, "`Int8Array`").
 - {{jsxref("TypedArray.@@species", "get TypedArray[@@species]")}}
   - : The constructor function used to create derived objects.
 - {{jsxref("TypedArray.prototype")}}
@@ -240,7 +122,7 @@ Where <var>TypedArray</var> is a constructor for one of the concrete types.
 
 - {{jsxref("TypedArray.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the typed
-    array. Fixed at construction time and thus **read only** .
+    array. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength")}}
   - : Returns the length (in bytes) of the typed array. Fixed at construction
     time and thus **read only.**
@@ -272,7 +154,7 @@ Where <var>TypedArray</var> is a constructor for one of the concrete types.
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -286,12 +168,9 @@ Where <var>TypedArray</var> is a constructor for one of the concrete types.
   - : Calls a function for each element in the array. See also
     {{jsxref("Array.prototype.forEach()")}}.
 - {{jsxref("TypedArray.prototype.includes()")}}
-
   - : Determines whether a typed array includes a certain element, returning
-
     `true` or `false` as appropriate. See also
     {{jsxref("Array.prototype.includes()")}}.
-
 - {{jsxref("TypedArray.prototype.indexOf()")}}
   - : Returns the first (least) index of an element within the array equal to
     the specified value, or `-1` if none is found. See also
@@ -411,6 +290,8 @@ Int8Array.prototype.foo = 'bar';
 
 ## See also
 
+- A polyfill of typed arrays is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

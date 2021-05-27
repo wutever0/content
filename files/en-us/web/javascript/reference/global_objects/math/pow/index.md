@@ -24,7 +24,7 @@ The **`Math.pow()`** function returns the `base` to the `exponent` power, as in
 - `base`
   - : The base number.
 - `exponent`
-  - : The exponent used to raise the `base` .
+  - : The exponent used to raise the `base`.
 
 ### Return value
 

@@ -224,8 +224,8 @@ With the global flag `g`, all 6 digits would be matched, not just 3.
 to `Z`, `0` to `9`, and `_`.
 
 To match characters from other languages such as Cyrillic or Hebrew, use
-<code>\u<var>hhhh</var></code> , where `hhhh` is the character's Unicode value
-in hexadecimal.
+<code>\u<var>hhhh</var></code>, where `hhhh` is the character's Unicode value in
+hexadecimal.
 
 This example demonstrates how one can separate out Unicode characters from a
 word.
@@ -295,6 +295,8 @@ return an empty string instead of `undefined`
 
 ## See also
 
+- A polyfill of many modern `RegExp` features is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
   chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
 - {{jsxref("String.prototype.match()")}}

@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - TypedArray
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.Uint8ClampedArray
 ---
 {{JSRef}}
@@ -26,10 +27,10 @@ or using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Uint8ClampedArray.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `1` in the case of an
-    `Uint8ClampedArray` .
+    `Uint8ClampedArray`.
 - {{jsxref("TypedArray.name", "Uint8ClampedArray.name")}}
   - : Returns the string value of the constructor name. In the case of the
-    `Uint8ClampedArray` type: " `Uint8ClampedArray` ".
+    `Uint8ClampedArray` type: "`Uint8ClampedArray`".
 
 ## Static methods
 
@@ -44,7 +45,7 @@ or using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Uint8ClampedArray.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Uint8ClampedArray` . Fixed at construction time and thus **read only** .
+    `Uint8ClampedArray`. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Uint8ClampedArray.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `Uint8ClampedArray` from the start of
     its {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus
@@ -54,7 +55,7 @@ or using standard array index syntax (that is, using bracket notation).
     its {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus
     **read only.**
 - {{jsxref("TypedArray.prototype.length", "Uint8ClampedArray.prototype.length")}}
-  - : Returns the number of elements held in the `UintClamped8Array` . Fixed at
+  - : Returns the number of elements held in the `UintClamped8Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -74,7 +75,7 @@ or using standard array index syntax (that is, using bracket notation).
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.filter", "Uint8ClampedArray.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.find", "Uint8ClampedArray.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -194,6 +195,8 @@ var uintc8 = new Uint8ClampedArray(iterable);
 
 ## See also
 
+- A polyfill of `Uint8ClampedArray` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

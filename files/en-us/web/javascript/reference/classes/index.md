@@ -508,14 +508,10 @@ A class can't be redefined. Attempting to do so produces a `SyntaxError`.
 If you're experimenting with code in a web browser, such as the Firefox Web
 Console (**Tools** > **Web Developer** > **Web Console**) and you 'Run' a
 definition of a class with the same name twice, you'll get a <code>SyntaxError:
-redeclaration of let <em>ClassName</em>;</code> . (See further discussion of
-this issue in {{Bug(1428672)}}.) Doing something similar in Chrome Developer
-Tools gives you a message like <code
-
-> Uncaught SyntaxError: Identifier '<em>ClassName</em>' has already been
-> declared at &#x3C;anonymous>:1:1</code
->
-> .
+redeclaration of let <em>ClassName</em>;</code>. (See further discussion of this
+issue in {{Bug(1428672)}}.) Doing something similar in Chrome Developer
+Tools gives you a message like <code>Uncaught SyntaxError: Identifier
+'<em>ClassName</em>' has already been declared at &#x3C;anonymous>:1:1</code>.
 
 ## Specifications
 

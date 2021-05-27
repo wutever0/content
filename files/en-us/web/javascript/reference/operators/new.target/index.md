@@ -89,13 +89,11 @@ let c = new C()  // logs class C{constructor(){console.log(new.target);}}
 let d = new D()  // logs class D extends C{constructor(){super();}}
 ```
 
-<p class="summary">
-  Thus from the above example of class <code>C</code> and <code>D</code>, it
-  seems that <code>new.target</code> points to the class definition of class
-  which is initialized. For example, when <code>d</code> was initialized using
-  <code>new D()</code>, the class definition of <code>D</code> was printed; and
-  similarly, in case of <code>c</code>, the class <code>C</code> was printed.
-</p>
+<p class="summary">Thus from the above example of class <code>C</code> and <code>D</code>,
+it seems that <code>new.target</code> points to the class definition of class which is
+initialized. For example, when <code>d</code> was initialized using
+<code>new D()</code>, the class definition of <code>D</code> was printed; and similarly,
+in case of <code>c</code>, the class <code>C</code> was printed.</p>
 
 ## Specifications
 

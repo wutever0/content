@@ -7,6 +7,7 @@ tags:
   - TypedArray
   - TypedArrays
   - Uint16Array
+  - Polyfill
 browser-compat: javascript.builtins.Uint16Array
 ---
 {{JSRef}}
@@ -26,10 +27,10 @@ or using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Uint16Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `2` in the case of an
-    `Uint16Array` .
+    `Uint16Array`.
 - {{jsxref("TypedArray.name", "Uint16Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
-    `Uint16Array` type: " `Uint16Array` ".
+    `Uint16Array` type: "`Uint16Array`".
 
 ## Static methods
 
@@ -44,7 +45,7 @@ or using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Uint16Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Uint16Array` . Fixed at construction time and thus **read only** .
+    `Uint16Array`. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Uint16Array.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `Uint16Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
@@ -54,7 +55,7 @@ or using standard array index syntax (that is, using bracket notation).
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Uint16Array.prototype.length")}}
-  - : Returns the number of elements held in the `Uint16Array` . Fixed at
+  - : Returns the number of elements held in the `Uint16Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -74,7 +75,7 @@ or using standard array index syntax (that is, using bracket notation).
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.filter", "Uint16Array.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.find", "Uint16Array.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -191,6 +192,8 @@ var uint16 = new Uint16Array(iterable);
 
 ## See also
 
+- A polyfill of `Uint16Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

@@ -26,7 +26,7 @@ remains for compatibility.
 - {{jsxref("Error.prototype.message", "EvalError.prototype.message")}}
   - : Error message. Although ECMA-262 specifies that
     {{jsxref("EvalError")}} should provide its own `message` property,
-    in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey) , it inherits
+    in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
     {{jsxref("Error.prototype.message")}}.
 - {{jsxref("Error.prototype.name", "EvalError.prototype.name")}}
   - : Error name. Inherited from {{jsxref("Error")}}.

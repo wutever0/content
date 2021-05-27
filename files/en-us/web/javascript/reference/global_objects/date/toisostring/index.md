@@ -14,17 +14,12 @@ browser-compat: javascript.builtins.Date.toISOString
 
 The **`toISOString()`** method returns a string in _simplified_ extended ISO
 format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)), which is always 24
-or 27 characters long (<code
-
-> <var>YYYY</var -<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code
-
-or <code
-
-> <var>±</var
-> <var>YYYYYY</var -<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code
->
-> , respectively). The timezone is always zero UTC offset, as denoted by the
-> suffix "`Z`".
+or 27 characters long
+(<code><var>YYYY</var>-<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code>
+or
+<code><var>±</var><var>YYYYYY</var>-<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code>,
+respectively). The timezone is always zero UTC offset, as denoted by the suffix
+"`Z`".
 
 {{EmbedInteractiveExample("pages/js/date-toisostring.html")}}
 

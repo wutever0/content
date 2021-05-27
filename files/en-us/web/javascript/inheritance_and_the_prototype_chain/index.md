@@ -524,38 +524,7 @@ console.log(inst.foo_prop);
 console.log(inst.bar_prop);
 ```
 
-<table class="standard-table">
-  <caption>
-    Pros and cons of extending Object.prototype
-  </caption>
-  <tbody>
-    <tr>
-      <th scope="row">Pro(s)</th>
-      <td>
-        Supported in all browsers — including older browsers (going all the way
-        back to IE 5.5). Also, it is very fast, very standard, and very
-        JIT-optimizable.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Con(s)</th>
-      <td>
-        <div>
-          1. In order to use this method, the function in question must be
-          initialized. During this initialization, the constructor may store
-          unique information that must be generated per-object. This unique
-          information would only be generated once, potentially leading to
-          problems.
-        </div>
-        <div>
-          2. The initialization of the constructor may put unwanted methods onto
-          the object.
-        </div>
-        <p>Both of those are generally not problems in practice.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Pros and cons of extending Object.prototype</caption><tbody><tr><th scope="row">Pro(s)</th><td>Supported in all browsers — including older browsers (going all the way back to IE 5.5). Also, it is very fast, very standard, and very JIT-optimizable.</td></tr><tr><th scope="row">Con(s)</th><td><div>1. In order to use this method, the function in question must be initialized. During this initialization, the constructor may store unique information that must be generated per-object. This unique information would only be generated once, potentially leading to problems.</div><div>2. The initialization of the constructor may put unwanted methods onto the object.</div><p>Both of those are generally not problems in practice.</p></td></tr></tbody></table>
 
 #### #2: {{jsxref("Object.create")}}
 
@@ -597,35 +566,7 @@ console.log(inst.foo_prop);
 console.log(inst.bar_prop)
 ```
 
-<table class="standard-table">
-  <caption>
-    Pros and cons of {{jsxref("Object.create")}}
-  </caption>
-  <tbody>
-    <tr>
-      <th scope="row">Pro(s)</th>
-      <td>
-        Supported in all modern browsers. Allows the direct setting of
-        <code>__proto__</code> in a way that is a single event, which permits
-        the browser to further optimize the object. Also allows the creation of
-        objects without a prototype, using <code>Object.create(null)</code>.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Con(s)</th>
-      <td>
-        Not supported in IE8 and below. However, as Microsoft has discontinued
-        extended support for systems running IE8 and below, that should not be a
-        concern for most applications. Additionally, the slow object
-        initialization can be a performance black hole if using the second
-        argument, because each object-descriptor property has its own separate
-        descriptor object. When dealing with hundreds of thousands of object
-        descriptors in the form of objects, that lag time might become a serious
-        issue.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Pros and cons of {{jsxref("Object.create")}}</caption><tbody><tr><th scope="row">Pro(s)</th><td>Supported in all modern browsers. Allows the direct setting of <code>__proto__</code> in a way that is a single event, which permits the browser to further optimize the object. Also allows the creation of objects without a prototype, using <code>Object.create(null)</code>.</td></tr><tr><th scope="row">Con(s)</th><td>Not supported in IE8 and below. However, as Microsoft has discontinued extended support for systems running IE8 and below, that should not be a concern for most applications. Additionally, the slow object initialization can be a performance black hole if using the second argument, because each object-descriptor property has its own separate descriptor object. When dealing with hundreds of thousands of object descriptors in the form of objects, that lag time might become a serious issue.</td></tr></tbody></table>
 
 #### #3: {{jsxref("Object.setPrototypeOf")}}
 
@@ -666,32 +607,7 @@ console.log(inst.foo_prop);
 console.log(inst.bar_prop)
 ```
 
-<table class="standard-table">
-  <caption>
-    Pros and cons of {{jsxref("Object.setPrototypeOf")}}
-  </caption>
-  <tbody>
-    <tr>
-      <th scope="row">Pro(s)</th>
-      <td>
-        Supported in all modern browsers. Allows the dynamic manipulation of an
-        object’s prototype and can even force a prototype on a prototype-less
-        object created with <code>Object.create(null)</code>.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Con(s)</th>
-      <td>
-        Ill-performing. Should be deprecated. Many browsers optimize the
-        prototype and try to guess the location of the method in memory when
-        calling an instance in advance; but setting the prototype dynamically
-        disrupts all those optimizations. It might cause some browsers to
-        recompile your code for de-optimization, to make it work according to
-        the specs. Not supported in IE8 and below.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Pros and cons of {{jsxref("Object.setPrototypeOf")}}</caption><tbody><tr><th scope="row">Pro(s)</th><td>Supported in all modern browsers. Allows the dynamic manipulation of an object’s prototype and can even force a prototype on a prototype-less object created with <code>Object.create(null)</code>.</td></tr><tr><th scope="row">Con(s)</th><td>Ill-performing. Should be deprecated. Many browsers optimize the prototype and try to guess the location of the method in memory when calling an instance in advance; but setting the prototype dynamically disrupts all those optimizations. It might cause some browsers to recompile your code for de-optimization, to make it work according to the specs. Not supported in IE8 and below.</td></tr></tbody></table>
 
 #### #4: Setting the {{jsxref("Object/proto","__proto__")}} property
 
@@ -727,33 +643,8 @@ console.log(inst.foo_prop);
 console.log(inst.bar_prop)
 ```
 
-<table class="standard-table">
-  <caption>
-    Pros and cons of setting the
-    {{jsxref("Object/proto","__proto__")}} property
-  </caption>
-  <tbody>
-    <tr>
-      <th scope="row">Pro(s)</th>
-      <td>
-        Supported in all modern browsers. Setting
-        {{jsxref("Object/proto","__proto__")}} to something that
-        is not an object only fails silently. It does not throw an exception.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Con(s)</th>
-      <td>
-        Non-performant and deprecated. Many browsers optimize the prototype and
-        try to guess the location of the method in the memory when calling an
-        instance in advance; but setting the prototype dynamically disrupts all
-        those optimizations and can even force some browsers to recompile for
-        de-optimization of your code, to make it work according to the specs.
-        Not supported in IE10 and below.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Pros and cons of setting the {{jsxref("Object/proto","__proto__")}} property</caption><tbody><tr><th scope="row">Pro(s)</th><td>Supported in all modern browsers. Setting {{jsxref("Object/proto","__proto__")}}
+to something that is not an object only fails silently. It does not throw an exception.</td></tr><tr><th scope="row">Con(s)</th><td>Non-performant and deprecated. Many browsers optimize the prototype and try to guess the location of the method in the memory when calling an instance in advance; but setting the prototype dynamically disrupts all those optimizations and can even force some browsers to recompile for de-optimization of your code, to make it work according to the specs. Not supported in IE10 and below.</td></tr></tbody></table>
 
 ## `prototype` and `Object.getPrototypeOf`
 

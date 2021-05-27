@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.sort
 ---
 {{JSRef}}
@@ -79,4 +80,6 @@ numbers.sort((a, b) => a - b); // compare numbers
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.sort` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("Array.prototype.sort()")}}

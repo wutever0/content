@@ -10,11 +10,8 @@ browser-compat: javascript.builtins.TypedArray.name
 ---
 {{JSRef}}
 
-The <code
-
-> <strong><em>TypedArray</em>.name</strong></code
->
-> property represents a string value of the typed array constructor name.
+The <code><strong><em>TypedArray</em>.name</strong></code> property represents a
+string value of the typed array constructor name.
 
 {{EmbedInteractiveExample("pages/js/typedarray-name.html","shorter")}}
 

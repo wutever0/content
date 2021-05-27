@@ -70,20 +70,26 @@ in JavaScript. For client-side exceptions, see
 - {{jsxref("Error.prototype.name")}}
   - : Error name.
 - {{jsxref("Error.prototype.description")}}
+  {{non-standard_inline}}
   - : A non-standard Microsoft property for the error description. Similar to
     {{jsxref("Error.prototype.message", "message")}}.
 - {{jsxref("Error.prototype.number")}}
+  {{non-standard_inline}}
   - : A non-standard Microsoft property for an error number.
 - {{jsxref("Error.prototype.fileName")}}
+  {{non-standard_inline}}
   - : A non-standard Mozilla property for the path to the file that raised this
     error.
 - {{jsxref("Error.prototype.lineNumber")}}
+  {{non-standard_inline}}
   - : A non-standard Mozilla property for the line number in the file that
     raised this error.
 - {{jsxref("Error.prototype.columnNumber")}}
+  {{non-standard_inline}}
   - : A non-standard Mozilla property for the column number in the line that
     raised this error.
 - {{jsxref("Error.prototype.stack")}}
+  {{non-standard_inline}}
   - : A non-standard Mozilla property for a stack trace.
 
 ## Instance methods

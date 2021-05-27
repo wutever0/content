@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - TypedArray
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.Int16Array
 ---
 {{JSRef}}
@@ -26,10 +27,10 @@ notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Int16Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `2` in the case of an
-    `Int16Array` .
+    `Int16Array`.
 - {{jsxref("TypedArray.name", "Int16Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
-    `Int16Array` type: " `Int16Array` ".
+    `Int16Array` type: "`Int16Array`".
 
 ## Static methods
 
@@ -44,7 +45,7 @@ notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Int16Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Int16Array` . Fixed at construction time and thus **read only** .
+    `Int16Array`. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Int16Array.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `Int16Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
@@ -54,7 +55,7 @@ notation).
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Int16Array.prototype.length")}}
-  - : Returns the number of elements held in the `Int16Array` . Fixed at
+  - : Returns the number of elements held in the `Int16Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -74,7 +75,7 @@ notation).
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.filter", "Int16Array.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.find", "Int16Array.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -190,6 +191,8 @@ var int16 = new Int16Array(iterable);
 
 ## See also
 
+- A polyfill of `Int16Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - **[JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)**
 - **{{jsxref("ArrayBuffer")}}**
 - **{{jsxref("DataView")}}**

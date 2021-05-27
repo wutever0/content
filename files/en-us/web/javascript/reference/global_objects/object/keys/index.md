@@ -7,15 +7,14 @@ tags:
 - JavaScript 1.8.5
 - Method
 - Object
+- Polyfill
 browser-compat: javascript.builtins.Object.keys
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>Object.keys()</strong></code> method returns an array of a
-> given object's own enumerable property <strong>names</strong>, iterated in the
-> same order that a normal loop would.</span
+The **`Object.keys()`** method returns an array of a given object's own
+enumerable property **names**, iterated in the same order that a normal loop
+would.
 
 {{EmbedInteractiveExample("pages/js/object-keys.html")}}
 
@@ -150,6 +149,8 @@ For a simple Browser Polyfill, see
 
 ## See also
 
+- A polyfill of `Object.keys` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 - {{jsxref("Object.prototype.propertyIsEnumerable()")}}
 - {{jsxref("Object.create()")}}

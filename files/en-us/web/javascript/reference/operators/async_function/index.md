@@ -19,39 +19,40 @@ an [async function statement](/en-US/docs/Web/JavaScript/Reference/Statements/a
 
 ## Syntax
 
-<pre class="brush: js">
-async function [<var>name</var>]([<var>param1</var>[, <var>param2</var>[, ..., <var>paramN</var>]]]) {
+<pre class="brush: js">async function [<var>name</var>]([<var>param1</var>[, <var>param2</var>[, ..., <var>paramN</var>]]]) {
    <var>statements</var>
-}</pre
->
+}</pre>
 
-
-As of ES2015, you can also use [arrow functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+As of ES2015, you can also
+use [arrow functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 
 ### Parameters
 
-*   `name`
-    *   : 
-        The function name. Can be omitted, in which case the function is 
-        *anonymous*
-        .
-        The name is only local to the function body.
-*   `paramN`
-    *   : 
-        The name of an argument to be passed to the function.
-*   `statements`
-    *   : 
-        The statements which comprise the body of the function.
+- `name`
+  - : The function name. Can be omitted, in which case the function is
+    _anonymous_. The name is only local to the function body.
+- `paramN`
+  - : The name of an argument to be passed to the function.
+- `statements`
+  - : The statements which comprise the body of the function.
 
 ## Description
 
-An `async function` expression is very similar to, and has almost the same syntax as, an {{jsxref('Statements/async_function', 'async function statement')}}. The main difference between an async `function` expression and an async `function` statement is the *function name*, which can be omitted in `async function` expressions to create *anonymous* functions. An `async function` expression can be used as an [IIFE](/en-US/docs/Glossary/IIFE) (Immediately Invoked Function Expression) which runs as soon as it is defined. See also the chapter about [functions](/en-US/docs/Web/JavaScript/Reference/Functions) for more information.
+An `async function` expression is very similar to, and has almost the same
+syntax as, an
+{{jsxref('Statements/async_function', 'async function statement')}}.
+The main difference between an async `function` expression and an async
+`function` statement is the _function name_, which can be omitted in
+`async function` expressions to create _anonymous_ functions. An
+`async function` expression can be used as an [IIFE](/en-US/docs/Glossary/IIFE)
+(Immediately Invoked Function Expression) which runs as soon as it is
+defined. See also the chapter about
+[functions](/en-US/docs/Web/JavaScript/Reference/Functions) for more
+information.
 
 ## Examples
 
 ### Simple example
-
-
 
 ```js
 function resolveAfter2Seconds(x) {
@@ -91,6 +92,6 @@ add(10).then(v => {
 
 ## See also
 
-*   {{jsxref("Statements/async_function", "async function")}}
-*   {{jsxref("AsyncFunction")}} object
-*   {{jsxref("Operators/await", "await")}}
+- {{jsxref("Statements/async_function", "async function")}}
+- {{jsxref("AsyncFunction")}} object
+- {{jsxref("Operators/await", "await")}}

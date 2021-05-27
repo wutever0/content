@@ -39,34 +39,17 @@ new Intl.DisplayNames(locales, options)
 			"#Locale_identification_and_negotiation", 1)}}
     page. The following Unicode extension key is allowed:
     - `nu`
-      - : The numbering system to be used. Possible values include: " `arab` ",
-        " `arabext` ", " `bali` ", " `beng` ", " `deva` ", " `fullwide` ", "
-        `gujr` ", " `guru` ", " `hanidec` ", " `khmr` ", " `knda` ", " `laoo` ",
-        " `latn` ", " `limb` ", " `mlym` ", " `mong` ", " `mymr` ", " `orya` ",
-        " `tamldec` ", " `telu` ", " `thai` ", " `tibt` ".
+      - : The numbering system to be used. Possible values include: "`arab`",
+        "`arabext`", "`bali`", "`beng`", "`deva`", "`fullwide`", "`gujr`",
+        "`guru`", "`hanidec`", "`khmr`", "`knda`", "`laoo`", "`latn`", "`limb`",
+        "`mlym`", "`mong`", "`mymr`", "`orya`", "`tamldec`", "`telu`", "`thai`",
+        "`tibt`".
 - `options` {{optional_inline}}
   - : An object with some or all of the following properties:
-    - `localeMatcher`
-      - : The locale matching algorithm to use. Possible values are " `lookup` "
-        and " `best fit` "; the default is " `best fit` ". For information about
-        this option, see the
-        {{jsxref("Global_Objects/Intl", "Intl", "#Locale_negotiation", 1)}}
-        page.
-    - `style`
-      - : The formatting style to use, the default is " `long` ".
-        - "`narrow`"
-        - "`short`"
-        - "`long`"
-    - `type`
-      - : The type to use.
-        - "`language`"
-        - "`region`"
-        - "`script`"
-        - "`currency`"
-    - `fallback`
-      - : The fallback to use, the default is " `code` ".
-        - "`code`"
-        - "`none`"
+    <dl><dt><code>localeMatcher</code></dt><dd>The locale matching algorithm to use. Possible values are
+    "<code>lookup</code>" and "<code>best fit</code>"; the default is
+    "<code>best fit</code>". For information about this option, see the
+    {{jsxref("Global_Objects/Intl", "Intl", "#Locale_negotiation", 1)}} page.</dd><dt><code>style</code></dt><dd>The formatting style to use, the default is "<code>long</code>".<ul><li>"<code>narrow</code>"</li><li>"<code>short</code>"</li><li>"<code>long</code>"</li></ul></dd><dt><code>type</code></dt><dd>The type to use.<ul><li>"<code>language</code>"</li><li>"<code>region</code>"</li><li>"<code>script</code>"</li><li>"<code>currency</code>"</li></ul></dd><dt><code>fallback</code></dt><dd>The fallback to use, the default is "<code>code</code>".<ul><li>"<code>code</code>"</li><li>"<code>none</code>"</li></ul></dd></dl>
 
 ## Examples
 

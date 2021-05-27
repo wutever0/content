@@ -95,13 +95,13 @@ For an alphabetical listing see the sidebar on the left.
   - : Iterates over iterable objects (including
     {{jsxref("Global_Objects/Array","arrays","","true")}},
     array-like objects,
-    [iterators and generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
-    ), invoking a custom iteration hook with statements to be executed for the
+    [iterators and generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)),
+    invoking a custom iteration hook with statements to be executed for the
     value of each distinct property.
 - {{jsxref("Statements/for-await...of", "for await...of")}}
   - : Iterates over async iterable objects, array-like objects,
-    [iterators and generators](/en-US/docs/JavaScript/Guide/Iterators_and_Generators)
-    , invoking a custom iteration hook with statements to be executed for the
+    [iterators and generators](/en-US/docs/JavaScript/Guide/Iterators_and_Generators),
+    invoking a custom iteration hook with statements to be executed for the
     value of each distinct property.
 - {{jsxref("Statements/while", "while")}}
   - : Creates a loop that executes a specified statement as long as the test

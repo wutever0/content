@@ -6,6 +6,7 @@ tags:
 - Method
 - Object
 - Prototype
+- Polyfill
 browser-compat: javascript.builtins.Object.toString
 ---
 {{JSRef}}
@@ -31,7 +32,7 @@ object is to be represented as a text value or when an object is referred to in
 a manner in which a string is expected. By default, the `toString()` method is
 inherited by every object descended from `Object`. If this method is not
 overridden in a custom object, `toString()` returns "<code>[object
-<var>type</var>]</code> ", where `type` is the object type. The following code
+<var>type</var>]</code>", where `type` is the object type. The following code
 illustrates this:
 
 ```js
@@ -40,9 +41,9 @@ o.toString(); // returns [object Object]
 ```
 
 > **Note:** Starting in JavaScript 1.8.5, `toString()` called on
-> {{jsxref("null")}} returns <code>[object <em>Null</em>]</code> , and
+> {{jsxref("null")}} returns <code>[object <em>Null</em>]</code>, and
 > {{jsxref("undefined")}} returns <code>[object
-> <em>Undefined</em>]</code> , as defined in the 5th Edition of ECMAScript and
+> <em>Undefined</em>]</code>, as defined in the 5th Edition of ECMAScript and
 > subsequent Errata.
 >
 > See
@@ -184,6 +185,9 @@ Object.prototype.toString.call(new Date()); // [object prototype polluted]
 
 ## See also
 
+- A polyfill of `Object.prototype.toString` with `Symbol.toStringTag` support is
+  available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.prototype.toSource()")}}
 - {{jsxref("Object.prototype.valueOf()")}}
 - {{jsxref("Number.prototype.toString()")}}

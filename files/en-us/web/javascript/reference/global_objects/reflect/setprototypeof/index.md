@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.setPrototypeOf
 ---
 {{JSRef}}
@@ -21,8 +22,7 @@ the operation was successful, or `false` otherwise.
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.setPrototypeOf(<var>target</var>, <var>prototype</var>)
+<pre class="brush: js">Reflect.setPrototypeOf(<var>target</var>, <var>prototype</var>)
 </pre>
 
 ### Parameters
@@ -77,5 +77,7 @@ Reflect.setPrototypeOf(target, proto)  // false
 
 ## See also
 
+- A polyfill of `Reflect.setPrototypeOf` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.setPrototypeOf()")}}

@@ -7,6 +7,7 @@ tags:
   - JavaScript
   - Reference
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.ArrayBuffer
 ---
 {{JSRef}}
@@ -48,14 +49,14 @@ also get an array buffer from existing data, for example, from a
 ## Instance properties
 
 - {{jsxref("ArrayBuffer.prototype.byteLength")}}
-  - : The read-only size, in bytes, of the `ArrayBuffer` . This is established
+  - : The read-only size, in bytes, of the `ArrayBuffer`. This is established
     when the array is constructed and cannot be changed.
 
 ## Instance methods
 
 - {{jsxref("ArrayBuffer.prototype.slice()")}}
   - : Returns a new `ArrayBuffer` whose contents are a copy of this
-    `ArrayBuffer` 's bytes from `begin` (inclusive) up to `end` (exclusive). If
+    `ArrayBuffer`'s bytes from `begin` (inclusive) up to `end` (exclusive). If
     either `begin` or `end` is negative, it refers to an index from the end of
     the array, as opposed to from the beginning.
 
@@ -81,6 +82,8 @@ const view = new Int32Array(buffer);
 
 ## See also
 
+- A polyfill of `ArrayBuffer` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("SharedArrayBuffer")}}
 - [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)

@@ -24,7 +24,7 @@ is referenced.
 - {{jsxref("Error.prototype.message", "ReferenceError.prototype.message")}}
   - : Error message. Although ECMA-262 specifies that
     {{jsxref("ReferenceError")}} should provide its own `message`
-    property, in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey) , it
+    property, in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it
     inherits {{jsxref("Error.prototype.message")}}.
 - {{jsxref("Error.prototype.name", "ReferenceError.prototype.name")}}
   - : Error name. Inherited from {{jsxref("Error")}}.

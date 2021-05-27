@@ -28,9 +28,7 @@ compile(pattern, flags)
 - `pattern`
   - : The text of the regular expression.
 - `flags`
-
   - : If specified, flags can have any combination of the following values:
-
     - `g`
       - : global match
     - `i`
@@ -41,9 +39,7 @@ compile(pattern, flags)
         (delimited by \n or \r), not only the very beginning or end of the whole
         input string)
     - `y`
-
       - : sticky; matches only from the index indicated by the `lastIndex`
-
         property of this regular expression in the target string (and does not
         attempt to match from any later indexes).
 

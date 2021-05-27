@@ -9,6 +9,7 @@ tags:
   - Reference
   - RegExp
   - Regular Expressions
+  - Polyfill
 browser-compat: javascript.builtins.RegExp.sticky
 ---
 {{JSRef}}
@@ -89,6 +90,8 @@ regex2.test('.\nfoo'); // true - index 2 is the beginning of a line
 
 ## See also
 
+- A polyfill of `sticky` `RegExp` flag is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("RegExp.lastIndex")}}
 - {{JSxRef("RegExp.prototype.dotAll")}}
 - {{JSxRef("RegExp.prototype.global")}}

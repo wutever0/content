@@ -73,7 +73,7 @@ var colors = ['#000', #333', '#666'];
 // SyntaxError: illegal character
 ```
 
-Add the missing quote for <code><strong>'</strong>#333'</code> .
+Add the missing quote for `'#333'`.
 
 ```js example-good
 var colors = ['#000', '#333', '#666'];

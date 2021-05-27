@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Number
   - Property
+  - Polyfill
 browser-compat: javascript.builtins.Number.MAX_SAFE_INTEGER
 ---
 {{JSRef}}
@@ -77,6 +78,8 @@ Number.MAX_SAFE_INTEGER * Number.EPSILON; // 2
 
 ## See also
 
+- A polyfill of `Number.MAX_SAFE_INTEGER` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - {{jsxref("Number.MIN_SAFE_INTEGER")}}
 - {{jsxref("Number.isSafeInteger()")}}
 - {{jsxref("BigInt")}}

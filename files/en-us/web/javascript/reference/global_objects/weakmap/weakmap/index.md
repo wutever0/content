@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - Reference
 - WeakMap
+- Polyfill
 browser-compat: javascript.builtins.WeakMap.WeakMap
 ---
 {{JSRef}}
@@ -76,6 +77,8 @@ wm1.has(o1); // false
 
 ## See also
 
+- A polyfill of `WeakMap` is available in
+  [`core-js`](https://github.com/zloirock/core-js#weakmap)
 - [`WeakMap` in the JavaScript guide](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
 - [Hiding Implementation Details with ECMAScript 6 WeakMaps](http://fitzgeraldnick.com/weblog/53/)
 - {{jsxref("Map")}}

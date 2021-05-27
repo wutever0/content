@@ -31,11 +31,10 @@ for complete information about expressions.
 
 ## Block statement
 
-The most basic statement is a <dfn>block statement</dfn> , which is used to
-group statements. The block is delimited by a pair of curly brackets:
+The most basic statement is a <dfn>block statement</dfn>, which is used to group
+statements. The block is delimited by a pair of curly brackets:
 
-<pre class="brush: js">
-{
+<pre class="brush: js">{
   <var>statement_1</var>;
   <var>statement_2</var>;
   ⋮
@@ -96,30 +95,25 @@ Use the optional `else` clause to execute a statement if the condition is
 
 An `if` statement looks like this:
 
-<pre class="brush: js">
-if (<var>condition</var>) {
+<pre class="brush: js">if (<var>condition</var>) {
   <var>statement_1</var>;
 } else {
   <var>statement_2</var>;
-}</pre
->
+}</pre>
 
-
-Here, the `condition` can be any expression that evaluates to
-`true` or `false`. (See [Boolean](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description)
+Here, the `condition` can be any expression that evaluates to `true` or `false`.
+(See
+[Boolean](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description)
 for an explanation of what evaluates to `true` and `false`.)
 
-If `condition` evaluates to `true`,
-`statement_1` is executed. Otherwise,
-`statement_2` is executed. `statement_1` and
-`statement_2` can be any statement, including further nested
-`if` statements.
+If `condition` evaluates to `true`, `statement_1` is executed. Otherwise,
+`statement_2` is executed. `statement_1` and `statement_2` can be any statement,
+including further nested `if` statements.
 
-You can also compound the statements using `else if` to have multiple
-conditions tested in sequence, as follows:
+You can also compound the statements using `else if` to have multiple conditions
+tested in sequence, as follows:
 
-<pre class="brush: js">
-if (<var>condition_1</var>) {
+<pre class="brush: js">if (<var>condition_1</var>) {
   <var>statement_1</var>;
 } else if (<var>condition_2</var>) {
   <var>statement_2</var>;
@@ -139,8 +133,7 @@ within a block statement (`{ … }`).
 In general, it's good practice to always use block statements—_especially_ when
 nesting `if` statements:
 
-<pre class="brush: js">
-if (<var>condition</var>) {
+<pre class="brush: js">if (<var>condition</var>) {
   <var>statement_1_runs_if_condition_is_true</var>;
   <var>statement_2_runs_if_condition_is_true</var>;
 } else {
@@ -223,8 +216,7 @@ executes the associated statement.
 
 A `switch` statement looks like this:
 
-<pre class="brush: js">
-switch (<var>expression</var>) {
+<pre class="brush: js">switch (<var>expression</var>) {
   case <var>label_1</var>:
     <var>statements_1</var>
     [break;]
@@ -269,8 +261,7 @@ When `break` is encountered, the program exits the `switch` and continues
 execution from the statement following `switch`. If `break` were omitted, the
 statement for `case 'Cherries'` would also be executed.
 
-<pre class="brush: js">
-switch (<var>fruittype</var>) {
+<pre class="brush: js">switch (<var>fruittype</var>) {
   case 'Oranges':
     console.log('Oranges are $0.59 a pound.');
     break;
@@ -292,37 +283,33 @@ switch (<var>fruittype</var>) {
   default:
    console.log(`Sorry, we are out of ${fruittype}.`);
 }
-console.log("Is there anything else you'd like?");</pre
->
-
+console.log("Is there anything else you'd like?");</pre>
 
 ## Exception handling statements
 
-You can throw exceptions using the `throw` statement and handle them using
-the `try...catch` statements.
+You can throw exceptions using the `throw` statement and handle them using the
+`try...catch` statements.
 
-*   [`throw` statement](#throw_statement)
-*   [`try...catch` statement](#try...catch_statement)
+- [`throw` statement](#throw_statement)
+- [`try...catch` statement](#try...catch_statement)
 
 ### Exception types
 
-Just about any object can be thrown in JavaScript. Nevertheless, not all thrown objects
-are created equal. While it is common to throw numbers or strings as errors, it is
-frequently more effective to use one of the exception types specifically created for
-this purpose:
+Just about any object can be thrown in JavaScript. Nevertheless, not all thrown
+objects are created equal. While it is common to throw numbers or strings as
+errors, it is frequently more effective to use one of the exception types
+specifically created for this purpose:
 
-*   [ECMAScript
-    exceptions](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types)
-*   [`DOMException`](/en-US/docs/Web/API/DOMException "The DOMException interface represents an abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API.")
-    and [`DOMError`](/en-US/docs/Web/API/DOMError "The DOMError interface describes an error object that contains an error name.")
+- [ECMAScript exceptions](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types)
+- [`DOMException`](/en-US/docs/Web/API/DOMException "The DOMException interface represents an abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API.")
+  and [`DOMError`](/en-US/docs/Web/API/DOMError "The DOMError interface describes an error object that contains an error name.")
 
 ### `throw` statement
 
-Use the `throw` statement to throw an exception. A `throw`
-statement specifies the value to be thrown:
+Use the `throw` statement to throw an exception. A `throw` statement
+specifies the value to be thrown:
 
-<pre class="brush: js">
-throw <var>expression</var>;
+<pre class="brush: js">throw <var>expression</var>;
 </pre>
 
 You may throw any expression, not just expressions of a specific type. The
@@ -405,8 +392,7 @@ catch (e) {
 You can use a `catch` block to handle all exceptions that may be generated in
 the `try` block.
 
-<pre class="brush: js">
-catch (<var>catchID</var>) {
+<pre class="brush: js">catch (<var>catchID</var>) {
   <var>statements</var>
 }
 </pre>

@@ -20,8 +20,7 @@ unevaluated operand.
 
 The `typeof` operator is followed by its operand:
 
-<pre class="brush: js">
-typeof <var>operand</var>
+<pre class="brush: js">typeof <var>operand</var>
 typeof(<var>operand</var>)
 </pre>
 
@@ -37,61 +36,8 @@ The following table summarizes the possible return values of `typeof`. For more
 information about types and primitives, see also the
 [JavaScript data structure](/en-US/docs/Web/JavaScript/Data_structures) page.
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Type</th>
-      <th scope="col">Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="/en-US/docs/Glossary/Undefined">Undefined</a></td>
-      <td><code>"undefined"</code></td>
-    </tr>
-    <tr>
-      <td><a href="/en-US/docs/Glossary/Null">Null</a></td>
-      <td><code>"object"</code> (see <a href="#typeof_null">below</a>)</td>
-    </tr>
-    <tr>
-      <td><a href="/en-US/docs/Glossary/Boolean">Boolean</a></td>
-      <td><code>"boolean"</code></td>
-    </tr>
-    <tr>
-      <td><a href="/en-US/docs/Glossary/Number">Number</a></td>
-      <td><code>"number"</code></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript
-        2020)
-      </td>
-      <td><code>"bigint"</code></td>
-    </tr>
-    <tr>
-      <td><a href="/en-US/docs/Glossary/String">String</a></td>
-      <td><code>"string"</code></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript
-        2015)
-      </td>
-      <td><code>"symbol"</code></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Glossary/Function">Function</a> object (implements
-        [[Call]] in ECMA-262 terms)
-      </td>
-      <td><code>"function"</code></td>
-    </tr>
-    <tr>
-      <td>Any other object</td>
-      <td><code>"object"</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Type</th><th scope="col">Result</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Glossary/Undefined">Undefined</a></td><td><code>"undefined"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Null">Null</a></td><td><code>"object"</code> (see <a href="#typeof_null">below</a>)</td></tr><tr><td><a href="/en-US/docs/Glossary/Boolean">Boolean</a></td><td><code>"boolean"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Number">Number</a></td><td><code>"number"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript 2020)</td><td><code>"bigint"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/String">String</a></td><td><code>"string"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript 2015)</td><td><code>"symbol"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Function">Function</a> object (implements [[Call]]
+in ECMA-262 terms)</td><td><code>"function"</code></td></tr><tr><td>Any other object</td><td><code>"object"</code></td></tr></tbody></table>
 
 > **Note:** ECMAScript 2019 and older permitted implementations to have `typeof`
 > return any implementation-defined string value for non-callable non-standard

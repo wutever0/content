@@ -27,10 +27,8 @@ WebAssembly.validate(bufferSource)
 ### Parameters
 
 - `bufferSource`
-
   - : A [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
     [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
-
     containing WebAssembly binary code to be validated.
 
 ### Return value

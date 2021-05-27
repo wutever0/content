@@ -15,11 +15,9 @@ browser-compat: javascript.operators.delete
 ---
 {{jsSidebar("Operators")}}
 
-<span class="seoSummary"
-
-> The JavaScript <strong><code>delete</code> operator</strong> removes a
-> property from an object; if no more references to the same property are held,
-> it is eventually released automatically.</span
+<span class="seoSummary">The JavaScript <strong><code>delete</code>
+operator</strong> removes a property from an object; if no more references to
+the same property are held, it is eventually released automatically.</span>
 
 {{EmbedInteractiveExample("pages/js/expressions-deleteoperator.html")}}
 
@@ -30,8 +28,7 @@ browser-compat: javascript.operators.delete
 Where `expression` should evaluate to a
 [property](/en-US/docs/Glossary/property/JavaScript) reference, e.g.:
 
-<pre class="brush: js">
-delete <var>object</var>.<var>property</var>
+<pre class="brush: js">delete <var>object</var>.<var>property</var>
 delete <var>object</var>['<var>property</var>']
 </pre>
 
@@ -194,8 +191,7 @@ build an array of single-property objects, etc.
 
 ## Examples
 
-<pre class="brush: js">
-// Creates the property adminName on the global scope.
+<pre class="brush: js">// Creates the property adminName on the global scope.
 adminName = 'xyz';
 
 // Creates the property empCount on the global scope.

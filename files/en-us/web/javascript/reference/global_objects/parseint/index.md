@@ -26,15 +26,11 @@ parseInt(string, radix)
 ### Parameters
 
 - `string`
-
   - : The value to parse. If this argument is not a string, then it is converted
     to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
-
     abstract operation. Leading {{glossary("whitespace")}} in this
     argument is ignored.
-
 - `radix`<var> {{optional_inline}}</var>
-
   - : An integer between `2` and `36` that represents the _radix_ (the base in
     mathematical numeral systems) of the `string`. Be careful—this does
     **_not_** default to `10`! If the radix value is not of the `Number` type it
@@ -104,7 +100,7 @@ call the {{jsxref("isNaN")}} function to determine if the result of
 operation result will also be `NaN`.
 
 To convert a number to its string literal in a particular radix, use
-<code><var>thatNumber</var>.toString(<var>radix</var>)</code> .
+<code><var>thatNumber</var>.toString(<var>radix</var>)</code>.
 
 > **Warning:** `parseInt` converts a {{jsxref("BigInt")}} to a
 > {{jsxref("Number")}} and loses precision in the process. This is

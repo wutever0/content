@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.big
 ---
 {{JSRef}} {{deprecated_header}}
@@ -67,5 +68,7 @@ document.getElementById('yourElemId').style.fontSize = '2em';
 
 ## See also
 
+- A polyfill of `String.prototype.big` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.fontsize()")}}
 - {{jsxref("String.prototype.small()")}}

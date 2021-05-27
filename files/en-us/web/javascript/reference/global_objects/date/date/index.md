@@ -56,22 +56,14 @@ There are four basic forms for the `Date()` constructor:
 
 3.  #### Timestamp string
 
-    - `dateString`
-      - : A string value representing a date, specified in a format recognized
-        by the {{jsxref("Date.parse()")}} method. (These formats are
-        [IETF-compliant RFC 2822 timestamps](https://datatracker.ietf.org/doc/html/rfc2822#page-14)
-        , and also strings in a
-        [version of ISO8601](https://www.ecma-international.org/ecma-262/11.0/#sec-date.parse)
-        .)
-        > **Note:** Parsing of date strings with the `Date` constructor (and
-        > `Date.parse()`, which works the same way) is _strongly discouraged_
-        > due to browser differences and inconsistencies.
-        >
-        > - Support for
-        >   [RFC 2822](https://datatracker.ietf.org/doc/html/rfc2822) format
-        >   strings is by convention only.
-        > - Support for ISO 8601 formats differs in that date-only strings (e.g.
-        >   `"1970-01-01"`) are treated as UTC, not local.
+    <dl><dt><code><var>dateString</var></code></dt><dd>A string value representing a date, specified in a format recognized by the
+    {{jsxref("Date.parse()")}} method. (These formats are <a href="https://datatracker.ietf.org/doc/html/rfc2822#page-14">IETF-compliant RFC 2822
+    timestamps</a>, and also strings in a <a href="https://www.ecma-international.org/ecma-262/11.0/#sec-date.parse">version
+    of ISO8601</a>.)<div class="note"><p><strong>Note:</strong> Parsing of date strings with the <code>Date</code>
+    constructor (and <code>Date.parse()</code>, which works the same way) is
+    <em>strongly discouraged</em> due to browser differences and inconsistencies.</p><ul><li>Support for <a href="https://datatracker.ietf.org/doc/html/rfc2822">RFC 2822</a>
+    format strings is by convention only.</li><li>Support for ISO 8601 formats differs in that date-only strings (e.g.
+    <code>"1970-01-01"</code>) are treated as UTC, not local.</li></ul></div></dd></dl>
 
 4.  #### Individual date and time component values
 
@@ -94,33 +86,19 @@ There are four basic forms for the `Date()` constructor:
       - : Integer value representing the month, beginning with `0` for January
         to `11` for December.
     - `day` {{optional_inline}}
-      - : Integer value representing the day of the month. The default is `1` .
+      - : Integer value representing the day of the month. The default is `1`.
     - `hours` {{optional_inline}}
-
       - : Integer value representing the hour of the day. The default is `0`
-
         (midnight).
-
     - `minutes` {{optional_inline}}
-
       - : Integer value representing the minute segment of a time. The default
-        is
-
-        `0` minutes past the hour.
-
+        is `0` minutes past the hour.
     - `seconds` {{optional_inline}}
-
       - : Integer value representing the second segment of a time. The default
-        is
-
-        `0` seconds past the minute.
-
+        is `0` seconds past the minute.
     - `milliseconds` {{optional_inline}}
-
       - : Integer value representing the millisecond segment of a time. The
-        default is
-
-        `0` milliseconds past the second.
+        default is `0` milliseconds past the second.
 
 ## Examples
 

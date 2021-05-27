@@ -23,8 +23,7 @@ in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide).
 
 Literal, constructor, and factory notations are possible:
 
-<pre class="brush: js">
-/<var>pattern</var>/<var>flags</var>
+<pre class="brush: js">/<var>pattern</var>/<var>flags</var>
 new RegExp(<var>pattern</var>[, <var>flags</var>])
 RegExp(<var>pattern</var>[, <var>flags</var>])
 </pre>
@@ -60,18 +59,15 @@ RegExp(<var>pattern</var>[, <var>flags</var>])
     - `i` (ignore case)
       - : If `u` flag is also enabled, use Unicode case folding.
     - `m` (multiline)
-
-      - : Treat beginning and end characters ( `^` and `$` ) as working over
-        multiple lines. In other words, match the beginning or end of
-
-        _each_ line (delimited by `\n` or `\r` ), not only the very beginning or
-        end of the whole input string.
-
+      - : Treat beginning and end characters (`^` and `$`) as working over
+        multiple lines. In other words, match the beginning or end of _each_
+        line (delimited by `\n` or `\r`), not only the very beginning or end of
+        the whole input string.
     - `s` ("dotAll")
       - : Allows `.` to match newlines.
     - `u` (unicode)
       - : Treat `pattern` as a sequence of Unicode code points. (See also
-        [Binary strings](/en-US/docs/Web/API/DOMString/Binary) ).
+        [Binary strings](/en-US/docs/Web/API/DOMString/Binary)).
     - `y` (sticky)
       - : Matches only from the index indicated by the `lastIndex` property of
         this regular expression in the target string. Does not attempt to match

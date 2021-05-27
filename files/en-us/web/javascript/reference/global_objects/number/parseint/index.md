@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - Method
 - Number
+- Polyfill
 browser-compat: javascript.builtins.Number.parseInt
 ---
 {{JSRef}}
@@ -24,22 +25,11 @@ Number.parseInt(string, radix)
 
 ### Parameters
 
-- `string`
-
-  - : The value to parse. If this argument is not a string, then it is converted
-    to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
-
-    abstract operation. Leading whitespace in this argument is ignored.
-
-- `radix`<var> {{optional_inline}}</var>
-
-  - : An integer between `2` and `36` that represents the
-
-    _radix_ (the base in mathematical numeral systems) of the
-
-    `string` . If `radix` is undefined or `0`, it is assumed to be `10` except
-    when the number begins with the code unit pairs `0x` or `0X`, in which case
-    a radix of `16` is assumed.
+<dl><dt><code><var>string</var></code></dt><dd>The value to parse. If this argument is not a string, then it is converted to one
+using the <code><a href="https://tc39.es/ecma262/#sec-tostring">ToString</a></code>
+abstract operation. Leading whitespace in this argument is ignored.</dd><dt><code><var>radix</var></code><var> {{optional_inline}}</var></dt><dd>An integer between <code>2</code> and <code>36</code> that represents the
+<em>radix</em> (the base in mathematical numeral systems) of the
+<code><var>string</var></code>.<p>If <code>radix</code> is undefined or <code>0</code>, it is assumed to be <code>10</code> except when the number begins with the code unit pairs <code>0x</code> or <code>0X</code>, in which case a radix of <code>16</code> is assumed.</p></dd></dl>
 
 ### Return value
 
@@ -83,5 +73,7 @@ examples.
 
 ## See also
 
+- A polyfill of `Number.parseInt` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - The {{jsxref("Number")}} object it belongs to.
 - The global {{jsxref("parseInt", "parseInt()")}} method.

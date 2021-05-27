@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Number
   - Property
+  - Polyfill
 browser-compat: javascript.builtins.Number.MIN_SAFE_INTEGER
 ---
 {{JSRef}}
@@ -53,6 +54,8 @@ Number.MIN_SAFE_INTEGER // -9007199254740991
 
 ## See also
 
+- A polyfill of `Number.MIN_SAFE_INTEGER` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - {{jsxref("Number.MAX_SAFE_INTEGER")}}
 - {{jsxref("Number.isSafeInteger()")}}
 - {{jsxref("BigInt")}}

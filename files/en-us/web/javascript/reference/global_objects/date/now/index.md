@@ -7,7 +7,7 @@ tags:
 - Method
 - Reference
 - Time
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Date.now
 ---
 {{JSRef}}
@@ -82,6 +82,8 @@ larger.
 
 ## See also
 
+- A polyfill of `Date.now` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-date)
 - {{domxref("Performance.now()")}} — provides timestamps with
   sub-millisecond resolution for use in measuring web page performance
 - {{domxref("console.time()")}} /

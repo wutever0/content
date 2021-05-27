@@ -8,7 +8,7 @@ tags:
 - Prototype
 - Reference
 - indexof
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.indexOf
 ---
 {{JSRef}}
@@ -215,6 +215,8 @@ if (!Array.prototype.indexOf) {
 
 ## See also
 
+- A polyfill of `Array.prototype.indexOf` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.lastIndexOf()")}}
 - {{jsxref("TypedArray.prototype.indexOf()")}}
 - {{jsxref("String.prototype.indexOf()")}}

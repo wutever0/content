@@ -25,18 +25,14 @@ has(key)
 ### Parameters
 
 - `key`
-
   - : Required. The key of the element to test for presence in the `WeakMap`
-
     object.
 
 ### Return value
 
 - Boolean
-
   - : Returns `true` if an element with the specified key exists in the
-
-    `WeakMap` object; otherwise `false` .
+    `WeakMap` object; otherwise `false`.
 
 ## Examples
 

@@ -153,11 +153,7 @@ For example:
   `"ﬀ"`. It is compatible with two consecutive U+0066 code points (`"ff"`).
 - the code point U+24B9 represents the symbol
 
-  <code
-
-  > <span class="message-body-wrapper" <span class="message-flex-body" <span
-  > class="devtools-monospace message-body"
-  > <span class="cm-string">"Ⓓ"</span></span </span </span </code
+  <code><span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="cm-string">"Ⓓ"</span></span></span></span></code>
 
   . It is compatible with the U+0044 code point (`"D"`).
 

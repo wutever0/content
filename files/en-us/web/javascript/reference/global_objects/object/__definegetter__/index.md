@@ -7,6 +7,7 @@ tags:
   - Method
   - Object
   - Prototype
+  - Polyfill
 browser-compat: javascript.builtins.Object.defineGetter
 ---
 {{JSRef}}
@@ -83,6 +84,8 @@ console.log(o.gimmeFive); // 5
 
 ## See also
 
+- A polyfill of `Object.prototype.__defineGetter__` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.prototype.__defineSetter__()")}}
 - {{jsxref("Functions/get", "get")}} operator
 - {{jsxref("Object.defineProperty()")}}

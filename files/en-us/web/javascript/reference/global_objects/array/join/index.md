@@ -11,16 +11,12 @@ browser-compat: javascript.builtins.Array.join
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>join()</strong></code> method creates and returns a new
-> string by concatenating all of the elements in an array (or an <a
-
-    href="/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects"
-    >array-like object</a
-
-> ), separated by commas or a specified separator string. If the array has only
-> one item, then that item will be returned without using the separator.</span
+<span class="seoSummary">The <code><strong>join()</strong></code> method creates
+and returns a new string by concatenating all of the elements in an array (or an
+<a href="/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects">array-like
+object</a>), separated by commas or a specified separator string. If the array
+has only one item, then that item will be returned without using the
+separator.</span>
 
 {{EmbedInteractiveExample("pages/js/array-join.html")}}
 

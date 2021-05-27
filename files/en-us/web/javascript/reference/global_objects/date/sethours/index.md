@@ -41,12 +41,12 @@ setHours(hoursValue, minutesValue, secondsValue, msValue)
   - : Optional. Ideally, an integer between 0 and 59, representing the seconds.
     If a value greater than 59 is provided, the datetime will be incremented by
     the extra seconds. If you specify the `secondsValue` parameter, you must
-    also specify the `minutesValue` .
+    also specify the `minutesValue`.
 - `msValue`
   - : Optional. Ideally, a number between 0 and 999, representing the
     milliseconds. If a value greater than 999 is provided, the datetime will be
     incremented by the extra milliseconds. If you specify the `msValue`
-    parameter, you must also specify the `minutesValue` and `secondsValue` .
+    parameter, you must also specify the `minutesValue` and `secondsValue`.
 
 ### Return value
 
@@ -66,8 +66,8 @@ methods are used.
 If a parameter you specify is outside of the expected range, `setHours()`
 attempts to update the date information in the {{jsxref("Date")}} object
 accordingly. For example, if you use 100 for `secondsValue`, the minutes will be
-incremented by 1 (<code><var>minutesValue</var> + 1</code> ), and 40 will be
-used for seconds.
+incremented by 1 (<code><var>minutesValue</var> + 1</code>), and 40 will be used
+for seconds.
 
 ## Examples
 

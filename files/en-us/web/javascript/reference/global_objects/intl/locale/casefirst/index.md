@@ -14,11 +14,8 @@ browser-compat: javascript.builtins.Intl.Locale.caseFirst
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.caseFirst</code></strong> property is
-> an accessor property that returns whether case is taken into account for the
-> locale's collation rules.</span
+The **`Intl.Locale.prototype.caseFirst`** property is an accessor property that
+returns whether case is taken into account for the locale's collation rules.
 
 ## Description
 
@@ -32,28 +29,7 @@ below.
 
 ### `caseFirst` values
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Value</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>upper</code></td>
-      <td>Upper case to be sorted before lower case.</td>
-    </tr>
-    <tr>
-      <td><code>lower</code></td>
-      <td>Lower case to be sorted before upper case.</td>
-    </tr>
-    <tr>
-      <td><code>false</code></td>
-      <td>No special case ordering.</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Value</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>upper</code></td><td>Upper case to be sorted before lower case.</td></tr><tr><td><code>lower</code></td><td>Lower case to be sorted before upper case.</td></tr><tr><td><code>false</code></td><td>No special case ordering.</td></tr></tbody></table>
 
 ## Examples
 

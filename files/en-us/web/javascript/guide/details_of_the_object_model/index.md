@@ -103,67 +103,7 @@ of this chapter describes the details of using JavaScript constructors and
 prototypes to create an object hierarchy and compares this to how you would do
 it in Java.
 
-<table class="standard-table">
-  <caption>
-    Comparison of class-based (Java) and prototype-based (JavaScript) object
-    systems
-  </caption>
-  <thead>
-    <tr>
-      <th scope="row">Category</th>
-      <th scope="col">Class-based (Java)</th>
-      <th scope="col">Prototype-based (JavaScript)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Class vs. Instance</th>
-      <td>Class and instance are distinct entities.</td>
-      <td>All objects can inherit from another object.</td>
-    </tr>
-    <tr>
-      <th scope="row">Definition</th>
-      <td>
-        Define a class with a class definition; instantiate a class with
-        constructor methods.
-      </td>
-      <td>Define and create a set of objects with constructor functions.</td>
-    </tr>
-    <tr>
-      <th scope="row">Creation of new object</th>
-      <td>Create a single object with the <code>new</code> operator.</td>
-      <td>Same.</td>
-    </tr>
-    <tr>
-      <th scope="row">Construction of object hierarchy</th>
-      <td>
-        Construct an object hierarchy by using class definitions to define
-        subclasses of existing classes.
-      </td>
-      <td>
-        Construct an object hierarchy by assigning an object as the prototype
-        associated with a constructor function.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Inheritance model</th>
-      <td>Inherit properties by following the class chain.</td>
-      <td>Inherit properties by following the prototype chain.</td>
-    </tr>
-    <tr>
-      <th scope="row">Extension of properties</th>
-      <td>
-        Class definition specifies <em>all</em> properties of all instances of a
-        class. Cannot add properties dynamically at run time.
-      </td>
-      <td>
-        Constructor function or prototype specifies an <em>initial set</em> of
-        properties. Can add or remove properties dynamically to individual
-        objects or to the entire set of objects.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Comparison of class-based (Java) and prototype-based (JavaScript) object systems</caption><thead><tr><th scope="row">Category</th><th scope="col">Class-based (Java)</th><th scope="col">Prototype-based (JavaScript)</th></tr></thead><tbody><tr><th scope="row">Class vs. Instance</th><td>Class and instance are distinct entities.</td><td>All objects can inherit from another object.</td></tr><tr><th scope="row">Definition</th><td>Define a class with a class definition; instantiate a class with constructor methods.</td><td>Define and create a set of objects with constructor functions.</td></tr><tr><th scope="row">Creation of new object</th><td>Create a single object with the <code>new</code> operator.</td><td>Same.</td></tr><tr><th scope="row">Construction of object hierarchy</th><td>Construct an object hierarchy by using class definitions to define subclasses of existing classes.</td><td>Construct an object hierarchy by assigning an object as the prototype associated with a constructor function.</td></tr><tr><th scope="row">Inheritance model</th><td>Inherit properties by following the class chain.</td><td>Inherit properties by following the prototype chain.</td></tr><tr><th scope="row">Extension of properties</th><td>Class definition specifies <em>all</em> properties of all instances of a class. Cannot add properties dynamically at run time.</td><td>Constructor function or prototype specifies an <em>initial set</em> of properties. Can add or remove properties dynamically to individual objects or to the entire set of objects.</td></tr></tbody></table>
 
 ## The employee example
 
@@ -339,18 +279,7 @@ the new objects.
 
 ### Creating objects with simple definitions
 
-<div class="twocolumns">
-  <h4 id="Object_hierarchy">Object hierarchy</h4>
-  <p>The following hierarchy is created using the code on the right side.</p>
-  <p><img src="figure8.3.png" /></p>
-  <h4
-    id="Individual_objects_Jim_Sally_Mark_Fred_Jane_etc._Instances_created_from_constructor"
-  >
-    Individual objects = Jim, Sally, Mark, Fred, Jane, etc.<br />"Instances"
-    created from constructor
-  </h4>
-  <pre class="brush: js">
-var jim = new Employee;
+<div class="twocolumns"><h4 id="Object_hierarchy">Object hierarchy</h4><p>The following hierarchy is created using the code on the right side.</p><p><img src="figure8.3.png"></p><h4 id="Individual_objects_Jim_Sally_Mark_Fred_Jane_etc._Instances_created_from_constructor">Individual objects = Jim, Sally, Mark, Fred, Jane, etc.<br>"Instances" created from constructor</h4><pre class="brush: js">var jim = new Employee;
 // Parentheses can be omitted if the
 // constructor takes no arguments.
 // jim.name is ''
@@ -368,9 +297,7 @@ fred.projects is [] // fred.quota is 100
 var jane = new Engineer; // jane.name is '' // jane.dept is 'engineering' //
 jane.projects is [] // jane.machine is ''
 
-</pre
-  >
-</div>
+</pre></div>
 
 ## Object properties
 
@@ -456,10 +383,7 @@ As soon as JavaScript executes this statement, the `mark` object also has the
 effect of adding this property to the `Employee` prototype and then overriding
 it for the `Engineer` prototype.
 
-<figure>
-  <img alt="" class="internal" src="figure8.4.png" />
-  <figcaption>Adding properties</figcaption>
-</figure>
+<figure><img alt="" class="internal" src="figure8.4.png"><figcaption>Adding properties</figcaption></figure>
 
 ## More flexible constructors
 
@@ -468,10 +392,7 @@ when you create an instance. As with Java, you can provide arguments to
 constructors to initialize property values for instances. The following figure
 shows one way to do this.
 
-<figure>
-  <img alt="" class="internal" src="figure8.5.png" />
-  <figcaption>Specifying properties in a constructor, take 1</figcaption>
-</figure>
+<figure><img alt="" class="internal" src="figure8.5.png"><figcaption>Specifying properties in a constructor, take 1</figcaption></figure>
 
 The following pairs of examples show the Java and JavaScript definitions for
 these objects.
@@ -586,10 +507,7 @@ local properties and values for the new object. You can have the constructor add
 more properties by directly calling the constructor function for an object
 higher in the prototype chain. The following figure shows these new definitions.
 
-<figure>
-  <img alt="" class="internal" src="figure8.6.png" />
-  <figcaption>Specifying properties in a constructor, take 2</figcaption>
-</figure>
+<figure><img alt="" class="internal" src="figure8.6.png"><figcaption>Specifying properties in a constructor, take 2</figcaption></figure>
 
 Let's look at one of these definitions in detail. Here's the new definition for
 the `Engineer` constructor:

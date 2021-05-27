@@ -14,12 +14,11 @@ browser-compat: javascript.builtins.Intl.Locale.numberingSystem
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.numberingSystem</code></strong>
-> property is an accessor property that returns the
-> <a href="https://en.wikipedia.org/wiki/Numeral_system">numeral system</a> used
-> by the locale.</span
+<span class="seoSummary">The
+<strong><code>Intl.Locale.prototype.numberingSystem</code></strong> property is
+an accessor property that returns the
+<a href="https://en.wikipedia.org/wiki/Numeral_system">numeral system</a> used
+by the locale.</span>
 
 ## Description
 

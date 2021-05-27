@@ -20,8 +20,7 @@ the method's name.
 
 ## Syntax
 
-<pre class="brush: js">
-const obj = {
+<pre class="brush: js">const obj = {
   get <var>property</var>() {},
   set <var>property</var>(<var>value</var>) {},
   <var>property</var>( <var>parameters…</var> ) {},

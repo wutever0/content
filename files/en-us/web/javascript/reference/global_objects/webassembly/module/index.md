@@ -11,12 +11,11 @@ browser-compat: javascript.builtins.WebAssembly.Module
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> A <strong><code>WebAssembly.Module</code></strong> object contains stateless
-> WebAssembly code that has already been compiled by the browser — this can be
-> efficiently <a href="/en-US/docs/Web/API/Worker/postMessage">shared with
-> Workers</a>, and instantiated multiple times.</span
+<span class="seoSummary">A <strong><code>WebAssembly.Module</code></strong>
+object contains stateless WebAssembly code that has already been compiled by the
+browser — this can be efficiently
+<a href="/en-US/docs/Web/API/Worker/postMessage">shared with Workers</a>, and
+instantiated multiple times.</span>
 
 ## Constructor
 
@@ -29,10 +28,10 @@ browser-compat: javascript.builtins.WebAssembly.Module
   - : Given a `Module` and string, returns a copy of the contents of all custom
     sections in the module with the given string name.
 - {{jsxref("Global_Objects/WebAssembly/Module/exports", "WebAssembly.Module.exports()")}}
-  - : Given a `Module` , returns an array containing descriptions of all the
+  - : Given a `Module`, returns an array containing descriptions of all the
     declared exports.
 - {{jsxref("Global_Objects/WebAssembly/Module/imports", "WebAssembly.Module.imports()")}}
-  - : Given a `Module` , returns an array containing descriptions of all the
+  - : Given a `Module`, returns an array containing descriptions of all the
     declared imports.
 
 ## Examples

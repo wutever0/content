@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.set
 ---
 {{JSRef}}
@@ -32,10 +33,8 @@ Reflect.set(target, propertyKey, value, receiver)
 - `value`
   - : The value to set.
 - `receiver` {{optional_inline}}
-
-  - : The value of `this` provided for the call to
-
-    `target` if a setter is encountered.
+  - : The value of `this` provided for the call to `target` if a setter is
+    encountered.
 
 ### Return value
 
@@ -90,5 +89,7 @@ Reflect.getOwnPropertyDescriptor(obj, 'undefined')
 
 ## See also
 
+- A polyfill of `Reflect.set` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)

@@ -6,6 +6,7 @@ tags:
 - Method
 - Number
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Number.isInteger
 ---
 {{JSRef}}
@@ -82,4 +83,6 @@ Number.isInteger = Number.isInteger || function(value) {
 
 ## See also
 
+- A polyfill of `Number.isInteger` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - The {{jsxref("Number")}} object it belongs to.

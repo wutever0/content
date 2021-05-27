@@ -6,18 +6,12 @@ tags:
   - JavaScript
   - Number
   - Reference
+  - Polyfill
 browser-compat: javascript.builtins.Number
 ---
 {{JSRef}}
 
-<div>
-  <strong><code>Number</code></strong
-  > is a <a
-    href="/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript"
-    >primitive wrapper object</a
-  > used to represent and manipulate numbers like <code>37</code> or
-  <code>-9.25</code>.
-</div>
+<div><strong><code>Number</code></strong> is a <a href="/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript">primitive wrapper object</a> used to represent and manipulate numbers like <code>37</code> or <code>-9.25</code>.</div>
 
 The **`Number`** constructor contains constants and methods for working with
 numbers. Values of other types can be converted to numbers using the
@@ -75,35 +69,34 @@ Number(undefined)  // NaN
 - {{jsxref("Number.EPSILON")}}
   - : The smallest interval between two representable numbers.
 - {{jsxref("Number.MAX_SAFE_INTEGER")}}
-  - : The maximum safe integer in JavaScript ( `2^53 - 1` ).
+  - : The maximum safe integer in JavaScript (`2^53 - 1`).
 - {{jsxref("Number.MAX_VALUE")}}
   - : The largest positive representable number.
 - {{jsxref("Number.MIN_SAFE_INTEGER")}}
-  - : The minimum safe integer in JavaScript ( `-(2^53 - 1)` ).
+  - : The minimum safe integer in JavaScript (`-(2^53 - 1)`).
 - {{jsxref("Number.MIN_VALUE")}}
   - : The smallest positive representable number—that is, the positive number
     closest to zero (without actually being zero).
 - {{jsxref("Number.NaN")}}
-  - : Special " **N** ot **a**
-    **N** umber" value.
+  - : Special "**N**ot **a** **N**umber" value.
 - {{jsxref("Number.NEGATIVE_INFINITY")}}
   - : Special value representing negative infinity. Returned on overflow.
 - {{jsxref("Number.POSITIVE_INFINITY")}}
   - : Special value representing infinity. Returned on overflow.
 - {{jsxref("Number", "Number.prototype")}}
-  - : Allows the addition of properties to the  `Number` object.
+  - : Allows the addition of properties to the `Number` object.
 
 ## Static methods
 
 - {{jsxref("Number.isNaN()")}}
-  - : Determine whether the passed value is `NaN` .
+  - : Determine whether the passed value is `NaN`.
 - {{jsxref("Number.isFinite()")}}
   - : Determine whether the passed value is a finite number.
 - {{jsxref("Number.isInteger()")}}
   - : Determine whether the passed value is an integer.
 - {{jsxref("Number.isSafeInteger()")}}
   - : Determine whether the passed value is a safe integer (number between
-    `-(2^53 - 1)` and `2^53 - 1` ).
+    `-(2^53 - 1)` and `2^53 - 1`).
 - {{jsxref("Number.parseFloat()", "Number.parseFloat(<var>string</var>)")}}
   - : This is the same as the global
     {{jsxref("parseFloat", "parseFloat()")}} function.
@@ -125,13 +118,9 @@ Number(undefined)  // NaN
   - : Returns a string representing the number to a specified precision in
     fixed-point or exponential notation.
 - {{jsxref("Number.prototype.toString()", "Number.prototype.toString([<var>radix</var>])")}}
-
   - : Returns a string representing the specified object in the specified
-    <var>radix</var>
-
-    ("base"). Overrides the
+    <var>radix</var> ("base"). Overrides the
     {{jsxref("Object.prototype.toString()")}} method.
-
 - {{jsxref("Number.prototype.valueOf()")}}
   - : Returns the primitive value of the specified object. Overrides the
     {{jsxref("Object.prototype.valueOf()")}} method.
@@ -211,6 +200,9 @@ Number('-Infinity') //-Infinity
 
 ## See also
 
+- A polyfill of modern `Number` behavior (with support binary and octal
+  literals) is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - {{jsxref("NaN")}}
 - {{jsxref("Arithmetic operators")}}
 - The {{jsxref("Math")}} global object

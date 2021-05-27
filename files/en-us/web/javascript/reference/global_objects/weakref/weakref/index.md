@@ -22,8 +22,8 @@ new WeakRef(targetObject);
 ### Parameters
 
 - targetObject
-  - : The target object the WeakRef should refer to (also called the _referent_
-    ).
+  - : The target object the WeakRef should refer to (also called the
+    _referent_).
 
 ## Examples
 

@@ -13,15 +13,12 @@ tags:
 {{jsSidebar("JavaScript Guide")}}
 {{PreviousNext("Web/JavaScript/Guide/Keyed_collections", "Web/JavaScript/Guide/Details_of_the_Object_Model")}}
 
-<p class="summary">
-  JavaScript is designed on a simple object-based paradigm. An object is a
-  collection of properties, and a property is an association between a name (or
-  <em>key</em>) and a value. A property's value can be a function, in which case
-  the property is known as a method. In addition to objects that are predefined
-  in the browser, you can define your own objects. This chapter describes how to
-  use objects, properties, functions, and methods, and how to create your own
-  objects.
-</p>
+JavaScript is designed on a simple object-based paradigm. An object is a
+collection of properties, and a property is an association between a name (or
+_key_) and a value. A property's value can be a function, in which case the
+property is known as a method. In addition to objects that are predefined in the
+browser, you can define your own objects. This chapter describes how to use
+objects, properties, functions, and methods, and how to create your own objects.
 
 ## Objects overview
 
@@ -233,7 +230,7 @@ var obj = { property_1:   value_1,   // property_# may be an identifier...
 where `obj` is the name of the new object, each
 <code>property*<var>i</var></code> is an identifier (either a name, a number, or
 a string literal), and each <code>value*<var>i</var></code> is an expression
-whose value is assigned to the <code>property\_<var>i</var></code> . The `obj`
+whose value is assigned to the <code>property\_<var>i</var></code>. The `obj`
 and assignment is optional; if you do not need to refer to this object
 elsewhere, you do not need to assign it to a variable. (Note that you may need
 to wrap the object literal in parentheses if the object appears where a

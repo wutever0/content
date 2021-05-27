@@ -23,23 +23,17 @@ When called in a non-constructor context, `Object` behaves identically to
 
 ## Syntax
 
-<pre class="brush: js">
-new Object()
-new Object(<var>value</var>)</pre
->
-
+<pre class="brush: js">new Object()
+new Object(<var>value</var>)</pre>
 
 ### Parameters
 
-*   `value`
-    *   : 
-        Any value.
+- `value`
+  - : Any value.
 
 ## Examples
 
 ### Creating a new Object
-
-
 
 ```js
 let o = new Object()
@@ -53,19 +47,13 @@ console.log(o)
 
 The following examples store an empty `Object` object in `o`:
 
-
-
 ```js
 let o = new Object()
 ```
 
-
-
 ```js
 let o = new Object(undefined)
 ```
-
-
 
 ```js
 let o = new Object(null)
@@ -81,5 +69,4 @@ let o = new Object(null)
 
 ## See also
 
-*   [Object
-    initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+- [Object initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)

@@ -9,7 +9,7 @@ tags:
 - Reference
 - inArray
 - in_array
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.includes
 ---
 {{JSRef}}
@@ -87,7 +87,7 @@ arr.includes('c', 100)  // false
 
 If `fromIndex` is negative, the computed index is calculated to be used as a
 position in the array at which to begin searching for `searchElement`. If the
-computed index is less or equal than <code>-1 \* <var>arr</var>.length</code> ,
+computed index is less or equal than <code>-1 \* <var>arr</var>.length</code>,
 the entire array will be searched.
 
 ```js
@@ -129,6 +129,8 @@ The example below illustrates `includes()` method called on the function's
 
 ## See also
 
+- A polyfill of `Array.prototype.includes` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("TypedArray.prototype.includes()")}}
 - {{jsxref("String.prototype.includes()")}}
 - {{jsxref("Array.prototype.indexOf()")}}

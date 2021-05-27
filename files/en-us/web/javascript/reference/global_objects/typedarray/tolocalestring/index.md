@@ -32,20 +32,12 @@ toLocaleString(locales, options)
 
 ### Parameters
 
-<div>
-  <p>
-    The <code>locales</code> and <code>options</code> arguments customize the
-    behavior of the function and let applications specify the language whose
-    formatting conventions should be used. In implementations, which ignore the
-    <code>locales</code> and <code>options</code> arguments, the locale used and
-    the form of the string returned are entirely implementation dependent.
-  </p>
-  <div>
-    See the
-    {{jsxref("Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
-    constructor for details on these parameters and how to use them.
-  </div>
-</div>
+<div><p>The <code>locales</code> and <code>options</code> arguments customize the behavior of
+the function and let applications specify the language whose formatting conventions
+should be used. In implementations, which ignore the <code>locales</code> and
+<code>options</code> arguments, the locale used and the form of the string returned
+are entirely implementation dependent.</p><div>See the {{jsxref("Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
+constructor for details on these parameters and how to use them.</div></div>
 
 ### Return value
 

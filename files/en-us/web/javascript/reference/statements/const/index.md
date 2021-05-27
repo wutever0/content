@@ -20,27 +20,21 @@ of a constant can't be changed through reassignment, and it can't be redeclared.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>name1</var> = <var>value1</var> [, <var>name2</var> = <var>value2</var> [, ... [, <var>nameN</var> = <var>valueN</var>]]];</pre
->
+<pre class="brush: js">const <var>name1</var> = <var>value1</var> [, <var>name2</var> = <var>value2</var> [, ... [, <var>nameN</var> = <var>valueN</var>]]];</pre>
 
+- `nameN`
+  - : The constant's name, which can be any legal
+    {{Glossary("identifier")}}.
+- `valueN`
+  - : The constant's value. This can be any legal
+    [expression](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions),
+    including a function expression.
 
-*   `nameN`
-    *   : 
-        The constant's name, which can be any legal {{Glossary("identifier")}}.
-*   `valueN`
-    *   : 
-        The constant's value. This can be any legal 
-        [expression](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)
-        ,
-        including a function expression.
+The
+[Destructuring Assignment ](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)syntax
+can also be used to declare variables.
 
- The [Destructuring
-Assignment ](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)syntax can also be used to declare variables.
-
-<pre
-  class="brush: js"
->const <var>{ bar }</var> = <em>foo</em>; // where foo = { bar:10, baz:12 };
+<pre class="brush: js">const <var>{ bar }</var> = <em>foo</em>; // where foo = { bar:10, baz:12 };
 /* This creates a constant with the name 'bar', which has a value of 10 */</pre>
 
 ## Description

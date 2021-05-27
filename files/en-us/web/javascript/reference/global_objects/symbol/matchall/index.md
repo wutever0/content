@@ -6,6 +6,7 @@ tags:
   - Property
   - Reference
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol.matchAll
 ---
 {{JSRef}}
@@ -67,5 +68,7 @@ for more examples.
 
 ## See also
 
+- A polyfill of `Symbol.matchAll` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - {{jsxref("String.prototype.matchAll()")}}
 - {{jsxref("RegExp.@@matchAll", "RegExp.prototype[@@matchAll]()")}}

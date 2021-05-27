@@ -17,8 +17,7 @@ The **`handler.deleteProperty()`** method is a trap for the
 
 ## Syntax
 
-<pre class="brush: js">
-const p = new Proxy(<var>target</var>, {
+<pre class="brush: js">const p = new Proxy(<var>target</var>, {
   deleteProperty: function(<var>target</var>, <var>property</var>) {
   }
 });

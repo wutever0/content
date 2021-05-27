@@ -9,11 +9,8 @@ browser-compat: javascript.builtins.parseFloat
 ---
 {{jsSidebar("Objects")}}
 
-<span class="seoSummary"
-
-> The <code><strong>parseFloat()</strong></code> function parses an argument
-> (converting it to a string first if needed) and returns a floating point
-> number.</span
+The **`parseFloat()`** function parses an argument (converting it to a string
+first if needed) and returns a floating point number.
 
 {{EmbedInteractiveExample("pages/js/globalprops-parsefloat.html")}}
 
@@ -24,12 +21,10 @@ browser-compat: javascript.builtins.parseFloat
 ### Parameters
 
 - `string`
-
   - : The value to parse. If this argument is not a string, then it is converted
-    to one using the
-
-    [`ToString`](https://tc39.es/ecma262/#sec-tostring) abstract operation.
-    Leading {{glossary("whitespace")}} in this argument is ignored.
+    to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
+    abstract operation. Leading {{glossary("whitespace")}} in this
+    argument is ignored.
 
 ### Return value
 

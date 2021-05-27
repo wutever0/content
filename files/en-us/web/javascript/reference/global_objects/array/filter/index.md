@@ -8,7 +8,7 @@ tags:
   - Method
   - Prototype
   - Reference
-  - polyfill
+  - Polyfill
 browser-compat: javascript.builtins.Array.filter
 ---
 {{JSRef}}
@@ -54,7 +54,7 @@ filter(function callbackFn(element, index, array) { ... }, thisArg)
       - : The array `filter` was called upon.
 
 - `thisArg`{{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn` .
+  - : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -305,6 +305,8 @@ console.log(deleteWords)
 
 ## See also
 
+- A polyfill of `Array.prototype.filter` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.forEach()")}}
 - {{jsxref("Array.prototype.every()")}}
 - {{jsxref("Array.prototype.some()")}}

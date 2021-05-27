@@ -14,11 +14,8 @@ browser-compat: javascript.builtins.Intl.Locale.language
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.language</code></strong> property is
-> an accessor property that returns the language associated with the
-> locale.</span
+The **`Intl.Locale.prototype.language`** property is an accessor property that
+returns the language associated with the locale.
 
 ## Description
 

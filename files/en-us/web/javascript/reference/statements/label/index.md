@@ -24,11 +24,8 @@ prefixing a statement with an identifier which you can refer to.
 </pre>
 
 - <code><em>label</em></code>
-
   - : Any JavaScript identifier that is not a reserved word.
-
 - <code><em>statement</em></code>
-
   - : A JavaScript statement. `break` can be used with any labeled statement,
     and `continue` can be used with looping labeled statements.
 

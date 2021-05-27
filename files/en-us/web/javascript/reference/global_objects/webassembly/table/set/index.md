@@ -28,8 +28,8 @@ set(index, value)
   - : The index of the function reference you want to mutate.
 - _value_
   - : The value you want to mutate the reference to. This must be an
-    [exported WebAssembly function](/en-US/docs/WebAssembly/Exported_functions)
-    , a JavaScript wrapper for an underlying wasm function.
+    [exported WebAssembly function](/en-US/docs/WebAssembly/Exported_functions),
+    a JavaScript wrapper for an underlying wasm function.
 
 ### Return value
 

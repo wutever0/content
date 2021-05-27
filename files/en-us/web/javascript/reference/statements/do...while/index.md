@@ -18,27 +18,21 @@ executing at least once.
 
 ## Syntax
 
-<pre class="brush: js">
-do
+<pre class="brush: js">do
    <em>statement</em>
 while (<em>condition</em>);
 </pre>
 
 - <code><em>statement</em></code>
-
   - : A statement that is executed at least once and is re-executed each time
     the condition evaluates to true. To execute multiple statements within the
     loop, use a {{jsxref("Statements/block", "block", "", 1)}}
-    statement ( `{ ... }` ) to group those statements.
-
+    statement (`{ ... }`) to group those statements.
 - <code><em>condition</em></code>
-
   - : An expression evaluated after each pass through the loop. If `condition`
-
-    evaluates to true, the `statement` is re-executed. When
-
-    `condition` evaluates to false, control passes to the statement following
-    the `do...while` .
+    evaluates to true, the `statement` is re-executed. When `condition`
+    evaluates to false, control passes to the statement following the
+    `do...while`.
 
 ## Examples
 

@@ -8,6 +8,7 @@ tags:
 - Method
 - Prototype
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Array.forEach
 ---
 {{JSRef}}
@@ -48,7 +49,7 @@ forEach(function callbackFn(element, index, array) { ... }, thisArg)
     - `array` {{optional_inline}}
       - : The array `forEach()` was called upon.
 - `thisArg` {{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn` .
+  - : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -147,7 +148,7 @@ of `forEach()` in implementations which do not natively support it.
 
 This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming
 {{jsxref("Object")}} and {{jsxref("TypeError")}} have their
-original values and that <code><var>fun</var>.call</code>  evaluates to the
+original values and that <code><var>fun</var>.call</code> evaluates to the
 original value of {{jsxref("Function.prototype.call()")}}.
 
 ```js
@@ -391,6 +392,8 @@ flatten(nested) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ## See also
 
+- A polyfill of `Array.prototype.forEach` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.find()")}}
 - {{jsxref("Array.prototype.findIndex()")}}
 - {{jsxref("Array.prototype.map()")}}

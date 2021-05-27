@@ -6,17 +6,16 @@ tags:
 - Method
 - Object
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Object.values
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>Object.values()</strong></code> method returns an array of a
-> given object's own enumerable property values, in the same order as that
-> provided by a {{jsxref("Statements/for...in", "for...in")}}
-> loop. (The only difference is that a <code>for...in</code> loop enumerates
-> properties in the prototype chain as well.)</span
+The **`Object.values()`** method returns an array of a given object's own
+enumerable property values, in the same order as that provided by a
+{{jsxref("Statements/for...in", "for...in")}} loop. (The only
+difference is that a `for...in` loop enumerates properties in the prototype
+chain as well.)
 
 {{EmbedInteractiveExample("pages/js/object-values.html")}}
 
@@ -83,6 +82,8 @@ console.log(Object.values('foo')); // ['f', 'o', 'o']
 
 ## See also
 
+- A polyfill of `Object.values` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 - {{jsxref("Object.keys()")}}
 - {{jsxref("Object.entries()")}}

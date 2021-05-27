@@ -48,50 +48,7 @@ methods.
 These global functions—functions which are called globally, rather than on an
 object—directly return their results to the caller.
 
-<div class="twocolumns">
-  <ul>
-    <li>{{JSxRef("Global_Objects/eval", "eval()")}}</li>
-    <li>
-      {{Non-Standard_Inline}}
-      {{JSxRef("Global_Objects/uneval", "uneval()")}} 
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/isFinite", "isFinite()")}}
-    </li>
-    <li>{{JSxRef("Global_Objects/isNaN", "isNaN()")}}</li>
-    <li>
-      {{JSxRef("Global_Objects/parseFloat", "parseFloat()")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/parseInt", "parseInt()")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/encodeURI", "encodeURI()")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/encodeURIComponent", "encodeURIComponent()")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/decodeURI", "decodeURI()")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/decodeURIComponent", "decodeURIComponent()")}}
-    </li>
-    <li>
-      <strong>Deprecated</strong>
-      <ul>
-        <li>
-          {{Deprecated_Inline}}
-          {{JSxRef("Global_Objects/escape", "escape()")}}
-        </li>
-        <li>
-          {{Deprecated_Inline}}
-          {{JSxRef("Global_Objects/unescape", "unescape()")}}
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
+<div class="twocolumns"><ul><li>{{JSxRef("Global_Objects/eval", "eval()")}}</li><li>{{Non-Standard_Inline}} {{JSxRef("Global_Objects/uneval", "uneval()")}} </li><li>{{JSxRef("Global_Objects/isFinite", "isFinite()")}}</li><li>{{JSxRef("Global_Objects/isNaN", "isNaN()")}}</li><li>{{JSxRef("Global_Objects/parseFloat", "parseFloat()")}}</li><li>{{JSxRef("Global_Objects/parseInt", "parseInt()")}}</li><li>{{JSxRef("Global_Objects/encodeURI", "encodeURI()")}}</li><li>{{JSxRef("Global_Objects/encodeURIComponent", "encodeURIComponent()")}}</li><li>{{JSxRef("Global_Objects/decodeURI", "decodeURI()")}}</li><li>{{JSxRef("Global_Objects/decodeURIComponent", "decodeURIComponent()")}}</li><li><strong>Deprecated</strong><ul><li>{{Deprecated_Inline}} {{JSxRef("Global_Objects/escape", "escape()")}}</li><li>{{Deprecated_Inline}} {{JSxRef("Global_Objects/unescape", "unescape()")}}</li></ul></li></ul></div>
 
 ### Fundamental objects
 
@@ -108,19 +65,7 @@ This includes general objects, booleans, functions, and symbols.
 Error objects are a special type of fundamental object. They include the basic
 {{JSxRef("Error")}} type, as well as several specialized error types.
 
-<div class="twocolumns">
-  <ul>
-    <li>{{JSxRef("Error")}}</li>
-    <li>{{JSxRef("AggregateError")}} </li>
-    <li>{{JSxRef("EvalError")}}</li>
-    <li>{{JSxRef("InternalError")}}</li>
-    <li>{{JSxRef("RangeError")}}</li>
-    <li>{{JSxRef("ReferenceError")}}</li>
-    <li>{{JSxRef("SyntaxError")}}</li>
-    <li>{{JSxRef("TypeError")}}</li>
-    <li>{{JSxRef("URIError")}}</li>
-  </ul>
-</div>
+<div class="twocolumns"><ul><li>{{JSxRef("Error")}}</li><li>{{JSxRef("AggregateError")}} </li><li>{{JSxRef("EvalError")}}</li><li>{{JSxRef("InternalError")}}</li><li>{{JSxRef("RangeError")}}</li><li>{{JSxRef("ReferenceError")}}</li><li>{{JSxRef("SyntaxError")}}</li><li>{{JSxRef("TypeError")}}</li><li>{{JSxRef("URIError")}}</li></ul></div>
 
 ### Numbers and dates
 
@@ -144,22 +89,7 @@ These objects represent strings and support manipulating them.
 These objects represent collections of data which are ordered by an index value.
 This includes (typed) arrays and array-like constructs.
 
-<div class="twocolumns">
-  <ul>
-    <li>{{JSxRef("Array")}}</li>
-    <li>{{JSxRef("Int8Array")}}</li>
-    <li>{{JSxRef("Uint8Array")}}</li>
-    <li>{{JSxRef("Uint8ClampedArray")}}</li>
-    <li>{{JSxRef("Int16Array")}}</li>
-    <li>{{JSxRef("Uint16Array")}}</li>
-    <li>{{JSxRef("Int32Array")}}</li>
-    <li>{{JSxRef("Uint32Array")}}</li>
-    <li>{{JSxRef("Float32Array")}}</li>
-    <li>{{JSxRef("Float64Array")}}</li>
-    <li>{{JSxRef("BigInt64Array")}}</li>
-    <li>{{JSxRef("BigUint64Array")}}</li>
-  </ul>
-</div>
+<div class="twocolumns"><ul><li>{{JSxRef("Array")}}</li><li>{{JSxRef("Int8Array")}}</li><li>{{JSxRef("Uint8Array")}}</li><li>{{JSxRef("Uint8ClampedArray")}}</li><li>{{JSxRef("Int16Array")}}</li><li>{{JSxRef("Uint16Array")}}</li><li>{{JSxRef("Int32Array")}}</li><li>{{JSxRef("Uint32Array")}}</li><li>{{JSxRef("Float32Array")}}</li><li>{{JSxRef("Float64Array")}}</li><li>{{JSxRef("BigInt64Array")}}</li><li>{{JSxRef("BigUint64Array")}}</li></ul></div>
 
 ### Keyed collections
 
@@ -204,47 +134,11 @@ using deeply nested callbacks, for example).
 
 Additions to the ECMAScript core for language-sensitive functionalities.
 
-<div class="twocolumns">
-  <ul>
-    <li>{{JSxRef("Intl")}}</li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/Collator", "Intl.Collator")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/ListFormat", "Intl.ListFormat")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/NumberFormat", "Intl.NumberFormat")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/PluralRules", "Intl.PluralRules")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/RelativeTimeFormat", "Intl.RelativeTimeFormat")}}
-    </li>
-    <li>
-      {{JSxRef("Global_Objects/Intl/Locale", "Intl.Locale")}}
-    </li>
-  </ul>
-</div>
+<div class="twocolumns"><ul><li>{{JSxRef("Intl")}}</li><li>{{JSxRef("Global_Objects/Intl/Collator", "Intl.Collator")}}</li><li>{{JSxRef("Global_Objects/Intl/DateTimeFormat", "Intl.DateTimeFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/ListFormat", "Intl.ListFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/NumberFormat", "Intl.NumberFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/PluralRules", "Intl.PluralRules")}}</li><li>{{JSxRef("Global_Objects/Intl/RelativeTimeFormat", "Intl.RelativeTimeFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/Locale", "Intl.Locale")}}</li></ul></div>
 
 ### WebAssembly
 
-<div class="twocolumns">
-  <ul>
-    <li>{{JSxRef("WebAssembly")}}</li>
-    <li>{{JSxRef("WebAssembly.Module")}}</li>
-    <li>{{JSxRef("WebAssembly.Instance")}}</li>
-    <li>{{JSxRef("WebAssembly.Memory")}}</li>
-    <li>{{JSxRef("WebAssembly.Table")}}</li>
-    <li>{{JSxRef("WebAssembly.CompileError")}}</li>
-    <li>{{JSxRef("WebAssembly.LinkError")}}</li>
-    <li>{{JSxRef("WebAssembly.RuntimeError")}}</li>
-  </ul>
-</div>
+<div class="twocolumns"><ul><li>{{JSxRef("WebAssembly")}}</li><li>{{JSxRef("WebAssembly.Module")}}</li><li>{{JSxRef("WebAssembly.Instance")}}</li><li>{{JSxRef("WebAssembly.Memory")}}</li><li>{{JSxRef("WebAssembly.Table")}}</li><li>{{JSxRef("WebAssembly.CompileError")}}</li><li>{{JSxRef("WebAssembly.LinkError")}}</li><li>{{JSxRef("WebAssembly.RuntimeError")}}</li></ul></div>
 
 ### Other
 

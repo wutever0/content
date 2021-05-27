@@ -9,6 +9,7 @@ tags:
 - Reference
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.forEach
 ---
 {{JSRef}}
@@ -40,17 +41,7 @@ forEach(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : Function that produces an element of the new typed array, taking three
-    arguments:
-    - `element`
-      - : The current element being processed in the typed array.
-    - `index`
-      - : The index of the current element being processed in the array.
-    - `array`
-      - : The array `forEach()` was called upon.
-- `thisArg` {{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn` .
+<dl><dt><code><var>callbackFn</var></code></dt><dd>Function that produces an element of the new typed array, taking three arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code></dt><dd>The index of the current element being processed in the array.</dd><dt><code><var>array</var></code></dt><dd>The array <code>forEach()</code> was called upon.</dd></dl></dd><dt><code><var>thisArg</var></code> {{optional_inline}}</dt><dd>Value to use as <code>this</code> when executing <code><var>callbackFn</var></code>.</dd></dl>
 
 ### Return value
 
@@ -117,6 +108,8 @@ new Uint8Array([0, 1, 2, 3]).forEach(logArrayElements);
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.forEach` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.map()")}}
 - {{jsxref("TypedArray.prototype.every()")}}
 - {{jsxref("TypedArray.prototype.some()")}}

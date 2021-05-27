@@ -10,7 +10,7 @@ browser-compat: javascript.builtins.Function.caller
 ---
 {{JSRef}} {{deprecated_header}}
 
-The **<code><var>function</var>.caller</code> ** property returns the function
+The **<code><var>function</var>.caller</code>** property returns the function
 that invoked the specified function. It returns `null` for strict, async
 function and generator function callers.
 

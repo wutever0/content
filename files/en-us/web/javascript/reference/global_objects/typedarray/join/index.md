@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.join
 ---
 {{JSRef}}
@@ -30,11 +31,9 @@ join(separator)
 ### Parameters
 
 - `separator` {{optional_inline}}
-
-  - : Specifies a string to separate each element. The `separator`
-
-    is converted to a string if necessary. If omitted, the typed array elements
-    are separated with a comma (",").
+  - : Specifies a string to separate each element. The `separator` is converted
+    to a string if necessary. If omitted, the typed array elements are separated
+    with a comma (",").
 
 ### Return value
 
@@ -79,5 +78,7 @@ If you need to support truly obsolete JavaScript engines that don't support
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.join` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray")}}
 - {{jsxref("Array.prototype.join()")}}

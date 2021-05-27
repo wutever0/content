@@ -7,50 +7,26 @@ tags:
 - Math
 - Method
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Math.log2
 ---
 {{JSRef}}
 
 The **`Math.log2()`** function returns the base 2 logarithm of a number, that is
 
-<math display="block"
-
-> <semantics <mrow <mo>∀</mo>
-
-      <mi>x</mi>
-      <mo>></mo>
-      <mn>0</mn>
-      <mo>,</mo>
-      <mstyle mathvariant="monospace"
-        ><mrow
-          ><mo lspace="0em" rspace="thinmathspace">Math.log2</mo>
-          <mo stretchy="false">(</mo>
-          <mi>x</mi>
-          <mo stretchy="false">)</mo>
-        </mrow></mstyle
-      ><mo>=</mo>
-      <msub
-        ><mo lspace="0em" rspace="0em">log</mo>
-        <mn>2</mn> </msub
-      ><mo stretchy="false">(</mo>
-      <mi>x</mi>
-      <mo stretchy="false">)</mo>
-      <mo>=</mo>
-      <mtext>the unique</mtext>
-      <mspace width="thickmathspace"></mspace><mi>y</mi>
-      <mspace width="thickmathspace"></mspace><mtext>such that</mtext>
-      <mspace width="thickmathspace"></mspace
-      ><msup
-        ><mn>2</mn>
-        <mi>y</mi> </msup
-      ><mo>=</mo>
-      <mi>x</mi> </mrow
-    ><annotation encoding="TeX"
-      >\forall x > 0, \mathtt{\operatorname{Math.log2}(x)} = \log_2(x) =
-      \text{the unique} \; y \; \text{such that} \; 2^y = x</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mo>∀</mo> <mi>x</mi> <mo>></mo>
+<mn>0</mn> <mo>,</mo>
+<mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.log2</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo>
+</mrow></mstyle><mo>=</mo> <msub><mo lspace="0em" rspace="0em">log</mo>
+<mn>2</mn> </msub><mo stretchy="false">(</mo> <mi>x</mi>
+<mo stretchy="false">)</mo> <mo>=</mo> <mtext>the unique</mtext>
+<mspace width="thickmathspace"></mspace><mi>y</mi>
+<mspace width="thickmathspace"></mspace><mtext>such that</mtext>
+<mspace width="thickmathspace"></mspace><msup><mn>2</mn> <mi>y</mi>
+</msup><mo>=</mo> <mi>x</mi> </mrow><annotation encoding="TeX">\forall x > 0,
+\mathtt{\operatorname{Math.log2}(x)} = \log_2(x) = \text{the unique} \; y \;
+\text{such that} \; 2^y = x</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-log2.html")}}
 
@@ -116,6 +92,8 @@ Math.log2(1024); // 10
 
 ## See also
 
+- A polyfill of `Math.log2` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.exp()")}}
 - {{jsxref("Math.log()")}}
 - {{jsxref("Math.log10()")}}

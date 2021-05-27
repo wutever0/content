@@ -23,8 +23,7 @@ specification.
 
 ## Syntax
 
-<pre class="brush: js">
-`string text`
+<pre class="brush: js">`string text`
 
 `string text line 1
  string text line 2`
@@ -41,14 +40,14 @@ Template literals are enclosed by the backtick (\` \`)
 of double or single quotes.
 
 Template literals can contain placeholders. These are indicated by the dollar
-sign and curly braces (<code>${<var>expression</var>}</code> ). The expressions
+sign and curly braces (<code>${<var>expression</var>}</code>). The expressions
 in the placeholders and the text between the backticks (\` \`) get passed to a
 function.
 
 The default function just concatenates the parts into a single string. If there
 is an expression preceding the template literal (`tag` here), this is called a
-<dfn><em>tagged template</em></dfn> . In that case, the tag expression (usually
-a function) gets called with the template literal, which you can then manipulate
+<dfn><em>tagged template</em></dfn>. In that case, the tag expression (usually a
+function) gets called with the template literal, which you can then manipulate
 before outputting.
 
 To escape a backtick in a template literal, put a backslash (`\`) before the

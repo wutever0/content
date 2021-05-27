@@ -12,11 +12,8 @@ browser-compat: javascript.builtins.Intl.Locale.Locale
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale</code></strong> constructor is a standard
-> built-in property of the Intl object that represents a Unicode locale
-> identifier.</span
+The **`Intl.Locale`** constructor is a standard built-in property of the Intl
+object that represents a Unicode locale identifier.
 
 {{EmbedInteractiveExample("pages/js/intl-locale.html")}}
 

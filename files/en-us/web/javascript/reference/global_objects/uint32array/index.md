@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - TypedArray
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.Uint32Array
 ---
 {{JSRef}}
@@ -25,7 +26,7 @@ or using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Uint32Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `4` in the case of an
-    `Uint32Array` .
+    `Uint32Array`.
 - {{jsxref("TypedArray.name", "Uint32Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
     `Uint32Array` type: "Uint32Array".
@@ -43,7 +44,7 @@ or using standard array index syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Uint32Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Uint32Array` . Fixed at construction time and thus **read only** .
+    `Uint32Array`. Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Uint32Array.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `Uint32Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
@@ -53,7 +54,7 @@ or using standard array index syntax (that is, using bracket notation).
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Uint32Array.prototype.length")}}
-  - : Returns the number of elements held in the `Uint32Array` . Fixed at
+  - : Returns the number of elements held in the `Uint32Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -73,7 +74,7 @@ or using standard array index syntax (that is, using bracket notation).
     a static value. See also {{jsxref("Array.prototype.fill()")}}.
 - {{jsxref("TypedArray.filter", "Uint32Array.prototype.filter()")}}
   - : Creates a new array with all of the elements of this array for which the
-    provided filtering function returns `true` . See also
+    provided filtering function returns `true`. See also
     {{jsxref("Array.prototype.filter()")}}.
 - {{jsxref("TypedArray.find", "Uint32Array.prototype.find()")}}
   - : Returns the found value in the array, if an element in the array satisfies
@@ -190,6 +191,8 @@ var uint32 = new Uint32Array(iterable);
 
 ## See also
 
+- A polyfill of `Uint32Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

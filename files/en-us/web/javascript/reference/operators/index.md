@@ -54,7 +54,7 @@ Left values are the destination of an assignment.
 
 - {{JSxRef("Operators/Property_accessors", "Property accessors", "", 1)}}
   - : Member operators provide access to a property or method of an object
-    ( `object.property` and `object["property"]` ).
+    (`object.property` and `object["property"]`).
 - {{JSxRef("Operators/new", "new")}}
   - : The `new` operator creates an instance of a constructor.
 - {{JSxRef("Operators/new%2Etarget", "new.target")}}

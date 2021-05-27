@@ -25,13 +25,13 @@ the code `(function(){}).constructor === Function`, which returns true.
 ## Instance properties
 
 - {{jsxref("Function.prototype.arguments")}}
-  - : An array corresponding to the arguments passed to a function.
-    This is deprecated as a property of {{jsxref("Function")}}. Use the
+  - : An array corresponding to the arguments passed to a function. This is
+    deprecated as a property of {{jsxref("Function")}}. Use the
     {{jsxref("Functions/arguments", "arguments")}} object
     (available within the function) instead.
 - {{jsxref("Function.prototype.caller")}}
-  - : Specifies the function that invoked the currently executing function.
-    This property is deprecated, and is only functional for some non-strict
+  - : Specifies the function that invoked the currently executing function. This
+    property is deprecated, and is only functional for some non-strict
     functions.
 - {{jsxref("Function.prototype.displayName")}}
   - : The display name of the function.
@@ -43,18 +43,18 @@ the code `(function(){}).constructor === Function`, which returns true.
 ## Instance methods
 
 - {{jsxref("Function.prototype.apply()", "Function.prototype.apply(<var>thisArg</var> [, <var>argsArray</var>])")}}
-  - : Calls a function and sets its `this` to the provided `thisArg` . Arguments
+  - : Calls a function and sets its `this` to the provided `thisArg`. Arguments
     can be passed as an {{jsxref("Array")}} object.
 - {{jsxref("Function.prototype.bind()", "Function.prototype.bind(<var>thisArg</var>[, <var>arg1</var>[, <var>arg2</var>[, ...<var>argN</var>]]])")}}
   - : Creates a new function which, when called, has its `this` set to the
-    provided `thisArg` . Optionally, a given sequence of arguments will be
+    provided `thisArg`. Optionally, a given sequence of arguments will be
     prepended to arguments provided the newly-bound function is called.
 - {{jsxref("Function.prototype.call()", "Function.prototype.call(<var>thisArg</var>[, <var>arg1</var>, <var>arg2</var>, ...<var>argN</var>])")}}
   - : Calls a function and sets its `this` to the provided value. Arguments can
     be passed as they are.
 - {{jsxref("Function.prototype.toString()", "Function.prototype.toString()")}}
-  - : Returns a string representing the source code of the function.
-    Overrides the {{jsxref("Object.prototype.toString")}} method.
+  - : Returns a string representing the source code of the function. Overrides
+    the {{jsxref("Object.prototype.toString")}} method.
 
 ## Examples
 

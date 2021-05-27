@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.filter
 ---
 {{JSRef}}
@@ -43,17 +44,11 @@ filter(function callbackFn(element, index, array) { ... }, thisArg)
 ### Parameters
 
 - `callbackFn`
-
   - : Function to test each element of the typed array. Invoked with arguments
-
-    <code>(<var>element</var>, <var>index</var>, <var>array</var>)</code>
-
-    . Return
-
-    `true` to keep the element, `false` otherwise.
-
+    <code>(<var>element</var>, <var>index</var>, <var>array</var>)</code>.
+    Return `true` to keep the element, `false` otherwise.
 - `thisArg`{{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn` .
+  - : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -126,6 +121,8 @@ new Uint8Array([12, 5, 8, 130, 44]).filter(elem => elem >= 10);
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.filter` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.every()")}}
 - {{jsxref("TypedArray.prototype.some()")}}
 - {{jsxref("Array.prototype.filter()")}}

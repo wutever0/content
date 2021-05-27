@@ -11,13 +11,12 @@ browser-compat: javascript.builtins.Reflect
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> <strong>Reflect</strong> is a built-in object that provides methods for
-> interceptable JavaScript operations. The methods are the same as those of <a
-> href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler" proxy
-> handlers</a . <code>Reflect</code> is not a function object, so it's not
-> constructible.</span
+<span class="seoSummary"><strong>Reflect</strong> is a built-in object that
+provides methods for interceptable JavaScript operations. The methods are the
+same as those of
+<a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler">proxy
+handlers</a>. <code>Reflect</code> is not a function object, so it's not
+constructible.</span>
 
 ## Description
 
@@ -42,29 +41,22 @@ them.
     `argumentsList` parameter. See also
     {{jsxref("Function.prototype.apply()")}}.
 - {{jsxref("Reflect.construct()", "Reflect.construct(<var>target</var>, <var>argumentsList</var>[, <var>newTarget</var>])")}}
-
   - : The [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new)
     as a function. Equivalent to calling <code>new
-    <var>target</var>(...<var>argumentsList</var>)</code>
-
-    . Also provides the option to specify a different prototype.
-
+    <var>target</var>(...<var>argumentsList</var>)</code>. Also provides the
+    option to specify a different prototype.
 - {{jsxref("Reflect.defineProperty()", "Reflect.defineProperty(<var>target</var>, <var>propertyKey</var>, <var>attributes</var>)")}}
   - : Similar to {{jsxref("Object.defineProperty()")}}. Returns a
     {{jsxref("Boolean")}} that is `true` if the property was successfully
     defined.
 - {{jsxref("Reflect.deleteProperty()", "Reflect.deleteProperty(<var>target</var>, <var>propertyKey</var>)")}}
-
   - : The
     [`delete` operator](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
     as a function. Equivalent to calling <code>delete
-    <var>target</var>[<var>propertyKey</var>]</code>
-
-    .
-
+    <var>target</var>[<var>propertyKey</var>]</code>.
 - {{jsxref("Reflect.get()", "Reflect.get(<var>target</var>, <var>propertyKey</var>[, <var>receiver</var>])")}}
   - : Returns the value of the property. Works like getting a property from an
-    object ( `target[propertyKey]` ) as a function.
+    object (`target[propertyKey]`) as a function.
 - {{jsxref("Reflect.getOwnPropertyDescriptor()", "Reflect.getOwnPropertyDescriptor(<var>target</var>, <var>propertyKey</var>)")}}
   - : Similar to
     {{jsxref("Object.getOwnPropertyDescriptor()")}}. Returns a

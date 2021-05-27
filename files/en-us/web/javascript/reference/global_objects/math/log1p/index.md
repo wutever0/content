@@ -7,6 +7,7 @@ tags:
   - Math
   - Method
   - Reference
+  - Polyfill
 browser-compat: javascript.builtins.Math.log1p
 ---
 {{JSRef}}
@@ -14,35 +15,15 @@ browser-compat: javascript.builtins.Math.log1p
 The **`Math.log1p()`** function returns the natural logarithm (base
 {{jsxref("Math.E", "e")}}) of 1 + a number, that is
 
-<math display="block"
-
-> <semantics <mrow <mo>∀</mo>
-
-      <mi>x</mi>
-      <mo>></mo>
-      <mo>-</mo>
-      <mn>1</mn>
-      <mo>,</mo>
-      <mstyle mathvariant="monospace"
-        ><mrow
-          ><mo lspace="0em" rspace="thinmathspace">Math.log1p</mo>
-          <mo stretchy="false">(</mo>
-          <mi>x</mi>
-          <mo stretchy="false">)</mo>
-        </mrow></mstyle
-      ><mo>=</mo>
-      <mo lspace="0em" rspace="0em">ln</mo>
-      <mo stretchy="false">(</mo>
-      <mn>1</mn>
-      <mo>+</mo>
-      <mi>x</mi>
-      <mo stretchy="false">)</mo> </mrow
-    ><annotation encoding="TeX"
-      >\forall x > -1, \mathtt{\operatorname{Math.log1p}(x)} = \ln(1 +
-      x)</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mo>∀</mo> <mi>x</mi> <mo>></mo>
+<mo>-</mo> <mn>1</mn> <mo>,</mo>
+<mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.log1p</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo>
+</mrow></mstyle><mo>=</mo> <mo lspace="0em" rspace="0em">ln</mo>
+<mo stretchy="false">(</mo> <mn>1</mn> <mo>+</mo> <mi>x</mi>
+<mo stretchy="false">)</mo> </mrow><annotation encoding="TeX">\forall x > -1,
+\mathtt{\operatorname{Math.log1p}(x)} = \ln(1 +
+x)</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-log1p.html")}}
 
@@ -108,6 +89,8 @@ Math.log1p(-2); // NaN
 
 ## See also
 
+- A polyfill of `Math.log1p` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.exp()")}}
 - {{jsxref("Math.log()")}}
 - {{jsxref("Math.expm1()")}}

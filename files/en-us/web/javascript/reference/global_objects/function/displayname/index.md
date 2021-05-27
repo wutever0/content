@@ -10,11 +10,8 @@ browser-compat: javascript.builtins.Function.displayName
 ---
 {{JSRef}} {{non-standard_header}}
 
-The <code
-
-> <strong><em>function</em>.displayName</strong></code
->
-> property returns the display name of the function.
+The <code><strong><em>function</em>.displayName</strong></code> property returns
+the display name of the function.
 
 ## Examples
 

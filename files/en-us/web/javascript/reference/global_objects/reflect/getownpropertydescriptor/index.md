@@ -7,24 +7,22 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.getOwnPropertyDescriptor
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The static <strong><code>Reflect.getOwnPropertyDescriptor()</code></strong>
-> method is similar to
-> {{jsxref("Object.getOwnPropertyDescriptor()")}}. It returns a
-> property descriptor of the given property if it exists on the object,
-> {{jsxref("undefined")}} otherwise.</span
+<span class="seoSummary">The static
+<strong><code>Reflect.getOwnPropertyDescriptor()</code></strong> method is
+similar to {{jsxref("Object.getOwnPropertyDescriptor()")}}. It
+returns a property descriptor of the given property if it exists on the object,
+{{jsxref("undefined")}} otherwise.</span>
 
 {{EmbedInteractiveExample("pages/js/reflect-getownpropertydescriptor.html")}}
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.getOwnPropertyDescriptor(<var>target</var>, <var>propertyKey</var>)
+<pre class="brush: js">Reflect.getOwnPropertyDescriptor(<var>target</var>, <var>propertyKey</var>)
 </pre>
 
 ### Parameters
@@ -92,5 +90,7 @@ Object.getOwnPropertyDescriptor('foo', 0)
 
 ## See also
 
+- A polyfill of `Reflect.getOwnPropertyDescriptor` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.getOwnPropertyDescriptor()")}}

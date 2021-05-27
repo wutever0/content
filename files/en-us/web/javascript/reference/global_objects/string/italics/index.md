@@ -8,6 +8,7 @@ tags:
 - Method
 - Prototype
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.italics
 ---
 {{JSRef}} {{deprecated_header}}
@@ -53,6 +54,8 @@ console.log(worldString.strike());  // <strike>Hello, world</strike>
 
 ## See also
 
+- A polyfill of `String.prototype.italics` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.blink()")}}
 - {{jsxref("String.prototype.bold()")}}
 - {{jsxref("String.prototype.strike()")}}

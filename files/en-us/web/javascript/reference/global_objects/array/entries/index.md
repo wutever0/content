@@ -8,6 +8,7 @@ tags:
 - JavaScript
 - Method
 - Prototype
+- Polyfill
 browser-compat: javascript.builtins.Array.entries
 ---
 {{JSRef}}
@@ -66,6 +67,8 @@ for (let e of iterator) {
 
 ## See also
 
+- A polyfill of `Array.prototype.entries` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.keys()")}}
 - {{jsxref("Array.prototype.values()")}}
 - {{jsxref("Array.prototype.forEach()")}}

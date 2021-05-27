@@ -74,8 +74,7 @@ An {{domxref("ArrayBufferView")}} with elements will cause a
 {{jsxref("TypeError")}}, as they are views over memory and will
 definitely cause other possible issues:
 
-<pre class="brush: js">
-> Object.freeze(new Uint8Array(0)) // No elements
+<pre class="brush: js">> Object.freeze(new Uint8Array(0)) // No elements
 <em>Uint8Array</em> []
 
 > Object.freeze(new Uint8Array(1)) // Has elements

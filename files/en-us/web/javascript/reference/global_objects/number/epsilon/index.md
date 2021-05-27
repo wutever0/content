@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Number
   - Property
+  - Polyfill
 browser-compat: javascript.builtins.Number.EPSILON
 ---
 {{JSRef}}
@@ -54,4 +55,6 @@ if (Number.EPSILON === undefined) {
 
 ## See also
 
+- A polyfill of `Number.EPSILON` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - The {{jsxref("Number")}} object it belongs to

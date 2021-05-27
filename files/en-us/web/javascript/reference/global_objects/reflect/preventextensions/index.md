@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.preventExtensions
 ---
 {{JSRef}}
@@ -20,8 +21,7 @@ some [differences](#difference_from_object.preventExtensions).
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.preventExtensions(<var>target</var>)
+<pre class="brush: js">Reflect.preventExtensions(<var>target</var>)
 </pre>
 
 ### Parameters
@@ -86,5 +86,7 @@ Object.preventExtensions(1)
 
 ## See also
 
+- A polyfill of `Reflect.preventExtensions` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.isExtensible()")}}

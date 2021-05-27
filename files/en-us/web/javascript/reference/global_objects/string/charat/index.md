@@ -11,12 +11,10 @@ browser-compat: javascript.builtins.String.charAt
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The {{jsxref("String")}} object's
-> <strong><code>charAt()</code></strong> method returns a new string consisting
-> of the single UTF-16 code unit located at the specified offset into the
-> string.</span
+<span class="seoSummary">The {{jsxref("String")}} object's
+<strong><code>charAt()</code></strong> method returns a new string consisting of
+the single UTF-16 code unit located at the specified offset into the
+string.</span>
 
 {{EmbedInteractiveExample("pages/js/string-charat.html", "shorter")}}
 
@@ -29,15 +27,9 @@ charAt(index)
 ### Parameters
 
 - `index`
-
-  - : An integer between `0` and <code><var>str</var>.length - 1</code>
-
-    . If the
-
-    `index` cannot be converted to the integer or no
-
-    `index` is provided, the default is `0` , so the first character of `str` is
-    returned.
+  - : An integer between `0` and <code><var>str</var>.length - 1</code>. If the
+    `index` cannot be converted to the integer or no `index` is provided, the
+    default is `0`, so the first character of `str` is returned.
 
 ### Return value
 
@@ -49,7 +41,7 @@ string.
 
 Characters in a string are indexed from left to right. The index of the first
 character is `0`, and the index of the last character—in a string called
-`stringName`—is <code><var>stringName</var>.length - 1</code> . If the `index`
+`stringName`—is <code><var>stringName</var>.length - 1</code>. If the `index`
 you supply is out of this range, JavaScript returns an empty string.
 
 If no `index` is provided to `charAt()`, the default is `0`.

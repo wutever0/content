@@ -13,15 +13,13 @@ browser-compat: javascript.statements.export
 ---
 {{jsSidebar("Statements")}}
 
-<span class="seoSummary"
-
-> The <strong><code>export</code></strong> statement is used when creating
-> JavaScript modules to export live bindings to functions, objects, or primitive
-> values from the module so they can be used by other programs with the
-> {{jsxref("Statements/import", "import")}} statement. Bindings
-> that are exported can still be modified locally; when imported, although they
-> can only be read by the importing module the value updates whenever it is
-> updated by the exporting module.</span
+The **`export`** statement is used when creating JavaScript modules to export
+live bindings to functions, objects, or primitive values from the module so they
+can be used by other programs with the
+{{jsxref("Statements/import", "import")}} statement. Bindings
+that are exported can still be modified locally; when imported, although they
+can only be read by the importing module the value updates whenever it is
+updated by the exporting module.
 
 Exported modules are in
 {{jsxref("Strict_mode","strict mode", "", 1)}} whether you declare
@@ -115,9 +113,7 @@ console.log(m);        // will log 12
 
 You can also rename named exports to avoid naming conflicts:
 
-<pre
-  class="brush: js"
->export { <var>myFunction</var> as <var>function1</var>,<var>
+<pre class="brush: js">export { <var>myFunction</var> as <var>function1</var>,<var>
          myVariable</var> as variable };
 </pre>
 

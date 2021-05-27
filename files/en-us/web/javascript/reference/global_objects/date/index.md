@@ -71,46 +71,33 @@ UTC (such as {{jsxref("Date.getUTCDay()", "getUTCDay()")}} and
 
 ## Static methods
 
-- {{jsxref("Date.now()")}}
-  - : Returns the numeric value corresponding to the current time—the number of
-    milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds
-    ignored.
-- {{jsxref("Date.parse()")}}
-  - : Parses a string representation of a date and returns the number of
-    milliseconds since 1 January, 1970, 00:00:00 UTC, with leap seconds ignored.
-    > **Note:** Parsing of strings with `Date.parse` is strongly discouraged due
-    > to browser differences and inconsistencies.
-- {{jsxref("Date.UTC()")}}
-  - : Accepts the same parameters as the longest form of the constructor (i.e. 2
-    to 7) and returns the number of milliseconds since January 1, 1970, 00:00:00
-    UTC, with leap seconds ignored.
+<dl><dt>{{jsxref("Date.now()")}}</dt><dd>Returns the numeric value corresponding to the current time—the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.</dd><dt>{{jsxref("Date.parse()")}}</dt><dd>Parses a string representation of a date and returns the number of milliseconds since 1 January, 1970, 00:00:00 UTC, with leap seconds ignored.<div class="note"><p><strong>Note:</strong> Parsing of strings with <code>Date.parse</code> is strongly discouraged due to browser differences and inconsistencies.</p></div></dd><dt>{{jsxref("Date.UTC()")}}</dt><dd>Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC, with leap seconds ignored.</dd></dl>
 
 ## Instance methods
 
 - {{jsxref("Date.prototype.getDate()")}}
-  - : Returns the day of the month ( `1` – `31` ) for the specified date
-    according to local time.
-- {{jsxref("Date.prototype.getDay()")}}
-  - : Returns the day of the week ( `0` – `6` ) for the specified date according
+  - : Returns the day of the month (`1`–`31`) for the specified date according
     to local time.
+- {{jsxref("Date.prototype.getDay()")}}
+  - : Returns the day of the week (`0`–`6`) for the specified date according to
+    local time.
 - {{jsxref("Date.prototype.getFullYear()")}}
   - : Returns the year (4 digits for 4-digit years) of the specified date
     according to local time.
 - {{jsxref("Date.prototype.getHours()")}}
-  - : Returns the hour ( `0` – `23` ) in the specified date according to local
-    time.
+  - : Returns the hour (`0`–`23`) in the specified date according to local time.
 - {{jsxref("Date.prototype.getMilliseconds()")}}
-  - : Returns the milliseconds ( `0` – `999` ) in the specified date according
-    to local time.
-- {{jsxref("Date.prototype.getMinutes()")}}
-  - : Returns the minutes ( `0` – `59` ) in the specified date according to
+  - : Returns the milliseconds (`0`–`999`) in the specified date according to
     local time.
+- {{jsxref("Date.prototype.getMinutes()")}}
+  - : Returns the minutes (`0`–`59`) in the specified date according to local
+    time.
 - {{jsxref("Date.prototype.getMonth()")}}
-  - : Returns the month ( `0` – `11` ) in the specified date according to local
+  - : Returns the month (`0`–`11`) in the specified date according to local
     time.
 - {{jsxref("Date.prototype.getSeconds()")}}
-  - : Returns the seconds ( `0` – `59` ) in the specified date according to
-    local time.
+  - : Returns the seconds (`0`–`59`) in the specified date according to local
+    time.
 - {{jsxref("Date.prototype.getTime()")}}
   - : Returns the numeric value of the specified date as the number of
     milliseconds since January 1, 1970, 00:00:00 UTC. (Negative values are
@@ -118,28 +105,28 @@ UTC (such as {{jsxref("Date.getUTCDay()", "getUTCDay()")}} and
 - {{jsxref("Date.prototype.getTimezoneOffset()")}}
   - : Returns the time-zone offset in minutes for the current locale.
 - {{jsxref("Date.prototype.getUTCDate()")}}
-  - : Returns the day (date) of the month ( `1` – `31` ) in the specified date
+  - : Returns the day (date) of the month (`1`–`31`) in the specified date
     according to universal time.
 - {{jsxref("Date.prototype.getUTCDay()")}}
-  - : Returns the day of the week ( `0` – `6` ) in the specified date according
-    to universal time.
+  - : Returns the day of the week (`0`–`6`) in the specified date according to
+    universal time.
 - {{jsxref("Date.prototype.getUTCFullYear()")}}
   - : Returns the year (4 digits for 4-digit years) in the specified date
     according to universal time.
 - {{jsxref("Date.prototype.getUTCHours()")}}
-  - : Returns the hours ( `0` – `23` ) in the specified date according to
-    universal time.
+  - : Returns the hours (`0`–`23`) in the specified date according to universal
+    time.
 - {{jsxref("Date.prototype.getUTCMilliseconds()")}}
-  - : Returns the milliseconds ( `0` – `999` ) in the specified date according
-    to universal time.
+  - : Returns the milliseconds (`0`–`999`) in the specified date according to
+    universal time.
 - {{jsxref("Date.prototype.getUTCMinutes()")}}
-  - : Returns the minutes ( `0` – `59` ) in the specified date according to
+  - : Returns the minutes (`0`–`59`) in the specified date according to
     universal time.
 - {{jsxref("Date.prototype.getUTCMonth()")}}
-  - : Returns the month ( `0` – `11` ) in the specified date according to
-    universal time.
+  - : Returns the month (`0`–`11`) in the specified date according to universal
+    time.
 - {{jsxref("Date.prototype.getUTCSeconds()")}}
-  - : Returns the seconds ( `0` – `59` ) in the specified date according to
+  - : Returns the seconds (`0`–`59`) in the specified date according to
     universal time.
 - {{jsxref("Date.prototype.getYear()")}}
   - : Returns the year (usually 2–3 digits) in the specified date according to
@@ -188,7 +175,7 @@ UTC (such as {{jsxref("Date.getUTCDay()", "getUTCDay()")}} and
     instead.
 - {{jsxref("Date.prototype.toDateString()")}}
   - : Returns the "date" portion of the {{jsxref("Date")}} as a
-    human-readable string like `'Thu Apr 12 2018'` .
+    human-readable string like `'Thu Apr 12 2018'`.
 - {{jsxref("Date.prototype.toISOString()")}}
   - : Converts a date to a string following the ISO 8601 Extended Format.
 - {{jsxref("Date.prototype.toJSON()")}}

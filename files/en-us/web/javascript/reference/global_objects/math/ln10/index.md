@@ -13,13 +13,8 @@ browser-compat: javascript.builtins.Math.LN10
 The **`Math.LN10`** property represents the natural logarithm of 10,
 approximately 2.302:
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace"><mi>Math.LN10</mi></mstyle
-> <mo>=</mo><mo lspace="0em" rspace="0em">ln</mo><mo stretchy="false">(</mo
-> <mn>10</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>2.302</mn></mrow
-> <annotation encoding="TeX" \mathtt{\mi{Math.LN10}} = \ln(10) \approx
-> 2.302</annotation </semantics </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mi>Math.LN10</mi></mstyle><mo>=</mo><mo lspace="0em" rspace="0em">ln</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>2.302</mn></mrow><annotation encoding="TeX">\mathtt{\mi{Math.LN10}}
+= \ln(10) \approx 2.302</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-ln10.html","shorter")}}
 

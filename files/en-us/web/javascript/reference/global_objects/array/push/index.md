@@ -27,7 +27,6 @@ push(element0, element1, ... , elementN)
 ### Parameters
 
 - <code>element<em>N</em></code>
-
   - : The element(s) to add to the end of the array.
 
 ### Return value

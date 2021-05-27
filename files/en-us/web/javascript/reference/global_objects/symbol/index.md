@@ -6,6 +6,7 @@ tags:
   - ECMAScript 2015
   - JavaScript
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol
 ---
 {{JSRef}}
@@ -86,14 +87,13 @@ array will be empty unless you've set Symbol properties on the object.
 
 - [`Symbol()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/Symbol)
   - : Creates a new `Symbol` object. It is incomplete as a constructor because
-    it does not support the syntax " `new Symbol()` ".
+    it does not support the syntax "`new Symbol()`".
 
 ## Static properties
 
 - {{jsxref("Symbol.asyncIterator")}}
   - : A method that returns the default AsyncIterator for an object. Used by
-    [`for await...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)
-    .
+    [`for await...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of).
 - {{jsxref("Symbol.hasInstance")}}
   - : A method determining if a constructor object recognizes an object as its
     instance. Used by
@@ -103,7 +103,7 @@ array will be empty unless you've set Symbol properties on the object.
     elements. Used by {{jsxref("Array.prototype.concat()")}}.
 - {{jsxref("Symbol.iterator")}}
   - : A method returning the default iterator for an object. Used by
-    [`for...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for...of) .
+    [`for...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
 - {{jsxref("Symbol.match")}}
   - : A method that matches against a string, also used to determine if an
     object may be used as a regular expression. Used by
@@ -138,7 +138,7 @@ array will be empty unless you've set Symbol properties on the object.
 - {{jsxref("Symbol.for()", "Symbol.for(key)")}}
   - : Searches for existing Symbols with the given `key` and returns it if
     found. Otherwise a new Symbol gets created in the global Symbol registry
-    with `key` .
+    with `key`.
 - {{jsxref("Symbol.keyFor", "Symbol.keyFor(sym)")}}
   - : Retrieves a shared Symbol key from the global Symbol registry for the
     given Symbol.
@@ -268,6 +268,8 @@ obj[Object(sym)]     // still 1
 
 ## See also
 
+- A polyfill of `Symbol` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - [Glossary: Symbol data type](/en-US/docs/Glossary/Symbol)
 - {{jsxref("Operators/typeof", "typeof")}}
 - [Data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)

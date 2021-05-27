@@ -8,6 +8,7 @@ tags:
 - Prototype
 - Reference
 - finally
+- Polyfill
 browser-compat: javascript.builtins.Promise.finally
 ---
 {{JSRef}}
@@ -96,6 +97,8 @@ fetch(myRequest).then(function(response) {
 
 ## See also
 
+- A polyfill of `Promise.prototype.finally` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
 - {{jsxref("Promise")}}
 - {{jsxref("Promise.prototype.then()")}}
 - {{jsxref("Promise.prototype.catch()")}}

@@ -28,10 +28,8 @@ WebAssembly.compile(bufferSource)
 ### Parameters
 
 - _bufferSource_
-
   - : A [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
     [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
-
     containing the binary code of the .wasm module you want to compile.
 
 ### Return value

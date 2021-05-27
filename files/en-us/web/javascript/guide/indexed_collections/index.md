@@ -15,9 +15,8 @@ objects and {{jsxref("TypedArray")}} objects.
 
 ## `Array` object
 
-An \*<dfn>array</dfn>
-
-- is an ordered list of values that you refer to with a name and an index.
+An _<dfn>array</dfn>_ is an ordered list of values that you refer to with a name
+and an index.
 
 For example, consider an array called `emp`, which contains employees' names
 indexed by their numerical employee number. So `emp[0]` would be employee number
@@ -34,8 +33,7 @@ expressions.
 
 The following statements create equivalent arrays:
 
-<pre class="brush: js">
-let arr = new Array(<var>element0</var>, <var>element1</var>, ..., <var>elementN</var>)
+<pre class="brush: js">let arr = new Array(<var>element0</var>, <var>element1</var>, ..., <var>elementN</var>)
 let arr = Array(<var>element0</var>, <var>element1</var>, ..., <var>elementN</var>)
 let arr = [<var>element0</var>, <var>element1</var>, ..., <var>elementN</var>]
 </pre>
@@ -53,8 +51,7 @@ for details.
 To create an array with non-zero length, but without any items, either of the
 following can be used:
 
-<pre class="brush: js">
-// This...
+<pre class="brush: js">// This...
 let arr = new Array(<var>arrayLength</var>)
 
 // ...results in the same array as this
@@ -514,14 +511,11 @@ console.log(a3.some(isNumber))  // logs false
 ```
 
 {{jsxref("Array.reduce", "reduce(callback[, initialValue])")}}
-applies <code
-
-> <var>callback</var>(<var>accumulator</var>, <var>currentValue</var>[,
-> <var>currentIndex</var>[, <var>array</var>]])</code
->
-> for each value in the array for the purpose of reducing the list of items down
-> to a single value.  The `reduce` function returns the final value returned by
-> `callback` function.
+applies <code><var>callback</var>(<var>accumulator</var>,
+<var>currentValue</var>[, <var>currentIndex</var>[, <var>array</var>]])</code>
+for each value in the array for the purpose of reducing the list of items down
+to a single value.  The `reduce` function returns the final value returned by
+`callback` function.
 
 If `initialValue` is specified, then `callback` is called with `initialValue` as
 the first parameter value and the value of the first item in the array as the
@@ -680,114 +674,7 @@ special typed array view, {{jsxref("Uint8ClampedArray")}}, which clamps
 the values between `0` and `255`. This is useful for
 [Canvas data processing](/en-US/docs/Web/API/ImageData), for example.
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th class="header" scope="col">Type</th>
-      <th class="header" scope="col">Value Range</th>
-      <th class="header" scope="col">Size in bytes</th>
-      <th class="header" scope="col">Description</th>
-      <th class="header" scope="col">Web IDL type</th>
-      <th class="header" scope="col">Equivalent C type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{jsxref("Int8Array")}}</td>
-      <td><code>-128</code> to <code>127</code></td>
-      <td>1</td>
-      <td>8-bit two's complement signed integer</td>
-      <td><code>byte</code></td>
-      <td><code>int8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8Array")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8ClampedArray")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer (clamped)</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int16Array")}}</td>
-      <td><code>-32768</code> to <code>32767</code></td>
-      <td>2</td>
-      <td>16-bit two's complement signed integer</td>
-      <td><code>short</code></td>
-      <td><code>int16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint16Array")}}</td>
-      <td><code>0</code> to <code>65535</code></td>
-      <td>2</td>
-      <td>16-bit unsigned integer</td>
-      <td><code>unsigned short</code></td>
-      <td><code>uint16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int32Array")}}</td>
-      <td><code>-2147483648</code> to <code>2147483647</code></td>
-      <td>4</td>
-      <td>32-bit two's complement signed integer</td>
-      <td><code>long</code></td>
-      <td><code>int32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint32Array")}}</td>
-      <td><code>0</code> to <code>4294967295</code></td>
-      <td>4</td>
-      <td>32-bit unsigned integer</td>
-      <td><code>unsigned long</code></td>
-      <td><code>uint32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float32Array")}}</td>
-      <td><code>1.2E-38</code> to <code>3.4E38</code></td>
-      <td>4</td>
-      <td>
-        32-bit IEEE floating point number (7 significant digits
-        e.g., <code>1.1234567</code>)
-      </td>
-      <td><code>unrestricted float</code></td>
-      <td><code>float</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float64Array")}}</td>
-      <td><code>5E-324</code> to <code>1.8E308</code></td>
-      <td>8</td>
-      <td>
-        64-bit IEEE floating point number (16 significant digits
-        e.g., <code>1.123...15</code>)
-      </td>
-      <td><code>unrestricted double</code></td>
-      <td><code>double</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigInt64Array")}}</td>
-      <td><code>-2^63</code> to <code>2^63 - 1</code></td>
-      <td>8</td>
-      <td>64-bit two's complement signed integer</td>
-      <td><code>bigint</code></td>
-      <td><code>int64_t (signed long long)</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigUint64Array")}}</td>
-      <td><code>0</code> to <code>2^64 - 1</code></td>
-      <td>8</td>
-      <td>64-bit unsigned integer</td>
-      <td><code>bigint</code></td>
-      <td><code>uint64_t (unsigned long long)</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th class="header" scope="col">Type</th><th class="header" scope="col">Value Range</th><th class="header" scope="col">Size in bytes</th><th class="header" scope="col">Description</th><th class="header" scope="col">Web IDL type</th><th class="header" scope="col">Equivalent C type</th></tr></thead><tbody><tr><td>{{jsxref("Int8Array")}}</td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr><td>{{jsxref("Uint8Array")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Uint8ClampedArray")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Int16Array")}}</td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr><td>{{jsxref("Uint16Array")}}</td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr><td>{{jsxref("Int32Array")}}</td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr><td>{{jsxref("Uint32Array")}}</td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr><td>{{jsxref("Float32Array")}}</td><td><code>1.2E-38</code> to <code>3.4E38</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.1234567</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr><td>{{jsxref("Float64Array")}}</td><td><code>5E-324</code> to <code>1.8E308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.123...15</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr><td>{{jsxref("BigInt64Array")}}</td><td><code>-2^63</code> to <code>2^63 - 1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr><td>{{jsxref("BigUint64Array")}}</td><td><code>0</code> to <code>2^64 - 1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
 
 For more information, see
 [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays) and the

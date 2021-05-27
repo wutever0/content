@@ -26,7 +26,6 @@ hasOwnProperty(prop)
 ### Parameters
 
 - <var>prop</var>
-
   - : The {{jsxref("String")}} name or {{Glossary("Symbol")}} of
     the property to test.
 

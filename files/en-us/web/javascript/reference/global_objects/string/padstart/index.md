@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.padStart
 ---
 {{JSRef}}
@@ -29,22 +30,13 @@ padStart(targetLength, padString)
 ### Parameters
 
 - `targetLength`
-
   - : The length of the resulting string once the current `str` has been padded.
-    If the value is less than <code><var>str.</var>length</code>
-
-    , then
-
-    `str` is returned as-is.
-
+    If the value is less than <code><var>str.</var>length</code>, then `str` is
+    returned as-is.
 - `padString` {{optional_inline}}
-
-  - : The string to pad the current `str` with. If
-
-    `padString` is too long to stay within the
-
-    `targetLength` , it will be truncated from the end. The default value is "
-    ` ` " ( `U+0020 'SPACE'` ).
+  - : The string to pad the current `str` with. If `padString` is too long to
+    stay within the `targetLength`, it will be truncated from the end. The
+    default value is "` `" (`U+0020 'SPACE'`).
 
 ### Return value
 
@@ -87,5 +79,7 @@ console.log(leftFillNum(num, 5));
 
 ## See also
 
+- A polyfill of `String.prototype.padStart` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.padEnd()")}}
 - [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)

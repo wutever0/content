@@ -24,8 +24,7 @@ Async functions may also be defined
 
 ## Syntax
 
-<pre class="brush: js">
-async function <var>name</var>([<var>param</var>[, <var>param</var>[, ...<var>param</var>]]]) {
+<pre class="brush: js">async function <var>name</var>([<var>param</var>[, <var>param</var>[, ...<var>param</var>]]]) {
    <var>statements</var>
 }
 </pre>
@@ -37,10 +36,8 @@ async function <var>name</var>([<var>param</var>[, <var>param</var>[, ...<var>pa
 - `param`
   - : The name of an argument to be passed to the function.
 - `statements`
-
-  - : The statements comprising the body of the function.  The `await`
-
-    mechanism may be used.
+  - : The statements comprising the body of the function.  The `await` mechanism
+    may be used.
 
 ### Return value
 
@@ -89,26 +86,7 @@ For example, the following:
 }
 </pre>
 
-<div class="notecard note">
-  <h4 id="checking_equality_with_promise_resolve_vs_async_return">
-    Checking equality with <code>Promise.resolve</code> vs
-    <code>async</code> return
-  </h4>
-  <p>
-    Even though the return value of an async function behaves as if it's wrapped
-    in a <code>Promise.resolve</code>, they are not equivalent.
-  </p>
-  <p>
-    An async function will return a different <em>reference</em>, whereas
-    <code>Promise.resolve</code> returns the same reference if the given value
-    is a promise.
-  </p>
-  <p>
-    It can be a problem when you want to check the equality of a promise and a
-    return value of an async function.
-  </p>
-  <pre class="brush: js">
-const p = new Promise((res, rej) => {
+<div class="notecard note"><h4 id="checking_equality_with_promise_resolve_vs_async_return">Checking equality with <code>Promise.resolve</code> vs <code>async</code> return</h4><p>Even though the return value of an async function behaves as if it's wrapped in a <code>Promise.resolve</code>, they are not equivalent.</p><p>An async function will return a different <em>reference</em>, whereas <code>Promise.resolve</code> returns the same reference if the given value is a promise.</p><p>It can be a problem when you want to check the equality of a promise and a return value of an async function.</p><pre class="brush: js">const p = new Promise((res, rej) => {
   res(1);
 })
 
@@ -117,11 +95,7 @@ async function asyncReturn() { return p; }
 function basicReturn() { return Promise.resolve(p); }
 
 console.log(p === basicReturn()); // true console.log(p === asyncReturn()); //
-false</pre
-
->
-
-</div>
+false</pre></div>
 
 The body of an async function can be thought of as being split by zero or more
 await expressions. Top-level code, up to and including the first await

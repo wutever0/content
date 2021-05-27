@@ -20,15 +20,12 @@ browser-compat: javascript.builtins.escape
 > > assume the existence of these features and behaviors when writing new
 > > ECMAScript code. …
 
-<span class="seoSummary"
-
-> The <code><strong>escape()</strong></code> function computes a new string in
-> which certain characters have been replaced by a hexadecimal escape
-> sequence.</span
+The **`escape()`** function computes a new string in which certain characters
+have been replaced by a hexadecimal escape sequence.
 
 > **Note:** This function was used mostly for URL queries (the part of a URL
 > following `?`)—_not_ for escaping ordinary String literals, which use the
-> format "<code>\x<var>HH</var></code> ". (`HH` are two hexadecimal digits, and
+> format "<code>\x<var>HH</var></code>". (`HH` are two hexadecimal digits, and
 > the form <code>\x<var>HH</var>\x<var>HH</var></code> is used for higher-plane
 > Unicode characters.)
 >
@@ -54,11 +51,8 @@ The `escape` function is a property of the _global object_. Special characters
 are encoded with the exception of: `@*_+-./`
 
 The hexadecimal form for characters, whose code unit value is `0xFF` or less, is
-a two-digit escape sequence: <code>%<var>xx</var></code> . For characters with a
-greater code unit, the four-digit format
-<code>%<strong>u</strong><var>xxxx</var></code>
-
-is used.
+a two-digit escape sequence: <code>%<var>xx</var></code>. For characters with a
+greater code unit, the four-digit format <code>%u<var>xxxx</var></code> is used.
 
 ## Examples
 

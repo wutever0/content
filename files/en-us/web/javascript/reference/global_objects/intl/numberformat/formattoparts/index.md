@@ -75,9 +75,7 @@ Possible types are the following:
 - percentSign
   - : The percent sign string ("%").
 - unit
-
   - : The unit string, such as the "l" or "litres", depending on how
-
     `unitDisplay` is specified.
 
 ## Examples

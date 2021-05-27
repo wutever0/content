@@ -7,6 +7,7 @@ tags:
   - Method
   - Object
   - Prototype
+  - Polyfill
 browser-compat: javascript.builtins.Object.defineSetter
 ---
 {{JSRef}}
@@ -29,21 +30,9 @@ __defineSetter__(prop, fun)
 
 ### Parameters
 
-- `prop`
-  - : A string containing the name of the property to be bound to the given
-    function.
-- `fun`
-
-  - : A function to be called when there is an attempt to set the specified
-    property. This function takes the form
-    <pre class="brush: js">function(<var>val</var>) { . . . }</pre>
-
-    - `val`
-
-      - : An alias for the variable that holds the value attempted to be
-        assigned to
-
-        `prop` .
+<dl><dt><code><var>prop</var></code></dt><dd>A string containing the name of the property to be bound to the given function.</dd><dt><code><var>fun</var></code></dt><dd>A function to be called when there is an attempt to set the specified property. This
+function takes the form<pre class="brush: js">function(<var>val</var>) { . . . }</pre><dl><dt><code><var>val</var></code></dt><dd>An alias for the variable that holds the value attempted to be assigned to
+<code><var>prop</var></code>.</dd></dl></dd></dl>
 
 ### Return value
 
@@ -99,6 +88,8 @@ console.log(o.anotherValue); // 5
 
 ## See also
 
+- A polyfill of `Object.prototype.__defineSetter__` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.prototype.__defineGetter__()")}}
 - {{jsxref("Functions/set", "set")}} operator
 - {{jsxref("Object.defineProperty()")}}

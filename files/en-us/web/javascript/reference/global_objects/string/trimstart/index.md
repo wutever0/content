@@ -7,6 +7,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.trimStart
 ---
 {{JSRef}}
@@ -49,8 +50,7 @@ String.prototype.trimLeft.name === "trimStart";
 
 The following example displays the lowercase string `'foo '`:
 
-<pre class="brush: js highlight: [5]">
-var str = '   foo  ';
+<pre class="brush: js highlight: [5]">var str = '   foo  ';
 
 console.log(str.length); // 8
 
@@ -61,8 +61,7 @@ console.log(str);        // 'foo  '
 
 ## Polyfill
 
-<pre class="brush: js highlight: [5]">
-//https://github.com/FabioVergani/js-Polyfill_String-trimStart
+<pre class="brush: js highlight: [5]">//https://github.com/FabioVergani/js-Polyfill_String-trimStart
 
 (function(w){
     var String=w.String, Proto=String.prototype;
@@ -93,9 +92,7 @@ ES6:
     })(Proto,'trimStart');
 
 })(window);
-*/</pre
->
-
+*/</pre>
 
 ## Specifications
 
@@ -107,5 +104,7 @@ ES6:
 
 ## See also
 
-*   {{jsxref("String.prototype.trim()")}}
-*   {{jsxref("String.prototype.trimEnd()")}}
+- A polyfill of `String.prototype.trimStart` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+- {{jsxref("String.prototype.trim()")}}
+- {{jsxref("String.prototype.trimEnd()")}}

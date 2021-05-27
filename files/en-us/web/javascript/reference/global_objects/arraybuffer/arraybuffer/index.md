@@ -6,6 +6,7 @@ tags:
 - Constructor
 - JavaScript
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.ArrayBuffer.ArrayBuffer
 ---
 {{JSRef}}
@@ -17,8 +18,7 @@ The **`ArrayBuffer()`** constructor is used to create
 
 ## Syntax
 
-<pre class="brush: js">
-new ArrayBuffer(<var>length</var>)
+<pre class="brush: js">new ArrayBuffer(<var>length</var>)
 </pre>
 
 ### Parameters
@@ -77,5 +77,7 @@ var view   = new Int32Array(buffer);
 
 ## See also
 
+- A polyfill of `ArrayBuffer` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("SharedArrayBuffer")}}

@@ -53,114 +53,7 @@ special typed array view, the `Uint8ClampedArray`. It clamps the values between
 0 and 255. This is useful for
 [Canvas data processing](/en-US/docs/Web/API/ImageData), for example.
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th class="header" scope="col">Type</th>
-      <th class="header" scope="col">Value Range</th>
-      <th class="header" scope="col">Size in bytes</th>
-      <th class="header" scope="col">Description</th>
-      <th class="header" scope="col">Web IDL type</th>
-      <th class="header" scope="col">Equivalent C type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{jsxref("Int8Array")}}</td>
-      <td><code>-128</code> to <code>127</code></td>
-      <td>1</td>
-      <td>8-bit two's complement signed integer</td>
-      <td><code>byte</code></td>
-      <td><code>int8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8Array")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint8ClampedArray")}}</td>
-      <td><code>0</code> to <code>255</code></td>
-      <td>1</td>
-      <td>8-bit unsigned integer (clamped)</td>
-      <td><code>octet</code></td>
-      <td><code>uint8_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int16Array")}}</td>
-      <td><code>-32768</code> to <code>32767</code></td>
-      <td>2</td>
-      <td>16-bit two's complement signed integer</td>
-      <td><code>short</code></td>
-      <td><code>int16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint16Array")}}</td>
-      <td><code>0</code> to <code>65535</code></td>
-      <td>2</td>
-      <td>16-bit unsigned integer</td>
-      <td><code>unsigned short</code></td>
-      <td><code>uint16_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Int32Array")}}</td>
-      <td><code>-2147483648</code> to <code>2147483647</code></td>
-      <td>4</td>
-      <td>32-bit two's complement signed integer</td>
-      <td><code>long</code></td>
-      <td><code>int32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Uint32Array")}}</td>
-      <td><code>0</code> to <code>4294967295</code></td>
-      <td>4</td>
-      <td>32-bit unsigned integer</td>
-      <td><code>unsigned long</code></td>
-      <td><code>uint32_t</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float32Array")}}</td>
-      <td><code>1.2E-38</code> to <code>3.4E38</code></td>
-      <td>4</td>
-      <td>
-        32-bit IEEE floating point number (7 significant digits
-        e.g., <code>1.123456</code>)
-      </td>
-      <td><code>unrestricted float</code></td>
-      <td><code>float</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("Float64Array")}}</td>
-      <td><code>5E-324</code> to <code>1.8E308</code></td>
-      <td>8</td>
-      <td>
-        64-bit IEEE floating point number (16 significant digits
-        e.g., <code>1.123...15</code>)
-      </td>
-      <td><code>unrestricted double</code></td>
-      <td><code>double</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigInt64Array")}}</td>
-      <td><code>-2^63</code> to <code>2^63 - 1</code></td>
-      <td>8</td>
-      <td>64-bit two's complement signed integer</td>
-      <td><code>bigint</code></td>
-      <td><code>int64_t (signed long long)</code></td>
-    </tr>
-    <tr>
-      <td>{{jsxref("BigUint64Array")}}</td>
-      <td><code>0</code> to <code>2^64 - 1</code></td>
-      <td>8</td>
-      <td>64-bit unsigned integer</td>
-      <td><code>bigint</code></td>
-      <td><code>uint64_t (unsigned long long)</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th class="header" scope="col">Type</th><th class="header" scope="col">Value Range</th><th class="header" scope="col">Size in bytes</th><th class="header" scope="col">Description</th><th class="header" scope="col">Web IDL type</th><th class="header" scope="col">Equivalent C type</th></tr></thead><tbody><tr><td>{{jsxref("Int8Array")}}</td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr><td>{{jsxref("Uint8Array")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Uint8ClampedArray")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Int16Array")}}</td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr><td>{{jsxref("Uint16Array")}}</td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr><td>{{jsxref("Int32Array")}}</td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr><td>{{jsxref("Uint32Array")}}</td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr><td>{{jsxref("Float32Array")}}</td><td><code>1.2E-38</code> to <code>3.4E38</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.123456</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr><td>{{jsxref("Float64Array")}}</td><td><code>5E-324</code> to <code>1.8E308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.123...15</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr><td>{{jsxref("BigInt64Array")}}</td><td><code>-2^63</code> to <code>2^63 - 1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr><td>{{jsxref("BigUint64Array")}}</td><td><code>0</code> to <code>2^64 - 1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
 
 ### DataView
 
@@ -180,14 +73,14 @@ and more are being added all the time.
 - [`FileReader.prototype.readAsArrayBuffer()`](</en-US/docs/Web/API/FileReader#readasarraybuffer()>)
   - : The `FileReader.prototype.readAsArrayBuffer()` method starts reading the
     contents of the specified [`Blob`](/en-US/docs/Web/API/Blob) or
-    [`File`](/en-US/docs/Web/API/File) .
+    [`File`](/en-US/docs/Web/API/File).
 - [`XMLHttpRequest.prototype.send()`](</en-US/docs/Web/API/XMLHttpRequest#send()>)
   - : `XMLHttpRequest` instances' `send()` method now supports typed arrays and
     {{jsxref("ArrayBuffer")}} objects as argument.
 - [`ImageData.data`](/en-US/docs/Web/API/ImageData)
   - : Is a {{jsxref("Uint8ClampedArray")}} representing a
     one-dimensional array containing the data in the RGBA order, with integer
-    values between `0` and `255`  inclusive.
+    values between `0` and `255` inclusive.
 
 ## Examples
 

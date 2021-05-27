@@ -36,7 +36,7 @@ by having a `next()` method that returns an object with two properties:
   - : The next value in the iteration sequence.
 - `done`
   - : This is `true` if the last value in the sequence has already been
-    consumed. If `value` is present alongside `done` , it is the iterator's
+    consumed. If `value` is present alongside `done`, it is the iterator's
     return value.
 
 Once created, an iterator object can be iterated explicitly by repeatedly
@@ -59,8 +59,7 @@ iterator which defines a sequence of integers from `start` (inclusive) to `end`
 (exclusive) spaced `step` apart. Its final return value is the size of the
 sequence it created, tracked by the variable `iterationCount`.
 
-<pre class="brush: js">
-function makeRangeIterator(<var>start</var> = 0, <var>end</var> = Infinity, <var>step</var> = 1) {
+<pre class="brush: js">function makeRangeIterator(<var>start</var> = 0, <var>end</var> = Infinity, <var>step</var> = 1) {
     let nextIndex = start;
     let iterationCount = 0;
 
@@ -117,30 +116,38 @@ each time. Each Generator may only be iterated once.
 We can now adapt the example from above. The behavior of this code is identical,
 but the implementation is much easier to write and read.
 
-<pre class="brush: js">
-function* makeRangeIterator(<var>start</var> = 0, <var>end</var> = 100, <var>step</var> = 1) {
+<pre class="brush: js">function* makeRangeIterator(<var>start</var> = 0, <var>end</var> = 100, <var>step</var> = 1) {
     let iterationCount = 0;
     for (let i = start; i &#x3C; end; i += step) {
         iterationCount++;
         yield i;
     }
     return iterationCount;
-}</pre
->
-
+}</pre>
 
 ## Iterables
 
-An object is **iterable** if it defines its iteration behavior, such as what values are looped over in a {{jsxref("Statements/for...of", "for...of")}} construct. Some built-in types, such as {{jsxref("Array")}} or {{jsxref("Map")}}, have a default iteration behavior, while other types (such as {{jsxref("Object")}}) do not.
+An object is **iterable** if it defines its iteration behavior, such as what
+values are looped over in a
+{{jsxref("Statements/for...of", "for...of")}} construct. Some
+built-in types, such as {{jsxref("Array")}} or {{jsxref("Map")}},
+have a default iteration behavior, while other types (such as
+{{jsxref("Object")}}) do not.
 
-In order to be **iterable**, an object must implement the **@@iterator** method. This means that the object (or one of the objects up its [prototype chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)) must have a property with a {{jsxref("Symbol.iterator")}} key.
+In order to be **iterable**, an object must implement the **@@iterator** method.
+This means that the object (or one of the objects up its
+[prototype chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain))
+must have a property with a {{jsxref("Symbol.iterator")}} key.
 
-It may be possible to iterate over an iterable more than once, or only once. It is up to the programmer to know which is the case.
+It may be possible to iterate over an iterable more than once, or only once. It
+is up to the programmer to know which is the case.
 
-Iterables which can iterate only once (such as Generators) customarily return `this` from their **@@iterator** method, whereas iterables which can be iterated many times must return a new iterator on each invocation of **@@iterator**.
+Iterables which can iterate only once (such as Generators) customarily
+return `this` from their **@@iterator** method, whereas iterables which can be
+iterated many times must return a new iterator on each invocation
+of **@@iterator**.
 
-<pre class="brush: js">
-function* makeIterator() {
+<pre class="brush: js">function* makeIterator() {
     yield 1;
     yield 2;
 }

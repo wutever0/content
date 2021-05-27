@@ -24,25 +24,19 @@ new WebAssembly.Global(descriptor, value)
 
 ### Parameters
 
-- _descriptor_
-  - : A `GlobalDescriptor` dictionary object, which contains two properties:
-    - `value`: A [`USVString`](/en-US/docs/Web/API/USVString) representing the
-      data type of the global. This can be one of `i32`, `i64`, `f32`, and
-      `f64`. USVString corresponds to the set of all possible sequences of
-      unicode scalar values. USVString maps to a String when returned in
-      JavaScript; it's generally only used for APIs that perform text processing
-      and need a string of unicode scalar values to operate on. USVString is
-      equivalent to DOMString except for not allowing unpaired surrogate
-      codepoints. Unpaired surrogate codepoints present in USVString are
-      converted by the browser to Unicode 'replacement character' U+FFFD, (�).
-    - `mutable`: A boolean value that determines whether the global is mutable
-      or not. By default, this is `false`.
-- _value_
-  - : The value the variable contains. This can be any value, as long as its
-    type matches the variable's data type. If no value is specified, a typed 0
-    value is used, as specified by the
-    [`DefaultValue` algorithm](https://webassembly.github.io/spec/js-api/#defaultvalue)
-    .
+<dl><dt><em>descriptor</em></dt><dd>A <code>GlobalDescriptor</code> dictionary object, which contains two properties:<ul><li><code>value</code>: A <a href="/en-US/docs/Web/API/USVString"><code>USVString</code></a> representing the
+data type of the global. This can be one of <code>i32</code>, <code>i64</code>,
+<code>f32</code>, and <code>f64</code>. USVString corresponds to the set of all
+possible sequences of unicode scalar values. USVString maps to a String when
+returned in JavaScript; it's generally only used for APIs that perform text
+processing and need a string of unicode scalar values to operate on. USVString is
+equivalent to DOMString except for not allowing unpaired surrogate codepoints.
+Unpaired surrogate codepoints present in USVString are converted by the browser to
+Unicode 'replacement character' U+FFFD, (�).</li><li><code>mutable</code>: A boolean value that determines whether the global is
+mutable or not. By default, this is <code>false</code>.</li></ul></dd><dt><em>value</em></dt><dd>The value the variable contains. This can be any value, as long as its type matches
+the variable's data type. If no value is specified, a typed 0 value is used, as
+specified by the <a href="https://webassembly.github.io/spec/js-api/#defaultvalue"><code>DefaultValue</code>
+algorithm</a>.</dd></dl>
 
 ## Examples
 

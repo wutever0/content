@@ -8,15 +8,14 @@ tags:
   - global
   - globalThis
   - this
+  - Polyfill
 browser-compat: javascript.builtins.globalThis
 ---
 {{jsSidebar("Objects")}}
 
-<span class="seoSummary"
-
-> The global <code><strong>globalThis</strong></code> property contains the
-> global <code>this</code> value, which is akin to the
-> <a href="/en-US/docs/Glossary/Global_object">global object</a>.</span
+<span class="seoSummary">The global <code><strong>globalThis</strong></code>
+property contains the global <code>this</code> value, which is akin to the
+<a href="/en-US/docs/Glossary/Global_object">global object</a>.</span>
 
 {{EmbedInteractiveExample("pages/js/globalprops-globalthis.html","shorter")}}
 
@@ -106,4 +105,6 @@ if (typeof globalThis.setTimeout !== 'function') {
 
 ## See also
 
+- A polyfill of `globalThis` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-globalthis)
 - {{jsxref("Operators/this", "this")}}

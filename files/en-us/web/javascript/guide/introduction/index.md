@@ -112,43 +112,7 @@ programming tools to a much wider audience because of their easier syntax,
 specialized built-in functionality, and minimal requirements for object
 creation.
 
-<table class="standard-table">
-  <caption>
-    JavaScript compared to Java
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">JavaScript</th>
-      <th scope="col">Java</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        Object-oriented. No distinction between types of objects. Inheritance is
-        through the prototype mechanism, and properties and methods can be added
-        to any object dynamically.
-      </td>
-      <td>
-        Class-based. Objects are divided into classes and instances with all
-        inheritance through the class hierarchy. Classes and instances cannot
-        have properties or methods added dynamically.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Variable data types are not declared (dynamic typing, loosely typed).
-      </td>
-      <td>
-        Variable data types must be declared (static typing, strongly typed).
-      </td>
-    </tr>
-    <tr>
-      <td>Cannot automatically write to hard disk.</td>
-      <td>Can automatically write to hard disk.</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>JavaScript compared to Java</caption><thead><tr><th scope="col">JavaScript</th><th scope="col">Java</th></tr></thead><tbody><tr><td>Object-oriented. No distinction between types of objects. Inheritance is through the prototype mechanism, and properties and methods can be added to any object dynamically.</td><td>Class-based. Objects are divided into classes and instances with all inheritance through the class hierarchy. Classes and instances cannot have properties or methods added dynamically.</td></tr><tr><td>Variable data types are not declared (dynamic typing, loosely typed).</td><td>Variable data types must be declared (static typing, strongly typed).</td></tr><tr><td>Cannot automatically write to hard disk.</td><td>Can automatically write to hard disk.</td></tr></tbody></table>
 
 For more information on the differences between JavaScript and Java, see the
 chapter
@@ -216,9 +180,9 @@ The [Web Console](/en-US/docs/Tools/Web_Console) shows you information about the
 currently loaded Web page, and also includes a JavaScript interpreter that you
 can use to execute JavaScript expressions in the current page.
 
-To open the Web Console (<kbd>Ctrl</kbd> \+<kbd>Shift</kbd> \+<kbd>I</kbd> on
-Windows and Linux or <kbd>Cmd</kbd> \-<kbd>Option</kbd> \-<kbd>K</kbd> on Mac),
-open the **Tools** menu in Firefox, and select "**Developer ▶ Web Console**".
+To open the Web Console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> on
+Windows and Linux or <kbd>Cmd</kbd>-<kbd>Option</kbd>-<kbd>K</kbd> on Mac), open
+the **Tools** menu in Firefox, and select "**Developer ▶ Web Console**".
 
 The Web Console appears at the bottom of the browser window. Along the bottom of
 the console is an input line that you can use to enter JavaScript, and the
@@ -263,8 +227,8 @@ and write your first "Hello world" JavaScript code:
 })();
 ```
 
-Press <kbd>Cmd</kbd> \+<kbd>Enter</kbd> or <kbd>Ctrl</kbd> \+<kbd>Enter</kbd>
-(or click the **Run** button) to watch it unfold in your browser!
+Press <kbd>Cmd</kbd>+<kbd>Enter</kbd> or <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or
+click the **Run** button) to watch it unfold in your browser!
 
 In the following pages, this guide introduces you to the JavaScript syntax and
 language features, so that you will be able to write more complex applications.

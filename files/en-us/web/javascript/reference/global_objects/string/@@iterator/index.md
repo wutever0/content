@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.@@iterator
 ---
 {{JSRef}}
@@ -65,4 +66,6 @@ for (var v of str) {
 
 ## See also
 
+- A polyfill of `String.prototype[@@iterator]` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)

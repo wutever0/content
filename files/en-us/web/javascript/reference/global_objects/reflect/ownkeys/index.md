@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.ownKeys
 ---
 {{JSRef}}
@@ -18,8 +19,7 @@ object's own property keys.
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.ownKeys(<var>target</var>)
+<pre class="brush: js">Reflect.ownKeys(<var>target</var>)
 </pre>
 
 ### Parameters
@@ -71,5 +71,7 @@ Reflect.ownKeys(obj)
 
 ## See also
 
+- A polyfill of `Reflect.ownKeys` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.getOwnPropertyNames()")}}

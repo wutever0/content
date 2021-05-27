@@ -40,25 +40,7 @@ computed during the initialization of the given
 
 The resulting object has the following properties:
 
-- `locale`
-  - : The BCP 47 language tag for the locale actually used. If any Unicode
-    extension values were requested in the input BCP 47 language tag that led to
-    this locale, the key-value pairs that were requested and are supported for
-    this locale are included in `locale` .
-- `style`
-  - : The length of the internationalized message. Possible values are:
-    - "`long`" (default, e.g., `in 1 month`)
-    - "`short`" (e.g., `in 1 mo.`),
-    - or "`narrow`" (e.g., `in 1 mo.`). The narrow style could be similar to the
-      short style for some locales.
-- `numeric`
-  - : The format of output message. Possible values are:
-    - "`always`" (default, e.g., `1 day ago`),
-    - or "`auto`" (e.g., `yesterday`). The "`auto`" value allows to not always
-      have to use numeric values in the output.
-- `numberingSystem`
-  - : The value requested using the Unicode extension key " `nu` " or filled in
-    as a default.
+<dl><dt><code>locale</code></dt><dd>The BCP 47 language tag for the locale actually used. If any Unicode extension values were requested in the input BCP 47 language tag that led to this locale, the key-value pairs that were requested and are supported for this locale are included in <code>locale</code>.</dd><dt><code>style</code></dt><dd>The length of the internationalized message. Possible values are:<ul><li>"<code>long</code>" (default, e.g., <code>in 1 month</code>)</li><li>"<code>short</code>" (e.g., <code>in 1 mo.</code>),</li><li>or "<code>narrow</code>" (e.g., <code>in 1 mo.</code>). The narrow style could be similar to the short style for some locales.</li></ul></dd><dt><code>numeric</code></dt><dd>The format of output message. Possible values are:<ul><li>"<code>always</code>" (default, e.g., <code>1 day ago</code>),</li><li>or "<code>auto</code>" (e.g., <code>yesterday</code>). The "<code>auto</code>" value allows to not always have to use numeric values in the output.</li></ul></dd><dt><code>numberingSystem</code></dt><dd>The value requested using the Unicode extension key "<code>nu</code>" or filled in as a default.</dd></dl>
 
 ## Examples
 

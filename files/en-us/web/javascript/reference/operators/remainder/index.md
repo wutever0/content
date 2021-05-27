@@ -23,9 +23,7 @@ obtain a modulo in JavaScript, in place of `a % n`, use `((a % n ) + n ) % n`.
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><strong>Operator:</strong> <var>var1</var> % <var>var2</var>
+<pre class="brush: js"><strong>Operator:</strong> <var>var1</var> % <var>var2</var>
 </pre>
 
 ## Examples

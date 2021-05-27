@@ -18,8 +18,7 @@ The **with statement** extends the scope chain for a statement.
 
 ## Syntax
 
-<pre class="brush: js">
-with (<var>expression</var>)
+<pre class="brush: js">with (<var>expression</var>)
   <var>statement</var>
 </pre>
 

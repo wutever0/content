@@ -8,15 +8,13 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.startsWith
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>startsWith()</code></strong> method determines whether a
-> string begins with the characters of a specified string, returning
-> <code>true</code> or <code>false</code> as appropriate.</span
+The **`startsWith()`** method determines whether a string begins with the
+characters of a specified string, returning `true` or `false` as appropriate.
 
 {{EmbedInteractiveExample("pages/js/string-startswith.html")}}
 
@@ -32,10 +30,8 @@ startsWith(searchString, position)
 - `searchString`
   - : The characters to be searched for at the start of this string.
 - `position` {{optional_inline}}
-
   - : The position in this string at which to begin searching for
-
-    `searchString` . Defaults to `0` .
+    `searchString`. Defaults to `0`.
 
 ### Return value
 
@@ -91,6 +87,8 @@ compact, Polyfill is available
 
 ## See also
 
+- A polyfill of `String.prototype.startsWith` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.endsWith()")}}
 - {{jsxref("String.prototype.includes()")}}
 - {{jsxref("String.prototype.indexOf()")}}

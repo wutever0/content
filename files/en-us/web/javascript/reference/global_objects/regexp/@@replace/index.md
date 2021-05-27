@@ -8,6 +8,7 @@ tags:
 - Reference
 - RegExp
 - Regular Expressions
+- Polyfill
 browser-compat: javascript.builtins.RegExp.@@replace
 ---
 {{JSRef}}
@@ -21,9 +22,7 @@ each match.
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><var>regexp</var>[Symbol.replace](<var>str<var>, <var>newSubStr</var>|<var>function</var>)</var></var></pre>
+<pre class="brush: js"><var>regexp</var>[Symbol.replace](<var>str<var>, <var>newSubStr</var>|<var>function</var>)</var></var></pre>
 
 ### Parameters
 
@@ -117,6 +116,8 @@ console.log(newstr); // ###34567
 
 ## See also
 
+- A polyfill of `RegExp.prototype[@@replace]` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.replace()")}}
 - {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
 - {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}

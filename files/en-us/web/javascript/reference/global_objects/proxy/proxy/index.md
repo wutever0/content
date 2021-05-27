@@ -20,7 +20,7 @@ objects.
 ### Parameters
 
 - `target`
-  - : A target object to wrap with `Proxy` . It can be any sort of object,
+  - : A target object to wrap with `Proxy`. It can be any sort of object,
     including a native array, a function, or even another proxy.
 - `handler`
   - : An object whose properties are functions that define the behavior of the

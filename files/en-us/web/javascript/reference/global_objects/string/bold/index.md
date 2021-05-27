@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.bold
 ---
 {{JSRef}} {{deprecated_header}}
@@ -55,6 +56,8 @@ console.log(worldString.strike());  // <strike>Hello, world</strike>
 
 ## See also
 
+- A polyfill of `String.prototype.bold` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.blink()")}}
 - {{jsxref("String.prototype.italics()")}}
 - {{jsxref("String.prototype.strike()")}}

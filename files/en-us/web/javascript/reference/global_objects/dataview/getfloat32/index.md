@@ -28,12 +28,9 @@ getFloat32(byteOffset, littleEndian)
 - `byteOffset`
   - : The offset, in byte, from the start of the view where to read the data.
 - `littleEndian`
-
   - : {{optional_inline}} Indicates whether the 32-bit float is stored in
     {{Glossary("Endianness", "little- or big-endian")}} format.
-    If `false` or
-
-    `undefined` , a big-endian value is read.
+    If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
 

@@ -33,14 +33,8 @@ used. In implementations that ignore the `locales` and `options` arguments, the
 locale used and the form of the string returned are entirely
 implementation-dependent.
 
-<div>
-  See the
-  <a
-    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat/NumberFormat"
-    ><code>Intl.NumberFormat()</code> constructor</a
-  >
-  for details on these parameters and how to use them.
-</div>
+<div>See the <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat/NumberFormat"><code>Intl.NumberFormat()</code>
+constructor</a> for details on these parameters and how to use them.</div>
 
 ### Return value
 

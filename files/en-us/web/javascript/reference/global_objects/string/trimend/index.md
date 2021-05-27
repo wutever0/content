@@ -7,6 +7,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.trimEnd
 ---
 {{JSRef}}
@@ -49,8 +50,7 @@ String.prototype.trimRight.name === "trimEnd";
 
 The following example displays the lowercase string `' foo'`:
 
-<pre class="brush: js highlight: [5]">
-var str = '   foo  ';
+<pre class="brush: js highlight: [5]">var str = '   foo  ';
 
 console.log(str.length); // 8
 
@@ -69,5 +69,7 @@ console.log(str);        // '   foo'
 
 ## See also
 
+- A polyfill of `String.prototype.trimEnd` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.trim()")}}
 - {{jsxref("String.prototype.trimStart()")}}

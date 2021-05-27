@@ -10,6 +10,7 @@ tags:
 - Prototype
 - Reduce
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Array.reduce
 ---
 {{JSRef}}
@@ -60,37 +61,23 @@ reduce(function callbackFn(accumulator, currentValue, index, array) { ... }, ini
     It takes four arguments:
 
     - `accumulator`
-
-      - : The accumulator accumulates <var>callbackFn</var>
-
-        's return values. It is the accumulated value previously returned in the
-        last invocation of the callback—or
-
-        `initialValue` , if it was supplied (see below).
-
+      - : The accumulator accumulates <var>callbackFn</var>'s return values. It
+        is the accumulated value previously returned in the last invocation of
+        the callback—or `initialValue`, if it was supplied (see below).
     - `currentValue`
       - : The current element being processed in the array.
     - `index` {{optional_inline}}
-
       - : The index of the current element being processed in the array. Starts
-        from index
-
-        `0` if an `initialValue` is provided. Otherwise, it starts from index
-        `1` .
-
+        from index `0` if an `initialValue` is provided. Otherwise, it starts
+        from index `1`.
     - `array` {{optional_inline}}
       - : The array `reduce()` was called upon.
 
 - `initialValue` {{optional_inline}}
-
   - : A value to use as the first argument to the first call of the
-
-    `callbackFn` . If no `initialValue` is supplied, the first element in the
-    array will be used as the initial
-
-    `accumulator` value and skipped as
-
-    `currentValue` . Calling `reduce()` on an empty array without an
+    `callbackFn`. If no `initialValue` is supplied, the first element in the
+    array will be used as the initial `accumulator` value and skipped as
+    `currentValue`. Calling `reduce()` on an empty array without an
     `initialValue` will throw a {{jsxref("TypeError")}}.
 
 ### Return value
@@ -160,62 +147,7 @@ Suppose the following use of `reduce()` occurred:
 The callback would be invoked four times, with the arguments and return values
 in each call being as follows:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">
-        <code><var>callback</var></code> iteration
-      </th>
-      <th scope="col">
-        <code><var>accumulator</var></code>
-      </th>
-      <th scope="col">
-        <code><var>currentValue</var></code>
-      </th>
-      <th scope="col">
-        <code><var>currentIndex</var></code>
-      </th>
-      <th scope="col">
-        <code><var>array</var></code>
-      </th>
-      <th scope="col">return value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">first call</th>
-      <td><code>0</code></td>
-      <td><code>1</code></td>
-      <td><code>1</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>1</code></td>
-    </tr>
-    <tr>
-      <th scope="row">second call</th>
-      <td><code>1</code></td>
-      <td><code>2</code></td>
-      <td><code>2</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>3</code></td>
-    </tr>
-    <tr>
-      <th scope="row">third call</th>
-      <td><code>3</code></td>
-      <td><code>3</code></td>
-      <td><code>3</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>6</code></td>
-    </tr>
-    <tr>
-      <th scope="row">fourth call</th>
-      <td><code>6</code></td>
-      <td><code>4</code></td>
-      <td><code>4</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>10</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col"><code><var>callback</var></code> iteration</th><th scope="col"><code><var>accumulator</var></code></th><th scope="col"><code><var>currentValue</var></code></th><th scope="col"><code><var>currentIndex</var></code></th><th scope="col"><code><var>array</var></code></th><th scope="col">return value</th></tr></thead><tbody><tr><th scope="row">first call</th><td><code>0</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>1</code></td></tr><tr><th scope="row">second call</th><td><code>1</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>3</code></td></tr><tr><th scope="row">third call</th><td><code>3</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>6</code></td></tr><tr><th scope="row">fourth call</th><td><code>6</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
 
 The value returned by `reduce()` would be that of the last callback invocation
 (`10`).
@@ -238,70 +170,7 @@ the result would look like this:
 }, 10)
 ```
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">
-        <code><var>callback</var></code> iteration
-      </th>
-      <th scope="col">
-        <code><var>accumulator</var></code>
-      </th>
-      <th scope="col">
-        <code><var>currentValue</var></code>
-      </th>
-      <th scope="col">
-        <code><var>currentIndex</var></code>
-      </th>
-      <th scope="col">
-        <code><var>array</var></code>
-      </th>
-      <th scope="col">return value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">first call</th>
-      <td><code>10</code></td>
-      <td><code>0</code></td>
-      <td><code>0</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>10</code></td>
-    </tr>
-    <tr>
-      <th scope="row">second call</th>
-      <td><code>10</code></td>
-      <td><code>1</code></td>
-      <td><code>1</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>11</code></td>
-    </tr>
-    <tr>
-      <th scope="row">third call</th>
-      <td><code>11</code></td>
-      <td><code>2</code></td>
-      <td><code>2</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>13</code></td>
-    </tr>
-    <tr>
-      <th scope="row">fourth call</th>
-      <td><code>13</code></td>
-      <td><code>3</code></td>
-      <td><code>3</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>16</code></td>
-    </tr>
-    <tr>
-      <th scope="row">fifth call</th>
-      <td><code>16</code></td>
-      <td><code>4</code></td>
-      <td><code>4</code></td>
-      <td><code>[0, 1, 2, 3, 4]</code></td>
-      <td><code>20</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col"><code><var>callback</var></code> iteration</th><th scope="col"><code><var>accumulator</var></code></th><th scope="col"><code><var>currentValue</var></code></th><th scope="col"><code><var>currentIndex</var></code></th><th scope="col"><code><var>array</var></code></th><th scope="col">return value</th></tr></thead><tbody><tr><th scope="row">first call</th><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr><th scope="row">second call</th><td><code>10</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>11</code></td></tr><tr><th scope="row">third call</th><td><code>11</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>13</code></td></tr><tr><th scope="row">fourth call</th><td><code>13</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>16</code></td></tr><tr><th scope="row">fifth call</th><td><code>16</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
 
 The value returned by `reduce()` in this case would be `20`.
 
@@ -669,4 +538,6 @@ if (!Array.prototype.mapUsingReduce) {
 
 ## See also
 
+- A polyfill of `Array.prototype.reduce` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.reduceRight()")}}

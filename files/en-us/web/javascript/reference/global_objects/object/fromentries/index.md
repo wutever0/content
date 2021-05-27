@@ -6,6 +6,7 @@ tags:
   - Method
   - Object
   - Reference
+  - Polyfill
 browser-compat: javascript.builtins.Object.fromEntries
 ---
 {{JSRef}}
@@ -24,8 +25,7 @@ an object.
 - `iterable`
   - : An iterable such as {{jsxref("Array")}} or {{jsxref("Map")}}
     or other objects implementing the
-    [iterable protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol)
-    .
+    [iterable protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol).
 
 ### Return value
 
@@ -96,6 +96,8 @@ console.log(object2);
 
 ## See also
 
+- A polyfill of `Object.fromEntries` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.entries()")}}
 - {{jsxref("Object.keys()")}}
 - {{jsxref("Object.values()")}}

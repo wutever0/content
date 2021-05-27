@@ -29,11 +29,9 @@ A new string representing the calling string converted to upper case.
 ### Exceptions
 
 - {{jsxref("TypeError")}}
-
   - : When called on {{jsxref("null")}} or
     {{jsxref("undefined")}}, for example,
-
-    `String.prototype.toUpperCase.call(undefined)` .
+    `String.prototype.toUpperCase.call(undefined)`.
 
 ## Description
 

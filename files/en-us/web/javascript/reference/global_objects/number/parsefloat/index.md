@@ -6,15 +6,14 @@ tags:
   - JavaScript
   - Method
   - Number
+  - Polyfill
 browser-compat: javascript.builtins.Number.parseFloat
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Number.parseFloat()</code></strong> method parses an
-> argument and returns a floating point number. If a number cannot be parsed
-> from the argument, it returns {{jsxref("NaN")}}.</span
+The **`Number.parseFloat()`** method parses an argument and returns a floating
+point number. If a number cannot be parsed from the argument, it returns
+{{jsxref("NaN")}}.
 
 {{EmbedInteractiveExample("pages/js/number-parsefloat.html")}}
 
@@ -72,6 +71,8 @@ examples.
 
 ## See also
 
+- A polyfill of `Number.parseFloat` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
 - - {{jsxref("Number")}}
     - : The object this method belongs to.
 - The global {{jsxref("parseFloat", "parseFloat()")}} method.

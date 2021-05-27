@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.link
 ---
 {{JSRef}} {{deprecated_header}}
@@ -26,13 +27,9 @@ link(url)
 ### Parameters
 
 - `url`
-
-  - : Any string that specifies the `href` attribute of the
-
-    `<a>` element; it should be a valid URL (relative or absolute), with any `&`
-    characters escaped as `&amp;` , and any
-
-    `"` characters escaped as `&quot;` .
+  - : Any string that specifies the `href` attribute of the `<a>` element; it
+    should be a valid URL (relative or absolute), with any `&` characters
+    escaped as `&amp;`, and any `"` characters escaped as `&quot;`.
 
 ### Return value
 
@@ -73,4 +70,6 @@ console.log('Click to return to ' + hotText.link(url));
 
 ## See also
 
+- A polyfill of `String.prototype.link` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.anchor()")}}

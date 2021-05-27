@@ -12,11 +12,8 @@ tags:
 {{jsSidebar("JavaScript Guide")}}
 {{PreviousNext("Web/JavaScript/Guide/Indexed_Collections", "Web/JavaScript/Guide/Working_with_Objects")}}
 
-<p class="summary">
-  This chapter introduces collections of data which are indexed by a key;
-  <code>Map</code> and <code>Set</code> objects contain elements which are
-  iterable in the order of insertion.
-</p>
+This chapter introduces collections of data which are indexed by a key; `Map`
+and `Set` objects contain elements which are iterable in the order of insertion.
 
 ## Maps
 
@@ -29,11 +26,8 @@ elements in insertion order.
 The following code shows some basic operations with a `Map`. See also the
 {{jsxref("Map")}} reference page for more examples and the complete API.
 You can use a {{jsxref("Statements/for...of","for...of")}} loop
-to return an array of <code
-
-> [<var >key<var>, <var>value</var>]</var></var </code
->
-> for each iteration.
+to return an array of <code>[<var>key<var>, <var>value</var>]</var></var></code>
+for each iteration.
 
 ```js
 let sayings = new Map();

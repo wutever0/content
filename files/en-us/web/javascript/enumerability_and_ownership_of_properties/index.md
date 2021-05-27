@@ -28,53 +28,15 @@ retrieving object properties. These are summarized in the tables below.
 
 ### Detection
 
-|                              | Own object                                                                                                                                                                                                                                      | Own object and prototype chain                            | Prototype chain only             |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------- |
-| Enumerable                   | [`propertyIsEnumerable`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)[`hasOwnProperty`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)                                          | Not available without extra code                          | Not available without extra code |
-| Nonenumerable                | [`hasOwnProperty`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) – filtered to exclude enumerables using [`propertyIsEnumerable`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable) | Not available without extra code                          | Not available without extra code |
-| Enumerable and Nonenumerable | [`hasOwnProperty`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)                                                                                                                                                   | [`in`](/en-US/docs/Web/JavaScript/Reference/Operators/in) | Not available without extra code |
+<table><thead><tr><th></th><th>Own object</th><th>Own object and prototype chain</th><th>Prototype chain only</th></tr></thead><tbody><tr><th>Enumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable">propertyIsEnumerable</a></code></p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty">hasOwnProperty</a></code></p></td><td>Not available without extra code</td><td>Not available without extra code</td></tr><tr><th>Nonenumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty">hasOwnProperty</a></code> – filtered to exclude enumerables using <code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable">propertyIsEnumerable</a></code></p></td><td>Not available without extra code</td><td>Not available without extra code</td></tr><tr><th>Enumerable and Nonenumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty">hasOwnProperty</a></code></p></td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Operators/in">in</a></code></td><td>Not available without extra code</td></tr></tbody></table>
 
 ### Retrieval
 
-|               | Own object                                                                                                                                                                                                                                                                                          | Own object and prototype chain   | Prototype chain only             |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------- |
-| Enumerable    | [`Object.keys`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)[`getOwnPropertyNames`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames) [`getOwnPropertySymbols`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols) | Not available without extra code | Not available without extra code |
-| Nonenumerable | [`getOwnPropertyNames`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames), <code                                                                                                                                                                                      |
-
-> <a
-
-    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols"
-    >getOwnPropertySymbols</a
-
-> </code
->
-> – filtered to exclude enumerables
-> using [`propertyIsEnumerable`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)
-> | Not available without extra code | Not available without extra code | |
-> Enumerable and Nonenumerable |
-> [`getOwnPropertyNames`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)[`getOwnPropertySymbols`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols)
-> | Not available without extra code | Not available without extra code |
+<table><thead><tr><th></th><th>Own object</th><th>Own object and prototype chain</th><th>Prototype chain only</th></tr></thead><tbody><tr><th>Enumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">Object.keys</a></code></p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">getOwnPropertyNames</a></code> </p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols">getOwnPropertySymbols</a></code></p></td><td>Not available without extra code</td><td>Not available without extra code</td></tr><tr><th>Nonenumerable</th><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">getOwnPropertyNames</a></code>, <code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols">getOwnPropertySymbols</a></code> – filtered to exclude enumerables using <code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable">propertyIsEnumerable</a></code></td><td>Not available without extra code</td><td>Not available without extra code</td></tr><tr><th>Enumerable and Nonenumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">getOwnPropertyNames</a></code></p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols">getOwnPropertySymbols</a></code></p></td><td>Not available without extra code</td><td>Not available without extra code</td></tr></tbody></table>
 
 ### Iteration
 
-|               | Own object                                                                                                                                                                                                                                                                                          | Own object and prototype chain                                                           | Prototype chain only             |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------- |
-| Enumerable    | [`Object.keys`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)[`getOwnPropertyNames`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames) [`getOwnPropertySymbols`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols) | [`for..in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)(excluding symbols) | Not available without extra code |
-| Nonenumerable | [`getOwnPropertyNames`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames), <code                                                                                                                                                                                      |
-
-> <a
-
-    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols"
-    >getOwnPropertySymbols</a
-
-> </code
->
-> – filtered to exclude enumerables
-> using [`propertyIsEnumerable`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)
-> | Not available without extra code | Not available without extra code | |
-> Enumerable and Nonenumerable |
-> [`getOwnPropertyNames`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)[`getOwnPropertySymbols`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols)
-> | Not available without extra code | Not available without extra code |
+<table><thead><tr><th></th><th>Own object</th><th>Own object and prototype chain</th><th>Prototype chain only</th></tr></thead><tbody><tr><th>Enumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">Object.keys</a></code></p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">getOwnPropertyNames</a></code> </p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols">getOwnPropertySymbols</a></code></p></td><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for..in</a></code></p><p>(excluding symbols)</p></td><td>Not available without extra code</td></tr><tr><th>Nonenumerable</th><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">getOwnPropertyNames</a></code>, <code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols">getOwnPropertySymbols</a></code> – filtered to exclude enumerables using <code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable">propertyIsEnumerable</a></code></td><td>Not available without extra code</td><td>Not available without extra code</td></tr><tr><th>Enumerable and Nonenumerable</th><td><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">getOwnPropertyNames</a></code></p><p><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols">getOwnPropertySymbols</a></code></p></td><td>Not available without extra code</td><td>Not available without extra code</td></tr></tbody></table>
 
 ## Obtaining properties by enumerability/ownership
 
@@ -85,7 +47,7 @@ a quick demonstration.
   `SimplePropertyRetriever.theGetMethodYouWant(obj).indexOf(prop) > -1`
 - Iteration can occur by
   `SimplePropertyRetriever.theGetMethodYouWant(obj).forEach(function (value, prop) {});`
-  (or use` filter()`, `map()`, etc.)
+  (or use `filter()`, `map()`, etc.)
 
 ```js
 var SimplePropertyRetriever = {

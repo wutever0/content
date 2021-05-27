@@ -13,12 +13,11 @@ browser-compat: javascript.builtins.Intl.Locale.toString
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.toString()</code></strong> returns the
-> Locale's full <a
-> href="https://www.unicode.org/reports/tr35/#Unicode_locale_identifier" locale
-> identifier string</a .</span
+<span class="seoSummary">The
+<strong><code>Intl.Locale.prototype.toString()</code></strong> returns the
+Locale's full
+<a href="https://www.unicode.org/reports/tr35/#Unicode_locale_identifier">locale
+identifier string</a>.</span>
 
 {{EmbedInteractiveExample("pages/js/intl-locale-prototype-tostring.html")}}
 
@@ -32,7 +31,7 @@ toString()
 
 ### Return value
 
-The <var>locale</var> 's Unicode locale identifier string.
+The <var>locale</var>'s Unicode locale identifier string.
 
 ## Description
 

@@ -8,16 +8,15 @@ tags:
 - Method
 - Reference
 - fround
+- Polyfill
 browser-compat: javascript.builtins.Math.fround
 ---
 {{JSRef}}
 
-<p class="seoSummary">
-  The <strong><code>Math.fround()</code></strong> function returns the nearest
-  {{interwiki("wikipedia", "Single-precision floating-point format", "32-bit
+The **`Math.fround()`** function returns the nearest
+{{interwiki("wikipedia", "Single-precision floating-point format", "32-bit
   single precision")}}
-  float representation of a {{jsxref("Number")}}.
-</p>
+float representation of a {{jsxref("Number")}}.
 
 {{EmbedInteractiveExample("pages/js/math-fround.html")}}
 
@@ -80,16 +79,9 @@ Math.fround(1.337); // 1.3370000123977661
 Math.fround(1.337) === 1.337; // false
 ```
 
-<math
-
-> <semantics <msup <mn>2</mn>
-
-      <mn>150</mn> </msup
-    ><annotation encoding="TeX">2^150</annotation>
-
-</semantics></math
-
-> is too big for a 32-bit float, so `Infinity` is returned:
+<math><semantics><msup><mn>2</mn> <mn>150</mn>
+</msup><annotation encoding="TeX">2^150</annotation> </semantics></math> is too
+big for a 32-bit float, so `Infinity` is returned:
 
 ```js
 2 ** 150; // 1.42724769270596e+45
@@ -150,4 +142,6 @@ if (!Math.fround) Math.fround = function(arg) {
 
 ## See also
 
+- A polyfill of `Math.fround` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.round()")}}

@@ -19,8 +19,7 @@ value and the write of the new value.
 
 ## Syntax
 
-<pre class="brush: js">
-Atomics.exchange(<var>typedArray</var>, <var>index</var>, <var>value</var>)
+<pre class="brush: js">Atomics.exchange(<var>typedArray</var>, <var>index</var>, <var>value</var>)
 </pre>
 
 ### Parameters
@@ -32,18 +31,14 @@ Atomics.exchange(<var>typedArray</var>, <var>index</var>, <var>value</var>)
     {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
     {{jsxref("BigUint64Array")}}.
 - `index`
-
-  - : The position in the `typedArray` to exchange a
-
-    `value` .
-
+  - : The position in the `typedArray` to exchange a `value`.
 - `value`
   - : The number to exchange.
 
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code> ).
+(<code><var>typedArray</var>[<var>index</var>]</code>).
 
 ### Exceptions
 

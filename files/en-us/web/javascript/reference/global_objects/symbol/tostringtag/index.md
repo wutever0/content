@@ -7,6 +7,7 @@ tags:
   - Property
   - Reference
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol.toStringTag
 ---
 {{JSRef}}
@@ -90,4 +91,6 @@ test[Symbol.toStringTag];  // Returns HTMLButtonElement
 
 ## See also
 
+- A polyfill of `Symbol.toStringTag` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - {{jsxref("Object.prototype.toString()")}}

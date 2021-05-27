@@ -18,16 +18,14 @@ except it also accepts BigInts as operands.
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><strong>Operator:</strong> <var>var1</var> ** <var>var2</var>
+<pre class="brush: js"><strong>Operator:</strong> <var>var1</var> ** <var>var2</var>
 </pre>
 
 ## Description
 
 The exponentiation operator is right-associative: <code><var>a</var> **
 <var>b</var> ** <var>c</var></code> is equal to <code><var>a</var> **
-(<var>b</var> ** <var>c</var>)</code> .
+(<var>b</var> ** <var>c</var>)</code>.
 
 In most languages, such as PHP, Python, and others that have an exponentiation
 operator (`**`), the exponentiation operator is defined to have a higher

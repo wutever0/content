@@ -28,7 +28,7 @@ the base of the natural logarithms.
 
 ### Return value
 
-A number representing <code>e^<var>x</var></code> , where `e` is
+A number representing <code>e^<var>x</var></code>, where `e` is
 {{jsxref("Math.E", "Euler's number", "", 1)}} and `x` is the
 argument.
 

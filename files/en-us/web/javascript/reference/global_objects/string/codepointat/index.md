@@ -8,6 +8,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.codePointAt
 ---
 {{JSRef}}
@@ -131,6 +132,8 @@ if (!String.prototype.codePointAt) {
 
 ## See also
 
+- A polyfill of `String.prototype.codePointAt` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.fromCodePoint()")}}
 - {{jsxref("String.fromCharCode()")}}
 - {{jsxref("String.prototype.charCodeAt()")}}

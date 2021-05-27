@@ -13,14 +13,12 @@ browser-compat: javascript.operators.class
 ---
 {{jsSidebar("Operators")}}
 
-<span class="seoSummary"
-
-> The <strong>class expression</strong> is one way to define a class in
-> ECMAScript 2015. Similar to
-> {{jsxref("Operators/function", "function
+The **class expression** is one way to define a class in ECMAScript 2015.
+Similar to
+{{jsxref("Operators/function", "function
     expressions", "", "true")}},
-> class expressions can be named or unnamed. If named, the name of the class is
-> local to the class body only.</span
+class expressions can be named or unnamed. If named, the name of the class is
+local to the class body only.
 
 JavaScript classes use prototype-based inheritance.
 
@@ -28,35 +26,37 @@ JavaScript classes use prototype-based inheritance.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>MyClass</var> = class [<var>className</var>] [extends <var>otherClassName</var>] {
+<pre class="brush: js">const <var>MyClass</var> = class [<var>className</var>] [extends <var>otherClassName</var>] {
     // class body
-};</pre
->
-
+};</pre>
 
 ## Description
 
-A class expression has a similar syntax to a {{jsxref("Statements/class", "class
-  declaration (statement)", "", "true")}}. As with `class` statements, the body
-of a `class` expression is executed in {{jsxref("Strict_mode", "strict mode",
+A class expression has a similar syntax to a
+{{jsxref("Statements/class", "class
+  declaration (statement)", "", "true")}}.
+As with `class` statements, the body of a `class` expression is executed in
+{{jsxref("Strict_mode", "strict mode",
   "", 1)}}.
 
 There are several differences between class expressions and
-{{jsxref("Statements/class", "class statements", "", "true")}}, however:
+{{jsxref("Statements/class", "class statements", "", "true")}},
+however:
 
-*   Class expressions may omit the class name ("binding identifier"), which is not
-    possible with {{jsxref("Statements/class", "class statements", "", "true")}}.
-*   Class expressions allow you to redefine (re-declare) classes **without
-    throwing** a {{jsxref("Global_Objects/SyntaxError", "SyntaxError")}}. This is
-    not the case with {{jsxref("Statements/class", "class statements", "", "true")}}.
+- Class expressions may omit the class name ("binding identifier"), which is not
+  possible with
+  {{jsxref("Statements/class", "class statements", "", "true")}}.
+- Class expressions allow you to redefine (re-declare) classes **without
+  throwing** a
+  {{jsxref("Global_Objects/SyntaxError", "SyntaxError")}}. This
+  is not the case with
+  {{jsxref("Statements/class", "class statements", "", "true")}}.
 
-The `constructor` method is optional. Classes generated with class
-expressions will always respond to {{jsxref("Operators/typeof", "typeof")}} with the
-value "`function`".
+The `constructor` method is optional. Classes generated with class expressions
+will always respond to {{jsxref("Operators/typeof", "typeof")}} with
+the value "`function`".
 
-<pre class="brush: js">
-'use strict';
+<pre class="brush: js">'use strict';
 let Foo = class {};  // constructor property is optional
 Foo = class {};      // Re-declaration is allowed
 

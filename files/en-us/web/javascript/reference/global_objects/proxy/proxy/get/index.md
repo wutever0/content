@@ -16,8 +16,7 @@ The **`handler.get()`** method is a trap for getting a property value.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   get: function(<var>target</var>, <var>property</var>, <var>receiver</var>) {
   }
 });

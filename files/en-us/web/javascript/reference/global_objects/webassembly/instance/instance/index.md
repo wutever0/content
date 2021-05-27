@@ -32,10 +32,8 @@ new WebAssembly.Instance(module, importObject)
   - : The {{jsxref("WebAssembly.Module")}} object to be
     instantiated.
 - _importObject_ {{optional_inline}}
-
   - : An object containing the values to be imported into the newly-created
-
-    `Instance` , such as functions or
+    `Instance`, such as functions or
     {{jsxref("WebAssembly.Memory")}} objects. There must be one
     matching property for each declared import of `module` or else a
     {{jsxref("WebAssembly.LinkError")}} is thrown.

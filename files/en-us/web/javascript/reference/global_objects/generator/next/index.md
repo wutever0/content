@@ -12,12 +12,9 @@ browser-compat: javascript.builtins.Generator.next
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>next()</code></strong> method returns an object with two
-> properties <code>done</code> and <code>value</code>. You can also provide a
-> parameter to the <code>next</code> method to send a value to the
-> generator.</span
+The **`next()`** method returns an object with two properties `done` and
+`value`. You can also provide a parameter to the `next` method to send a value
+to the generator.
 
 ## Syntax
 
@@ -32,8 +29,8 @@ next(value)
   - : The value to send to the generator.
 
     The value will be assigned as a result of a `yield` expression. For example,
-    in <code><var>variable</var> = yield <var>expression</var></code> , the
-    value passed to the `.next()` function will be assigned to `variable`.
+    in <code><var>variable</var> = yield <var>expression</var></code>, the value
+    passed to the `.next()` function will be assigned to `variable`.
 
 ### Return value
 
@@ -50,10 +47,8 @@ An {{jsxref("Object")}} with two properties:
     altogether.
 
 - `value`
-
   - : Any JavaScript value returned by the iterator. Can be omitted when `done`
-
-    is `true` .
+    is `true`.
 
 ## Examples
 

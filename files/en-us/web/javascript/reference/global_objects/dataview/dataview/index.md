@@ -7,6 +7,7 @@ tags:
 - JavaScript
 - Reference
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.DataView.DataView
 ---
 {{JSRef}}
@@ -82,4 +83,6 @@ view.getInt16(1); // 42
 
 ## See also
 
+- A polyfill of `DataView` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("DataView")}}

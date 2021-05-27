@@ -14,11 +14,9 @@ browser-compat: javascript.operators.yield_star
 ---
 {{jsSidebar("Operators")}}
 
-<span class="seoSummary"
-
-> The <strong><code>yield\*</code> expression</strong> is used to delegate to
-> another {{jsxref("Statements/function*", "generator")}} or
-> iterable object.</span
+The **`yield*` expression** is used to delegate to another
+{{jsxref("Statements/function*", "generator")}} or iterable
+object.
 
 {{EmbedInteractiveExample("pages/js/expressions-yieldasterisk.html")}}
 

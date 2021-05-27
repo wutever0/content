@@ -18,24 +18,22 @@ executing the statement.
 
 ## Syntax
 
-<pre class="brush: js">
-while (<var>condition</var>)
+<pre class="brush: js">while (<var>condition</var>)
   <var>statement</var>
 </pre>
 
 - `condition`
-
   - : An expression evaluated before each pass through the loop. If this
     condition evaluates to true, `statement` is executed. When condition
-    evaluates to false, execution continues with the statement after the
-
-    `while` loop.
-
+    evaluates to false, execution continues with the statement after the `while`
+    loop.
 - `statement`
+
   - : An optional statement that is executed as long as the condition evaluates
     to true. To execute multiple statements within the loop, use a
-    [block](/en-US/docs/JavaScript/Reference/Statements/block) statement (
-    `{ ... }` ) to group those statements.
+    [block](/en-US/docs/JavaScript/Reference/Statements/block) statement
+    (`{ ... }`) to group those statements.
+
     Note: Use the `break` statement to stop a loop before condition evaluates to
     true.
 

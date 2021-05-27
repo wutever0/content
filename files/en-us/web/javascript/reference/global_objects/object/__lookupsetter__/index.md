@@ -7,6 +7,7 @@ tags:
   - Method
   - Object
   - Prototype
+  - Polyfill
 browser-compat: javascript.builtins.Object.lookupSetter
 ---
 {{JSRef}} {{deprecated_header}}
@@ -70,6 +71,8 @@ Object.getOwnPropertyDescriptor(obj, 'foo').set;
 
 ## See also
 
+- A polyfill of `Object.prototype.__lookupSetter__` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.prototype.__lookupGetter__()")}}
 - {{jsxref("Functions/set", "set")}} operator
 - {{jsxref("Object.getOwnPropertyDescriptor()")}} and

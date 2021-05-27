@@ -8,6 +8,7 @@ tags:
 - Reference
 - Regular Expressions
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.matchAll
 ---
 {{JSRef}}
@@ -34,7 +35,7 @@ matchAll(regexp)
 
     If a non-`RegExp` object `obj` is passed, it is implicitly converted to a
     {{jsxref("RegExp")}} by using <code>new
-    RegExp(<var>obj</var>)</code> .
+    RegExp(<var>obj</var>)</code>.
 
     The `RegExp` object must have the `/g` flag, otherwise a `TypeError` will be
     thrown.
@@ -158,6 +159,8 @@ array[1];
 
 ## See also
 
+- A polyfill of `String.prototype.matchAll` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.match()")}}
 - [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [Capturing groups](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)

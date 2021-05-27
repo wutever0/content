@@ -8,13 +8,7 @@ tags:
 ---
 {{jsSidebar("JavaScript Guide")}}
 
-<p class="summary">
-  The JavaScript Guide shows you how to use
-  <a href="/en-US/docs/Web/JavaScript">JavaScript</a> and gives an overview of
-  the language. If you need exhaustive information about a language feature,
-  have a look at the
-  <a href="/en-US/docs/Web/JavaScript/Reference">JavaScript reference</a>.
-</p>
+<p class="summary">The JavaScript Guide shows you how to use <a href="/en-US/docs/Web/JavaScript">JavaScript</a> and gives an overview of the language. If you need exhaustive information about a language feature, have a look at the <a href="/en-US/docs/Web/JavaScript/Reference">JavaScript reference</a>.</p>
 
 This Guide is divided into the following chapters.
 
@@ -48,20 +42,8 @@ This Guide is divided into the following chapters.
 - [`for`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement)
 - [`while`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#while_statement)
 - [`do...while`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement)
-- <code
-
-  > <a
-
-      href="/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement"
-      >continue</a
-
-  > /<a
-
-      href="/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement"
-      >break</a
-
-  > </code
-
+- [`continue`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement)
+- [`break`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement)
 - [`for..in`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...in_statement)
 - [`for..of`](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement)
 

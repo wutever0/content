@@ -30,18 +30,14 @@ used inside an
 
 ## Syntax
 
-<pre class="brush: js">
-for await (<var>variable</var> of <var>iterable</var>) {
+<pre class="brush: js">for await (<var>variable</var> of <var>iterable</var>) {
   <var>statement</var>
 }
 </pre>
 
 - `variable`
-
   - : On each iteration a value of a different property is assigned to
-
-    `variable` . `variable` may be declared with `const` , `let` , or `var` .
-
+    `variable`. `variable` may be declared with `const`, `let`, or `var`.
 - `iterable`
   - : Object whose iterable properties are to be iterated over.
 

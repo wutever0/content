@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - TypedArray
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.Float32Array
 ---
 {{JSRef}}
@@ -26,7 +27,7 @@ syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Float32Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `4` in the case of an
-    `Float32Array` .
+    `Float32Array`.
 - {{jsxref("TypedArray.name", "Float32Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
     `Float32Array` type: "Float32Array".
@@ -44,16 +45,16 @@ syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Float32Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Float32Array` Fixed at construction time and thus **read only** .
+    `Float32Array` Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Float32Array.prototype.byteLength")}}
-  - : Returns the length (in bytes) of the `Float32Array` . Fixed at
-    construction time and thus **read only.**
+  - : Returns the length (in bytes) of the `Float32Array`. Fixed at construction
+    time and thus **read only.**
 - {{jsxref("TypedArray.prototype.byteOffset", "Float32Array.prototype.byteOffset")}}
   - : Returns the offset (in bytes) of the `Float32Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Float32Array.prototype.length")}}
-  - : Returns the number of elements hold in the `Float32Array` . Fixed at
+  - : Returns the number of elements hold in the `Float32Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -189,6 +190,8 @@ var float32 = new Float32Array(iterable);
 
 ## See also
 
+- A polyfill of `Float32Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

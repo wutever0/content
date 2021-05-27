@@ -15,20 +15,17 @@ The **`Proxy.revocable()`** method is used to create a revocable
 
 ## Syntax
 
-<pre class="brush: js">
-Proxy.revocable(<var>target</var>, <var>handler</var>);
+<pre class="brush: js">Proxy.revocable(<var>target</var>, <var>handler</var>);
 </pre>
 
 ### Parameters
 
 - `target`
-  - : A target object to wrap with `Proxy` . It can be any sort of object,
+  - : A target object to wrap with `Proxy`. It can be any sort of object,
     including a native array, a function, or even another proxy.
 - `handler`
-
-  - : An object whose properties are functions define the behavior of proxy
-
-    `p` when an operation is performed on it.
+  - : An object whose properties are functions define the behavior of proxy `p`
+    when an operation is performed on it.
 
 ### Return value
 
@@ -42,7 +39,7 @@ A revocable `Proxy` is an object with following two properties
 - `proxy`
   - : A Proxy object created with `new Proxy(target, handler)` call.
 - `revoke`
-  - : A function with no argument to invalidate (switch off) the `proxy` .
+  - : A function with no argument to invalidate (switch off) the `proxy`.
 
 If the `revoke()` function gets called, the proxy becomes unusable: Any trap to
 a handler will throw a {{jsxref("TypeError")}}. Once a proxy is

@@ -119,8 +119,7 @@ let removedItem = fruits.splice(pos, 1) // this is how to remove an item
 
 **Remove items from an index position**
 
-<pre class="brush: js">
-let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+<pre class="brush: js">let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
 console.log(vegetables)
 // ["Cabbage", "Turnip", "Radish", "Carrot"]
 
@@ -278,45 +277,7 @@ const myArray = myRe.exec('cdbBdbsbz')
 
 The properties and elements returned from this match are as follows:
 
-<table class="fullwidth-table standard-table">
-  <thead>
-    <tr>
-      <th class="header" scope="col">Property/Element</th>
-      <th class="header" scope="col">Description</th>
-      <th class="header" scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>input</code><br />{{ReadOnlyInline}}</td>
-      <td>
-        The original string against which the regular expression was matched.
-      </td>
-      <td><code>"cdbBdbsbz"</code></td>
-    </tr>
-    <tr>
-      <td><code>index</code><br />{{ReadOnlyInline}}</td>
-      <td>The zero-based index of the match in the string.</td>
-      <td><code>1</code></td>
-    </tr>
-    <tr>
-      <td><code>[0]</code><br />{{ReadOnlyInline}}</td>
-      <td>The last matched characters.</td>
-      <td><code>"dbBd"</code></td>
-    </tr>
-    <tr>
-      <td><code>[1], ...[n]</code><br />{{ReadOnlyInline}}</td>
-      <td>
-        Elements that specify the parenthesized substring matches (if included)
-        in the regular expression. The number of possible parenthesized
-        substrings is unlimited.
-      </td>
-      <td>
-        <code>[1]: "bB"<br />[2]: "d"</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="fullwidth-table standard-table"><thead><tr><th class="header" scope="col">Property/Element</th><th class="header" scope="col">Description</th><th class="header" scope="col">Example</th></tr></thead><tbody><tr><td><code>input</code><br>{{ReadOnlyInline}}</td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz"</code></td></tr><tr><td><code>index</code><br>{{ReadOnlyInline}}</td><td>The zero-based index of the match in the string.</td><td><code>1</code></td></tr><tr><td><code>[0]</code><br>{{ReadOnlyInline}}</td><td>The last matched characters.</td><td><code>"dbBd"</code></td></tr><tr><td><code>[1], ...[n]</code><br>{{ReadOnlyInline}}</td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: "bB"<br>[2]: "d"</code></td></tr></tbody></table>
 
 ## Constructor
 
@@ -368,7 +329,7 @@ The properties and elements returned from this match are as follows:
     a static value.
 - {{jsxref("Array.prototype.filter()")}}
   - : Returns a new array containing all elements of the calling array for which
-    the provided filtering function returns `true` .
+    the provided filtering function returns `true`.
 - {{jsxref("Array.prototype.find()")}}
   - : Returns the found `element` in the array, if some element in the array
     satisfies the testing function, or `undefined` if not found.
@@ -406,7 +367,7 @@ The properties and elements returned from this match are as follows:
   - : Apply a function against an accumulator> and each value of the array (from
     right-to-left) as to reduce it to a single value.
 - {{jsxref("Array.prototype.reverse()")}}
-  - : Reverses the order of the elements of an array _in place_ . (First becomes
+  - : Reverses the order of the elements of an array _in place_. (First becomes
     the last, last becomes first.)
 - {{jsxref("Array.prototype.shift()")}}
   - : Removes the first element from an array and returns that element.

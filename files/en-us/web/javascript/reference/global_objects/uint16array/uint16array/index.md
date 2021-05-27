@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - Reference
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.Uint16Array.Uint16Array
 ---
 {{JSRef}}
@@ -30,38 +31,25 @@ new Uint16Array(buffer, byteOffset, length);
 
 - `length`
   - : When called with a `length` argument, an internal array buffer is created
-    in memory, of size `length`
-    _multiplied by `BYTES_PER_ELEMENT`_ bytes, containing zeros.
+    in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes,
+    containing zeros.
 - `typedArray`
-
   - : When called with a `typedArray` argument, which can be an object of any of
-    the typed array types (such as `Int32Array` ), the
-
-    `typedArray` gets copied into a new typed array. Each value in
-
-    `typedArray` is converted to the corresponding type of the constructor
-    before being copied into the new array. The length of the new typed array
-    will be same as the length of the `typedArray` argument.
-
+    the typed array types (such as `Int32Array`), the `typedArray` gets copied
+    into a new typed array. Each value in `typedArray` is converted to the
+    corresponding type of the constructor before being copied into the new
+    array. The length of the new typed array will be same as the length of the
+    `typedArray` argument.
 - `object`
-
   - : When called with an `object` argument, a new typed array is created as if
-    by the <code><var>TypedArray</var>.from()</code>
-
-    method.
-
+    by the <code><var>TypedArray</var>.from()</code> method.
 - `buffer`, `byteOffset`, `length`
-
-  - : When called with a `buffer` , and optionally a
-
-    `byteOffset` and a `length` argument, a new typed array view is created that
-    views the specified {{jsxref("ArrayBuffer")}}. The `byteOffset` and
-    `length` parameters specify the memory range that will be exposed by the
-    typed array view. If both are omitted, all of `buffer` is viewed; if only
-
-    `length` is omitted, the remainder of
-
-    `buffer` is viewed.
+  - : When called with a `buffer`, and optionally a `byteOffset` and a `length`
+    argument, a new typed array view is created that views the specified
+    {{jsxref("ArrayBuffer")}}. The `byteOffset` and `length` parameters
+    specify the memory range that will be exposed by the typed array view. If
+    both are omitted, all of `buffer` is viewed; if only `length` is omitted,
+    the remainder of `buffer` is viewed.
 
 ## Description
 
@@ -128,6 +116,8 @@ var uint16 = new Uint16Array(iterable);
 
 ## See also
 
+- A polyfill of `Uint16Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

@@ -12,11 +12,8 @@ browser-compat: javascript.builtins.Generator.throw
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>throw()</code></strong> method resumes the execution of a
-> generator by throwing an error into it and returns an object with two
-> properties <code>done</code> and <code>value</code>.</span
+The **`throw()`** method resumes the execution of a generator by throwing an
+error into it and returns an object with two properties `done` and `value`.
 
 ## Syntax
 
@@ -27,9 +24,7 @@ throw(exception)
 ### Parameters
 
 - `exception`
-
   - : The exception to throw. For debugging purposes, it is useful to make it an
-
     `instanceof` {{jsxref("Error")}}.
 
 ### Return value
@@ -37,19 +32,12 @@ throw(exception)
 An {{jsxref("Global_Objects/Object", "Object")}} with two
 properties:
 
-- `done` (boolean)
-  - :
-    - Has the value `true` if the iterator is past the end of the iterated
-      sequence. In this case `value` optionally specifies the _return value_ of
-      the iterator.
-    - Has the value `false` if the iterator was able to produce the next value
-      in the sequence. This is equivalent of not specifying the `done` property
-      altogether.
-- `value`
-
-  - : Any JavaScript value returned by the iterator. Can be omitted when `done`
-
-    is `true` .
+<dl><dt><code>done</code> (boolean)</dt><dd><ul><li>Has the value <code>true</code> if the iterator is past the end of the iterated
+sequence. In this case <code>value</code> optionally specifies the <em>return
+value</em> of the iterator.</li><li>Has the value <code>false</code> if the iterator was able to produce the next
+value in the sequence. This is equivalent of not specifying the <code>done</code>
+property altogether.</li></ul></dd><dt><code>value</code></dt><dd>Any JavaScript value returned by the iterator. Can be omitted when <code>done</code>
+is <code>true</code>.</dd></dl>
 
 ## Examples
 

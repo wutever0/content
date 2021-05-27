@@ -28,12 +28,9 @@ String.fromCharCode(num1, num2, ..., numN)
 ### Parameters
 
 - <code>num1, ..., num<em>N</em></code>
-
-  - : A sequence of numbers that are UTF-16 code units. The range is between
-
-    `0` and `65535` ( `0xFFFF` ). Numbers greater than
-
-    `0xFFFF` are truncated. No validity checks are performed.
+  - : A sequence of numbers that are UTF-16 code units. The range is between `0`
+    and `65535` (`0xFFFF`). Numbers greater than `0xFFFF` are truncated. No
+    validity checks are performed.
 
 ### Return value
 

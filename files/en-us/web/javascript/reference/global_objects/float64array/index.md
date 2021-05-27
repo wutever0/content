@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - TypedArray
   - TypedArrays
+  - Polyfill
 browser-compat: javascript.builtins.Float64Array
 ---
 {{JSRef}}
@@ -26,7 +27,7 @@ syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.BYTES_PER_ELEMENT", "Float64Array.BYTES_PER_ELEMENT")}}
   - : Returns a number value of the element size. `8` in the case of an
-    `Float64Array` .
+    `Float64Array`.
 - {{jsxref("TypedArray.name", "Float64Array.name")}}
   - : Returns the string value of the constructor name. In the case of the
     `Float64Array` type: "Float64Array".
@@ -44,7 +45,7 @@ syntax (that is, using bracket notation).
 
 - {{jsxref("TypedArray.prototype.buffer", "Float64Array.prototype.buffer")}}
   - : Returns the {{jsxref("ArrayBuffer")}} referenced by the
-    `Float64Array` Fixed at construction time and thus **read only** .
+    `Float64Array` Fixed at construction time and thus **read only**.
 - {{jsxref("TypedArray.prototype.byteLength", "Float64Array.prototype.byteLength")}}
   - : Returns the length (in bytes) of the `Float64Array` from the start of its
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
@@ -54,7 +55,7 @@ syntax (that is, using bracket notation).
     {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read
     only.**
 - {{jsxref("TypedArray.prototype.length", "Float64Array.prototype.length")}}
-  - : Returns the number of elements hold in the `Float64Array` . Fixed at
+  - : Returns the number of elements hold in the `Float64Array`. Fixed at
     construction time and thus **read only.**
 
 ## Instance methods
@@ -190,6 +191,8 @@ var float64 = new Float64Array(iterable);
 
 ## See also
 
+- A polyfill of `Float64Array` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - {{jsxref("ArrayBuffer")}}
 - {{jsxref("DataView")}}

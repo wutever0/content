@@ -8,11 +8,12 @@ tags:
 - TypedArray
 - TypedArrays
 - from
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.from
 ---
 {{JSRef}}
 
-The **<code><var>TypedArray</var>.from()</code> ** method creates a new
+The **<code><var>TypedArray</var>.from()</code>** method creates a new
 [typed array](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 from an array-like or iterable object. This method is nearly the same as
 {{jsxref("Array.from()")}}.
@@ -40,21 +41,7 @@ TypedArray.from(arrayLike, function mapFn(currentValue, index, array) { ... }, t
 
 Where `TypedArray` is one of:
 
-<div class="threecolumns">
-  <ul>
-    <li>{{jsxref("Int8Array")}}</li>
-    <li>{{jsxref("Uint8Array")}}</li>
-    <li>{{jsxref("Uint8ClampedArray")}}</li>
-    <li>{{jsxref("Int16Array")}}</li>
-    <li>{{jsxref("Uint16Array")}}</li>
-    <li>{{jsxref("Int32Array")}}</li>
-    <li>{{jsxref("Uint32Array")}}</li>
-    <li>{{jsxref("Float32Array")}}</li>
-    <li>{{jsxref("Float64Array")}}</li>
-    <li>{{jsxref("BigInt64Array")}}</li>
-    <li>{{jsxref("BigUint64Array")}}</li>
-  </ul>
-</div>
+<div class="threecolumns"><ul><li>{{jsxref("Int8Array")}}</li><li>{{jsxref("Uint8Array")}}</li><li>{{jsxref("Uint8ClampedArray")}}</li><li>{{jsxref("Int16Array")}}</li><li>{{jsxref("Uint16Array")}}</li><li>{{jsxref("Int32Array")}}</li><li>{{jsxref("Uint32Array")}}</li><li>{{jsxref("Float32Array")}}</li><li>{{jsxref("Float64Array")}}</li><li>{{jsxref("BigInt64Array")}}</li><li>{{jsxref("BigUint64Array")}}</li></ul></div>
 
 ### Parameters
 
@@ -63,7 +50,7 @@ Where `TypedArray` is one of:
 - `mapFn` {{optional_inline}}
   - : Map function to call on every element of the typed array.
 - `thisArg` {{optional_inline}}
-  - : Value to use as `this` when executing `mapFn` .
+  - : Value to use as `this` when executing `mapFn`.
 
 ### Return value
 
@@ -84,15 +71,10 @@ which allows you to execute a
 element of the typed array (or subclass object) that is being created. This
 means that the following are equivalent:
 
-- <code
-
-  > <var>TypedArray</var>.from(<var>obj</var>, <var>mapFn</var>,
-  > <var>thisArg</var>)</code
-
-- <code
-
-  > <var>TypedArray</var>.from(Array.prototype.map.call(<var>obj</var>,
-  > <var>mapFn</var>, <var>thisArg</var>))</code
+- <code><var>TypedArray</var>.from(<var>obj</var>, <var>mapFn</var>,
+  <var>thisArg</var>)</code>
+- <code><var>TypedArray</var>.from(Array.prototype.map.call(<var>obj</var>,
+  <var>mapFn</var>, <var>thisArg</var>))</code>
 
   .
 
@@ -101,7 +83,7 @@ The `length` property of the `from()` method is `1`.
 ### Differences from Array.from()
 
 Some subtle distinctions between {{jsxref("Array.from()")}} and
-<code><var>TypedArray</var>.from()</code> :
+<code><var>TypedArray</var>.from()</code>:
 
 - If the `thisArg` value passed to
 
@@ -172,54 +154,6 @@ Uint8Array.from({length: 5}, (v, k) => k);
 // Uint8Array [ 0, 1, 2, 3, 4 ]
 ```
 
-## Polyfill
-
-You can partially work around this by inserting the following code at the
-beginning of your scripts, allowing use of much of the functionality of `from()`
-in implementations that do not natively support it.
-
-```js
-if (!Int8Array.__proto__.from) {
-    (function () {
-        Int8Array.__proto__.from = function (obj, func, thisObj) {
-
-            var typedArrayClass = Int8Array.__proto__;
-            if(typeof this !== 'function') {
-                throw new TypeError('# is not a constructor');
-            }
-            if (this.__proto__ !== typedArrayClass) {
-                throw new TypeError('this is not a typed array.');
-            }
-
-            func = func || function (elem) {
-                    return elem;
-                };
-
-            if (typeof func !== 'function') {
-                throw new TypeError('specified argument is not a function');
-            }
-
-            obj = Object(obj);
-            if (!obj['length']) {
-                return new this(0);
-            }
-            var copy_data = [];
-            for(var i = 0; i < obj.length; i++) {
-                copy_data.push(obj[i]);
-            }
-
-            copy_data = copy_data.map(func, thisObj);
-
-            var typed_array = new this(copy_data.length);
-            for(var i = 0; i < typed_array.length; i++) {
-                typed_array[i] = copy_data[i];
-            }
-            return typed_array;
-        }
-    })();
-}
-```
-
 ## Specifications
 
 {{Specifications}}
@@ -230,6 +164,9 @@ if (!Int8Array.__proto__.from) {
 
 ## See also
 
+- A polyfill of `TypedArray.from` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.of()")}}
 - {{jsxref("Array.from()")}}
 - {{jsxref("Array.prototype.map()")}}
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/v0.0.1/int-8-array.polyfill.js)

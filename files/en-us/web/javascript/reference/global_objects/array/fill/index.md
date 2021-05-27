@@ -7,17 +7,14 @@ tags:
 - JavaScript
 - Method
 - Prototype
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.fill
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>fill()</strong></code> method changes all elements in an
-> array to a static value, from a start index (default <code>0</code>) to an end
-> index (default <code>array.length</code>). It returns the modified
-> array.</span
+The **`fill()`** method changes all elements in an array to a static value, from
+a start index (default `0`) to an end index (default `array.length`). It returns
+the modified array.
 
 {{EmbedInteractiveExample("pages/js/array-fill.html")}}
 
@@ -35,9 +32,9 @@ fill(value, start, end)
   - : Value to fill the array with. (Note all elements in the array will be this
     exact value.)
 - `start` {{optional_inline}}
-  - : Start index, default `0` .
+  - : Start index, default `0`.
 - `end` {{optional_inline}}
-  - : End index, default `arr.length` .
+  - : End index, default `arr.length`.
 
 ### Return value
 
@@ -164,5 +161,7 @@ console.log(arr[2][0]); // 1
 
 ## See also
 
+- A polyfill of `Array.prototype.fill` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array")}}
 - {{jsxref("TypedArray.prototype.fill()")}}

@@ -258,231 +258,7 @@ this is untrue, however. Unfortunately, {{jsxref("Object.is")}} has to
 be thought of in terms of its specific characteristics, rather than its
 looseness or strictness with regard to the equality operators.
 
-<table class="standard-table">
-  <caption>
-    Sameness Comparisons
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">x</th>
-      <th scope="col">y</th>
-      <th scope="col"><code>==</code></th>
-      <th scope="col"><code>===</code></th>
-      <th scope="col"><code>Object.is</code></th>
-      <th scope="col"><code>SameValueZero</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>undefined</code></td>
-      <td><code>undefined</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>null</code></td>
-      <td><code>null</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>true</code></td>
-      <td><code>true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>false</code></td>
-      <td><code>false</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>'foo'</code></td>
-      <td><code>'foo'</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>0</code></td>
-      <td><code>0</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>+0</code></td>
-      <td><code>-0</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>+0</code></td>
-      <td><code>0</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>-0</code></td>
-      <td><code>0</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>0n</code></td>
-      <td><code>-0n</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-    <tr>
-      <td><code>0</code></td>
-      <td><code>false</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>""</code></td>
-      <td><code>false</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>""</code></td>
-      <td><code>0</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>'0'</code></td>
-      <td><code>0</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>'17'</code></td>
-      <td><code>17</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>[1, 2]</code></td>
-      <td><code>'1,2'</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>new String('foo')</code></td>
-      <td><code>'foo'</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>null</code></td>
-      <td><code>undefined</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>null</code></td>
-      <td><code>false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>undefined</code></td>
-      <td><code>false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>{ foo: 'bar' }</code></td>
-      <td><code>{ foo: 'bar' }</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>new String('foo')</code></td>
-      <td><code>new String('foo')</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>0</code></td>
-      <td><code>null</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>0</code></td>
-      <td><code>NaN</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>'foo'</code></td>
-      <td><code>NaN</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-    </tr>
-    <tr>
-      <td><code>NaN</code></td>
-      <td><code>NaN</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>❌ false</code></td>
-      <td><code>✅ true</code></td>
-      <td><code>✅ true</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Sameness Comparisons</caption><thead><tr><th scope="col">x</th><th scope="col">y</th><th scope="col"><code>==</code></th><th scope="col"><code>===</code></th><th scope="col"><code>Object.is</code></th><th scope="col"><code>SameValueZero</code></th></tr></thead><tbody><tr><td><code>undefined</code></td><td><code>undefined</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>null</code></td><td><code>null</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>true</code></td><td><code>true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>false</code></td><td><code>false</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>'foo'</code></td><td><code>'foo'</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>0</code></td><td><code>0</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>+0</code></td><td><code>-0</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>✅ true</code></td></tr><tr><td><code>+0</code></td><td><code>0</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>-0</code></td><td><code>0</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>✅ true</code></td></tr><tr><td><code>0n</code></td><td><code>-0n</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr><tr><td><code>0</code></td><td><code>false</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>""</code></td><td><code>false</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>""</code></td><td><code>0</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>'0'</code></td><td><code>0</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>'17'</code></td><td><code>17</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>[1, 2]</code></td><td><code>'1,2'</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>new String('foo')</code></td><td><code>'foo'</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>null</code></td><td><code>undefined</code></td><td><code>✅ true</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>null</code></td><td><code>false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>undefined</code></td><td><code>false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>{ foo: 'bar' }</code></td><td><code>{ foo: 'bar' }</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>new String('foo')</code></td><td><code>new String('foo')</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>0</code></td><td><code>null</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>0</code></td><td><code>NaN</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>'foo'</code></td><td><code>NaN</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td></tr><tr><td><code>NaN</code></td><td><code>NaN</code></td><td><code>❌ false</code></td><td><code>❌ false</code></td><td><code>✅ true</code></td><td><code>✅ true</code></td></tr></tbody></table>
 
 ## When to use Object.is versus triple equals
 
@@ -503,17 +279,7 @@ your comparison.
 Here's a non-exhaustive list of built-in methods and operators that might cause
 a distinction between `-0` and `+0` to manifest itself in your code:
 
-- [`- (unary negation)`](/en-US/docs/Web/JavaScript/Reference/Operators#-_.28unary_negation.29)
-
-  - :
-    ```js
-        let stoppingForce = obj.mass * -obj.velocity;
-        ```
-
-    If `obj.velocity` is `0` (or computes to `0`), a `-0` is introduced at that
-    place and propagates out into `stoppingForce`.
-
-<!---->
+<dl><dt><a href="/en-US/docs/Web/JavaScript/Reference/Operators#-_.28unary_negation.29"><code>- (unary negation)</code></a></dt><dd><pre class="brush: js">let stoppingForce = obj.mass * -obj.velocity;</pre><p>If <code>obj.velocity</code> is <code>0</code> (or computes to <code>0</code>), a <code>-0</code> is introduced at that place and propagates out into <code>stoppingForce</code>.</p></dd></dl>
 
 - {{jsxref("Math.atan2")}}, {{jsxref("Math.ceil")}},
   {{jsxref("Math.pow")}}, {{jsxref("Math.round")}}
@@ -521,14 +287,14 @@ a distinction between `-0` and `+0` to manifest itself in your code:
     as a return value of these methods even when no `-0` exists as one of the
     parameters. For example, using {{jsxref("Math.pow")}} to raise
     {{jsxref("Infinity", "-Infinity")}} to the power of any
-    negative, odd exponent evaluates to `-0` . Refer to the documentation for
-    the individual methods.
+    negative, odd exponent evaluates to `-0`. Refer to the documentation for the
+    individual methods.
 - {{jsxref("Math.floor")}}, {{jsxref("Math.max")}},
   {{jsxref("Math.min")}}, {{jsxref("Math.sin")}},
   {{jsxref("Math.sqrt")}}, {{jsxref("Math.tan")}}
   - : It's possible to get a `-0` return value out of these methods in some
     cases where a `-0` exists as one of the parameters. E.g., `Math.min(-0, +0)`
-    evaluates to `-0` . Refer to the documentation for the individual methods.
+    evaluates to `-0`. Refer to the documentation for the individual methods.
 - [`~`](/en-US/docs/Web/JavaScript/Reference/Operators),
   [`<<`](/en-US/docs/Web/JavaScript/Reference/Operators),
   [`>>`](/en-US/docs/Web/JavaScript/Reference/Operators)
@@ -536,7 +302,7 @@ a distinction between `-0` and `+0` to manifest itself in your code:
     is only one representation for 0 in the internal 32-bit integer type, `-0`
     will not survive a round trip after an inverse operation. E.g., both
     `Object.is(~~(-0), -0)` and `Object.is(-0 << 2 >> 2, -0)` evaluate to
-    `false` .
+    `false`.
 
 Relying on {{jsxref("Object.is")}} when the signedness of zeros is not
 taken into account can be hazardous. Of course, when the intent is to

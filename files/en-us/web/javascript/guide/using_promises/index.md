@@ -12,14 +12,7 @@ tags:
 ---
 {{jsSidebar("JavaScript Guide")}}{{PreviousNext("Web/JavaScript/Guide/Details_of_the_Object_Model", "Web/JavaScript/Guide/Iterators_and_Generators")}}
 
-<p class="summary">
-  <span class="seoSummary"
-    >A {{jsxref("Promise")}} is an object representing the eventual
-    completion or failure of an asynchronous operation. Since most people are
-    consumers of already-created promises, this guide will explain consumption
-    of returned promises before explaining how to create them.</span
-  >
-</p>
+<p class="summary"><span class="seoSummary">A {{jsxref("Promise")}} is an object representing the eventual completion or failure of an asynchronous operation. Since most people are consumers of already-created promises, this guide will explain consumption of returned promises before explaining how to create them.</span></p>
 
 Essentially, a promise is a returned object to which you attach callbacks,
 instead of passing callbacks into a function.

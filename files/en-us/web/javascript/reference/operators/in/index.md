@@ -10,10 +10,9 @@ browser-compat: javascript.operators.in
 ---
 {{jsSidebar("Operators")}}
 
-<span class="seoSummary"
-
-> The <strong><code>in</code> operator</strong> returns <code>true</code> if the
-> specified property is in the specified object or its prototype chain.</span
+<span class="seoSummary">The <strong><code>in</code> operator</strong> returns
+<code>true</code> if the specified property is in the specified object or its
+prototype chain.</span>
 
 {{EmbedInteractiveExample("pages/js/expressions-inoperator.html")}}
 
@@ -27,11 +26,9 @@ browser-compat: javascript.operators.in
   - : A string or symbol representing a property name or array index
     (non-symbols will be coerced to strings).
 - `object`
-
   - : Object to check if it (or its prototype chain)
-    <span class="short_text" lang="en">contains</span>
-
-    the property with specified name ( `prop` ).
+    <span class="short_text" lang="en">contains</span> the property with
+    specified name (`prop`).
 
 ## Examples
 

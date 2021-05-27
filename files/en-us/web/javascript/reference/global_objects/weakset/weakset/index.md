@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - Reference
 - WeakSet
+- Polyfill
 browser-compat: javascript.builtins.WeakSet.WeakSet
 ---
 {{JSRef}}
@@ -23,12 +24,10 @@ new WeakSet(iterable)
 ### Parameters
 
 - <var>iterable</var>
-
   - : If an
     [iterable object](/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
-    is passed, all of its elements will be added to the new
-
-    `WeakSet` . null is treated as undefined.
+    is passed, all of its elements will be added to the new `WeakSet`. null is
+    treated as undefined.
 
 ## Examples
 
@@ -63,4 +62,6 @@ same object\***. And so they are both added to the set.
 
 ## See also
 
+- A polyfill of `WeakSet` is available in
+  [`core-js`](https://github.com/zloirock/core-js#weakset)
 - {{jsxref("WeakSet")}}

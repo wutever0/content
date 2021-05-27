@@ -32,9 +32,7 @@ The **`Object.setPrototypeOf()`** method sets the prototype (i.e., the internal
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><code>Object.setPrototypeOf(<var>obj</var>, <var>prototype</var>)</code></pre>
+<pre class="brush: js"><code>Object.setPrototypeOf(<var>obj</var>, <var>prototype</var>)</code></pre>
 
 ### Parameters
 

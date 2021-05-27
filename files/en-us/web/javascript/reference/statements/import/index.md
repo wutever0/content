@@ -32,8 +32,7 @@ Backward compatibility can be ensured using attribute `nomodule` on the
 
 ## Syntax
 
-<pre class="brush: js">
-import <em>defaultExport</em> from "<em>module-name</em>";
+<pre class="brush: js">import <em>defaultExport</em> from "<em>module-name</em>";
 import * as <em>name</em> from "<em>module-name</em>";
 import { <em>export1</em> } from "<em>module-name</em>";
 import { <em>export1</em> as <em>alias1</em> } from "<em>module-name</em>";
@@ -49,14 +48,10 @@ var promise = import("<em>module-name</em>");
 - `defaultExport`
   - : Name that will refer to the default export from the module.
 - `module-name`
-
   - : The module to import from. This is often a relative or absolute path name
-    to the
-
-    `.js` file containing the module. Certain bundlers may permit or require the
-    use of the extension; check your environment. Only single quoted and double
-    quoted Strings are allowed.
-
+    to the `.js` file containing the module. Certain bundlers may permit or
+    require the use of the extension; check your environment. Only single
+    quoted and double quoted Strings are allowed.
 - `name`
   - : Name of the module object that will be used as a kind of namespace when
     referring to the imports.
@@ -77,8 +72,7 @@ them. Below are examples to clarify the syntax.
 This inserts `myModule` into the current scope, containing all the exports from
 the module in the file located in `/modules/my-module.js`.
 
-<pre class="brush: js">
-import * as <em>myModule</em> from '/modules/my-module.js';
+<pre class="brush: js">import * as <em>myModule</em> from '/modules/my-module.js';
 </pre>
 
 Here, accessing the exports means using the module name ("myModule" in this

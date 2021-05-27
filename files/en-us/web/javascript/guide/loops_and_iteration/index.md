@@ -12,11 +12,9 @@ tags:
 {{PreviousNext("Web/JavaScript/Guide/Control_flow_and_error_handling",
   "Web/JavaScript/Guide/Functions")}}
 
-<p class="summary">
-  Loops offer a quick and easy way to do something repeatedly. This chapter of
-  the <a href="/en-US/docs/Web/JavaScript/Guide">JavaScript Guide</a> introduces
-  the different iteration statements available to JavaScript.
-</p>
+<p class="summary">Loops offer a quick and easy way to do something repeatedly. This
+chapter of the <a href="/en-US/docs/Web/JavaScript/Guide">JavaScript Guide</a>
+introduces the different iteration statements available to JavaScript.</p>
 
 You can think of a loop as a computerized version of the game where you tell
 someone to take _X_ steps in one direction, then _Y_ steps in another. For
@@ -128,8 +126,7 @@ repeats until a specified condition evaluates to false.
 
 A `do...while` statement looks as follows:
 
-<pre class="brush: js">
-do
+<pre class="brush: js">do
   <em>statement</em>
 while (condition);
 </pre>
@@ -161,8 +158,7 @@ A {{jsxref("statements/while","while")}} statement executes its
 statements as long as a specified condition evaluates to `true`. A `while`
 statement looks as follows:
 
-<pre class="brush: js">
-while (<em>condition</em>)
+<pre class="brush: js">while (<em>condition</em>)
   <em>statement</em>
 </pre>
 
@@ -257,8 +253,7 @@ terminate a loop, `switch`, or in conjunction with a labeled statement.
 
 The syntax of the `break` statement looks like this:
 
-<pre class="brush: js">
-break;
+<pre class="brush: js">break;
 break [<em>label</em>];
 </pre>
 
@@ -317,8 +312,7 @@ be used to restart a `while`, `do-while`, `for`, or `label` statement.
 
 The syntax of the `continue` statement looks like the following:
 
-<pre class="brush: js">
-continue [<em>label</em>];
+<pre class="brush: js">continue [<em>label</em>];
 </pre>
 
 ### Example 1
@@ -446,8 +440,7 @@ creates a loop Iterating over
 invoking a custom iteration hook with statements to be executed for the value of
 each distinct property.
 
-<pre class="brush: js">
-for (<em>variable</em> of <em>object</em>)
+<pre class="brush: js">for (<em>variable</em> of <em>object</em>)
   <em>statement</em>
 </pre>
 

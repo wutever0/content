@@ -10,6 +10,7 @@ tags:
 - Method
 - Prototype
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Array.@@iterator
 ---
 {{JSRef}}
@@ -134,6 +135,8 @@ logIterable(123);
 
 ## See also
 
+- A polyfill of `Array.prototype[@@iterator]` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.keys()")}}
 - {{jsxref("Array.prototype.entries()")}}
 - {{jsxref("Array.prototype.forEach()")}}

@@ -16,8 +16,7 @@ value.
 
 ## Syntax
 
-<pre class="brush: js">
-Symbol()[Symbol.toPrimitive](<var>hint</var>)
+<pre class="brush: js">Symbol()[Symbol.toPrimitive](<var>hint</var>)
 </pre>
 
 ### Return value

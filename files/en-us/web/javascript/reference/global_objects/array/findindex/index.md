@@ -8,16 +8,14 @@ tags:
 - Method
 - Prototype
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Array.findIndex
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>findIndex()</strong></code> method returns the
-> <strong>index</strong> of the first element in the array <strong>that
-> satisfies the provided testing function</strong>. Otherwise, it returns
-> <code>-1</code>, indicating that no element passed the test.</span
+The **`findIndex()`** method returns the **index** of the first element in the
+array **that satisfies the provided testing function**. Otherwise, it returns
+`-1`, indicating that no element passed the test.
 
 {{EmbedInteractiveExample("pages/js/array-findindex.html","shorter")}}
 
@@ -60,10 +58,7 @@ findIndex(function callbackFn(element, index, array) { ... }, thisArg)
       - : The array `findIndex()` was called upon.
 
 - `thisArg` {{optional_inline}}
-
-  - : Optional object to use as `this` when executing
-
-    `callbackFn` .
+  - : Optional object to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -152,5 +147,7 @@ console.log(fruits[index]); // blueberries
 
 ## See also
 
+- A polyfill of `Array.prototype.findIndex` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.find()")}}
 - {{jsxref("Array.prototype.indexOf()")}}

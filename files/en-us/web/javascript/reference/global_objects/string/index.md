@@ -49,7 +49,7 @@ situations. See
 below.
 
 String literals can be specified using single or double quotes, which are
-treated identically, or using the backtick character <kbd>`</kbd> . This last
+treated identically, or using the backtick character <kbd>`</kbd>. This last
 form specifies a
 [template literal](/en-US/docs/Web/JavaScript/Reference/Template_literals): with
 this form you can interpolate expressions.
@@ -163,96 +163,7 @@ console.log(eval(s2.valueOf()))  // returns the number 4
 
 Special characters can be encoded using escape sequences:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Escape sequence</th>
-      <th scope="col">Unicode code point</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>\0</code></td>
-      <td>null character (U+0000 NULL)</td>
-    </tr>
-    <tr>
-      <td><code>\'</code></td>
-      <td>single quote (U+0027 APOSTROPHE)</td>
-    </tr>
-    <tr>
-      <td><code>\"</code></td>
-      <td>double quote (U+0022 QUOTATION MARK)</td>
-    </tr>
-    <tr>
-      <td><code>\\</code></td>
-      <td>backslash (U+005C REVERSE SOLIDUS)</td>
-    </tr>
-    <tr>
-      <td><code>\n</code></td>
-      <td>newline (U+000A LINE FEED; LF)</td>
-    </tr>
-    <tr>
-      <td><code>\r</code></td>
-      <td>carriage return (U+000D CARRIAGE RETURN; CR)</td>
-    </tr>
-    <tr>
-      <td><code>\v</code></td>
-      <td>vertical tab (U+000B LINE TABULATION)</td>
-    </tr>
-    <tr>
-      <td><code>\t</code></td>
-      <td>tab (U+0009 CHARACTER TABULATION)</td>
-    </tr>
-    <tr>
-      <td><code>\b</code></td>
-      <td>backspace (U+0008 BACKSPACE)</td>
-    </tr>
-    <tr>
-      <td><code>\f</code></td>
-      <td>form feed (U+000C FORM FEED)</td>
-    </tr>
-    <tr>
-      <td>
-        <code>\u<var>XXXX</var></code
-        ><br />…where <code><var>XXXX</var></code> is exactly 4 hex digits in
-        the range <code>0000</code>–<code>FFFF</code>; e.g.,
-        <code>\u000A</code> is the same as <code>\n</code> (LINE FEED);
-        <code>\u0021</code> is "<code>!</code>"
-      </td>
-      <td>
-        Unicode code point between <code>U+0000</code> and
-        <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>\u{<var>X</var>}</code>…<code>\u{<var>XXXXXX</var>}</code
-        ><br />…where <code><var>X</var></code
-        >…<code><var>XXXXXX</var></code> is 1–6 hex digits in the range
-        <code>0</code>–<code>10FFFF</code>; e.g., <code>\u{A}</code> is the same
-        as <code>\n</code> (LINE FEED); <code>\u{21}</code> is "<code>!</code>"
-      </td>
-      <td>
-        Unicode code point between <code>U+0000</code> and
-        <code>U+10FFFF</code> (the entirety of Unicode)
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>\x<var>XX</var></code
-        ><br />…where <code><var>XX</var></code> is exactly 2 hex digits in the
-        range <code>00</code>–<code>FF</code>; e.g., <code>\x0A</code> is the
-        same as <code>\n</code> (LINE FEED); <code>\x21</code> is
-        "<code>!</code>"
-      </td>
-      <td>
-        Unicode code point between <code>U+0000</code> and
-        <code>U+00FF</code> (the Basic Latin and Latin-1 Supplement blocks;
-        equivalent to ISO-8859-1)
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Escape sequence</th><th scope="col">Unicode code point</th></tr></thead><tbody><tr><td><code>\0</code></td><td>null character (U+0000 NULL)</td></tr><tr><td><code>\'</code></td><td>single quote (U+0027 APOSTROPHE)</td></tr><tr><td><code>\"</code></td><td>double quote (U+0022 QUOTATION MARK)</td></tr><tr><td><code>\\</code></td><td>backslash (U+005C REVERSE SOLIDUS)</td></tr><tr><td><code>\n</code></td><td>newline (U+000A LINE FEED; LF)</td></tr><tr><td><code>\r</code></td><td>carriage return (U+000D CARRIAGE RETURN; CR)</td></tr><tr><td><code>\v</code></td><td>vertical tab (U+000B LINE TABULATION)</td></tr><tr><td><code>\t</code></td><td>tab (U+0009 CHARACTER TABULATION)</td></tr><tr><td><code>\b</code></td><td>backspace (U+0008 BACKSPACE)</td></tr><tr><td><code>\f</code></td><td>form feed (U+000C FORM FEED)</td></tr><tr><td><code>\u<var>XXXX</var></code><br>…where <code><var>XXXX</var></code> is exactly 4 hex digits in the range <code>0000</code>–<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td></tr><tr><td><code>\u{<var>X</var>}</code>…<code>\u{<var>XXXXXX</var>}</code><br>…where <code><var>X</var></code>…<code><var>XXXXXX</var></code> is 1–6 hex digits in the range <code>0</code>–<code>10FFFF</code>; e.g., <code>\u{A}</code> is the same as <code>\n</code> (LINE FEED); <code>\u{21}</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+10FFFF</code> (the entirety of Unicode)</td></tr><tr><td><code>\x<var>XX</var></code><br>…where <code><var>XX</var></code> is exactly 2 hex digits in the range <code>00</code>–<code>FF</code>; e.g., <code>\x0A</code> is the same as <code>\n</code> (LINE FEED); <code>\x21</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+00FF</code> (the Basic Latin and Latin-1 Supplement blocks; equivalent to ISO-8859-1)</td></tr></tbody></table>
 
 ### Long literal strings
 
@@ -317,93 +228,70 @@ Both of the above methods result in identical strings.
 
 - {{jsxref("String.prototype.at()", "String.prototype.at(<var>index</var>)")}}{{Experimental_Inline}}
   - : Returns the character (exactly one UTF-16 code unit) at the specified
-    `index` . Accepts negative integers, which count back from the last string
+    `index`. Accepts negative integers, which count back from the last string
     character.
 - {{jsxref("String.prototype.charAt()", "String.prototype.charAt(<var>index</var>)")}}
-
   - : Returns the character (exactly one UTF-16 code unit) at the specified
-
-    `index` .
-
+    `index`.
 - {{jsxref("String.prototype.charCodeAt()",
     "String.prototype.charCodeAt(<var>index</var>)")}}
-
-  - : Returns a number that is the UTF-16 code unit value at the given
-
-    `index` .
-
+  - : Returns a number that is the UTF-16 code unit value at the given `index`.
 - {{jsxref("String.prototype.codePointAt()",
     "String.prototype.codePointAt(<var>pos</var>)")}}
   - : Returns a nonnegative integer Number that is the code point value of the
-    UTF-16 encoded code point starting at the specified `pos` .
+    UTF-16 encoded code point starting at the specified `pos`.
 - {{jsxref("String.prototype.concat()", "String.prototype.concat(<var>str </var>[,
     ...<var>strN </var>])")}}
   - : Combines the text of two (or more) strings and returns a new string.
 - {{jsxref("String.prototype.includes()",
     "String.prototype.includes(<var>searchString</var> [, <var>position</var>])")}}
-  - : Determines whether the calling string contains `searchString` .
+  - : Determines whether the calling string contains `searchString`.
 - {{jsxref("String.prototype.endsWith()",
     "String.prototype.endsWith(<var>searchString</var> [, <var>length</var>])")}}
-
   - : Determines whether a string ends with the characters of the string
-
-    `searchString` .
-
+    `searchString`.
 - {{jsxref("String.prototype.indexOf()",
     "String.prototype.indexOf(<var>searchValue</var> [, <var>fromIndex</var>])")}}
   - : Returns the index within the calling {{jsxref("String")}} object
-    of the first occurrence of `searchValue` , or `-1` if not found.
+    of the first occurrence of `searchValue`, or `-1` if not found.
 - {{jsxref("String.prototype.lastIndexOf()",
     "String.prototype.lastIndexOf(<var>searchValue</var> [, <var>fromIndex</var>])")}}
   - : Returns the index within the calling {{jsxref("String")}} object
-    of the last occurrence of `searchValue` , or `-1` if not found.
+    of the last occurrence of `searchValue`, or `-1` if not found.
 - {{jsxref("String.prototype.localeCompare()",
     "String.prototype.localeCompare(<var>compareString</var> [, <var>locales</var> [,
     <var>options</var>]])")}}
-
-  - : Returns a number indicating whether the reference string
-
-    `compareString` comes before, after, or is equivalent to the given string in
-    sort order.
-
+  - : Returns a number indicating whether the reference string `compareString`
+    comes before, after, or is equivalent to the given string in sort order.
 - {{jsxref("String.prototype.match()", "String.prototype.match(<var>regexp</var>)")}}
   - : Used to match regular expression `regexp` against a string.
 - {{jsxref("String.prototype.matchAll()",
     "String.prototype.matchAll(<var>regexp</var>)")}}
-  - : Returns an iterator of all `regexp` 's matches.
+  - : Returns an iterator of all `regexp`'s matches.
 - {{jsxref("String.prototype.normalize()",
     "String.prototype.normalize([<var>form</var>])")}}
   - : Returns the Unicode Normalization Form of the calling string value.
 - {{jsxref("String.prototype.padEnd()",
     "String.prototype.padEnd(<var>targetLength</var> [, <var>padString</var>])")}}
   - : Pads the current string from the end with a given string and returns a new
-    string of the length `targetLength` .
+    string of the length `targetLength`.
 - {{jsxref("String.prototype.padStart()",
     "String.prototype.padStart(<var>targetLength</var> [, <var>padString</var>])")}}
   - : Pads the current string from the start with a given string and returns a
-    new string of the length `targetLength` .
+    new string of the length `targetLength`.
 - {{jsxref("String.prototype.repeat()", "String.prototype.repeat(<var>count</var>)")}}
-
-  - : Returns a string consisting of the elements of the object repeated
-
-    `count` times.
-
+  - : Returns a string consisting of the elements of the object repeated `count`
+    times.
 - {{jsxref("String.prototype.replace()" ,
     "String.prototype.replace(<var>searchFor</var>, <var>replaceWith</var>)")}}
-
-  - : Used to replace occurrences of `searchFor` using
-
-    `replaceWith` . `searchFor` may be a string or Regular Expression, and
-    `replaceWith` may be a string or function.
-
+  - : Used to replace occurrences of `searchFor` using `replaceWith`.
+    `searchFor` may be a string or Regular Expression, and `replaceWith` may be
+    a string or function.
 - {{jsxref("String.prototype.replaceAll()" ,
     "String.prototype.replaceAll(<var>searchFor</var>, <var>replaceWith</var>)")}}
-
-  - : Used to replace all occurrences of `searchFor` using
-
-    `replaceWith` . `searchFor` may be a string or Regular Expression, and
-    `replaceWith` may be a string or function.
-
+  - : Used to replace all occurrences of `searchFor` using `replaceWith`.
+    `searchFor` may be a string or Regular Expression, and `replaceWith` may be
+    a string or function.
 - {{jsxref("String.prototype.search()",
     "String.prototype.search(<var>regexp</var>)")}}
   - : Search for a match between a regular expression `regexp` and the calling
@@ -414,14 +302,11 @@ Both of the above methods result in identical strings.
 - {{jsxref("String.prototype.split()", "String.prototype.split([<var>sep</var> [,
     <var>limit</var>] ])")}}
   - : Returns an array of strings populated by splitting the calling string at
-    occurrences of the substring `sep` .
+    occurrences of the substring `sep`.
 - {{jsxref("String.prototype.startsWith()",
     "String.prototype.startsWith(<var>searchString</var> [, <var>length</var>])")}}
-
   - : Determines whether the calling string begins with the characters of string
-
-    `searchString` .
-
+    `searchString`.
 - {{jsxref("String.prototype.substring()",
     "String.prototype.substring(<var>indexStart</var> [, <var>indexEnd</var>])")}}
   - : Returns a new string containing characters of the calling string from (or

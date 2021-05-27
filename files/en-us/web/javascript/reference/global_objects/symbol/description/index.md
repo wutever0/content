@@ -6,6 +6,7 @@ tags:
   - Property
   - Prototype
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol.description
 ---
 {{JSRef}}
@@ -52,5 +53,7 @@ Symbol.for('foo').description; // "foo"
 
 ## See also
 
+- A polyfill of `Symbol.prototype.description` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - {{JSxRef("Symbol.prototype.toString()")}}
 - Polyfill: <https://npmjs.com/symbol.prototype.description>

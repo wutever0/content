@@ -8,6 +8,7 @@ tags:
 - Reference
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.reduce
 ---
 {{JSRef}}
@@ -43,30 +44,9 @@ reduce(function callbackFn(accumulator, currentValue, index, array) { ... }, ini
 
 ### Parameters
 
-- `callbackFn`
-
-  - : Function to execute on each value in the typed array, taking four
-    arguments:
-
-    - `accumulator`
-
-      - : The value previously returned in the last invocation of the callback,
-        or
-
-        `initialValue` , if supplied (see below).
-
-    - `currentValue`
-      - : The current element being processed in the typed array.
-    - `index`
-      - : The index of the current element being processed in the typed array.
-    - `array`
-      - : The typed array `reduce()` was called upon.
-
-- `initialValue`
-
-  - : Optional. Object to use as the first argument to the first call of the
-
-    `callbackFn` .
+<dl><dt><code><var>callbackFn</var></code></dt><dd>Function to execute on each value in the typed array, taking four arguments:<dl><dt><code><var>accumulator</var></code></dt><dd>The value previously returned in the last invocation of the callback, or
+<code>initialValue</code>, if supplied (see below).</dd><dt><code><var>currentValue</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code></dt><dd>The index of the current element being processed in the typed array.</dd><dt><code><var>array</var></code></dt><dd>The typed array <code>reduce()</code> was called upon.</dd></dl></dd><dt><code><var>initialValue</var></code></dt><dd>Optional. Object to use as the first argument to the first call of the
+<code><var>callbackFn</var></code>.</dd></dl>
 
 ### Return value
 
@@ -121,5 +101,7 @@ be used here: replace `Array.prototype.reduce` with
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.reduce` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.reduceRight()")}}
 - {{jsxref("Array.prototype.reduce()")}}

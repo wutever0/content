@@ -8,6 +8,7 @@ tags:
 - Objects
 - Reference
 - stringify
+- Polyfill
 browser-compat: javascript.builtins.JSON.stringify
 ---
 {{JSRef}}
@@ -29,27 +30,16 @@ JSON.stringify(value, replacer, space)
 
 ### Parameters
 
-- `value`
-  - : The value to convert to a JSON string.
-- `replacer` {{optional_inline}}
-  - : A function that alters the behavior of the stringification process, or an
-    array of {{JSxRef("String")}} and {{JSxRef("Number")}} that
-    serve as an allowlist for selecting/filtering the properties of the value
-    object to be included in the JSON string. If this value is
-    {{JSxRef("null")}} or not provided, all properties of the object are
-    included in the resulting JSON string.
-- `space` {{optional_inline}}
-
-  - : A {{JSxRef("String")}} or {{JSxRef("Number")}} object
-    that's used to insert white space into the output JSON string for
-    readability purposes. If this is a `Number`, it indicates the number of
-    space characters to use as white space; this number is capped at 10 (if it
-    is greater, the value is just `10`). Values less than 1 indicate that no
-    space should be used.
-
-    If this is a `String`, the string (or the first 10 characters of the string,
-    if it's longer than that) is used as white space. If this parameter is not
-    provided (or is {{JSxRef("null")}}), no white space is used.
+<dl><dt><code><var>value</var></code></dt><dd>The value to convert to a JSON string.</dd><dt><code><var>replacer</var></code> {{optional_inline}}</dt><dd>A function that alters the behavior of the stringification process, or an array of
+{{JSxRef("String")}} and {{JSxRef("Number")}} that serve as an allowlist for
+selecting/filtering the properties of the value object to be included in the JSON
+string. If this value is {{JSxRef("null")}} or not provided, all properties of the
+object are included in the resulting JSON string.</dd><dt><code><var>space</var></code> {{optional_inline}}</dt><dd>A {{JSxRef("String")}} or {{JSxRef("Number")}} object that's used to insert white
+space into the output JSON string for readability purposes.<p>If this is a <code>Number</code>, it indicates the number of space characters to
+use as white space; this number is capped at 10 (if it is greater, the value is just
+<code>10</code>). Values less than 1 indicate that no space should be used.</p><p>If this is a <code>String</code>, the string (or the first 10 characters of the
+string, if it's longer than that) is used as white space. If this parameter is not
+provided (or is {{JSxRef("null")}}), no white space is used.</p></dd></dl>
 
 ### Return value
 
@@ -205,9 +195,7 @@ JSON.stringify(foo, replacer);
 // '{"week":45,"month":7}'
 ```
 
-#### Example <var>replacer</var>
-
-, as an array
+#### Example <var>replacer</var>, as an array
 
 If `replacer` is an array, the array's values indicate the names of the
 properties in the object that should be included in the resulting JSON string.
@@ -426,4 +414,7 @@ two possible encodings of these code points.
 
 ## See also
 
+- A polyfill of modern `JSON.stringify` behavior (symbol and well-formed
+  unicode) is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
 - {{JSxRef("JSON.parse()")}}

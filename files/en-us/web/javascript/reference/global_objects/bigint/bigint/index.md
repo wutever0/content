@@ -14,8 +14,7 @@ The **`BigInt()`** constructor returns a value of type **bigint**.
 
 ## Syntax
 
-<pre class="brush: js">
-BigInt(<var>value</var>);
+<pre class="brush: js">BigInt(<var>value</var>);
 </pre>
 
 ### Parameters

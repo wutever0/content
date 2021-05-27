@@ -8,6 +8,7 @@ tags:
   - Promise
   - Reference
   - promise.all
+  - Polyfill
 browser-compat: javascript.builtins.Promise
 ---
 {{JSRef}}
@@ -558,6 +559,8 @@ closely.
 
 ## See also
 
+- A polyfill of `Promise` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
 - [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [Promises/A+ specification](http://promisesaplus.com/)
 - [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)

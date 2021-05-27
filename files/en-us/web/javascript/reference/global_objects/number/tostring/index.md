@@ -35,10 +35,8 @@ A string representing the specified {{jsxref("Number")}} object.
 ### Exceptions
 
 - {{jsxref("RangeError")}}
-
-  - : If `toString()` is given a `radix` less than
-
-    `2` or greater than `36` , a {{jsxref("RangeError")}} is thrown.
+  - : If `toString()` is given a `radix` less than `2` or greater than `36`, a
+    {{jsxref("RangeError")}} is thrown.
 
 ## Description
 

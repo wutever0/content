@@ -7,6 +7,7 @@ tags:
 - Math
 - Method
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Math.clz32
 ---
 {{JSRef}}
@@ -184,5 +185,7 @@ if (!Math.clz32) Math.clz32 = (function(log, LN2){
 
 ## See also
 
+- A polyfill of `Math.clz32` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math")}}
 - {{jsxref("Math.imul")}}

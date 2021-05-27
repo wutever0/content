@@ -22,17 +22,14 @@ resolves to something) into a single layer.
 
 ## Syntax
 
-<pre class="brush: js">
-Promise.resolve(<var>value</var>);
+<pre class="brush: js">Promise.resolve(<var>value</var>);
 </pre>
 
 ### Parameters
 
 - `value`
-
-  - : Argument to be resolved by this `Promise` . Can also be a
-
-    `Promise` or a thenable to resolve.
+  - : Argument to be resolved by this `Promise`. Can also be a `Promise` or a
+    thenable to resolve.
 
 ### Return value
 

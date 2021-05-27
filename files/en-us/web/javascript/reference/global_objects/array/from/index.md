@@ -7,16 +7,13 @@ tags:
 - JavaScript
 - Method
 - Reference
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.from
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>Array.from()</strong></code> static method creates a new,
-> shallow-copied <code>Array</code> instance from an array-like or iterable
-> object.</span
+The **`Array.from()`** static method creates a new, shallow-copied `Array`
+instance from an array-like or iterable object.
 
 {{EmbedInteractiveExample("pages/js/array-from.html","shorter")}}
 
@@ -46,7 +43,7 @@ Array.from(arrayLike, function mapFn(element, index, array) { ... }, thisArg)
 - `mapFn` {{Optional_inline}}
   - : Map function to call on every element of the array.
 - `thisArg` {{Optional_inline}}
-  - : Value to use as `this` when executing `mapFn` .
+  - : Value to use as `this` when executing `mapFn`.
 
 ### Return value
 
@@ -65,11 +62,10 @@ A new {{jsxref("Array")}} instance.
 element of the array being created.
 
 More clearly, <code>Array.from(<var>obj</var>, <var>mapFn</var>,
-<var>thisArg</var>)</code> has the same result as <code
-
-> Array.from(<var>obj</var>).map(<var>mapFn</var>, <var>thisArg</var>)</code
->
-> , except that it does not create an intermediate array.
+<var>thisArg</var>)</code> has the same result
+as <code>Array.from(<var>obj</var>).map(<var>mapFn</var>,
+<var>thisArg</var>)</code>, except that it does not create an intermediate
+array.
 
 > **Note:** This is especially important for certain array subclasses, like
 > [typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays), since the
@@ -336,6 +332,8 @@ if (!Array.from) {
 
 ## See also
 
+- A polyfill of `Array.from` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array")}}
 - {{jsxref("Array.prototype.map()")}}
 - {{jsxref("TypedArray.from()")}}

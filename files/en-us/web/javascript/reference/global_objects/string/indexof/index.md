@@ -11,12 +11,11 @@ browser-compat: javascript.builtins.String.indexOf
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>indexOf()</code></strong> method returns the index within
-> the calling {{jsxref("String")}} object of the first occurrence of the
-> specified value, starting the search at <code>fromIndex</code>. Returns
-> <code>-1</code> if the value is not found.</span
+<span class="seoSummary">The <strong><code>indexOf()</code></strong> method
+returns the index within the calling {{jsxref("String")}} object of the
+first occurrence of the specified value, starting the search at
+<code>fromIndex</code>. Returns <code>-1</code> if the value is not
+found.</span>
 
 {{EmbedInteractiveExample("pages/js/string-indexof.html")}}
 
@@ -51,8 +50,8 @@ indexOf(searchValue, fromIndex)
     to `0`.
 
     For <var><code>fromIndex</code></var> values lower than `0`, or greater than
-    <code><var>str</var>.length</code> , the search starts at index `0` and
-    <code><var>str</var>.length</code> , respectively.
+    <code><var>str</var>.length</code>, the search starts at index `0` and
+    <code><var>str</var>.length</code>, respectively.
 
     For example, `'hello world'.indexOf('o', -5)` will return `4`, as it starts
     at position `0`, and `o` is found at position `4`. On the other hand,
@@ -92,7 +91,7 @@ string at the end of the searched string.
 
 Characters in a string are indexed from left to right. The index of the first
 character is `0`, and the index of the last character of a string called
-`stringName` is <code><var>stringName</var>.length - 1</code> .
+`stringName` is <code><var>stringName</var>.length - 1</code>.
 
 ```js
 'Blue Whale'.indexOf('Blue')      // returns  0

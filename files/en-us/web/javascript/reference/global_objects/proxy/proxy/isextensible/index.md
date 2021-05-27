@@ -17,8 +17,7 @@ The **`handler.isExtensible()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   isExtensible: function(<var>target</var>) {
   }
 });

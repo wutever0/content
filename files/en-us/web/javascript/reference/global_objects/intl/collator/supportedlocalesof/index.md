@@ -39,8 +39,8 @@ Intl.Collator.supportedLocalesOf(locales, options)
 - `options` {{optional_inline}}
   - : An object that may have the following property:
     - `localeMatcher`
-      - : The locale matching algorithm to use. Possible values are " `lookup` "
-        and " `best fit` "; the default is " `best fit` ". For information about
+      - : The locale matching algorithm to use. Possible values are "`lookup`"
+        and "`best fit`"; the default is "`best fit`". For information about
         this option, see the
         {{jsxref("Intl", "Intl", "#Locale_negotiation", 1)}}
         page.

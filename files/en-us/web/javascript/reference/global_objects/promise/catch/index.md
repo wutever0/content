@@ -33,16 +33,10 @@ p.catch(function(<var>reason</var>) {
 
 ### Parameters
 
-- `onRejected`
-
-  - : A {{jsxref("Function")}} called when the `Promise` is rejected. This
-    function has one argument:
-
-    - `reason` \* : The rejection reason. The Promise returned by `catch()` is
-      rejected if
-
-    `onRejected` throws an error or returns a Promise which is itself rejected;
-    otherwise, it is resolved.
+<dl><dt><code><var>onRejected</var></code></dt><dd>A {{jsxref("Function")}} called when the <code>Promise</code> is rejected. This
+function has one argument:<dl><dt><code><var>reason</var></code></dt><dd>The rejection reason.</dd></dl>The Promise returned by <code>catch()</code> is rejected if
+<code><var>onRejected</var></code> throws an error or returns a Promise which is
+itself rejected; otherwise, it is resolved.</dd></dl>
 
 ### Return value
 

@@ -8,18 +8,15 @@ tags:
 - Method
 - Prototype
 - Reference
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.some
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>some()</code></strong> method tests whether at least
-> one element in the array passes the test implemented by the provided function.
-> It returns true if, in the array, it finds an element for which the provided
-> function returns true; otherwise it returns false. It doesn't modify the
-> array.</span
+The **`some()`** method tests whether at least one element in the array passes
+the test implemented by the provided function. It returns true if, in the array,
+it finds an element for which the provided function returns true; otherwise it
+returns false. It doesn't modify the array.
 
 {{EmbedInteractiveExample("pages/js/array-some.html")}}
 
@@ -53,7 +50,7 @@ some(function callbackFn(element, index, array) { ... }, thisArg)
     - `array`{{optional_inline}}
       - : The array `some()` was called upon.
 - `thisArg`{{optional_inline}}
-  - : A value to use as `this` when executing `callbackFn` .
+  - : A value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -100,7 +97,7 @@ inserting the following code at the beginning of your scripts, allowing use of
 
 This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming
 {{jsxref("Object")}} and {{jsxref("TypeError")}} have their
-original values and that <code><var>fun</var>.call</code>  evaluates to the
+original values and that <code><var>fun</var>.call</code> evaluates to the
 original value of {{jsxref("Function.prototype.call()")}}.
 
 ```js
@@ -221,6 +218,8 @@ getBoolean('true');  // true
 
 ## See also
 
+- A polyfill of `Array.prototype.some` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.every()")}}
 - {{jsxref("Array.prototype.forEach()")}}
 - {{jsxref("Array.prototype.find()")}}

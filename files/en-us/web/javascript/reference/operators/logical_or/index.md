@@ -2,11 +2,11 @@
 title: Logical OR (||)
 slug: Web/JavaScript/Reference/Operators/Logical_OR
 tags:
-- JavaScript
-- Language feature
-- Logical Operator
-- Operator
-- Reference
+  - JavaScript
+  - Language feature
+  - Logical Operator
+  - Operator
+  - Reference
 browser-compat: javascript.operators.logical_or
 ---
 {{jsSidebar("Operators")}}
@@ -27,9 +27,7 @@ will return a non-Boolean value.
 
 ## Description
 
-If <code>expr<strong>1</strong></code> can be converted to `true`, returns
-<code>expr<strong>1</strong></code> ; else, returns
-<code>expr<strong>2</strong></code> .
+If `expr1` can be converted to `true`, returns `expr1`; else, returns `expr2`.
 
 If a value can be converted to `true`, the value is so-called
 {{Glossary("truthy")}}. If a value can be converted to `false`, the value
@@ -46,11 +44,12 @@ Examples of expressions that can be converted to false are:
 Even though the `||` operator can be used with operands that are not Boolean
 values, it can still be considered a boolean operator since its return value can
 always be converted to a
-[boolean primitive](/en-US/docs/Web/JavaScript/Data_structures#Boolean_type). To
+[boolean primitive](/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To
 explicitly convert its return value (or any expression in general) to the
 corresponding boolean value, use a double
-[NOT operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_NOT)
-or the {{jsxref("Global_Objects/Boolean/Boolean", "Boolean")}}
+{{JSxRef("Operators/Logical_NOT", "NOT
+  operator")}} or the
+{{jsxref("Global_Objects/Boolean/Boolean", "Boolean")}}
 constructor.
 
 ### Short-circuit evaluation

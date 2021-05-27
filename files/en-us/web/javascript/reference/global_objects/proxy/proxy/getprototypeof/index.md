@@ -17,8 +17,7 @@ internal method.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>obj</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>obj</var>, {
   getPrototypeOf(<var>target</var>) {
   ...
   }

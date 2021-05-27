@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Property
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol.iterator
 ---
 {{JSRef}}
@@ -99,6 +100,8 @@ nonWellFormedIterable[Symbol.iterator] = () => 1
 
 ## See also
 
+- A polyfill of `Symbol.iterator` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
 - {{jsxref("Array.@@iterator", "Array.prototype[@@iterator]()")}}
 - {{jsxref("TypedArray.@@iterator", "TypedArray.prototype[@@iterator]()")}}

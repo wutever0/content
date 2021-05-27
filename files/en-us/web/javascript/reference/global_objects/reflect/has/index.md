@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.has
 ---
 {{JSRef}}
@@ -19,8 +20,7 @@ function.
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.has(<var>target</var>, <var>propertyKey</var>)
+<pre class="brush: js">Reflect.has(<var>target</var>, <var>propertyKey</var>)
 </pre>
 
 ### Parameters
@@ -87,5 +87,7 @@ Reflect.has(c, 'foo') // true
 
 ## See also
 
+- A polyfill of `Reflect.has` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - [`in` operator](/en-US/docs/Web/JavaScript/Reference/Operators/in)

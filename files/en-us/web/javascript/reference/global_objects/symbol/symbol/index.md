@@ -6,6 +6,7 @@ tags:
 - JavaScript
 - Reference
 - Symbol
+- Polyfill
 browser-compat: javascript.builtins.Symbol.Symbol
 ---
 {{JSRef}}
@@ -87,4 +88,6 @@ typeof symObj // => "object"
 
 ## See also
 
+- A polyfill of `Symbol` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - [Glossary: Symbol data type](/en-US/docs/Glossary/Symbol)

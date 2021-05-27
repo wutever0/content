@@ -17,19 +17,17 @@ returns a value.
 
 ## Syntax
 
-<pre
-  class="brush: js"
-><strong>Operator:</strong> <var>x</var>-- or --<var>x</var>
+<pre class="brush: js"><strong>Operator:</strong> <var>x</var>-- or --<var>x</var>
 </pre>
 
 ## Description
 
 If used postfix, with operator after operand (for example,
-<code><var>x</var>--</code> ), the decrement operator decrements and returns the
+<code><var>x</var>--</code>), the decrement operator decrements and returns the
 value before decrementing.
 
 If used prefix, with operator before operand (for example,
-<code>--<var>x</var></code> ), the decrement operator decrements and returns the
+<code>--<var>x</var></code>), the decrement operator decrements and returns the
 value after decrementing.
 
 ## Examples

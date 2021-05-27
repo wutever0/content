@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.sup
 ---
 {{JSRef}} {{deprecated_header}}
@@ -59,4 +60,6 @@ console.log('This is what a ' + subText.sub() + ' looks like.');
 
 ## See also
 
+- A polyfill of `String.prototype.sup` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.sub()")}}

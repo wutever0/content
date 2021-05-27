@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.fill
 ---
 {{JSRef}}
@@ -35,7 +36,7 @@ fill(value, start, end)
 - `start` {{optional_inline}}
   - : Start index. Defaults to 0.
 - `end` {{optional_inline}}
-  - : End index (not included). Defaults to `this.length` .
+  - : End index (not included). Defaults to `this.length`.
 
 ### Return value
 
@@ -87,4 +88,6 @@ if (!Uint8Array.prototype.fill) {
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.fill` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("Array.prototype.fill()")}}

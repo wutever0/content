@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.defineProperty
 ---
 {{JSRef}}
@@ -19,8 +20,7 @@ The static **`Reflect.defineProperty()`** method is like
 
 ## Syntax
 
-<pre class="brush: js">
-Reflect.defineProperty(<var>target</var>, <var>propertyKey</var>, <var>attributes</var>)
+<pre class="brush: js">Reflect.defineProperty(<var>target</var>, <var>propertyKey</var>, <var>attributes</var>)
 </pre>
 
 ### Parameters
@@ -94,5 +94,7 @@ if (Reflect.defineProperty(target, property, attributes)) {
 
 ## See also
 
+- A polyfill of `Reflect.defineProperty` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - {{jsxref("Object.defineProperty()")}}

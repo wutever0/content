@@ -66,24 +66,22 @@ value of `y` to `x`.
 There are also compound assignment operators that are shorthand for the
 operations listed in the following table:
 
-| Compound assignment operatorsName                                                                                 | Shorthand operator | Meaning          |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------- |
-| [Assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Assignment)                                           | `x = y`            | `x = y`          |
-| [Addition assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment)                         | `x += y`           | `x = x + y`      |
-| [Subtraction assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment)                   | `x -= y`           | `x = x - y`      |
-| [Multiplication assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment)             | `x *= y`           | `x = x * y`      |
-| [Division assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment)                         | `x /= y`           | `x = x / y`      |
-| [Remainder assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment)                       | `x %= y`           | `x = x % y`      |
-| [Exponentiation assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment)             | `x **= y`          | `x = x ** y`     |
-| [Left shift assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment)                     | `x <<= y`          | `x = x << y`     |
-| [Right shift assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment)                   | `x >>= y`          | `x = x >> y`     |
-| [Unsigned right shift assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment) | `x >>>= y`         | `x = x >>> y`    |
-| [Bitwise AND assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment)                   | `x &= y`           | `x = x & y`      |
-| [Bitwise XOR assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment)                   | `x ^= y`           | `x = x ^ y`      |
-| [Bitwise OR assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)                     | `x \|= y`          | `x = x \| y`     |
-| [Logical AND assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)                   | `x &&= y`          | `x && (x = y)`   |
-| [Logical OR assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)                     | `x \|\|= y`        | `x \|\| (x = y)` |
-| [Logical nullish assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment)           | `x ??= y`          | `x ?? (x = y)`   |
+<table class="standard-table"><caption>Compound assignment operators</caption><thead><tr><th>Name</th><th>Shorthand operator</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Assignment">Assignment</a></td><td><code>x = y</code></td><td><code>x = y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment">Addition
+assignment</a></td><td><code>x += y</code></td><td><code>x = x + y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment">Subtraction
+assignment</a></td><td><code>x -= y</code></td><td><code>x = x - y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment">Multiplication
+assignment</a></td><td><code>x *= y</code></td><td><code>x = x * y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment">Division
+assignment</a></td><td><code>x /= y</code></td><td><code>x = x / y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment">Remainder
+assignment</a></td><td><code>x %= y</code></td><td><code>x = x % y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment">Exponentiation
+assignment</a></td><td><code>x **= y</code></td><td><code>x = x ** y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment">Left
+shift assignment</a></td><td><code>x &#x3C;&#x3C;= y</code></td><td><code>x = x &#x3C;&#x3C; y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment">Right
+shift assignment</a></td><td><code>x >>= y</code></td><td><code>x = x >> y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment">Unsigned
+right shift assignment</a></td><td><code>x >>>= y</code></td><td><code>x = x >>> y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment">Bitwise
+AND assignment</a></td><td><code>x &#x26;= y</code></td><td><code>x = x &#x26; y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment">Bitwise
+XOR assignment</a></td><td><code>x ^= y</code></td><td><code>x = x ^ y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment">Bitwise
+OR assignment</a></td><td><code>x |= y</code></td><td><code>x = x | y</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment">Logical
+AND assignment</a></td><td><code>x &#x26;&#x26;= y</code></td><td><code>x &#x26;&#x26; (x = y)</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment">Logical
+OR assignment</a></td><td><code>x ||= y</code></td><td><code>x || (x = y)</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment">Logical
+nullish assignment</a></td><td><code>x ??= y</code></td><td><code>x ?? (x = y)</code></td></tr></tbody></table>
 
 #### Return value and chaining
 
@@ -153,141 +151,19 @@ var var1 = 3;
 var var2 = 4;
 ```
 
-<table class="standard-table">
-  <caption>
-    Comparison operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Description</th>
-      <th scope="col">Examples returning true</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators#equality"
-          >Equal</a
-        >
-        (<code>==</code>)
-      </td>
-      <td>Returns <code>true</code> if the operands are equal.</td>
-      <td>
-        <code>3 == var1</code>
-        <p><code>"3" == var1</code></p>
-        <code>3 == '3'</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators#inequality"
-          >Not equal</a
-        >
-        (<code>!=</code>)
-      </td>
-      <td>Returns <code>true</code> if the operands are not equal.</td>
-      <td>
-        <code>var1 != 4<br />var2 != "3"</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators#identity"
-          >Strict equal</a
-        >
-        (<code>===</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the operands are equal and of the same
-        type. See also {{jsxref("Object.is")}} and
-        <a href="/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
-          >sameness in JS</a
-        >.
-      </td>
-      <td><code>3 === var1</code></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators#nonidentity"
-          >Strict not equal</a
-        >
-        (<code>!==</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the operands are of the same type but not
-        equal, or are of different type.
-      </td>
-      <td>
-        <code>var1 !== "3"<br />3 !== '3'</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a
-          href="/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_operator"
-          >Greater than</a
-        >
-        (<code>></code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is greater than the right
-        operand.
-      </td>
-      <td>
-        <code>var2 > var1<br />"12" > 2</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a
-          href="/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_or_equal_operator"
-          >Greater than or equal</a
-        >
-        (<code>>=</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is greater than or equal
-        to the right operand.
-      </td>
-      <td>
-        <code>var2 >= var1<br />var1 >= 3</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a
-          href="/en-US/docs/Web/JavaScript/Reference/Operators#less_than_operator"
-          >Less than</a
-        >
-        (<code>&#x3C;</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is less than the right
-        operand.
-      </td>
-      <td>
-        <code>var1 &#x3C; var2<br />"2" &#x3C; 12</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a
-          href="/en-US/docs/Web/JavaScript/Reference/Operators#less_than_or_equal_operator"
-          >Less than or equal</a
-        >
-        (<code>&#x3C;=</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is less than or equal to
-        the right operand.
-      </td>
-      <td>
-        <code>var1 &#x3C;= var2<br />var2 &#x3C;= 5</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Comparison operators</caption><thead><tr><th scope="col">Operator</th><th scope="col">Description</th><th scope="col">Examples returning true</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#equality">Equal</a>
+(<code>==</code>)</td><td>Returns <code>true</code> if the operands are equal.</td><td><code>3 == var1</code><p><code>"3" == var1</code></p><code>3 == '3'</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#inequality">Not equal</a> (<code>!=</code>)</td><td>Returns <code>true</code> if the operands are not equal.</td><td><code>var1 != 4<br>var2 != "3"</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#identity">Strict
+equal</a> (<code>===</code>)</td><td>Returns <code>true</code> if the operands are equal and of the same type. See
+also {{jsxref("Object.is")}} and <a href="/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">sameness in
+JS</a>.</td><td><code>3 === var1</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#nonidentity">Strict
+not equal</a> (<code>!==</code>)</td><td>Returns <code>true</code> if the operands are of the same type but not equal, or
+are of different type.</td><td><code>var1 !== "3"<br>3 !== '3'</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_operator">Greater
+than</a> (<code>></code>)</td><td>Returns <code>true</code> if the left operand is greater than the right operand.</td><td><code>var2 > var1<br>"12" > 2</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_or_equal_operator">Greater
+than or equal</a> (<code>>=</code>)</td><td>Returns <code>true</code> if the left operand is greater than or equal to the
+right operand.</td><td><code>var2 >= var1<br>var1 >= 3</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#less_than_operator">Less
+than</a> (<code>&#x3C;</code>)</td><td>Returns <code>true</code> if the left operand is less than the right operand.</td><td><code>var1 &#x3C; var2<br>"2" &#x3C; 12</code></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators#less_than_or_equal_operator">Less
+than or equal</a> (<code>&#x3C;=</code>)</td><td>Returns <code>true</code> if the left operand is less than or equal to the right
+operand.</td><td><code>var1 &#x3C;= var2<br>var2 &#x3C;= 5</code></td></tr></tbody></table>
 
 > **Note:** `=>` is not an operator, but the notation for
 > [Arrow functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
@@ -309,111 +185,23 @@ division by zero produces {{jsxref("Infinity")}}). For example:
 In addition to the standard arithmetic operations (`+`, `-`, `*`, `/`),
 JavaScript provides the arithmetic operators listed in the following table:
 
-<table class="fullwidth-table">
-  <caption>
-    Arithmetic operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Description</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
-          >Remainder</a
-        >
-        (<code>%</code>)
-      </td>
-      <td>
-        Binary operator. Returns the integer remainder of dividing the two
-        operands.
-      </td>
-      <td>12 % 5 returns 2.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Increment"
-          >Increment</a
-        >
-        (<code>++</code>)
-      </td>
-      <td>
-        Unary operator. Adds one to its operand. If used as a prefix operator
-        (<code>++x</code>), returns the value of its operand after adding one;
-        if used as a postfix operator (<code>x++</code>), returns the value of
-        its operand before adding one.
-      </td>
-      <td>
-        If <code>x</code> is 3, then <code>++x</code> sets <code>x</code> to 4
-        and returns 4, whereas <code>x++</code> returns 3 and, only then, sets
-        <code>x</code> to 4.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Decrement"
-          >Decrement</a
-        >
-        (<code>--</code>)
-      </td>
-      <td>
-        Unary operator. Subtracts one from its operand. The return value is
-        analogous to that for the increment operator.
-      </td>
-      <td>
-        If <code>x</code> is 3, then <code>--x</code> sets <code>x</code> to 2
-        and returns 2, whereas <code>x--</code> returns 3 and, only then, sets
-        <code>x</code> to 2.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation"
-          >Unary negation</a
-        >
-        (<code>-</code>)
-      </td>
-      <td>Unary operator. Returns the negation of its operand.</td>
-      <td>If <code>x</code> is 3, then <code>-x</code> returns -3.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus"
-          >Unary plus</a
-        >
-        (<code>+</code>)
-      </td>
-      <td>
-        Unary operator. Attempts to convert the operand to a number, if it is
-        not already.
-      </td>
-      <td>
-        <p><code>+"3"</code> returns <code>3</code>.</p>
-        <p><code>+true</code> returns <code>1</code>.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation"
-          >Exponentiation operator</a
-        >
-        (<code>**</code>)
-      </td>
-      <td>
-        Calculates the <code>base</code> to the <code>exponent</code> power,
-        that is, <code>base^exponent</code>
-      </td>
-      <td>
-        <code>2 ** 3</code> returns <code>8</code>.<br /><code>10 ** -1</code>
-        returns <code>0.1</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="fullwidth-table"><caption>Arithmetic operators</caption><thead><tr><th scope="col">Operator</th><th scope="col">Description</th><th scope="col">Example</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Remainder">Remainder</a>
+(<code>%</code>)</td><td>Binary operator. Returns the integer remainder of dividing the two operands.</td><td>12 % 5 returns 2.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Increment">Increment</a>
+(<code>++</code>)</td><td>Unary operator. Adds one to its operand. If used as a prefix operator
+(<code>++x</code>), returns the value of its operand after adding one; if used as
+a postfix operator (<code>x++</code>), returns the value of its operand before
+adding one.</td><td>If <code>x</code> is 3, then <code>++x</code> sets <code>x</code> to 4 and
+returns 4, whereas <code>x++</code> returns 3 and, only then, sets <code>x</code>
+to 4.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Decrement">Decrement</a>
+(<code>--</code>)</td><td>Unary operator. Subtracts one from its operand. The return value is analogous to
+that for the increment operator.</td><td>If <code>x</code> is 3, then <code>--x</code> sets <code>x</code> to 2 and
+returns 2, whereas <code>x--</code> returns 3 and, only then, sets <code>x</code>
+to 2.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation">Unary
+negation</a> (<code>-</code>)</td><td>Unary operator. Returns the negation of its operand.</td><td>If <code>x</code> is 3, then <code>-x</code> returns -3.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus">Unary
+plus</a> (<code>+</code>)</td><td>Unary operator. Attempts to convert the operand to a number, if it is not
+already.</td><td><p><code>+"3"</code> returns <code>3</code>.</p><p><code>+true</code> returns <code>1</code>.</p></td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation">Exponentiation
+operator</a> (<code>**</code>)</td><td>Calculates the <code>base</code> to the <code>exponent</code> power, that is,
+<code>base^exponent</code></td><td><code>2 ** 3</code> returns <code>8</code>.<br><code>10 ** -1</code> returns <code>0.1</code>.</td></tr></tbody></table>
 
 ### Bitwise operators
 
@@ -425,104 +213,21 @@ numerical values.
 
 The following table summarizes JavaScript's bitwise operators.
 
-<table class="standard-table">
-  <caption>
-    Bitwise operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Usage</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND"
-          >Bitwise AND</a
-        >
-      </td>
-      <td><code>a &#x26; b</code></td>
-      <td>
-        Returns a one in each bit position for which the corresponding bits of
-        both operands are ones.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR"
-          >Bitwise OR</a
-        >
-      </td>
-      <td><code>a | b</code></td>
-      <td>
-        Returns a zero in each bit position for which the corresponding bits of
-        both operands are zeros.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR"
-          >Bitwise XOR</a
-        >
-      </td>
-      <td><code>a ^ b</code></td>
-      <td>
-        Returns a zero in each bit position for which the corresponding bits are
-        the same.<br />[Returns a one in each bit position for which the
-        corresponding bits are different.]
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT"
-          >Bitwise NOT</a
-        >
-      </td>
-      <td><code>~ a</code></td>
-      <td>Inverts the bits of its operand.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift"
-          >Left shift</a
-        >
-      </td>
-      <td><code>a &#x3C;&#x3C; b</code></td>
-      <td>
-        Shifts <code>a</code> in binary representation <code>b</code> bits to
-        the left, shifting in zeros from the right.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift"
-          >Sign-propagating right shift</a
-        >
-      </td>
-      <td><code>a >> b</code></td>
-      <td>
-        Shifts <code>a</code> in binary representation <code>b</code> bits to
-        the right, discarding bits shifted off.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a
-          href="/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift"
-          >Zero-fill right shift</a
-        >
-      </td>
-      <td><code>a >>> b</code></td>
-      <td>
-        Shifts <code>a</code> in binary representation <code>b</code> bits to
-        the right, discarding bits shifted off, and shifting in zeros from the
-        left.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Bitwise operators</caption><thead><tr><th scope="col">Operator</th><th scope="col">Usage</th><th scope="col">Description</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND">Bitwise
+AND</a></td><td><code>a &#x26; b</code></td><td>Returns a one in each bit position for which the corresponding bits of both
+operands are ones.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR">Bitwise
+OR</a></td><td><code>a | b</code></td><td>Returns a zero in each bit position for which the corresponding bits of both
+operands are zeros.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR">Bitwise
+XOR</a></td><td><code>a ^ b</code></td><td>Returns a zero in each bit position for which the corresponding bits are the
+same.<br>[Returns a one in each bit position for which the corresponding bits are
+different.]</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT">Bitwise
+NOT</a></td><td><code>~ a</code></td><td>Inverts the bits of its operand.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift">Left
+shift</a></td><td><code>a &#x3C;&#x3C; b</code></td><td>Shifts <code>a</code> in binary representation <code>b</code> bits to the left,
+shifting in zeros from the right.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift">Sign-propagating
+right shift</a></td><td><code>a >> b</code></td><td>Shifts <code>a</code> in binary representation <code>b</code> bits to the right,
+discarding bits shifted off.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift">Zero-fill
+right shift</a></td><td><code>a >>> b</code></td><td>Shifts <code>a</code> in binary representation <code>b</code> bits to the right,
+discarding bits shifted off, and shifting in zeros from the left.</td></tr></tbody></table>
 
 #### Bitwise logical operators
 
@@ -545,45 +250,7 @@ For example, the binary representation of nine is 1001, and the binary
 representation of fifteen is 1111. So, when the bitwise operators are applied to
 these values, the results are as follows:
 
-<table class="standard-table">
-  <caption>
-    Bitwise operator examples
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Expression</th>
-      <th scope="col">Result</th>
-      <th scope="col">Binary Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>15 &#x26; 9</code></td>
-      <td><code>9</code></td>
-      <td><code>1111 &#x26; 1001 = 1001</code></td>
-    </tr>
-    <tr>
-      <td><code>15 | 9</code></td>
-      <td><code>15</code></td>
-      <td><code>1111 | 1001 = 1111</code></td>
-    </tr>
-    <tr>
-      <td><code>15 ^ 9</code></td>
-      <td><code>6</code></td>
-      <td><code>1111 ^ 1001 = 0110</code></td>
-    </tr>
-    <tr>
-      <td><code>~15</code></td>
-      <td><code>-16</code></td>
-      <td><code>~ 0000 0000 ... 0000 1111 = 1111 1111 ... 1111 0000</code></td>
-    </tr>
-    <tr>
-      <td><code>~9</code></td>
-      <td><code>-10</code></td>
-      <td><code>~ 0000 0000 ... 0000 1001 = 1111 1111 ... 1111 0110</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Bitwise operator examples</caption><thead><tr><th scope="col">Expression</th><th scope="col">Result</th><th scope="col">Binary Description</th></tr></thead><tbody><tr><td><code>15 &#x26; 9</code></td><td><code>9</code></td><td><code>1111 &#x26; 1001 = 1001</code></td></tr><tr><td><code>15 | 9</code></td><td><code>15</code></td><td><code>1111 | 1001 = 1111</code></td></tr><tr><td><code>15 ^ 9</code></td><td><code>6</code></td><td><code>1111 ^ 1001 = 0110</code></td></tr><tr><td><code>~15</code></td><td><code>-16</code></td><td><code>~ 0000 0000 ... 0000 1111 = 1111 1111 ... 1111 0000</code></td></tr><tr><td><code>~9</code></td><td><code>-10</code></td><td><code>~ 0000 0000 ... 0000 1001 = 1111 1111 ... 1111 0110</code></td></tr></tbody></table>
 
 Note that all 32 bits are inverted using the Bitwise NOT operator, and that
 values with the most significant (left-most) bit set to 1 represent negative
@@ -605,73 +272,21 @@ otherwise, they return {{jsxref("Number")}}.
 
 The shift operators are listed in the following table.
 
-<table class="fullwidth-table">
-  <caption>
-    Bitwise shift operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Description</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift"
-          >Left shift</a
-        ><br />(<code>&#x3C;&#x3C;</code>)
-      </td>
-      <td>
-        This operator shifts the first operand the specified number of bits to
-        the left. Excess bits shifted off to the left are discarded. Zero bits
-        are shifted in from the right.
-      </td>
-      <td>
-        <code>9&#x3C;&#x3C;2</code> yields 36, because 1001 shifted 2 bits to
-        the left becomes 100100, which is 36.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift"
-          >Sign-propagating right shift</a
-        >
-        (<code>>></code>)
-      </td>
-      <td>
-        This operator shifts the first operand the specified number of bits to
-        the right. Excess bits shifted off to the right are discarded. Copies of
-        the leftmost bit are shifted in from the left.
-      </td>
-      <td>
-        <code>9>>2</code> yields 2, because 1001 shifted 2 bits to the right
-        becomes 10, which is 2. Likewise, <code>-9>>2</code> yields -3, because
-        the sign is preserved.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a
-          href="/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift"
-          >Zero-fill right shift</a
-        >
-        (<code>>>></code>)
-      </td>
-      <td>
-        This operator shifts the first operand the specified number of bits to
-        the right. Excess bits shifted off to the right are discarded. Zero bits
-        are shifted in from the left.
-      </td>
-      <td>
-        <code>19>>>2</code> yields 4, because 10011 shifted 2 bits to the right
-        becomes 100, which is 4. For non-negative numbers, zero-fill right shift
-        and sign-propagating right shift yield the same result.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="fullwidth-table"><caption>Bitwise shift operators</caption><thead><tr><th scope="col">Operator</th><th scope="col">Description</th><th scope="col">Example</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift">Left
+shift</a><br>(<code>&#x3C;&#x3C;</code>)</td><td>This operator shifts the first operand the specified number of bits to the left.
+Excess bits shifted off to the left are discarded. Zero bits are shifted in from
+the right.</td><td><code>9&#x3C;&#x3C;2</code> yields 36, because 1001 shifted 2 bits to the left
+becomes 100100, which is 36.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift">Sign-propagating
+right shift</a> (<code>>></code>)</td><td>This operator shifts the first operand the specified number of bits to the
+right. Excess bits shifted off to the right are discarded. Copies of the leftmost
+bit are shifted in from the left.</td><td><code>9>>2</code> yields 2, because 1001 shifted 2 bits to the right
+becomes 10, which is 2. Likewise, <code>-9>>2</code> yields -3, because the
+sign is preserved.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift">Zero-fill
+right shift</a> (<code>>>></code>)</td><td>This operator shifts the first operand the specified number of bits to the
+right. Excess bits shifted off to the right are discarded. Zero bits are shifted
+in from the left.</td><td><code>19>>>2</code> yields 4, because 10011 shifted 2 bits to the right
+becomes 100, which is 4. For non-negative numbers, zero-fill right shift and
+sign-propagating right shift yield the same result.</td></tr></tbody></table>
 
 ### Logical operators
 
@@ -681,61 +296,17 @@ return the value of one of the specified operands, so if these operators are
 used with non-Boolean values, they may return a non-Boolean value. The logical
 operators are described in the following table.
 
-<table class="fullwidth-table">
-  <caption>
-    Logical operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Usage</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND"
-          >Logical AND</a
-        >
-        (<code>&#x26;&#x26;</code>)
-      </td>
-      <td><code>expr1 &#x26;&#x26; expr2</code></td>
-      <td>
-        Returns <code>expr1</code> if it can be converted to <code>false</code>;
-        otherwise, returns <code>expr2</code>. Thus, when used with Boolean
-        values, <code>&#x26;&#x26;</code> returns <code>true</code> if both
-        operands are true; otherwise, returns <code>false</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR"
-          >Logical OR </a
-        >(<code>||</code>)
-      </td>
-      <td><code>expr1 || expr2</code></td>
-      <td>
-        Returns <code>expr1</code> if it can be converted to <code>true</code>;
-        otherwise, returns <code>expr2</code>. Thus, when used with Boolean
-        values, <code>||</code> returns <code>true</code> if either operand is
-        true; if both are false, returns <code>false</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT"
-          >Logical NOT </a
-        >(<code>!</code>)
-      </td>
-      <td><code>!expr</code></td>
-      <td>
-        Returns <code>false</code> if its single operand that can be converted
-        to <code>true</code>; otherwise, returns <code>true</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="fullwidth-table"><caption>Logical operators</caption><thead><tr><th scope="col">Operator</th><th scope="col">Usage</th><th scope="col">Description</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND">Logical
+AND</a> (<code>&#x26;&#x26;</code>)</td><td><code>expr1 &#x26;&#x26; expr2</code></td><td>Returns <code>expr1</code> if it can be converted to <code>false</code>;
+otherwise, returns <code>expr2</code>. Thus, when used with Boolean values,
+<code>&#x26;&#x26;</code> returns <code>true</code> if both operands are true;
+otherwise, returns <code>false</code>.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR">Logical OR
+</a>(<code>||</code>)</td><td><code>expr1 || expr2</code></td><td>Returns <code>expr1</code> if it can be converted to <code>true</code>;
+otherwise, returns <code>expr2</code>. Thus, when used with Boolean values,
+<code>||</code> returns <code>true</code> if either operand is true; if both are
+false, returns <code>false</code>.</td></tr><tr><td><a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT">Logical NOT
+</a>(<code>!</code>)</td><td><code>!expr</code></td><td>Returns <code>false</code> if its single operand that can be converted to
+<code>true</code>; otherwise, returns <code>true</code>.</td></tr></tbody></table>
 
 Examples of expressions that can be converted to `false` are those that evaluate
 to null, 0, NaN, the empty string (""), or undefined.
@@ -1081,88 +652,7 @@ parentheses.
 The following table describes the precedence of operators, from highest to
 lowest.
 
-<table class="standard-table">
-  <caption>
-    Operator precedence
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator type</th>
-      <th scope="col">Individual operators</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>member</td>
-      <td><code>. []</code></td>
-    </tr>
-    <tr>
-      <td>call / create instance</td>
-      <td><code>() new</code></td>
-    </tr>
-    <tr>
-      <td>negation/increment</td>
-      <td><code>! ~ - + ++ -- typeof void delete</code></td>
-    </tr>
-    <tr>
-      <td>multiply/divide</td>
-      <td><code>* / %</code></td>
-    </tr>
-    <tr>
-      <td>addition/subtraction</td>
-      <td><code>+ -</code></td>
-    </tr>
-    <tr>
-      <td>bitwise shift</td>
-      <td><code>&#x3C;&#x3C; >> >>></code></td>
-    </tr>
-    <tr>
-      <td>relational</td>
-      <td><code>&#x3C; &#x3C;= > >= in instanceof</code></td>
-    </tr>
-    <tr>
-      <td>equality</td>
-      <td><code>== != === !==</code></td>
-    </tr>
-    <tr>
-      <td>bitwise-and</td>
-      <td><code>&#x26;</code></td>
-    </tr>
-    <tr>
-      <td>bitwise-xor</td>
-      <td><code>^</code></td>
-    </tr>
-    <tr>
-      <td>bitwise-or</td>
-      <td><code>|</code></td>
-    </tr>
-    <tr>
-      <td>logical-and</td>
-      <td><code>&#x26;&#x26;</code></td>
-    </tr>
-    <tr>
-      <td>logical-or</td>
-      <td><code>||</code></td>
-    </tr>
-    <tr>
-      <td>conditional</td>
-      <td><code>?:</code></td>
-    </tr>
-    <tr>
-      <td>assignment</td>
-      <td>
-        <code
-          >= += -= *= /= %= &#x3C;&#x3C;= >>= >>>= &#x26;= ^= |= &#x26;&#x26;=
-          ||= ??=</code
-        >
-      </td>
-    </tr>
-    <tr>
-      <td>comma</td>
-      <td><code>,</code></td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><caption>Operator precedence</caption><thead><tr><th scope="col">Operator type</th><th scope="col">Individual operators</th></tr></thead><tbody><tr><td>member</td><td><code>. []</code></td></tr><tr><td>call / create instance</td><td><code>() new</code></td></tr><tr><td>negation/increment</td><td><code>! ~ - + ++ -- typeof void delete</code></td></tr><tr><td>multiply/divide</td><td><code>* / %</code></td></tr><tr><td>addition/subtraction</td><td><code>+ -</code></td></tr><tr><td>bitwise shift</td><td><code>&#x3C;&#x3C; >> >>></code></td></tr><tr><td>relational</td><td><code>&#x3C; &#x3C;= > >= in instanceof</code></td></tr><tr><td>equality</td><td><code>== != === !==</code></td></tr><tr><td>bitwise-and</td><td><code>&#x26;</code></td></tr><tr><td>bitwise-xor</td><td><code>^</code></td></tr><tr><td>bitwise-or</td><td><code>|</code></td></tr><tr><td>logical-and</td><td><code>&#x26;&#x26;</code></td></tr><tr><td>logical-or</td><td><code>||</code></td></tr><tr><td>conditional</td><td><code>?:</code></td></tr><tr><td>assignment</td><td><code>= += -= *= /= %= &#x3C;&#x3C;= >>= >>>= &#x26;= ^= |= &#x26;&#x26;= ||= ??=</code></td></tr><tr><td>comma</td><td><code>,</code></td></tr></tbody></table>
 
 A more detailed version of this table, complete with links to additional details
 about each operator, may be found in

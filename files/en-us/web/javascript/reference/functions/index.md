@@ -93,8 +93,7 @@ There is a special syntax for declaring functions (see
 [function statement](/en-US/docs/Web/JavaScript/Reference/Statements/function)
 for details):
 
-<pre class="brush: js">
-function <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
+<pre class="brush: js">function <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
    <var>statements</var>
 }
 </pre>
@@ -117,8 +116,7 @@ be used in the call stack for example) or "anonymous" function expressions.
 Function expressions are not _hoisted_ onto the beginning of the scope,
 therefore they cannot be used before they appear in the code.
 
-<pre class="brush: js">
-function [<var>name</var>]([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
+<pre class="brush: js">function [<var>name</var>]([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
    <var>statements</var>
 }
 </pre>
@@ -175,8 +173,7 @@ There is a special syntax for generator function declarations (see
 {{jsxref('Statements/function*', 'function* statement')}} for
 details):
 
-<pre class="brush: js">
-function* <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
+<pre class="brush: js">function* <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
    <var>statements</var>
 }
 </pre>
@@ -195,8 +192,7 @@ generator function declaration (see
 {{jsxref('Operators/function*', 'function* expression')}} for
 details):
 
-<pre class="brush: js">
-function* [<var>name</var>]([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
+<pre class="brush: js">function* [<var>name</var>]([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
    <var>statements</var>
 }
 </pre>
@@ -225,8 +221,8 @@ param => expression
 ```
 
 - `param`
-  - : The name of an argument. Zero arguments need to be indicated with `()` . 
-    For only one argument, the parentheses are not required. (like  `foo => 1` )
+  - : The name of an argument. Zero arguments need to be indicated with `()`. 
+    For only one argument, the parentheses are not required. (like `foo => 1`)
 - `statements` or `expression`
   - : Multiple statements need to be enclosed in brackets. A single expression
     requires no brackets. The expression is also the implicit return value of
@@ -241,15 +237,12 @@ param => expression
 As all other objects, {{jsxref("Function")}} objects can be created using
 the `new` operator:
 
-<pre class="brush: js">
-new Function (<var>arg1</var>, <var>arg2</var>, ... <var>argN</var>, <var>functionBody</var>)
+<pre class="brush: js">new Function (<var>arg1</var>, <var>arg2</var>, ... <var>argN</var>, <var>functionBody</var>)
 </pre>
 
 - <code><var>arg1</var>, <var>arg2</var>, ... <var>argN</var></code>
-
   - : Zero or more names to be used by the function as formal parameters. Each
     must be a proper JavaScript identifier.
-
 - `functionBody`
   - : A string containing the JavaScript statements comprising the function
     body.
@@ -270,17 +263,14 @@ operator) has the same effect as invoking it as a constructor.
 As all other objects, {{jsxref("GeneratorFunction")}} objects can be
 created using the `new` operator:
 
-<pre class="brush: js">
-new GeneratorFunction (<var>arg1</var>, <var>arg2</var>, ... <var>argN</var>, <var>functionBody</var>)
+<pre class="brush: js">new GeneratorFunction (<var>arg1</var>, <var>arg2</var>, ... <var>argN</var>, <var>functionBody</var>)
 </pre>
 
 - <code><var>arg1</var>, <var>arg2</var>, ... <var>argN</var></code>
-
   - : Zero or more names to be used by the function as formal argument names.
     Each must be a string that conforms to the rules for a valid JavaScript
-    identifier or a list of such strings separated with a comma; for example "
-    `x` ", " `theValue` ", or " `a,b` ".
-
+    identifier or a list of such strings separated with a comma; for example
+    "`x`", "`theValue`", or "`a,b`".
 - `functionBody`
   - : A string containing the JavaScript statements comprising the function
     definition.

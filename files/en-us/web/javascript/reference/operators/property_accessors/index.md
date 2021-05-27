@@ -10,10 +10,8 @@ browser-compat: javascript.operators.property_accessors
 ---
 {{jsSidebar("Operators")}}
 
-<span class="seoSummary"
-
-> <strong>Property accessors</strong> provide access to an object's properties
-> by using the dot notation or the bracket notation.</span
+**Property accessors** provide access to an object's properties by using the dot
+notation or the bracket notation.
 
 {{EmbedInteractiveExample("pages/js/expressions-propertyaccessors.html", "taller")}}
 
@@ -46,8 +44,7 @@ reserved words can be used but are not recommended). For example,
 <code><var>object</var>.$1</code> is valid, while
 <code><var>object</var>.1</code> is not.
 
-<pre class="brush: js">
-const variable = <var>object</var>.<var>property_name;</var>
+<pre class="brush: js">const variable = <var>object</var>.<var>property_name;</var>
 
 <var>object</var>.<var>property_name</var> = value;
 </pre>
@@ -94,15 +91,10 @@ In the `object[property_name]` syntax, the `property_name` is just a string or
 [Symbol](/en-US/docs/Glossary/Symbol). So, it can be any string, including
 `'1foo'`, `'!bar!'`, or even `' '` (a space).
 
-<pre class="brush: js">
-const variable = <var>object</var>[<var>property_name</var>]
-<var>object</var>[<var>property_name</var>] = value;</pre
->
-
+<pre class="brush: js">const variable = <var>object</var>[<var>property_name</var>]
+<var>object</var>[<var>property_name</var>] = value;</pre>
 
 This does the exact same thing as the previous example.
-
-
 
 ```js
 document['createElement']('pre')
@@ -110,19 +102,15 @@ document['createElement']('pre')
 
 A space before bracket notation is allowed.
 
-
-
 ```js
 document ['createElement']('pre')
 ```
 
 ### Property names
 
-Property names are string or [Symbol](/en-US/docs/Glossary/Symbol). Any
-other value, including a number, is coerced to a string. This outputs
-`'value'`, since `1` is coerced into `'1'`.
-
-
+Property names are string or [Symbol](/en-US/docs/Glossary/Symbol). Any other
+value, including a number, is coerced to a string. This outputs `'value'`, since
+`1` is coerced into `'1'`.
 
 ```js
 let object = {}
@@ -130,10 +118,8 @@ object['1'] = 'value'
 console.log(object[1])
 ```
 
-This also outputs `'value'`, since both `foo` and
-`bar` are converted to the same string.
-
-
+This also outputs `'value'`, since both `foo` and `bar` are converted to the
+same string.
 
 ```js
 let foo = {unique_prop: 1}, bar = {unique_prop: 2}, object = {};
@@ -146,33 +132,29 @@ engine, this string would be "`[object Object]`".
 
 ### Method binding
 
-A method is not bound to the object that it is a method of. Specifically,
-`this` is not fixed in a method. Put another way, `this` does not
-necessarily refer to the object containing a method. Instead, `this` is
-"passed" by the function call. See [method
-binding](/en-US/docs/Web/JavaScript/Reference/Operators/this#method_binding).
+A method is not bound to the object that it is a method of. Specifically, `this`
+is not fixed in a method. Put another way, `this` does not necessarily refer to
+the object containing a method. Instead, `this` is "passed" by the function
+call. See
+[method binding](/en-US/docs/Web/JavaScript/Reference/Operators/this#method_binding).
 
 ## Examples
 
 ### Bracket notation vs. `eval`
 
-JavaScript novices often make the mistake of using {{jsxref("Global_Objects/eval", "eval()")}} where
-the bracket notation can be used instead.
+JavaScript novices often make the mistake of using
+{{jsxref("Global_Objects/eval", "eval()")}} where the bracket
+notation can be used instead.
 
 For example, the following syntax is often seen in many scripts.
-
-
 
 ```js
 x = eval('document.forms.form_name.elements.' + strFormControl + '.value')
 ```
 
-`eval()` is slow and should be avoided whenever possible. Also,
-`strFormControl` would have to hold an identifier, which is not required for
-names and `id`s of form controls. It is better to use bracket notation
-instead:
-
-
+`eval()` is slow and should be avoided whenever possible. Also, `strFormControl`
+would have to hold an identifier, which is not required for names and `id`s of
+form controls. It is better to use bracket notation instead:
 
 ```js
 x = document.forms['form_name'].elements[strFormControl].value
@@ -188,7 +170,6 @@ x = document.forms['form_name'].elements[strFormControl].value
 
 ## See also
 
-*   {{jsxref("Object")}}
-*   {{jsxref("Object.defineProperty()")}}
-*   [Optional
-    chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+- {{jsxref("Object")}}
+- {{jsxref("Object.defineProperty()")}}
+- [Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)

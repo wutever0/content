@@ -7,15 +7,14 @@ tags:
   - JavaScript
   - Reference
   - WeakMap
+  - Polyfill
 browser-compat: javascript.builtins.WeakMap
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>WeakMap</code></strong> object is a collection of key/value
-> pairs in which the keys are weakly referenced. The keys must be objects and
-> the values can be arbitrary values.</span
+The **`WeakMap`** object is a collection of key/value pairs in which the keys
+are weakly referenced. The keys must be objects and the values can be arbitrary
+values.
 
 You can learn more about `WeakMap`s in the
 [WeakMap object](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
@@ -40,7 +39,7 @@ corresponding value from the array of values.
 
 Such an implementation would have two main inconveniences:
 
-1.  The first one is an _O(<var>n</var> )_ set and search (
+1.  The first one is an _O(<var>n</var>)_ set and search (
 
     <var>n</var>
 
@@ -73,14 +72,11 @@ have a list of keys, you should use a {{jsxref("Map")}}.
 ## Instance methods
 
 - {{jsxref("WeakMap.delete", "WeakMap.prototype.delete(<var>key</var>)")}}
-
-  - : Removes any value associated to the `key` .
-    <code>WeakMap.prototype.has(<var>key</var>)</code>
-
-    will return `false` afterwards.
-
+  - : Removes any value associated to the `key`.
+    <code>WeakMap.prototype.has(<var>key</var>)</code> will return `false`
+    afterwards.
 - {{jsxref("WeakMap.get", "WeakMap.prototype.get(<var>key</var>)")}}
-  - : Returns the value associated to the `key` , or `undefined` if there is
+  - : Returns the value associated to the `key`, or `undefined` if there is
     none.
 - {{jsxref("WeakMap.has", "WeakMap.prototype.has(<var>key</var>)")}}
   - : Returns a Boolean asserting whether a value has been associated to the
@@ -159,6 +155,8 @@ class ClearableWeakMap {
 
 ## See also
 
+- A polyfill of `WeakMap` is available in
+  [`core-js`](https://github.com/zloirock/core-js#weakmap)
 - [`WeakMap` in the JavaScript guide](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
 - [Hiding Implementation Details with ECMAScript 6 WeakMaps](http://fitzgeraldnick.com/weblog/53/)
 - {{jsxref("Map")}}

@@ -10,11 +10,9 @@ browser-compat: javascript.classes.constructor
 ---
 {{jsSidebar("Classes")}}
 
-<span class="seoSummary"
-
-> The <code>constructor</code> method is a special method of
-> a {{jsxref("Statements/class", "class")}} for creating and
-> initializing an object of that class.</span
+The `constructor` method is a special method of
+a {{jsxref("Statements/class", "class")}} for creating and
+initializing an object of that class.
 
 {{EmbedInteractiveExample("pages/js/classes-constructor.html")}}
 

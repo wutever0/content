@@ -50,7 +50,7 @@ becomes true and are typically used as blocking constructs.
   - : Stores a value at the specified index of the array. Returns the old value.
 - {{jsxref("Atomics.isLockFree()", "Atomics.isLockFree(size)")}}
   - : An optimization primitive that can be used to determine whether to use
-    locks or atomic operations. Returns `true`  if an atomic operation on arrays
+    locks or atomic operations. Returns `true` if an atomic operation on arrays
     of the given element size will be implemented using a hardware atomic
     operation (as opposed to a lock). Experts only.
 - {{jsxref("Atomics.load()")}}
@@ -68,8 +68,8 @@ becomes true and are typically used as blocking constructs.
     value at that index.
 - {{jsxref("Atomics.wait()")}}
   - : Verifies that the specified index of the array still contains a value and
-    sleeps awaiting or times out. Returns either " `ok` ", " `not-equal` ", or "
-    `timed-out` ". If waiting is not allowed in the calling agent then it throws
+    sleeps awaiting or times out. Returns either "`ok`", "`not-equal`", or
+    "`timed-out`". If waiting is not allowed in the calling agent then it throws
     an {{JSxref("Error")}} exception. (Most browsers will not allow
     `wait()` on the browser's main thread.)
 - {{jsxref("Atomics.xor()")}}

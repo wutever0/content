@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.every
 ---
 {{JSRef}}
@@ -41,16 +42,7 @@ every(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : A function to test for each element, taking three arguments:
-    - `element`
-      - : The current element being processed in the typed array.
-    - `index` {{Optional_inline}}
-      - : The index of the current element being processed in the typed array.
-    - `array` {{Optional_inline}}
-      - : The typed array `every` was called upon.
-- `thisArg` {{Optional_inline}}
-  - : A value to use as `this` when executing `callbackFn` .
+<dl><dt><code><var>callbackFn</var></code></dt><dd>A function to test for each element, taking three arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code> {{Optional_inline}}</dt><dd>The index of the current element being processed in the typed array.</dd><dt><code><var>array</var></code> {{Optional_inline}}</dt><dd>The typed array <code>every</code> was called upon.</dd></dl></dd><dt><code><var>thisArg</var></code> {{Optional_inline}}</dt><dd>A value to use as <code>this</code> when executing <code><var>callbackFn</var></code>.</dd></dl>
 
 ### Return value
 
@@ -111,5 +103,7 @@ new Uint8Array([12, 54, 18, 130, 44]).every(elem => elem >= 10); // true
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.every` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.some()")}}
 - {{jsxref("Array.prototype.every()")}}

@@ -20,8 +20,7 @@ other write happens until the modified value is written back.
 
 ## Syntax
 
-<pre class="brush: js">
-Atomics.compareExchange(<var>typedArray</var>, <var>index</var>, <var>expectedValue</var>, <var>replacementValue</var>)
+<pre class="brush: js">Atomics.compareExchange(<var>typedArray</var>, <var>index</var>, <var>expectedValue</var>, <var>replacementValue</var>)
 </pre>
 
 ### Parameters
@@ -33,11 +32,7 @@ Atomics.compareExchange(<var>typedArray</var>, <var>index</var>, <var>expectedVa
     {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
     {{jsxref("BigUint64Array")}}.
 - `index`
-
-  - : The position in the `typedArray` to exchange a
-
-    `value` .
-
+  - : The position in the `typedArray` to exchange a `value`.
 - `expectedValue`
   - : The value to check for equality.
 - `replacementValue`
@@ -46,7 +41,7 @@ Atomics.compareExchange(<var>typedArray</var>, <var>index</var>, <var>expectedVa
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code> ).
+(<code><var>typedArray</var>[<var>index</var>]</code>).
 
 ### Exceptions
 

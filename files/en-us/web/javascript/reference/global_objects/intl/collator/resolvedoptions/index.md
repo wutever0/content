@@ -42,18 +42,17 @@ The resulting object has the following properties:
   - : The BCP 47 language tag for the locale actually used. If any Unicode
     extension values were requested in the input BCP 47 language tag that led to
     this locale, the key-value pairs that were requested and are supported for
-    this locale are included in `locale` .
+    this locale are included in `locale`.
 - `usage`, `sensitivity`, `ignorePunctuation`
   - : The values provided for these properties in the `options` argument or
     filled in as defaults.
 - `collation`
-  - : The value requested using the Unicode extension key " `co` ", if it is
-    supported for `locale` , or " `default` ".
+  - : The value requested using the Unicode extension key "`co`", if it is
+    supported for `locale`, or "`default`".
 - `numeric`, `caseFirst`
   - : The values requested for these properties in the `options` argument or
-    using the Unicode extension keys " `kn` " and " `kf` " or filled in as
-    defaults. If the implementation does not support these properties, they are
-    omitted.
+    using the Unicode extension keys "`kn`" and "`kf`" or filled in as defaults.
+    If the implementation does not support these properties, they are omitted.
 
 ## Examples
 

@@ -9,10 +9,7 @@ browser-compat: javascript.builtins.Error.Error
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Error</code></strong> constructor creates an error
-> object.</span
+The **`Error`** constructor creates an error object.
 
 ## Syntax
 
@@ -28,19 +25,12 @@ new Error(message, fileName, lineNumber)
 - `message`{{Optional_Inline}}
   - : A human-readable description of the error.
 - `fileName` {{Optional_Inline}}{{Non-standard_inline}}
-
-  - : The value for the `fileName` property on the created
-
-    `Error` object. Defaults to the name of the file containing the code that
-    called the `Error()` constructor.
-
+  - : The value for the `fileName` property on the created `Error` object.
+    Defaults to the name of the file containing the code that called the
+    `Error()` constructor.
 - `lineNumber` {{Optional_Inline}}{{Non-standard_inline}}
-
-  - : The value for the `lineNumber` property on the created
-
-    `Error` object. Defaults to the line number containing the
-
-    `Error()` constructor invocation.
+  - : The value for the `lineNumber` property on the created `Error` object.
+    Defaults to the line number containing the `Error()` constructor invocation.
 
 ## Examples
 

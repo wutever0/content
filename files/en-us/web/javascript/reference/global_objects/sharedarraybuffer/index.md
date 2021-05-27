@@ -129,9 +129,9 @@ var sab = new SharedArrayBuffer(1024);
 
 - {{jsxref("SharedArrayBuffer.slice", "SharedArrayBuffer.prototype.slice(begin, end)")}}
   - : Returns a new `SharedArrayBuffer` whose contents are a copy of this
-    `SharedArrayBuffer` 's bytes from `begin` , inclusive, up to `end` ,
-    exclusive. If either `begin` or `end` is negative, it refers to an index
-    from the end of the array, as opposed to from the beginning.
+    `SharedArrayBuffer`'s bytes from `begin`, inclusive, up to `end`, exclusive.
+    If either `begin` or `end` is negative, it refers to an index from the end
+    of the array, as opposed to from the beginning.
 
 ## Examples
 

@@ -58,8 +58,7 @@ for (let i = 0; i < 5; ++i) {
 
 Sometimes, you leave out brackets around `if` statements:
 
-<pre class="brush: js example-bad line-numbers language-js">
-function round(n, upperBound, lowerBound){
+<pre class="brush: js example-bad line-numbers language-js">function round(n, upperBound, lowerBound){
   if(n > upperBound) || (n &#x3C; lowerBound){
     throw 'Number ' + String(n) + ' is more than ' + String(upperBound) + ' or less than ' + String(lowerBound);
   }else if(n &#x3C; ((upperBound + lowerBound)/2)){
@@ -67,14 +66,10 @@ function round(n, upperBound, lowerBound){
   }else{
     return upperBound;
   }
-} // SyntaxError: expected expression, got '||'</pre
->
-
+} // SyntaxError: expected expression, got '||'</pre>
 
 The brackets may look correct at first, but note how the `||` is outside the
 brackets. Correct would be putting brackets around the `||`:
-
-
 
 ```js example-good
 function round(n, upperBound, lowerBound){
@@ -90,4 +85,4 @@ function round(n, upperBound, lowerBound){
 
 ## See also
 
-*   {{jsxref("SyntaxError")}}
+- {{jsxref("SyntaxError")}}

@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - imul
+- Polyfill
 browser-compat: javascript.builtins.Math.imul
 ---
 {{JSRef}}
@@ -111,4 +112,6 @@ if (!Math.imul) Math.imul = function(opA, opB) {
 
 ## See also
 
+- A polyfill of `Math.imul` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - [Emscripten](https://en.wikipedia.org/wiki/Emscripten)

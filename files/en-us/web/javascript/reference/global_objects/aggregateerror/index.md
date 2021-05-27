@@ -6,6 +6,7 @@ tags:
   - Class
   - Interface
   - JavaScript
+  - Polyfill
 browser-compat: javascript.builtins.AggregateError
 ---
 {{JSRef}}
@@ -23,9 +24,9 @@ when all promises passed to it reject.
 ## Instance properties
 
 - {{JSxRef("Error.prototype.message", "AggregateError.prototype.message")}}
-  - : Error message, defaults to `""` .
+  - : Error message, defaults to `""`.
 - {{JSxRef("Error.prototype.name", "AggregateError.prototype.name")}}
-  - : Error name, defaults to `AggregateError` .
+  - : Error name, defaults to `AggregateError`.
 
 ## Examples
 
@@ -67,5 +68,7 @@ try {
 
 ## See also
 
+- A polyfill of `AggregateError` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
 - {{JSxRef("Error")}}
 - {{JSxRef("Promise.any")}}

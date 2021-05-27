@@ -9,15 +9,14 @@ tags:
   - Object
   - Reference
   - set
+  - Polyfill
 browser-compat: javascript.builtins.Set
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Set</code></strong> object lets you store unique values of
-> any type, whether {{Glossary("Primitive", "primitive values")}}
-> or object references.</span
+The **`Set`** object lets you store unique values of any type, whether
+{{Glossary("Primitive", "primitive values")}} or object
+references.
 
 ## Description
 
@@ -62,13 +61,10 @@ in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as
 - {{jsxref("Set.prototype.clear()")}}
   - : Removes all elements from the `Set` object.
 - {{jsxref("Set.delete", "Set.prototype.delete(<var>value</var>)")}}
-
   - : Removes the element associated to the `value` and returns a boolean
     asserting whether an element was successfully removed or not.
-    <code>Set.prototype.has(<var>value</var>)</code>
-
-    will return `false` afterwards.
-
+    <code>Set.prototype.has(<var>value</var>)</code> will return `false`
+    afterwards.
 - {{jsxref("Set.has", "Set.prototype.has(<var>value</var>)")}}
   - : Returns a boolean asserting whether an element is present with the given
     value in the `Set` object or not.
@@ -89,7 +85,7 @@ in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as
 - {{jsxref("Set.prototype.entries()")}}
 
   - : Returns a new iterator object that contains **an array of
-    <code>[<var>value</var>, <var>value</var>]</code> ** for each element in the
+    <code>[<var>value</var>, <var>value</var>]</code>** for each element in the
     `Set` object, in insertion order.
 
     This is similar to the {{jsxref("Map")}} object, so that each entry's
@@ -98,7 +94,7 @@ in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as
 - {{jsxref("Set.forEach", "Set.prototype.forEach(<var>callbackFn</var>[, <var>thisArg</var>])")}}
   - : Calls `callbackFn` once for each value present in the `Set` object, in
     insertion order. If a `thisArg` parameter is provided, it will be used as
-    the `this` value for each invocation of `callbackFn` .
+    the `this` value for each invocation of `callbackFn`.
 
 ## Examples
 
@@ -282,17 +278,14 @@ new Set("firefox")  // Set(6) { "f", "i", "r", "e", "o", "x" }
 
 ### Use Set to ensure the uniqueness of a list of values
 
-<pre class="brush: js" dir="ltr">
-const array = Array
+<pre class="brush: js" dir="ltr">const array = Array
   .from(document.querySelectorAll('[id]'))
   .map(function(e) {
       return e.id
   });
 
 const set = new Set(array);
-console.assert(set.size == array.length);</pre
->
-
+console.assert(set.size == array.length);</pre>
 
 ## Specifications
 
@@ -304,6 +297,8 @@ console.assert(set.size == array.length);</pre
 
 ## See also
 
-*   {{jsxref("Map")}}
-*   {{jsxref("WeakMap")}}
-*   {{jsxref("WeakSet")}}
+- A polyfill of `Set` is available in
+  [`core-js`](https://github.com/zloirock/core-js#set)
+- {{jsxref("Map")}}
+- {{jsxref("WeakMap")}}
+- {{jsxref("WeakSet")}}

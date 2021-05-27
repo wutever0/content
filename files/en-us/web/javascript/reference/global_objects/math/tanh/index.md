@@ -7,6 +7,7 @@ tags:
 - Math
 - Method
 - Reference
+- Polyfill
 browser-compat: javascript.builtins.Math.tanh
 ---
 {{JSRef}}
@@ -14,75 +15,20 @@ browser-compat: javascript.builtins.Math.tanh
 The **`Math.tanh()`** function returns the hyperbolic tangent of a number, that
 is
 
-<math display="block"
-
-> <semantics <mrow <mo lspace="0em" rspace="0em">tanh</mo>
-
-      <mi>x</mi>
-      <mo>=</mo>
-      <mfrac
-        ><mrow
-          ><mo lspace="0em" rspace="0em">sinh</mo>
-          <mi>x</mi> </mrow
-        ><mrow
-          ><mo lspace="0em" rspace="0em">cosh</mo>
-          <mi>x</mi>
-        </mrow></mfrac
-      ><mo>=</mo>
-      <mfrac
-        ><mrow
-          ><msup
-            ><mi>e</mi>
-            <mi>x</mi> </msup
-          ><mo>-</mo>
-          <msup
-            ><mi>e</mi>
-            <mrow
-              ><mo>-</mo>
-              <mi>x</mi>
-            </mrow></msup
-          ></mrow
-        ><mrow
-          ><msup
-            ><mi>e</mi>
-            <mi>x</mi> </msup
-          ><mo>+</mo>
-          <msup
-            ><mi>e</mi>
-            <mrow
-              ><mo>-</mo>
-              <mi>x</mi>
-            </mrow></msup
-          ></mrow
-        ></mfrac
-      ><mo>=</mo>
-      <mfrac
-        ><mrow
-          ><msup
-            ><mi>e</mi>
-            <mrow
-              ><mn>2</mn>
-              <mi>x</mi>
-            </mrow></msup
-          ><mo>-</mo>
-          <mn>1</mn> </mrow
-        ><mrow
-          ><msup
-            ><mi>e</mi>
-            <mrow
-              ><mn>2</mn>
-              <mi>x</mi>
-            </mrow></msup
-          ><mo>+</mo>
-          <mn>1</mn>
-        </mrow></mfrac
-      ></mrow
-    ><annotation encoding="TeX"
-      >\tanh x = \frac{\sinh x}{\cosh x} = \frac {e^x - e^{-x}} {e^x + e^{-x}} =
-      \frac{e^{2x} - 1}{e^{2x}+1}</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mo lspace="0em" rspace="0em">tanh</mo>
+<mi>x</mi> <mo>=</mo> <mfrac><mrow><mo lspace="0em" rspace="0em">sinh</mo>
+<mi>x</mi> </mrow><mrow><mo lspace="0em" rspace="0em">cosh</mo> <mi>x</mi>
+</mrow></mfrac><mo>=</mo> <mfrac><mrow><msup><mi>e</mi> <mi>x</mi>
+</msup><mo>-</mo> <msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi>
+</mrow></msup></mrow><mrow><msup><mi>e</mi> <mi>x</mi> </msup><mo>+</mo>
+<msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi>
+</mrow></msup></mrow></mfrac><mo>=</mo> <mfrac><mrow><msup><mi>e</mi>
+<mrow><mn>2</mn> <mi>x</mi> </mrow></msup><mo>-</mo> <mn>1</mn>
+</mrow><mrow><msup><mi>e</mi> <mrow><mn>2</mn> <mi>x</mi>
+</mrow></msup><mo>+</mo> <mn>1</mn>
+</mrow></mfrac></mrow><annotation encoding="TeX">\tanh x = \frac{\sinh x}{\cosh
+x} = \frac {e^x - e^{-x}} {e^x + e^{-x}} = \frac{e^{2x} -
+1}{e^{2x}+1}</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-tanh.html")}}
 
@@ -137,6 +83,8 @@ Math.tanh(1);        // 0.7615941559557649
 
 ## See also
 
+- A polyfill of `Math.tanh` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
 - {{jsxref("Math.acosh()")}}
 - {{jsxref("Math.asinh()")}}
 - {{jsxref("Math.atanh()")}}

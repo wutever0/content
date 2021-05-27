@@ -28,12 +28,9 @@ slice(begin, end)
 - `begin`
   - : Zero-based byte index at which to begin slicing.
 - `end` {{optional_inline}}
-
   - : Byte index before which to end slicing. If end is unspecified, the new
-
     `ArrayBuffer` contains all bytes from begin to the end of this
-
-    `ArrayBuffer` . If negative, it will make the Byte index begin from the last
+    `ArrayBuffer`. If negative, it will make the Byte index begin from the last
     Byte.
 
 ### Return value

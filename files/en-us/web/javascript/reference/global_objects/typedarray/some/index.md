@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.some
 ---
 {{JSRef}}
@@ -41,16 +42,7 @@ some(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : Function to test for each element, taking three arguments:
-    - `element`
-      - : The current element being processed in the typed array.
-    - `index`
-      - : The index of the current element being processed in the typed array.
-    - `array`
-      - : The typed array `some` was called upon.
-- `thisArg`
-  - : Optional. Value to use as `this` when executing `callback` .
+<dl><dt><code>callbackFn</code></dt><dd>Function to test for each element, taking three arguments:<dl><dt><code>element</code></dt><dd>The current element being processed in the typed array.</dd><dt><code>index</code></dt><dd>The index of the current element being processed in the typed array.</dd><dt><code>array</code></dt><dd>The typed array <code>some</code> was called upon.</dd></dl></dd><dt><code>thisArg</code></dt><dd>Optional. Value to use as <code>this</code> when executing <code>callback</code>.</dd></dl>
 
 ### Return value
 
@@ -130,5 +122,7 @@ new Uint8Array([12, 5, 8, 1, 4]).some(elem => elem > 10); // true
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.some` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.every()")}}
 - {{jsxref("Array.prototype.some()")}}

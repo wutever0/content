@@ -7,6 +7,7 @@ tags:
 - Method
 - Reference
 - Reflect
+- Polyfill
 browser-compat: javascript.builtins.Reflect.get
 ---
 {{JSRef}}
@@ -30,13 +31,9 @@ Reflect.get(target, propertyKey, receiver)
 - `propertyKey`
   - : The name of the property to get.
 - `receiver` {{optional_inline}}
-
-  - : The value of `this` provided for the call to
-
-    `target` if a getter is encountered. When used with
-    {{jsxref("Proxy")}}, it can be an object that inherits from
-
-    `target` .
+  - : The value of `this` provided for the call to `target` if a getter is
+    encountered. When used with {{jsxref("Proxy")}}, it can be an object
+    that inherits from `target`.
 
 ### Return value
 
@@ -98,5 +95,7 @@ Reflect.get(obj, 'foo', y) // "3bar"
 
 ## See also
 
+- A polyfill of `Reflect.get` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
 - {{jsxref("Reflect")}}
 - [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)

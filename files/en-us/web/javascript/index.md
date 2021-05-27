@@ -103,7 +103,7 @@ or programming. The complete modules available there are as follows:
   - : Overview of available data structures in JavaScript.
 - [Equality comparisons and sameness](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
   - : JavaScript provides three different value-comparison operations: strict
-    equality using `===` , loose equality using `==` , and the
+    equality using `===`, loose equality using `==`, and the
     {{jsxref("Global_Objects/Object/is", "Object.is()")}}
     method.
 - [Closures](/en-US/docs/Web/JavaScript/Closures)
@@ -146,8 +146,8 @@ documentation.
     {{jsxref("Operators/typeof", "typeof")}},
     {{jsxref("Operators/new", "new")}},
     {{jsxref("Operators/this", "this")}}, the
-    [operator precedence](/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-    , and more.
+    [operator precedence](/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence),
+    and more.
 - [Statements and declarations](/en-US/docs/Web/JavaScript/Reference/Statements)
   - : Learn how
     {{jsxref("Statements/do...while", "do-while")}},
@@ -169,9 +169,9 @@ documentation.
 Helpful tools for writing and debugging your **JavaScript** code.
 
 - [Firefox Developer Tools](/en-US/docs/Tools)
-  - : [Web Console](/en-US/docs/Tools/Web_Console) ,
-    [JavaScript Profiler](/en-US/docs/Tools/Performance) ,
-    [Debugger](/en-US/docs/Tools/Debugger) , and more.
+  - : [Web Console](/en-US/docs/Tools/Web_Console),
+    [JavaScript Profiler](/en-US/docs/Tools/Performance),
+    [Debugger](/en-US/docs/Tools/Debugger), and more.
 - [JavaScript Shells](/en-US/docs/Web/JavaScript/Shells)
   - : A JavaScript shell allows you to quickly test snippets of JavaScript code.
 - [Learn JavaScript](https://learnjavascript.online/)

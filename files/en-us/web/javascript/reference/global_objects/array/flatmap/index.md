@@ -9,6 +9,7 @@ tags:
 - Prototype
 - Reference
 - flatMap
+- Polyfill
 browser-compat: javascript.builtins.Array.flatMap
 ---
 {{JSRef}}
@@ -41,17 +42,7 @@ flatMap(function callbackFn(currentValue, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callback`
-  - : Function that produces an element of the new Array, taking three
-    arguments:
-    - `currentValue`
-      - : The current element being processed in the array.
-    - `index`{{optional_inline}}
-      - : The index of the current element being processed in the array.
-    - `array`{{optional_inline}}
-      - : The array `map` was called upon.
-- `thisArg`{{optional_inline}}
-  - : Value to use as `this` when executing `callback` .
+<dl><dt><code>callback</code></dt><dd>Function that produces an element of the new Array, taking three arguments:<dl><dt><code>currentValue</code></dt><dd>The current element being processed in the array.</dd><dt><code>index</code>{{optional_inline}}</dt><dd>The index of the current element being processed in the array.</dd><dt><code>array</code>{{optional_inline}}</dt><dd>The array <code>map</code> was called upon.</dd></dl></dd><dt><code>thisArg</code>{{optional_inline}}</dt><dd>Value to use as <code>this</code> when executing <code>callback</code>.</dd></dl>
 
 ### Return value
 
@@ -156,6 +147,8 @@ a.flatMap( (n) =>
 
 ## See also
 
+- A polyfill of `Array.prototype.flatMap` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.flat()")}}
 - {{jsxref("Array.prototype.map()")}}
 - {{jsxref("Array.prototype.reduce()")}}

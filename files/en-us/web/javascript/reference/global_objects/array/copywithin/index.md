@@ -8,7 +8,7 @@ tags:
 - Method
 - Prototype
 - Reference
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.copyWithin
 ---
 {{JSRef}}
@@ -113,5 +113,7 @@ i32a.copyWithin(0, 2)
 
 ## See also
 
+- A polyfill of `Array.prototype.copyWithin` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
 - {{jsxref("Array")}}

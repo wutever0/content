@@ -23,11 +23,7 @@ semicolons to end statements.
 Control characters have no visual representation but are used to control the
 interpretation of the text.
 
-| Unicode format-control charactersCode point | Name                  | Abbreviation | Description                                                                                                                                                                                                                    |
-| ------------------------------------------- | --------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `U+200C`                                    | Zero width non-joiner | <ZWNJ>       | Placed between characters to prevent being connected into ligatures in certain languages ([Wikipedia](https://en.wikipedia.org/wiki/Zero-width_non-joiner)).                                                                   |
-| `U+200D`                                    | Zero width joiner     | <ZWJ>        | Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages ([Wikipedia](https://en.wikipedia.org/wiki/Zero-width_joiner)). |
-| `U+FEFF`                                    | Byte order mark       | <BOM>        | Used at the start of the script to mark it as Unicode and the text's byte order ([Wikipedia](https://en.wikipedia.org/wiki/Byte_order_mark)).                                                                                  |
+<table class="standard-table"><caption>Unicode format-control characters</caption><thead><tr><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th></tr></thead><tbody><tr><td><code>U+200C</code></td><td>Zero width non-joiner</td><td>&#x3C;ZWNJ></td><td>Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).</td></tr><tr><td><code>U+200D</code></td><td>Zero width joiner</td><td>&#x3C;ZWJ></td><td>Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).</td></tr><tr><td><code>U+FEFF</code></td><td>Byte order mark</td><td>&#x3C;BOM></td><td>Used at the start of the script to mark it as Unicode and the text's byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).</td></tr></tbody></table>
 
 ## White space
 
@@ -38,14 +34,7 @@ are usually unnecessary for the functionality of the code.
 are often used to remove whitespace in order to reduce the amount of data that
 needs to be transferred.
 
-| White space charactersCode point | Name                           | Abbreviation | Description                                                                                               | Escape sequence |
-| -------------------------------- | ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------- | --------------- |
-| U+0009                           | Character tabulation           | <HT>         | Horizontal tabulation                                                                                     | \t              |
-| U+000B                           | Line tabulation                | <VT>         | Vertical tabulation                                                                                       | \v              |
-| U+000C                           | Form feed                      | <FF>         | Page breaking control character ([Wikipedia](https://en.wikipedia.org/wiki/Page_break#Form_feed)).        | \f              |
-| U+0020                           | Space                          | <SP>         | Normal space                                                                                              |                 |
-| U+00A0                           | No-break space                 | <NBSP>       | Normal space, but no point at which a line may break                                                      |                 |
-| Others                           | Other Unicode space characters | <USP>        | [Spaces in Unicode on Wikipedia](https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode) |                 |
+<table class="standard-table"><caption>White space characters</caption><thead><tr><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr><td>U+0009</td><td>Character tabulation</td><td>&#x3C;HT></td><td>Horizontal tabulation</td><td>\t</td></tr><tr><td>U+000B</td><td>Line tabulation</td><td>&#x3C;VT></td><td>Vertical tabulation</td><td>\v</td></tr><tr><td>U+000C</td><td>Form feed</td><td>&#x3C;FF></td><td>Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).</td><td>\f</td></tr><tr><td>U+0020</td><td>Space</td><td>&#x3C;SP></td><td>Normal space</td><td></td></tr><tr><td>U+00A0</td><td>No-break space</td><td>&#x3C;NBSP></td><td>Normal space, but no point at which a line may break</td><td></td></tr><tr><td>Others</td><td>Other Unicode space characters</td><td>&#x3C;USP></td><td><a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a></td><td></td></tr></tbody></table>
 
 ## Line terminators
 
@@ -62,12 +51,7 @@ Only the following Unicode code points are treated as line terminators in
 ECMAScript, other line breaking characters are treated as white space (for
 example, Next Line, NEL, U+0085 is considered as white space).
 
-| Line terminator charactersCode point | Name                | Abbreviation | Description                                            | Escape sequence |
-| ------------------------------------ | ------------------- | ------------ | ------------------------------------------------------ | --------------- |
-| U+000A                               | Line Feed           | <LF>         | New line character in UNIX systems.                    | \n              |
-| U+000D                               | Carriage Return     | <CR>         | New line character in Commodore and early Mac systems. | \r              |
-| U+2028                               | Line Separator      | <LS>         | [Wikipedia](https://en.wikipedia.org/wiki/Newline)     |                 |
-| U+2029                               | Paragraph Separator | <PS>         | [Wikipedia](https://en.wikipedia.org/wiki/Newline)     |                 |
+<table class="standard-table"><caption>Line terminator characters</caption><thead><tr><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr><td>U+000A</td><td>Line Feed</td><td>&#x3C;LF></td><td>New line character in UNIX systems.</td><td>\n</td></tr><tr><td>U+000D</td><td>Carriage Return</td><td>&#x3C;CR></td><td>New line character in Commodore and early Mac systems.</td><td>\r</td></tr><tr><td>U+2028</td><td>Line Separator</td><td>&#x3C;LS></td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr><tr><td>U+2029</td><td>Paragraph Separator</td><td>&#x3C;PS></td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr></tbody></table>
 
 ## Comments
 

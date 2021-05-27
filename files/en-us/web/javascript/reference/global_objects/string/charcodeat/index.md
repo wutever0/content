@@ -11,11 +11,8 @@ browser-compat: javascript.builtins.String.charCodeAt
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>charCodeAt()</code></strong> method returns an integer
-> between <code>0</code> and <code>65535</code> representing the UTF-16 code
-> unit at the given index.</span
+The **`charCodeAt()`** method returns an integer between `0` and `65535`
+representing the UTF-16 code unit at the given index.
 
 {{EmbedInteractiveExample("pages/js/string-charcodeat.html", "shorter")}}
 
@@ -35,10 +32,8 @@ charCodeAt(index)
 ### Parameters
 
 - `index`
-
-  - : An integer greater than or equal to `0` and less than the
-
-    `length` of the string. If `index` is not a number, it defaults to `0` .
+  - : An integer greater than or equal to `0` and less than the `length` of the
+    string. If `index` is not a number, it defaults to `0`.
 
 ### Return value
 
@@ -60,9 +55,9 @@ information on Unicode, see the
 >
 > Because of this, in order to examine (or reproduce) the full character for
 > individual character values of `65536` or greater, for such characters, it is
-> necessary to retrieve not only <code>charCodeAt(<var>i</var>)</code> , but
-> also <code>charCodeAt(<var>i</var>+1)</code> (as if manipulating a string with
-> two letters), or to use <code>codePointAt(<var>i</var>)</code> instead. See
+> necessary to retrieve not only <code>charCodeAt(<var>i</var>)</code>, but also
+> <code>charCodeAt(<var>i</var>+1)</code> (as if manipulating a string with two
+> letters), or to use <code>codePointAt(<var>i</var>)</code> instead. See
 > examples 2 and 3 (below).
 
 `charCodeAt()` returns {{jsxref("Global_Objects/NaN", "NaN")}} if

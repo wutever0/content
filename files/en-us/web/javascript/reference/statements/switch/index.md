@@ -11,22 +11,19 @@ browser-compat: javascript.statements.switch
 ---
 {{jsSidebar("Statements")}}
 
-<span class="seoSummary"
-
-> The <strong><code>switch</code></strong> statement evaluates an <a
-> href="/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators"
-> expression</a , matching the expression's value to a <code>case</code> clause,
-> and executes
-> <a href="/en-US/docs/Web/JavaScript/Reference/Statements">statements</a>
-> associated with that <code>case</code>, as well as statements in
-> <code>case</code>s that follow the matching <code>case</code>.</span
+<span class="seoSummary">The <strong><code>switch</code></strong> statement
+evaluates an
+<a href="/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">expression</a>,
+matching the expression's value to a <code>case</code> clause, and executes
+<a href="/en-US/docs/Web/JavaScript/Reference/Statements">statements</a>
+associated with that <code>case</code>, as well as statements in
+<code>case</code>s that follow the matching <code>case</code>.</span>
 
 {{EmbedInteractiveExample("pages/js/statement-switch.html", "taller")}}
 
 ## Syntax
 
-<pre class="brush: js">
-switch (<var>expression</var>) {
+<pre class="brush: js">switch (<var>expression</var>) {
   case <var>value1</var>:
     //Statements executed when the
     //result of expression matches value1
@@ -44,89 +41,53 @@ switch (<var>expression</var>) {
     //Statements executed when none of
     //the values match the value of the expression
     [break;]]
-}</pre
->
+}</pre>
 
-
-*   `expression`
-    *   : 
-        An expression whose result is matched against each 
-        `case`
-         clause.
-*   <code>case <var>valueN</var></code>
-     {{optional_inline}}
-    *   : 
-        A 
-        `case`
-         clause used to match against 
-        `expression`
-        .
-        If the 
-        `expression`
-         matches the specified
-
-        `valueN`
-        , the statements inside the 
-        `case`
-         clause are
-        executed until either the end of the 
-        `switch`
-         statement or a
-
-        `break`
-        .
-*   `default` {{optional_inline}}
-    *   : 
-        A 
-        `default`
-         clause; if provided, this clause is executed if the value of
-
-        `expression`
-         doesn't match any of the 
-        `case`
-         clauses.
+- `expression`
+  - : An expression whose result is matched against each `case` clause.
+- <code>case <var>valueN</var></code> {{optional_inline}}
+  - : A `case` clause used to match against `expression`. If the `expression`
+    matches the specified `valueN`, the statements inside the `case` clause are
+    executed until either the end of the `switch` statement or a `break`.
+- `default` {{optional_inline}}
+  - : A `default` clause; if provided, this clause is executed if the value of
+    `expression` doesn't match any of the `case` clauses.
 
 ## Description
 
-A `switch` statement first evaluates its expression. It then looks for the
-first `case` clause whose expression evaluates to the same value as the
-result of the input expression (using the [strict
-comparison](/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators), `===`) and transfers control to that clause, executing the
-associated statements. (If multiple `case`s match the provided value, the
-first `case` that matches is selected, even if the `case`s are not
-equal to each other.)
+A `switch` statement first evaluates its expression. It then looks for the first
+`case` clause whose expression evaluates to the same value as the result of the
+input expression (using the
+[strict comparison](/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators),
+`===`) and transfers control to that clause, executing the associated
+statements. (If multiple `case`s match the provided value, the first `case` that
+matches is selected, even if the `case`s are not equal to each other.)
 
 If no matching `case` clause is found, the program looks for the optional
-`default` clause, and if found, transfers control to that clause, executing
-the associated statements. If no `default` clause is found, the program
-continues execution at the statement following the end of `switch`. By
-convention, the `default` clause is the last clause, but it does not need to
-be so.
+`default` clause, and if found, transfers control to that clause, executing the
+associated statements. If no `default` clause is found, the program continues
+execution at the statement following the end of `switch`. By convention, the
+`default` clause is the last clause, but it does not need to be so.
 
-The optional
-[`break`](/en-US/docs/Web/JavaScript/Reference/Statements/break)
-statement associated with each `case` label ensures that the program breaks
-out of `switch` once the matched statement is executed and continues
-execution at the statement following `switch`. If `break` is
-omitted, the program continues execution at the next statement in the
-`switch` statement. The
-[`break`](/en-US/docs/Web/JavaScript/Reference/Statements/break)
-statement is not required if a
-[`return`](/en-US/docs/Web/JavaScript/Reference/Statements/return)
-statement precedes it.
+The optional [`break`](/en-US/docs/Web/JavaScript/Reference/Statements/break)
+statement associated with each `case` label ensures that the program breaks out
+of `switch` once the matched statement is executed and continues execution at
+the statement following `switch`. If `break` is omitted, the program continues
+execution at the next statement in the `switch` statement. The
+[`break`](/en-US/docs/Web/JavaScript/Reference/Statements/break) statement is
+not required if a
+[`return`](/en-US/docs/Web/JavaScript/Reference/Statements/return) statement
+precedes it.
 
 ## Examples
 
 ### Using `switch`
 
-In the following example, if `expr` evaluates to `Bananas`, the
-program matches the value with case `case 'Bananas'` and executes the
-associated statement. When `break` is encountered, the program breaks out of
-`switch` and executes the statement following `switch`. If
-`break` were omitted, the statement for the `case 'Cherries'`
-would also be executed.
-
-
+In the following example, if `expr` evaluates to `Bananas`, the program matches
+the value with case `case 'Bananas'` and executes the associated statement. When
+`break` is encountered, the program breaks out of `switch` and executes the
+statement following `switch`. If `break` were omitted, the statement for the
+`case 'Cherries'` would also be executed.
 
 ```js
 switch (expr) {
@@ -155,13 +116,11 @@ console.log("Is there anything else you'd like?");
 
 ### What happens if I forgot a `break`?
 
-If you forget a `break` then the script will run from the `case`
-where the criterion is met and will run the cases after that **regardless if a
-criterion was met**.
+If you forget a `break` then the script will run from the `case` where the
+criterion is met and will run the cases after that **regardless if a criterion
+was met**.
 
 See example here:
-
-
 
 ```js
 var foo = 0;
@@ -185,10 +144,8 @@ switch (foo) {
 
 ### Can I put a `default` between cases?
 
-Yes, you can! JavaScript will drop you back to the `default` if it can't
-find a match:
-
-
+Yes, you can! JavaScript will drop you back to the `default` if it can't find a
+match:
 
 ```js
 var foo = 5;
@@ -212,15 +169,13 @@ This technique is also commonly called fall-through.
 
 #### Multi-`case` : single operation
 
-This method takes advantage of the fact that if there is no break below a
-`case` clause it will continue to execute the next `case` clause
-regardless if the `case` meets the criteria. (See the section [What happens if I forgot a
-`break`?](#what_happens_if_i_forgot_a_break))
+This method takes advantage of the fact that if there is no break below a `case`
+clause it will continue to execute the next `case` clause regardless if the
+`case` meets the criteria. (See the section
+[What happens if I forgot a `break`?](#what_happens_if_i_forgot_a_break))
 
-This is an example of a single operation sequential `case` statement, where
-four different values perform exactly the same.
-
-
+This is an example of a single operation sequential `case` statement, where four
+different values perform exactly the same.
 
 ```js
 var Animal = 'Giraffe';
@@ -240,12 +195,10 @@ switch (Animal) {
 #### Multi-`case` : chained operations
 
 This is an example of a multiple-operation sequential `case` clause, where,
-depending on the provided integer, you can receive different output. This shows you that
-it will traverse in the order that you put the `case` clauses, and it does
-not have to be numerically sequential. In JavaScript, you can even mix in definitions of
-strings into these `case` statements as well.
-
-
+depending on the provided integer, you can receive different output. This shows
+you that it will traverse in the order that you put the `case` clauses, and it
+does not have to be numerically sequential. In JavaScript, you can even mix in
+definitions of strings into these `case` statements as well.
 
 ```js
 var foo = 1;
@@ -275,59 +228,18 @@ switch (foo) {
 
 The output from this example:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Value</th>
-      <th scope="col">Log text</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code>foo</code> is <code>NaN</code> or not <code>1</code>,
-        <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, or
-        <code>0</code>
-      </td>
-      <td>Please pick a number from 0 to 5!</td>
-    </tr>
-    <tr>
-      <td><code>0</code></td>
-      <td>Output: So What Is Your Name?</td>
-    </tr>
-    <tr>
-      <td><code>1</code></td>
-      <td>Output: What Is Your Name?</td>
-    </tr>
-    <tr>
-      <td><code>2</code></td>
-      <td>Output: Your Name?</td>
-    </tr>
-    <tr>
-      <td><code>3</code></td>
-      <td>Output: Name?</td>
-    </tr>
-    <tr>
-      <td><code>4</code></td>
-      <td>Output: ?</td>
-    </tr>
-    <tr>
-      <td><code>5</code></td>
-      <td>Output: !</td>
-    </tr>
-  </tbody>
-</table>
-
+<table class="standard-table"><thead><tr><th scope="col">Value</th><th scope="col">Log text</th></tr></thead><tbody><tr><td><code>foo</code> is <code>NaN</code> or not <code>1</code>, <code>2</code>,
+<code>3</code>, <code>4</code>, <code>5</code>, or <code>0</code></td><td>Please pick a number from 0 to 5!</td></tr><tr><td><code>0</code></td><td>Output: So What Is Your Name?</td></tr><tr><td><code>1</code></td><td>Output: What Is Your Name?</td></tr><tr><td><code>2</code></td><td>Output: Your Name?</td></tr><tr><td><code>3</code></td><td>Output: Name?</td></tr><tr><td><code>4</code></td><td>Output: ?</td></tr><tr><td><code>5</code></td><td>Output: !</td></tr></tbody></table>
 
 ### Block-scope variables within `switch` statements
 
-With ECMAScript 2015 (ES6) support made available in most modern browsers, there will
-be cases where you would want to use {{jsxref("Statements/let", "let")}} and
-{{jsxref("Statements/const", "const")}} statements to declare block-scoped variables.
+With ECMAScript 2015 (ES6) support made available in most modern browsers, there
+will be cases where you would want to use
+{{jsxref("Statements/let", "let")}} and
+{{jsxref("Statements/const", "const")}} statements to declare
+block-scoped variables.
 
 Take a look at this example:
-
-
 
 ```js
 const action = 'say_hello';
@@ -347,14 +259,14 @@ switch (action) {
 ```
 
 This example will output the error
-`Uncaught SyntaxError: Identifier 'message' has already been declared` which
-you were not probably expecting.
+`Uncaught SyntaxError: Identifier 'message' has already been declared` which you
+were not probably expecting.
 
 This is because the first `let message = 'hello';` conflicts with second let
 statement `let message = 'hi';` even they're within their own separate case
-clauses `case 'say_hello':` and `case 'say_hi':`. Ultimately, this
-is due to both `let` statements being interpreted as duplicate declarations
-of the same variable name within the same block scope.
+clauses `case 'say_hello':` and `case 'say_hi':`. Ultimately, this is due to
+both `let` statements being interpreted as duplicate declarations of the same
+variable name within the same block scope.
 
 We can easily fix this by wrapping our `case` clauses with brackets:
 

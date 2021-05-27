@@ -24,7 +24,7 @@ function was used in a wrong way.
 - {{jsxref("Error.prototype.message", "URIError.prototype.message")}}
   - : Error message. Although ECMA-262 specifies that
     {{jsxref("URIError")}} should provide its own `message` property, in
-    [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey) , it inherits
+    [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
     {{jsxref("Error.prototype.message")}}.
 - {{jsxref("Error.prototype.name", "URIError.prototype.name")}}
   - : Error name. Inherited from {{jsxref("Error")}}.

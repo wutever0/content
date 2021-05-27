@@ -72,7 +72,7 @@ invoke it yourself as follows:
 > {{jsxref("Object.toString", "toString()")}} method, which is
 > different from {{jsxref("String")}} objects converting to string
 > primitives using `valueOf`. All objects have a string conversion, if only
-> "<code>[object <em>type</em>]</code> ". But many objects do not convert to
+> "<code>[object <em>type</em>]</code>". But many objects do not convert to
 > number, boolean, or function.
 
 ## Examples

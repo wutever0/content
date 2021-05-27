@@ -117,9 +117,10 @@ after which the message will actually be pushed into the queue. If there is no
 other message in the queue, and the stack is empty, the message is processed
 right after the delay. However, if there are messages, the `setTimeout` message
 will have to wait for other messages to be processed. For this reason, the
-second argument indicates a _minimum_ time—not a _guaranteed_ time. Here is an
-example that demonstrates this concept (`setTimeout` does not run immediately
-after its timer expires):
+second argument indicates a _minimum_ time—not a _guaranteed_ time.
+
+Here is an example that demonstrates this concept (`setTimeout` does not run
+immediately after its timer expires):
 
 ```js
 const s = new Date().getSeconds();

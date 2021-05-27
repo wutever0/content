@@ -40,24 +40,7 @@ bitwise.
 
 The truth table for the `NOT` operation is:
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th class="header" scope="col">a</th>
-      <th class="header" scope="col">NOT a</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th class="header" scope="col">a</th><th class="header" scope="col">NOT a</th></tr></thead><tbody><tr><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td></tr></tbody></table>
 
 ```js
  9 (base 10) = 00000000000000000000000000001001 (base 2)

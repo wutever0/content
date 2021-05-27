@@ -43,15 +43,12 @@ The resulting object has the following properties:
   - : The BCP 47 language tag for the locale actually used. If any Unicode
     extension values were requested in the input BCP 47 language tag that led to
     this locale, the key-value pairs that were requested and are supported for
-    this locale are included in `locale` .
+    this locale are included in `locale`.
 - `calendar`
   - : E.g. "gregory"
 - `numberingSystem`
-
-  - : The values requested using the Unicode extension keys `"ca"` and
-
-    `"nu"` or filled in as default values.
-
+  - : The values requested using the Unicode extension keys `"ca"` and `"nu"` or
+    filled in as default values.
 - `timeZone`
   - : The value provided for this property in the `options` argument;
     {{jsxref("undefined")}} (representing the runtime's default time

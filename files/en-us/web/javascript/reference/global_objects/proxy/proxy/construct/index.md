@@ -20,8 +20,7 @@ initialize the proxy must itself have a `[[Construct]]` internal method (i.e.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   construct: function(<var>target</var>, <var>argumentsList</var>, <var>newTarget</var>) {
   }
 });

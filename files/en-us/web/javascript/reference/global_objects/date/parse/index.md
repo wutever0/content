@@ -26,22 +26,20 @@ parsed (a library can help if many different formats are to be accommodated).
 
 Direct call:
 
-<pre class="brush: js">
-Date.parse(<var>dateString</var>)
+<pre class="brush: js">Date.parse(<var>dateString</var>)
 </pre>
 
 Implicit call:
 
-<pre class="brush: js">
-new Date(<var>dateString</var>)
+<pre class="brush: js">new Date(<var>dateString</var>)
 </pre>
 
 ### Parameters
 
 - `dateString`
   - : A string representing
-    [a simplification of the ISO 8601 calendar date extended format](#date_time_string_format)
-    . (Other formats may be used, but results are implementation-dependent.)
+    [a simplification of the ISO 8601 calendar date extended format](#date_time_string_format).
+    (Other formats may be used, but results are implementation-dependent.)
 
 ### Return value
 

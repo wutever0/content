@@ -8,6 +8,7 @@ tags:
 - Prototype
 - Reference
 - flat
+- Polyfill
 browser-compat: javascript.builtins.Array.flat
 ---
 {{JSRef}}
@@ -157,6 +158,8 @@ arr5.flat();
 
 ## See also
 
+- A polyfill of `Array.prototype.flat` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.flatMap()")}}
 - {{jsxref("Array.prototype.map()")}}
 - {{jsxref("Array.prototype.reduce()")}}

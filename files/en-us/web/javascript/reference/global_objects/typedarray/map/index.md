@@ -8,6 +8,7 @@ tags:
 - Prototype
 - TypedArray
 - TypedArrays
+- Polyfill
 browser-compat: javascript.builtins.TypedArray.map
 ---
 {{JSRef}}
@@ -52,7 +53,7 @@ map(function callbackFn(currentValue, index, array) { ... }, thisArg)
     - `array` {{optional_inline}}
       - : The typed array `map()` was called upon.
 - `thisArg` {{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn` .
+  - : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -126,5 +127,7 @@ const doubles = numbers.map(function(num) {
 
 ## See also
 
+- A polyfill of `TypedArray.prototype.map` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
 - {{jsxref("TypedArray.prototype.filter()")}}
 - {{jsxref("Array.prototype.map()")}}

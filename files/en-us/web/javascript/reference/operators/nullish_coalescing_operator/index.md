@@ -19,11 +19,10 @@ returns its left-hand side operand.
 This can be contrasted with the
 [logical OR (`||`) operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR),
 which returns the right-hand side operand if the left operand is _any_
-[falsy](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Description)*[ ](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Description)*value,
-not only `null` or `undefined`. In other words, if you use `||` to provide some
-default value to another variable `foo`, you may encounter unexpected behaviors
-if you consider some falsy values as usable (e.g., `''` or `0`). See below for
-more examples.
+{{Glossary("falsy")}} value, not only `null` or `undefined`. In other
+words, if you use `||` to provide some default value to another variable `foo`,
+you may encounter unexpected behaviors if you consider some falsy values as
+usable (e.g., `''` or `0`). See below for more examples.
 
 The nullish coalescing operator has the fifth-lowest
 [operator precedence](/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence),
@@ -62,7 +61,7 @@ console.log(valC); // 42
 
 Earlier, when one wanted to assign a default value to a variable, a common
 pattern was to use the logical OR operator
-([`||`](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR_2)):
+([`||`](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)):
 
 ```js
 let foo;
@@ -163,6 +162,8 @@ console.log(foo.someBarProp?.toUpperCase() ?? "not available"); // "not availabl
 
 ## See also
 
-- [The optional chaining operator](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-- [The logical OR (`||`) operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR_2)
+- The
+  [optional chaining operator](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+- The
+  [logical OR (`||`) operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
 - [Default parameters in functions](/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)

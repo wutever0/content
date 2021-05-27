@@ -35,65 +35,11 @@ A string representing the given date using the UTC time zone.
 
 ## Description
 
-The value returned by `toUTCString()` is a string in the form <code
+The value returned by `toUTCString()` is a string in the form
+<code><var>Www</var>, <var>dd</var> <var>Mmm</var> <var>yyyy</var>
+<var>hh</var>:<var>mm</var>:<var>ss</var> GMT</code>, Where:
 
-> <var>Www</var>, <var>dd</var> <var>Mmm</var> <var>yyyy</var>
-> <var>hh</var>:<var>mm</var>:<var>ss</var> GMT</code
->
-> , Where:
-
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Format String</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code><var>Www</var></code>
-      </td>
-      <td>Day of week, as three letters (e.g. Sun, Mon, ...)</td>
-    </tr>
-    <tr>
-      <td>
-        <code><var>dd</var></code>
-      </td>
-      <td>Day of month, as two digits with leading zero if required</td>
-    </tr>
-    <tr>
-      <td>
-        <code><var>Mmm</var></code>
-      </td>
-      <td>Month, as three letters (e.g. Jan, Feb, ...)</td>
-    </tr>
-    <tr>
-      <td>
-        <code><var>yyyy</var></code>
-      </td>
-      <td>Year, as four or more digits with leading zeroes if required</td>
-    </tr>
-    <tr>
-      <td>
-        <code><var>hh</var></code>
-      </td>
-      <td>Hour, as two digits with leading zero if required</td>
-    </tr>
-    <tr>
-      <td>
-        <code><var>mm</var></code>
-      </td>
-      <td>Minute, as two digits with leading zero if required</td>
-    </tr>
-    <tr>
-      <td>
-        <code><var>ss</var></code>
-      </td>
-      <td>Seconds, as two digits with leading zero if required</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Format String</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code><var>Www</var></code></td><td>Day of week, as three letters (e.g. Sun, Mon, ...)</td></tr><tr><td><code><var>dd</var></code></td><td>Day of month, as two digits with leading zero if required</td></tr><tr><td><code><var>Mmm</var></code></td><td>Month, as three letters (e.g. Jan, Feb, ...)</td></tr><tr><td><code><var>yyyy</var></code></td><td>Year, as four or more digits with leading zeroes if required</td></tr><tr><td><code><var>hh</var></code></td><td>Hour, as two digits with leading zero if required</td></tr><tr><td><code><var>mm</var></code></td><td>Minute, as two digits with leading zero if required</td></tr><tr><td><code><var>ss</var></code></td><td>Seconds, as two digits with leading zero if required</td></tr></tbody></table>
 
 Prior to ECMAScript 2018, the format of the return value varied according to the
 platform. The most common return value was an RFC-1123 formatted date stamp,

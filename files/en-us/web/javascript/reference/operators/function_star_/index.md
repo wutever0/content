@@ -21,37 +21,29 @@ expression.
 
 ## Syntax
 
-<pre class="brush: js">
-function* [<var>name</var>]([<var>param1</var>[, <var>param2[</var>, ..., <var>paramN</var>]]]) {
+<pre class="brush: js">function* [<var>name</var>]([<var>param1</var>[, <var>param2[</var>, ..., <var>paramN</var>]]]) {
    <var>statements</var>
-}</pre
->
-
+}</pre>
 
 ### Parameters
 
-*   `name` {{optional_inline}}
-    *   : 
-        The function name. Can be omitted, in which case the function is
-
-        *anonymous*
-        . The name is only local to the function body.
-*   `paramN` {{optional_inline}}
-    *   : 
-        The name of an argument to be passed to the function. A function can have up to 255
-        arguments.
-*   `statements`
-    *   : 
-        The statements which comprise the body of the function.
+- `name` {{optional_inline}}
+  - : The function name. Can be omitted, in which case the function is
+    _anonymous_. The name is only local to the function body.
+- `paramN` {{optional_inline}}
+  - : The name of an argument to be passed to the function. A function can have
+    up to 255 arguments.
+- `statements`
+  - : The statements which comprise the body of the function.
 
 ## Description
 
-A `function*` expression is very similar to and has almost the same syntax
-as a {{jsxref('Statements/function*', 'function* statement', "", 1)}}. The main
-difference between a `function*` expression and a `function*`
-statement is the *function name*, which can be omitted in `function*`
-expressions to create *anonymous* generator functions. See also the chapter
-about {{jsxref("Functions", "functions")}} for more information.
+A `function*` expression is very similar to and has almost the same syntax as a
+{{jsxref('Statements/function*', 'function* statement', "", 1)}}.
+The main difference between a `function*` expression and a `function*` statement
+is the _function name_, which can be omitted in `function*` expressions to
+create *anonymous* generator functions. See also the chapter about
+{{jsxref("Functions", "functions")}} for more information.
 
 ## Examples
 
@@ -59,8 +51,6 @@ about {{jsxref("Functions", "functions")}} for more information.
 
 The following example defines an unnamed generator function and assigns it to
 `x`. The function yields the square of its argument:
-
-
 
 ```js
 let x = function*(y) {
@@ -78,13 +68,12 @@ let x = function*(y) {
 
 ## See also
 
-*   {{jsxref("Statements/function*", "function*")}} statement
-*   {{jsxref("GeneratorFunction")}} object
-*   [The Iterator
-    protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
-*   {{jsxref("Operators/yield", "yield")}}
-*   {{jsxref("Operators/yield*", "yield*")}}
-*   {{jsxref("Function")}} object
-*   {{jsxref("Statements/function", "function")}} statement
-*   {{jsxref("Operators/function", "function")}} expression
-*   {{jsxref("Functions_and_function_scope", "Functions and function scope", "", 1)}}
+- {{jsxref("Statements/function*", "function*")}} statement
+- {{jsxref("GeneratorFunction")}} object
+- [The Iterator protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+- {{jsxref("Operators/yield", "yield")}}
+- {{jsxref("Operators/yield*", "yield*")}}
+- {{jsxref("Function")}} object
+- {{jsxref("Statements/function", "function")}} statement
+- {{jsxref("Operators/function", "function")}} expression
+- {{jsxref("Functions_and_function_scope", "Functions and function scope", "", 1)}}

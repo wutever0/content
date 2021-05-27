@@ -29,20 +29,10 @@ between the positive x-axis and the ray from (0,0) to the point (x,y), for
 
 ### Return value
 
-The angle in radians (in <math
-
-> <semantics <mrow <mo stretchy="false">[</mo>
-
-      <mo>-</mo>
-      <mi>π</mi>
-      <mo>,</mo>
-      <mi>π</mi>
-      <mo stretchy="false">]</mo> </mrow
-    ><annotation encoding="TeX">[-\pi, \pi]</annotation>
-
-</semantics></math
-
-> ) between the positive x-axis and the ray from (0,0) to the point (x,y).
+The angle in radians (in <math><semantics><mrow><mo stretchy="false">[</mo>
+<mo>-</mo> <mi>π</mi> <mo>,</mo> <mi>π</mi> <mo stretchy="false">]</mo>
+</mrow><annotation encoding="TeX">[-\pi, \pi]</annotation> </semantics></math>)
+between the positive x-axis and the ray from (0,0) to the point (x,y).
 
 ## Description
 

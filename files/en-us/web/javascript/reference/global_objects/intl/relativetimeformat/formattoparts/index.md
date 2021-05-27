@@ -34,8 +34,8 @@ formatToParts(value, unit)
   - : Numeric value to use in the internationalized relative time message.
 - `unit`
   - : Unit to use in the relative time internationalized message. Possible
-    values are: " `year` ", " `quarter` ", " `month` ", " `week` ", " `day` ", "
-    `hour` ", " `minute` ", " `second` ". Plural forms are also permitted.
+    values are: "`year`", "`quarter`", "`month`", "`week`", "`day`", "`hour`",
+    "`minute`", "`second`". Plural forms are also permitted.
 
 ### Return value
 
@@ -44,17 +44,7 @@ parts.
 
 ## Description
 
-<div>
-  The <code>Intl.RelativeTimeFormat.prototype.formatToParts</code> method is a
-  version of the format method which it returns an array of objects which
-  represent "parts" of the object, separating the formatted number into its
-  consituent parts and separating it from other surrounding text. These objects
-  have two properties: type a <code>NumberFormat</code> formatToParts type,
-  and value, which is the String which is the component of the output. If a
-  "part" came from <code>NumberFormat</code>, it will have a unit property which
-  indicates the unit being formatted; literals which are part of the larger
-  frame will not have this property.
-</div>
+<div>The <code>Intl.RelativeTimeFormat.prototype.formatToParts</code> method is a version of the format method which it returns an array of objects which represent "parts" of the object, separating the formatted number into its consituent parts and separating it from other surrounding text. These objects have two properties: type a <code>NumberFormat</code> formatToParts type, and value, which is the String which is the component of the output. If a "part" came from <code>NumberFormat</code>, it will have a unit property which indicates the unit being formatted; literals which are part of the larger frame will not have this property.</div>
 
 ## Examples
 

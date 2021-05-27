@@ -31,12 +31,9 @@ setUint32(byteOffset, value, littleEndian)
 - `value`
   - : The value to set.
 - `littleEndian`
-
   - : {{optional_inline}} Indicates whether the 32-bit int is stored in
     {{Glossary("Endianness", "little- or big-endian")}} format.
-    If `false` or
-
-    `undefined` , a big-endian value is written.
+    If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
 

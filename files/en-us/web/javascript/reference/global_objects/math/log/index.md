@@ -13,42 +13,18 @@ browser-compat: javascript.builtins.Math.log
 The **`Math.log()`** function returns the natural logarithm (base
 {{jsxref("Math.E", "e")}}) of a number, that is
 
-<math display="block"
-
-> <semantics <mrow <mo>∀</mo>
-
-      <mi>x</mi>
-      <mo>></mo>
-      <mn>0</mn>
-      <mo>,</mo>
-      <mstyle mathvariant="monospace"
-        ><mrow
-          ><mo lspace="0em" rspace="thinmathspace">Math.log</mo>
-          <mo stretchy="false">(</mo>
-          <mi>x</mi>
-          <mo stretchy="false">)</mo>
-        </mrow></mstyle
-      ><mo>=</mo>
-      <mo lspace="0em" rspace="0em">ln</mo>
-      <mo stretchy="false">(</mo>
-      <mi>x</mi>
-      <mo stretchy="false">)</mo>
-      <mo>=</mo>
-      <mtext>the unique</mtext>
-      <mspace width="thickmathspace"></mspace><mi>y</mi>
-      <mspace width="thickmathspace"></mspace><mtext>such that</mtext>
-      <mspace width="thickmathspace"></mspace
-      ><msup
-        ><mi>e</mi>
-        <mi>y</mi> </msup
-      ><mo>=</mo>
-      <mi>x</mi> </mrow
-    ><annotation encoding="TeX"
-      >\forall x > 0, \mathtt{\operatorname{Math.log}(x)} = \ln(x) = \text{the
-      unique} \; y \; \text{such that} \; e^y = x</annotation
-    ></semantics
-
-> </math
+<math display="block"><semantics><mrow><mo>∀</mo> <mi>x</mi> <mo>></mo>
+<mn>0</mn> <mo>,</mo>
+<mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.log</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo>
+</mrow></mstyle><mo>=</mo> <mo lspace="0em" rspace="0em">ln</mo>
+<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo> <mo>=</mo>
+<mtext>the unique</mtext> <mspace width="thickmathspace"></mspace><mi>y</mi>
+<mspace width="thickmathspace"></mspace><mtext>such that</mtext>
+<mspace width="thickmathspace"></mspace><msup><mi>e</mi> <mi>y</mi>
+</msup><mo>=</mo> <mi>x</mi> </mrow><annotation encoding="TeX">\forall x > 0,
+\mathtt{\operatorname{Math.log}(x)} = \ln(x) = \text{the unique} \; y \;
+\text{such that} \; e^y = x</annotation></semantics></math>
 
 The JavaScript **`Math.log()`** function is equivalent to _ln(x)_ in
 mathematics.
@@ -101,17 +77,9 @@ Math.log(10); // 2.302585092994046
 
 ### Using Math.log() with a different base
 
-The following function returns the logarithm of `y` with base `x` (ie. <math
-
-> <semantics <mrow <msub <mo>log</mo>
-
-        <mi>x</mi> </msub
-      ><mi>y</mi> </mrow
-    ><annotation encoding="TeX">\log_x y</annotation>
-
-</semantics></math
-
-> ):
+The following function returns the logarithm of `y` with base `x` (ie.
+<math><semantics><mrow><msub><mo>log</mo> <mi>x</mi> </msub><mi>y</mi>
+</mrow><annotation encoding="TeX">\log_x y</annotation> </semantics></math>):
 
 ```js
 function getBaseLog(x, y) {

@@ -25,7 +25,7 @@ getTimezoneOffset()
 
 ### Return value
 
-The difference, in minutes, between <var>date</var> , as evaluated in the UTC
+The difference, in minutes, between <var>date</var>, as evaluated in the UTC
 time zone, and as evaluated in the local time zone.
 
 ## Description
@@ -43,24 +43,7 @@ The number of minutes returned by `getTimezoneOffset()` is positive if the local
 time zone is behind UTC, and negative if the local time zone is ahead of UTC.
 For example, for UTC+10, `-600` will be returned.
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="row">Current time zone</th>
-      <th scope="col">UTC-8</th>
-      <th scope="col">UTC</th>
-      <th scope="col">UTC+3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Return Value</th>
-      <td>480</td>
-      <td>0</td>
-      <td>-180</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="row">Current time zone</th><th scope="col">UTC-8</th><th scope="col">UTC</th><th scope="col">UTC+3</th></tr></thead><tbody><tr><th scope="row">Return Value</th><td>480</td><td>0</td><td>-180</td></tr></tbody></table>
 
 ### Varied results in Daylight Saving Time (DST) time zones
 
@@ -68,8 +51,8 @@ In a time zone that annually shifts in and out of Daylight Saving Time (DST),
 the number of minutes returned by calling `getTimezoneOffset()` can vary.
 
 Consider a given local time zone and a date <var>date1</var> that are both in
-DST, and consider <var>minutes</var> , the number of minutes returned by calling
-<code><var>date1</var>.getTimezoneOffset()</code> ; then:
+DST, and consider <var>minutes</var>, the number of minutes returned by calling
+<code><var>date1</var>.getTimezoneOffset()</code>; then:
 
 - If the local time zone is currently in DST, but a given date
 

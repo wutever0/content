@@ -16,8 +16,7 @@ The **`handler.apply()`** method is a trap for a function call.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   apply: function(<var>target</var>, <var>thisArg</var>, <var>argumentsList</var>) {
   }
 });
@@ -48,7 +47,6 @@ The **`handler.apply()`** method is a trap for a function call.
 This trap can intercept these operations:
 
 - <code><var>proxy</var>(...<var>args</var>)</code>
-
 - {{jsxref("Function.prototype.apply()")}} and
   {{jsxref("Function.prototype.call()")}}
 - {{jsxref("Reflect.apply()")}}

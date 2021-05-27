@@ -8,6 +8,7 @@ tags:
 - Prototype
 - Reference
 - String
+- Polyfill
 browser-compat: javascript.builtins.String.repeat
 ---
 {{JSRef}}
@@ -116,4 +117,6 @@ if (!String.prototype.repeat) {
 
 ## See also
 
+- A polyfill of `String.prototype.repeat` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
 - {{jsxref("String.prototype.concat()")}}

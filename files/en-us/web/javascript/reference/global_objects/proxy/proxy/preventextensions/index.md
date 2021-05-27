@@ -17,8 +17,7 @@ The **`handler.preventExtensions()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   preventExtensions: function(<var>target</var>) {
   }
 });

@@ -13,12 +13,8 @@ browser-compat: javascript.builtins.Math.PI
 The **`Math.PI`** property represents the ratio of the circumference of a circle
 to its diameter, approximately 3.14159:
 
-<math display="block"
-
-> <semantics <mrow <mstyle mathvariant="monospace"><mi>Math.PI</mi></mstyle
-> <mo>=</mo><mi>π</mi><mo>≈</mo><mn>3.14159</mn></mrow <annotation
-> encoding="TeX" \mathtt{\mi{Math.PI}} = \pi \approx 3.14159</annotation
-> </semantics </math
+<math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mi>Math.PI</mi></mstyle><mo>=</mo><mi>π</mi><mo>≈</mo><mn>3.14159</mn></mrow><annotation encoding="TeX">\mathtt{\mi{Math.PI}}
+= \pi \approx 3.14159</annotation></semantics></math>
 
 {{EmbedInteractiveExample("pages/js/math-pi.html")}}
 

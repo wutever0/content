@@ -11,10 +11,8 @@ browser-compat: javascript.builtins.String.concat
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>concat()</code></strong> method concatenates the string
-> arguments to the calling string and returns a new string.</span
+The **`concat()`** method concatenates the string arguments to the calling
+string and returns a new string.
 
 {{EmbedInteractiveExample("pages/js/string-concat.html")}}
 
@@ -29,7 +27,7 @@ concat(str1, str2, ... , strN)
 ### Parameters
 
 - `strN`
-  - : One or more strings to concatenate to `str` .
+  - : One or more strings to concatenate to `str`.
 
 ### Return value
 

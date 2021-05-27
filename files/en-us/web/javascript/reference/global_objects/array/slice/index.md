@@ -51,10 +51,10 @@ slice(start, end)
     second-to-last element in the sequence.
 
     If `end` is omitted, `slice` extracts through the end of the sequence
-    (<code><var>arr</var>.length</code> ).
+    (<code><var>arr</var>.length</code>).
 
     If `end` is greater than the length of the sequence, `slice` extracts
-    through to the end of the sequence (<code><var>arr</var>.length</code> ).
+    through to the end of the sequence (<code><var>arr</var>.length</code>).
 
 ### Return value
 

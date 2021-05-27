@@ -8,16 +8,14 @@ tags:
   - Method
   - Prototype
   - Reference
+  - Polyfill
 browser-compat: javascript.builtins.Array.find
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code>find()</code> method returns the value of the first element in the
-> provided array that satisfies the provided testing function. If no values
-> satisfy the testing function, {{jsxref("undefined")}} is
-> returned.</span
+The `find()` method returns the value of the first element in the provided array
+that satisfies the provided testing function. If no values satisfy the testing
+function, {{jsxref("undefined")}} is returned.
 
 {{EmbedInteractiveExample("pages/js/array-find.html","shorter")}}
 
@@ -55,19 +53,8 @@ find(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : Function to execute on each value in the array, taking 3 arguments:
-    - `element`
-      - : The current element in the array.
-    - `index` {{optional_inline}}
-      - : The index (position) of the current element in the array.
-    - `array` {{optional_inline}}
-      - : The array that `find` was called on.
-- `thisArg` {{optional_inline}}
-
-  - : Object to use as {{jsxref("Operators/this", "this")}} inside
-
-    `callbackFn` .
+<dl><dt><code><var>callbackFn</var></code></dt><dd>Function to execute on each value in the array, taking 3 arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element in the array.</dd><dt><code><var>index</var></code> {{optional_inline}}</dt><dd>The index (position) of the current element in the array.</dd><dt><code><var>array</var></code> {{optional_inline}}</dt><dd>The array that <code>find</code> was called on.</dd></dl></dd><dt><code><var>thisArg</var></code> {{optional_inline}}</dt><dd>Object to use as {{jsxref("Operators/this", "this")}} inside
+<code><var>callbackFn</var></code>.</dd></dl>
 
 ### Return value
 
@@ -197,6 +184,8 @@ array.find(function(value, index) {
 
 ## See also
 
+- A polyfill of `Array.prototype.find` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.findIndex()")}} – find and return an
   index
 - {{jsxref("Array.prototype.includes()")}} – test whether a value

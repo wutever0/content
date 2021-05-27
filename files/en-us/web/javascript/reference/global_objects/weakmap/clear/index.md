@@ -24,8 +24,7 @@ clear()
 
 ### Using the `clear` method
 
-<pre class="brush: js;highlight:[10] example-bad">
-var wm = new WeakMap();
+<pre class="brush: js;highlight:[10] example-bad">var wm = new WeakMap();
 var obj = {};
 
 wm.set(obj, 'foo');

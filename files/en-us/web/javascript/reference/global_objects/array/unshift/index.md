@@ -27,8 +27,7 @@ unshift(element0, element1, ... , elementN)
 ### Parameters
 
 - <code>element<em>N</em></code>
-
-  - : The elements to add to the front of the `arr` .
+  - : The elements to add to the front of the `arr`.
 
 ### Return value
 

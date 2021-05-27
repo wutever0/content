@@ -16,8 +16,7 @@ The **`handler.set()`** method is a trap for setting a property value.
 
 ## Syntax
 
-<pre class="brush: js">
-const <var>p</var> = new Proxy(<var>target</var>, {
+<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
   set: function(<var>target</var>, <var>property</var>, <var>value</var>, <var>receiver</var>) {
   }
 });
@@ -40,8 +39,8 @@ the handler.
     usually the proxy itself. But a `set()` handler can also be called
     indirectly, via the prototype chain or various other ways.
 
-    For example, suppose a script does <code><var>obj</var>.name = "jen"</code>
-    , and `obj` is not a proxy, and has no own property `.name`, but it has a
+    For example, suppose a script does <code><var>obj</var>.name = "jen"</code>,
+    and `obj` is not a proxy, and has no own property `.name`, but it has a
     proxy on its prototype chain. That proxy's `set()` handler will be called,
     and `obj` will be passed as the receiver.
 

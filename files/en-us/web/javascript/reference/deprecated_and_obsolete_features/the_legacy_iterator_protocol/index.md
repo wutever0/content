@@ -27,18 +27,7 @@ following semantics, and throws
 {{jsxref("Global_Objects/StopIteration", "StopIteration")}}
 at the end of iteration.
 
-<table class="standard-table">
-  <tbody>
-    <tr>
-      <th scope="col">Property</th>
-      <th scope="col">Value</th>
-    </tr>
-    <tr>
-      <td><code>next</code></td>
-      <td>A zero arguments function that returns an value.</td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><tbody><tr><th scope="col">Property</th><th scope="col">Value</th></tr><tr><td><code>next</code></td><td>A zero arguments function that returns an value.</td></tr></tbody></table>
 
 ### Difference between legacy and ES2015 iterator protocols
 

@@ -31,7 +31,7 @@ match(regexp)
 
     If `regexp` is a non-`RegExp` object, it is implicitly converted to a
     {{jsxref("RegExp")}} by using <code>new
-    RegExp(<var>regexp</var>)</code> .
+    RegExp(<var>regexp</var>)</code>.
 
     If you don't give any parameter and use the `match()` method directly, you
     will get an {{jsxref("Array")}} with an empty string: `[""]`.
@@ -156,7 +156,7 @@ str.match();   // returns [""]
 
 When the `regexp` parameter is a string or a number, it is implicitly converted
 to a {{jsxref("RegExp")}} by using <code>new
-RegExp(<var>regexp</var>)</code> .
+RegExp(<var>regexp</var>)</code>.
 
 If it is a positive number with a positive sign, `RegExp()` will ignore the
 positive sign.

@@ -8,16 +8,13 @@ tags:
 - Method
 - Prototype
 - Reference
-- polyfill
+- Polyfill
 browser-compat: javascript.builtins.Array.map
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <code><strong>map()</strong></code> method <strong>creates a new
-> array</strong> populated with the results of calling a provided function on
-> every element in the calling array.</span
+The **`map()`** method **creates a new array** populated with the results of
+calling a provided function on every element in the calling array.
 
 {{EmbedInteractiveExample("pages/js/array-map.html")}}
 
@@ -57,7 +54,7 @@ map(function callbackFn(element, index, array) { ... }, thisArg)
       - : The array `map` was called upon.
 
 - `thisArg`{{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn` .
+  - : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -400,6 +397,8 @@ let filteredNumbers = numbers.map(function(num, index) {
 
 ## See also
 
+- A polyfill of `Array.prototype.map` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
 - {{jsxref("Array.prototype.forEach()")}}
 - {{jsxref("Map")}} object
 - {{jsxref("Array.from()")}}

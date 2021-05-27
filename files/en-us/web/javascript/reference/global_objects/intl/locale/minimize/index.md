@@ -12,11 +12,10 @@ browser-compat: javascript.builtins.Intl.Locale.minimize
 ---
 {{JSRef}}
 
-<span class="seoSummary"
-
-> The <strong><code>Intl.Locale.prototype.minimize()</code></strong> method
-> attempts to remove information about the locale that would be added by calling
-> {{jsxref("Intl/Locale/maximize", "Locale.maximize()")}}.</span
+<span class="seoSummary">The
+<strong><code>Intl.Locale.prototype.minimize()</code></strong> method attempts
+to remove information about the locale that would be added by calling
+{{jsxref("Intl/Locale/maximize", "Locale.maximize()")}}.</span>
 
 {{EmbedInteractiveExample("pages/js/intl-locale-prototype-minimize.html", "taller")}}
 

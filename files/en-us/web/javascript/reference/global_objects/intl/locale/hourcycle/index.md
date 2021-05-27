@@ -29,44 +29,7 @@ several different values, which are listed in the table below.
 
 ### Valid hour cycle types
 
-<table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Hour cycle type</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>h12</code></td>
-      <td>
-        Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour
-        clock, with midnight starting at 12:00 am.
-      </td>
-    </tr>
-    <tr>
-      <td><code>h23</code></td>
-      <td>
-        Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour
-        clock, with midnight starting at 0:00.
-      </td>
-    </tr>
-    <tr>
-      <td><code>h11</code></td>
-      <td>
-        Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour
-        clock, with midnight starting at 0:00 am.
-      </td>
-    </tr>
-    <tr>
-      <td><code>h24</code></td>
-      <td>
-        Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour
-        clock, with midnight starting at 24:00.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table class="standard-table"><thead><tr><th scope="col">Hour cycle type</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>h12</code></td><td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr><td><code>h23</code></td><td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr><td><code>h11</code></td><td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr><td><code>h24</code></td><td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
 
 ## Examples
 

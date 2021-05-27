@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Property
   - Symbol
+  - Polyfill
 browser-compat: javascript.builtins.Symbol.isConcatSpreadable
 ---
 {{JSRef}}
@@ -91,4 +92,6 @@ x.concat(fakeArray)  // [1, 2, 3, "hello", "world"]
 
 ## See also
 
+- A polyfill of `Symbol.isConcatSpreadable` is available in
+  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
 - {{jsxref("Array.prototype.concat()")}}
