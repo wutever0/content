@@ -178,7 +178,7 @@ reportPerimeter(square1.length, reportList);
   /* JavaScript module code here */
 &lt;/script&gt;</pre>
 
-<p>The script into which you import the module features basically acts as the top-level module. If you omit it, Firefox for example gives you an error of "SyntaxError: import declarations may only appear at top level of a module".</p>
+<p>The script into which you import the module features basically acts as the top-level module. If you omit the "module" type from the <a href="/en-US/docs/Web/HTML/Element/script" title="The HTML &lt;script&gt; element is used to embed or reference executable code; this is typically used to embed or refer to JavaScript code."><code>&lt;script&gt;</code></a> element, Firefox for example gives you an error of "SyntaxError: import declarations may only appear at top level of a module".</p>
 
 <p>You can only use <code>import</code> and <code>export</code> statements inside modules, not regular scripts.</p>
 
@@ -262,7 +262,7 @@ import { function1 as newFunctionName,
 import { name, draw, reportArea, reportPerimeter } from './modules/circle.js';
 import { name, draw, reportArea, reportPerimeter } from './modules/triangle.js';</pre>
 
-<p>The browser would throw an error such as "SyntaxError: redeclaration of import name" (Firefox).</p>
+<p>The browser would throw an error such as "or: redeclaration of import name" (Firefox).</p>
 
 <p>Instead we need to rename the imports so that they are unique:</p>
 
